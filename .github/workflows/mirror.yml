@@ -1,0 +1,47 @@
+name: Mirror NHC outlook partials
+
+on:
+  schedule:
+    # Every 30 minutes. NHC regenerates the graphical TWO every ~6h
+    # (plus intermediate updates during active systems).
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch NHC partials
+        run: |
+          set -e
+          UA="CARICOOS-nhc-mirror/1.0 (+https://www.caricoos.org)"
+          for f in two_atl_2dx.html two_atl_7dx.html; do
+            curl -sf --retry 3 --retry-delay 10 -A "$UA" \
+              "https://www.nhc.noaa.gov/xgtwo/$f" -o "$f.tmp"
+            # Sanity check: only replace the mirror copy if the payload
+            # actually contains the image map the site parses.
+            if grep -q "<map id='twomap" "$f.tmp"; then
+              mv "$f.tmp" "$f"
+            else
+              echo "::warning::$f fetched but missing <map>; keeping previous copy"
+              rm -f "$f.tmp"
+            fi
+          done
+
+      - name: Commit if changed
+        run: |
+          git config user.name "nhc-mirror-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "mirror: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
