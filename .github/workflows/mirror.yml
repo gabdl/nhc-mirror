@@ -24,6 +24,8 @@ jobs:
         run: |
           set -e
           UA="CARICOOS-nhc-mirror/1.0 (+https://www.caricoos.org)"
+          # Legacy xgtwo partials (old image-map format; no longer carries
+          # active named storms, kept while caricoos.org still parses it)
           for f in two_atl_2dx.html two_atl_7dx.html; do
             curl -sf --retry 3 --retry-delay 10 -A "$UA" \
               "https://www.nhc.noaa.gov/xgtwo/$f" -o "$f.tmp"
@@ -36,6 +38,16 @@ jobs:
               rm -f "$f.tmp"
             fi
           done
+          # New gtwo page (2025/2026 redesign): responsive images + SVG
+          # overlay with storm/disturbance data in data-* attributes.
+          curl -sf --retry 3 --retry-delay 10 -A "$UA" \
+            "https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=7" -o gtwo_atl.html.tmp
+          if grep -q 'class="layer-svg' gtwo_atl.html.tmp; then
+            mv gtwo_atl.html.tmp gtwo_atl.html
+          else
+            echo "::warning::gtwo_atl.html fetched but missing layer-svg; keeping previous copy"
+            rm -f gtwo_atl.html.tmp
+          fi
 
       - name: Commit if changed
         run: |
