@@ -627,17 +627,76 @@ document.addEventListener('DOMContentLoaded', function() {
           
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-pac-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-pac-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
       
@@ -876,6 +935,24 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="0"
+    data-details="
+  
+  <b>As of 5:00 PM PDT Sat Sep 5 2026...</b><br>Offshore of Southwestern Mexico:<br>A trough of low pressure located several hundred miles south of the coast of southwestern Mexico is producing disorganized showers and thunderstorms. Gradual development of this system is possible, and a tropical depression could form during the middle or latter portions of next week while the system moves generally west-northwestward at 10 to 15 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="1457" cy="709" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -931,6 +1008,74 @@ document.addEventListener('DOMContentLoaded', function() {
           
       </div>
 
+      <div id="view-pac-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_pac_2d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_pac_2d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_pac_2d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_pac_2d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_pac_2d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_pac_2d1_w1024.png" 
+          alt="2 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+           
+            
+            
+              
+                
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="0"
+    data-details="
+  
+  <b>As of 5:00 PM PDT Sat Sep 5 2026...</b><br>Offshore of Southwestern Mexico:<br>A trough of low pressure located several hundred miles south of the coast of southwestern Mexico is producing disorganized showers and thunderstorms. Gradual development of this system is possible, and a tropical depression could form during the middle or latter portions of next week while the system moves generally west-northwestward at 10 to 15 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+"
+    data-action="switchDisturbance:0">
+  
+    <circle cx="965" cy="582" r="50" fill="transparent" pointer-events="all" />
+  
+  </g>
+
+              
+            
+             
+        </svg>
+          
+      </div>
+
       <div id="view-pac-7d0" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
         <img 
           srcset="
@@ -980,13 +1125,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="60"
     data-details="
   
-  <b>As of 11:00 AM PDT Sat Sep 5 2026...</b><br>Offshore of Southwestern Mexico:<br>An area of low pressure is forecast to develop well offshore of southwestern Mexico early next week. Gradual development is possible thereafter, and a tropical depression could form during the second half of the week while the system moves generally west-northwestward at 10 to 15 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 5:00 PM PDT Sat Sep 5 2026...</b><br>Offshore of Southwestern Mexico:<br>A trough of low pressure located several hundred miles south of the coast of southwestern Mexico is producing disorganized showers and thunderstorms. Gradual development of this system is possible, and a tropical depression could form during the middle or latter portions of next week while the system moves generally west-northwestward at 10 to 15 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1380,668,1381,667,1382,665,1384,663,1385,661,1386,659,1387,657,1388,655,1389,653,1390,651,1390,649,1391,646,1392,644,1393,642,1393,640,1394,638,1394,635,1394,633,1395,631,1395,629,1395,626,1395,624,1395,622,1395,619,1395,617,1394,615,1394,612,1393,610,1393,608,1392,605,1391,603,1390,601,1389,598,1388,596,1387,594,1385,591,1384,589,1382,587,1381,584,1379,582,1377,580,1375,577,1373,575,1370,573,1368,571,1366,568,1363,566,1361,564,1358,562,1355,560,1352,557,1350,555,1347,553,1344,551,1340,549,1337,547,1334,545,1331,543,1328,541,1324,539,1321,536,1317,534,1314,532,1310,531,1307,529,1303,527,1299,525,1296,523,1292,521,1288,519,1285,517,1281,515,1277,514,1273,512,1269,510,1266,508,1262,507,1258,505,1254,503,1250,502,1247,500,1243,499,1239,498,1235,496,1231,495,1228,494,1224,493,1220,492,1217,490,1213,490,1209,489,1206,488,1202,487,1199,486,1195,486,1192,485,1189,485,1185,484,1182,484,1179,484,1176,484,1173,484,1170,484,1167,484,1164,484,1161,485,1158,485,1156,486,1153,486,1151,487,1148,488,1146,489,1143,490,1141,491,1139,492,1136,493,1134,494,1132,496,1130,497,1128,498,1126,500,1124,502,1122,503,1120,505,1119,507,1117,509,1115,511,1114,513,1112,515,1111,517,1109,519,1108,522,1107,524,1105,526,1104,529,1103,531,1102,534,1101,536,1100,539,1099,542,1098,544,1097,547,1096,550,1096,553,1095,555,1094,558,1094,561,1093,564,1093,566,1093,569,1092,572,1092,574,1092,577,1092,580,1092,582,1093,585,1093,587,1093,590,1094,592,1094,594,1095,597,1096,599,1096,601,1097,603,1098,605,1099,607,1101,608,1102,610,1103,612,1105,613,1107,614,1108,616,1110,617,1112,618,1114,619,1116,620,1118,621,1120,622,1122,623,1125,624,1127,624,1129,625,1132,626,1134,626,1137,627,1139,627,1142,628,1144,628,1147,629,1149,629,1152,629,1155,630,1157,630,1160,631,1162,631,1165,631,1168,632,1170,632,1173,633,1175,633,1178,634,1180,634,1183,635,1185,635,1187,636,1190,637,1192,637,1194,638,1197,639,1199,639,1201,640,1203,641,1205,642,1208,642,1210,643,1212,644,1214,645,1216,646,1218,647,1221,648,1223,649,1225,650,1227,651,1229,652,1231,653,1233,654,1235,655,1238,656,1240,658,1242,659,1244,660,1246,661,1248,662,1250,664,1253,665,1255,666,1257,668,1259,669,1262,670,1264,672,1266,673,1268,674,1271,676,1273,677,1275,678,1277,680,1280,681,1282,682,1284,684,1287,685,1289,686,1291,687,1293,688,1296,689,1298,690,1300,691,1302,692,1305,693,1307,694,1309,695,1311,696,1313,696,1316,697,1318,697,1320,698,1322,698,1324,698,1326,699,1328,699,1330,699,1332,699,1334,698,1336,698,1338,698,1340,698,1342,697,1344,697,1346,696,1348,695,1349,695,1351,694,1353,693,1355,692,1356,691,1358,690,1360,689,1361,688,1363,687,1365,685,1366,684,1368,683,1369,681,1371,680,1372,678,1373,677,1375,675,1376,674,1377,672,1379,670,1380,668" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1457" cy="709" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1362,676,1363,675,1364,673,1365,672,1365,670,1366,669,1367,667,1368,666,1368,664,1369,662,1369,661,1370,659,1370,657,1371,655,1371,653,1371,651,1371,650,1371,648,1371,646,1371,643,1371,641,1371,639,1370,637,1370,635,1369,633,1369,631,1368,629,1368,627,1367,624,1366,622,1365,620,1364,618,1363,616,1361,614,1360,611,1359,609,1357,607,1356,605,1354,603,1352,601,1350,599,1348,597,1346,595,1344,593,1342,591,1340,589,1337,586,1335,584,1333,582,1330,580,1327,578,1325,576,1322,574,1319,572,1316,570,1313,568,1310,566,1307,564,1304,562,1301,560,1298,558,1294,556,1291,554,1288,552,1284,551,1281,549,1277,547,1274,545,1270,543,1266,541,1263,539,1259,537,1255,535,1252,533,1248,531,1244,529,1240,527,1236,526,1233,524,1229,522,1225,520,1221,519,1217,517,1214,515,1210,514,1206,512,1202,511,1199,509,1195,508,1192,507,1188,505,1184,504,1181,503,1178,502,1174,501,1171,500,1168,499,1165,498,1162,498,1159,497,1156,496,1153,496,1150,496,1148,495,1145,495,1142,495,1140,495,1138,495,1135,495,1133,495,1131,496,1129,496,1127,496,1125,497,1123,497,1121,498,1120,499,1118,499,1116,500,1115,501,1113,502,1112,503,1110,504,1109,505,1107,507,1106,508,1105,509,1104,510,1102,512,1101,513,1100,515,1099,517,1098,518,1097,520,1096,522,1095,523,1094,525,1093,527,1092,529,1091,531,1090,533,1089,535,1089,537,1088,539,1087,541,1087,543,1086,545,1086,547,1085,550,1085,552,1085,554,1084,556,1084,558,1084,560,1084,563,1084,565,1084,567,1084,569,1084,571,1084,573,1085,575,1085,578,1085,580,1086,582,1087,584,1087,586,1088,588,1089,589,1090,591,1091,593,1092,595,1094,597,1095,598,1096,600,1098,602,1099,603,1101,605,1102,607,1104,608,1106,610,1108,611,1110,613,1111,614,1113,616,1115,617,1117,619,1120,620,1122,621,1124,623,1126,624,1128,625,1130,627,1133,628,1135,629,1137,630,1139,632,1142,633,1144,634,1146,635,1149,636,1151,638,1153,639,1155,640,1158,641,1160,642,1162,643,1165,645,1167,646,1169,647,1171,648,1174,649,1176,650,1178,651,1181,652,1183,653,1185,654,1187,655,1190,656,1192,657,1194,658,1197,659,1199,660,1201,661,1204,662,1206,663,1208,664,1211,665,1213,666,1215,667,1218,668,1220,668,1222,669,1225,670,1227,671,1230,672,1232,673,1234,673,1237,674,1239,675,1242,676,1244,676,1247,677,1249,678,1252,678,1254,679,1256,680,1259,680,1261,681,1264,682,1266,682,1269,683,1271,683,1273,684,1276,684,1278,685,1281,685,1283,686,1285,686,1288,686,1290,687,1292,687,1295,688,1297,688,1299,688,1301,688,1304,689,1306,689,1308,689,1310,689,1312,689,1314,690,1317,690,1319,690,1321,690,1323,690,1325,690,1327,690,1329,690,1330,689,1332,689,1334,689,1336,689,1338,689,1339,688,1341,688,1343,687,1344,687,1346,686,1348,686,1349,685,1350,684,1352,684,1353,683,1355,682,1356,681,1357,680,1358,679,1360,678,1361,677,1362,676" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1108,13 +1257,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="60"
     data-details="
   
-  <b>As of 11:00 AM PDT Sat Sep 5 2026...</b><br>Offshore of Southwestern Mexico:<br>An area of low pressure is forecast to develop well offshore of southwestern Mexico early next week. Gradual development is possible thereafter, and a tropical depression could form during the second half of the week while the system moves generally west-northwestward at 10 to 15 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 5:00 PM PDT Sat Sep 5 2026...</b><br>Offshore of Southwestern Mexico:<br>A trough of low pressure located several hundred miles south of the coast of southwestern Mexico is producing disorganized showers and thunderstorms. Gradual development of this system is possible, and a tropical depression could form during the middle or latter portions of next week while the system moves generally west-northwestward at 10 to 15 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1380,668,1381,667,1382,665,1384,663,1385,661,1386,659,1387,657,1388,655,1389,653,1390,651,1390,649,1391,646,1392,644,1393,642,1393,640,1394,638,1394,635,1394,633,1395,631,1395,629,1395,626,1395,624,1395,622,1395,619,1395,617,1394,615,1394,612,1393,610,1393,608,1392,605,1391,603,1390,601,1389,598,1388,596,1387,594,1385,591,1384,589,1382,587,1381,584,1379,582,1377,580,1375,577,1373,575,1370,573,1368,571,1366,568,1363,566,1361,564,1358,562,1355,560,1352,557,1350,555,1347,553,1344,551,1340,549,1337,547,1334,545,1331,543,1328,541,1324,539,1321,536,1317,534,1314,532,1310,531,1307,529,1303,527,1299,525,1296,523,1292,521,1288,519,1285,517,1281,515,1277,514,1273,512,1269,510,1266,508,1262,507,1258,505,1254,503,1250,502,1247,500,1243,499,1239,498,1235,496,1231,495,1228,494,1224,493,1220,492,1217,490,1213,490,1209,489,1206,488,1202,487,1199,486,1195,486,1192,485,1189,485,1185,484,1182,484,1179,484,1176,484,1173,484,1170,484,1167,484,1164,484,1161,485,1158,485,1156,486,1153,486,1151,487,1148,488,1146,489,1143,490,1141,491,1139,492,1136,493,1134,494,1132,496,1130,497,1128,498,1126,500,1124,502,1122,503,1120,505,1119,507,1117,509,1115,511,1114,513,1112,515,1111,517,1109,519,1108,522,1107,524,1105,526,1104,529,1103,531,1102,534,1101,536,1100,539,1099,542,1098,544,1097,547,1096,550,1096,553,1095,555,1094,558,1094,561,1093,564,1093,566,1093,569,1092,572,1092,574,1092,577,1092,580,1092,582,1093,585,1093,587,1093,590,1094,592,1094,594,1095,597,1096,599,1096,601,1097,603,1098,605,1099,607,1101,608,1102,610,1103,612,1105,613,1107,614,1108,616,1110,617,1112,618,1114,619,1116,620,1118,621,1120,622,1122,623,1125,624,1127,624,1129,625,1132,626,1134,626,1137,627,1139,627,1142,628,1144,628,1147,629,1149,629,1152,629,1155,630,1157,630,1160,631,1162,631,1165,631,1168,632,1170,632,1173,633,1175,633,1178,634,1180,634,1183,635,1185,635,1187,636,1190,637,1192,637,1194,638,1197,639,1199,639,1201,640,1203,641,1205,642,1208,642,1210,643,1212,644,1214,645,1216,646,1218,647,1221,648,1223,649,1225,650,1227,651,1229,652,1231,653,1233,654,1235,655,1238,656,1240,658,1242,659,1244,660,1246,661,1248,662,1250,664,1253,665,1255,666,1257,668,1259,669,1262,670,1264,672,1266,673,1268,674,1271,676,1273,677,1275,678,1277,680,1280,681,1282,682,1284,684,1287,685,1289,686,1291,687,1293,688,1296,689,1298,690,1300,691,1302,692,1305,693,1307,694,1309,695,1311,696,1313,696,1316,697,1318,697,1320,698,1322,698,1324,698,1326,699,1328,699,1330,699,1332,699,1334,698,1336,698,1338,698,1340,698,1342,697,1344,697,1346,696,1348,695,1349,695,1351,694,1353,693,1355,692,1356,691,1358,690,1360,689,1361,688,1363,687,1365,685,1366,684,1368,683,1369,681,1371,680,1372,678,1373,677,1375,675,1376,674,1377,672,1379,670,1380,668" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1457" cy="709" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1362,676,1363,675,1364,673,1365,672,1365,670,1366,669,1367,667,1368,666,1368,664,1369,662,1369,661,1370,659,1370,657,1371,655,1371,653,1371,651,1371,650,1371,648,1371,646,1371,643,1371,641,1371,639,1370,637,1370,635,1369,633,1369,631,1368,629,1368,627,1367,624,1366,622,1365,620,1364,618,1363,616,1361,614,1360,611,1359,609,1357,607,1356,605,1354,603,1352,601,1350,599,1348,597,1346,595,1344,593,1342,591,1340,589,1337,586,1335,584,1333,582,1330,580,1327,578,1325,576,1322,574,1319,572,1316,570,1313,568,1310,566,1307,564,1304,562,1301,560,1298,558,1294,556,1291,554,1288,552,1284,551,1281,549,1277,547,1274,545,1270,543,1266,541,1263,539,1259,537,1255,535,1252,533,1248,531,1244,529,1240,527,1236,526,1233,524,1229,522,1225,520,1221,519,1217,517,1214,515,1210,514,1206,512,1202,511,1199,509,1195,508,1192,507,1188,505,1184,504,1181,503,1178,502,1174,501,1171,500,1168,499,1165,498,1162,498,1159,497,1156,496,1153,496,1150,496,1148,495,1145,495,1142,495,1140,495,1138,495,1135,495,1133,495,1131,496,1129,496,1127,496,1125,497,1123,497,1121,498,1120,499,1118,499,1116,500,1115,501,1113,502,1112,503,1110,504,1109,505,1107,507,1106,508,1105,509,1104,510,1102,512,1101,513,1100,515,1099,517,1098,518,1097,520,1096,522,1095,523,1094,525,1093,527,1092,529,1091,531,1090,533,1089,535,1089,537,1088,539,1087,541,1087,543,1086,545,1086,547,1085,550,1085,552,1085,554,1084,556,1084,558,1084,560,1084,563,1084,565,1084,567,1084,569,1084,571,1084,573,1085,575,1085,578,1085,580,1086,582,1087,584,1087,586,1088,588,1089,589,1090,591,1091,593,1092,595,1094,597,1095,598,1096,600,1098,602,1099,603,1101,605,1102,607,1104,608,1106,610,1108,611,1110,613,1111,614,1113,616,1115,617,1117,619,1120,620,1122,621,1124,623,1126,624,1128,625,1130,627,1133,628,1135,629,1137,630,1139,632,1142,633,1144,634,1146,635,1149,636,1151,638,1153,639,1155,640,1158,641,1160,642,1162,643,1165,645,1167,646,1169,647,1171,648,1174,649,1176,650,1178,651,1181,652,1183,653,1185,654,1187,655,1190,656,1192,657,1194,658,1197,659,1199,660,1201,661,1204,662,1206,663,1208,664,1211,665,1213,666,1215,667,1218,668,1220,668,1222,669,1225,670,1227,671,1230,672,1232,673,1234,673,1237,674,1239,675,1242,676,1244,676,1247,677,1249,678,1252,678,1254,679,1256,680,1259,680,1261,681,1264,682,1266,682,1269,683,1271,683,1273,684,1276,684,1278,685,1281,685,1283,686,1285,686,1288,686,1290,687,1292,687,1295,688,1297,688,1299,688,1301,688,1304,689,1306,689,1308,689,1310,689,1312,689,1314,690,1317,690,1319,690,1321,690,1323,690,1325,690,1327,690,1329,690,1330,689,1332,689,1334,689,1336,689,1338,689,1339,688,1341,688,1343,687,1344,687,1346,686,1348,686,1349,685,1350,684,1352,684,1353,683,1355,682,1356,681,1357,680,1358,679,1360,678,1361,677,1362,676" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1439,14 +1592,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Sat Sep 05 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Lowell, located several hundred miles south-southwest of the<br>Hawaiian Islands, on Hurricane Karina, located about 750 miles east<br>of the Hawaiian Islands, and on Hurricane Marie, located several<br>hundred miles west of the southern tip of the Baja California<br>Peninsula.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster D. Zelinsky<br><br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 PM HST Sat Sep 05 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Lowell, located about 600 miles south-southwest of the Hawaiian<br>Islands, on recently downgraded Tropical Storm Karina, located about<br>750 miles east-northeast of the Hawaiian Islands, and on Hurricane<br>Marie, located several hundred miles west of the southern tip of the<br>Baja California Peninsula.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Cangialosi<br><br><br></pre>
       </div>
           
     </div>
         
     <div id="two-cpac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">178 <br />ACPN51 PHFO 051711<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />800 AM HST sábado 05 de septiembre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el huracán Lowell, ubicado a varios cientos de<br />millas al sur-suroeste de las islas hawaianas, el huracán Karina,<br />ubicado a unas 750 millas al este de las islas hawaianas, y el<br />huracán Marie, ubicado a varios cientos de millas al oeste del<br />extremo sur de la península de Baja California.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador D. Zelinsky <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">356 <br />ACPN51 PHFO 052312<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />200 PM HST sábado 05 de septiembre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el huracán Lowell, ubicado a unas 600 millas al<br />sur-suroeste de las Islas Hawaii, sobre la tormenta tropical Karina,<br />recientemente degradada, ubicada a unas 750 millas al este-noreste<br />de las Islas Hawaii, y sobre el huracán Marie, ubicado varios<br />cientos de millas al oeste del extremo sur de la Península de Baja<br />California.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Cangialosi <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
     </div>
@@ -1457,8 +1610,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 AM PDT Sat Sep 5 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Lowell, located several hundred miles south-southwest of the <br>Hawaiian Islands, on Hurricane Karina, located about 750 miles east <br>of the Hawaiian Islands, and on Hurricane Marie, located several <br>hundred miles west of the southern tip of the Baja California <br>Peninsula.<br><br>1. Offshore of Southwestern Mexico:<br>An area of low pressure is forecast to develop well offshore of <br>southwestern Mexico early next week. Gradual development is possible <br>thereafter, and a tropical depression could form during the second <br>half of the week while the system moves generally west-northwestward <br>at 10 to 15 mph.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...medium...60 percent.<br>
-<br><br>Forecaster D. Zelinsky<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 PM PDT Sat Sep 5 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Lowell, located about 600 miles south-southwest of the Hawaiian <br>Islands, on recently downgraded Tropical Storm Karina, located about <br>750 miles east-northeast of the Hawaiian Islands, and on Hurricane <br>Marie, located several hundred miles west of the southern tip of the <br>Baja California Peninsula.<br><br>1. Offshore of Southwestern Mexico:<br>A trough of low pressure located several hundred miles south of the <br>coast of southwestern Mexico is producing disorganized showers and <br>thunderstorms. Gradual development of this system is possible, and a <br>tropical depression could form during the middle or latter portions <br>of next week while the system moves generally west-northwestward at <br>10 to 15 mph.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...medium...60 percent.<br>
+<br><br>Forecaster Cangialosi<br><br></pre>
       </div>
           
             
@@ -1473,7 +1626,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">179 <br />ABPZ21 KNHC 051711<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1100 AM PDT sábado 5 de septiembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el huracán Lowell, ubicado a varios cientos de<br />millas al sur-suroeste de las islas hawaianas, el huracán Karina,<br />ubicado a unas 750 millas al este de las islas hawaianas, y el<br />huracán Marie, ubicado a varios cientos de millas al oeste del<br />extremo sur de la península de Baja California.<br /><br />Costa del suroeste de México: Se pronostica que se formará un área<br />de baja presión hacia el mar a principios de la próxima semana. A<br />partir de entonces, es posible que se produzca un desarrollo<br />gradual, y se forme una depresión tropical durante la segunda mitad<br />de la semana, a medida que el sistema se mueve generalmente hacia el<br />oeste-noroeste, a una velocidad de 10 a 15 mph.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación en 7 días...mediana...60 por ciento.<br /><br />$$<br />Pronosticador D. Zelinsky<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">357 <br />ABPZ21 KNHC 052312<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />500 PM PDT sábado 5 de septiembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el huracán Lowell, ubicado a unas 600 millas al<br />sur-suroeste de las Islas Hawaii, sobre la tormenta tropical Karina,<br />recientemente degradada, ubicada a unas 750 millas al este-noreste<br />de las Islas Hawaii, y sobre el huracán Marie, ubicado varios<br />cientos de millas al oeste del extremo sur de la Península de Baja<br />California.<br /><br />En alta mar del suroeste de México: Una vaga de baja presión ubicada<br />a varios cientos de millas al sur de la costa del suroeste de México<br />está produciendo aguaceros y tormentas desorganizadas. Es posible<br />que este sistema se desarrolle gradualmente, y se forme una<br />depresión tropical durante la mitad o última parte de la próxima<br />semana, mientras que el sistema se mueve generalmente hacia el<br />oeste-noroeste, a un ritmo de 10 a 15 mph.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación en 7 días...mediana...60 por ciento.<br /><br />$$<br />Pronosticador Cangialosi<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
@@ -1492,7 +1645,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>200 PM EDT Sat Sep 5 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Berg<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>800 PM EDT Sat Sep 5 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Adams<br>NNNN<br><br></pre>
       </div>
           
             
@@ -1507,7 +1660,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">994 <br />ACCA62 KNHC 051724<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />200 PM EDT sábado 5 de septiembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Berg<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">808 <br />ACCA62 KNHC 052316<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />800 PM EDT sábado 5 de septiembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Adams<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
