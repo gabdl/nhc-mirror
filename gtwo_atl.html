@@ -758,17 +758,76 @@ document.addEventListener('DOMContentLoaded', function() {
           
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-pac-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-pac-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
 
@@ -1206,6 +1265,24 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 5:00 PM PDT Mon Sep 14 2026...</b><br>Southwest of Southwestern Mexico:<br>An area of low pressure could form well to the south of southwestern Mexico near the end of this week. Environmental conditions appear conducive for some development over the weekend as the system moves west-northwestward to northwestward around 10 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="1509,688,1509,686,1509,683,1509,681,1508,679,1508,677,1507,675,1507,673,1506,671,1506,669,1505,667,1504,665,1504,663,1503,661,1502,659,1501,657,1500,655,1499,653,1498,651,1497,649,1496,647,1494,645,1493,643,1492,642,1490,640,1489,638,1488,636,1486,634,1484,633,1483,631,1481,629,1479,627,1478,626,1476,624,1474,622,1472,621,1470,619,1468,617,1466,616,1464,614,1462,613,1460,611,1458,609,1456,608,1453,606,1451,605,1449,603,1446,602,1444,600,1442,599,1439,598,1437,596,1434,595,1431,593,1429,592,1426,591,1424,589,1421,588,1418,587,1415,586,1413,584,1410,583,1407,582,1404,581,1401,580,1398,579,1396,578,1393,577,1390,576,1387,575,1384,574,1381,573,1378,572,1375,571,1372,570,1370,569,1367,568,1364,568,1361,567,1358,566,1355,566,1352,565,1349,564,1347,564,1344,563,1341,563,1338,563,1335,562,1333,562,1330,562,1327,561,1325,561,1322,561,1319,561,1317,561,1314,561,1312,561,1309,561,1307,561,1304,561,1302,561,1300,562,1298,562,1295,562,1293,563,1291,563,1289,563,1287,564,1285,565,1283,565,1281,566,1279,567,1277,567,1275,568,1274,569,1272,570,1270,571,1268,571,1267,572,1265,573,1264,574,1262,575,1261,577,1259,578,1258,579,1257,580,1255,581,1254,582,1253,584,1251,585,1250,586,1249,588,1248,589,1247,590,1246,592,1245,593,1244,594,1243,596,1242,597,1241,599,1240,600,1240,602,1239,603,1238,605,1237,607,1237,608,1236,610,1235,611,1235,613,1234,615,1234,616,1233,618,1233,619,1232,621,1232,623,1232,624,1231,626,1231,628,1231,629,1231,631,1230,633,1230,634,1230,636,1230,638,1230,640,1230,641,1230,643,1231,645,1231,647,1231,648,1231,650,1232,652,1232,654,1233,656,1233,657,1234,659,1234,661,1235,663,1236,665,1237,666,1238,668,1239,670,1240,672,1241,674,1242,676,1243,678,1245,679,1246,681,1248,683,1249,685,1251,687,1252,689,1254,691,1256,693,1258,695,1260,697,1262,699,1264,701,1267,703,1269,705,1272,706,1274,708,1277,710,1280,712,1282,714,1285,716,1288,718,1291,720,1294,722,1297,724,1301,726,1304,728,1307,730,1311,732,1314,734,1317,735,1321,737,1324,739,1328,741,1332,742,1335,744,1339,746,1342,747,1346,749,1350,750,1354,752,1357,753,1361,755,1365,756,1368,757,1372,759,1376,760,1380,761,1383,762,1387,763,1391,764,1394,765,1398,766,1401,766,1405,767,1408,768,1412,768,1415,769,1419,769,1422,769,1425,770,1429,770,1432,770,1435,770,1438,769,1441,769,1444,769,1447,768,1450,768,1452,767,1455,767,1458,766,1460,765,1463,764,1465,763,1467,762,1470,761,1472,760,1474,759,1476,757,1478,756,1480,754,1482,753,1484,751,1485,750,1487,748,1489,746,1490,745,1492,743,1493,741,1495,739,1496,737,1497,735,1498,733,1499,731,1501,729,1502,727,1502,725,1503,723,1504,721,1505,719,1506,716,1506,714,1507,712,1507,710,1508,708,1508,705,1509,703,1509,701,1509,699,1509,697,1509,694,1509,692,1509,690,1509,688" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -1240,6 +1317,86 @@ document.addEventListener('DOMContentLoaded', function() {
     
   </g>
    
+        </svg>
+          
+      </div>
+
+      <div id="view-pac-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_pac_7d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_pac_7d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_pac_7d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_pac_7d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_pac_7d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_pac_7d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_pac_7d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_pac_7d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_pac_7d1_w1024.png" 
+          alt="7 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="View Atlantic Outlook" 
+    onclick="switchBasin('atl')">
+    <polygon points="1916,218,1903,228,1884,239,1875,254,1856,264,1847,283,1841,300,1849,328,1858,347,1867,368,1864,391,1864,417,1843,415,1837,402,1828,381,1819,355,1815,336,1807,321,1785,321,1771,319,1751,311,1726,313,1704,317,1698,330,1672,336,1657,330,1636,326,1611,326,1593,336,1576,345,1566,360,1566,381,1564,400,1553,419,1549,446,1555,472,1564,499,1578,516,1596,537,1617,544,1636,544,1657,535,1672,518,1675,495,1694,489,1711,480,1730,480,1749,493,1745,510,1738,527,1734,544,1728,565,1721,584,1711,594,1736,594,1751,590,1775,590,1794,599,1811,607,1817,624,1809,637,1805,656,1805,679,1809,698,1828,713,1843,726,1860,720,1884,711,1901,711,1918,724" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+           
+            
+            
+              
+                
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 5:00 PM PDT Mon Sep 14 2026...</b><br>Southwest of Southwestern Mexico:<br>An area of low pressure could form well to the south of southwestern Mexico near the end of this week. Environmental conditions appear conducive for some development over the weekend as the system moves west-northwestward to northwestward around 10 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="1509,688,1509,686,1509,683,1509,681,1508,679,1508,677,1507,675,1507,673,1506,671,1506,669,1505,667,1504,665,1504,663,1503,661,1502,659,1501,657,1500,655,1499,653,1498,651,1497,649,1496,647,1494,645,1493,643,1492,642,1490,640,1489,638,1488,636,1486,634,1484,633,1483,631,1481,629,1479,627,1478,626,1476,624,1474,622,1472,621,1470,619,1468,617,1466,616,1464,614,1462,613,1460,611,1458,609,1456,608,1453,606,1451,605,1449,603,1446,602,1444,600,1442,599,1439,598,1437,596,1434,595,1431,593,1429,592,1426,591,1424,589,1421,588,1418,587,1415,586,1413,584,1410,583,1407,582,1404,581,1401,580,1398,579,1396,578,1393,577,1390,576,1387,575,1384,574,1381,573,1378,572,1375,571,1372,570,1370,569,1367,568,1364,568,1361,567,1358,566,1355,566,1352,565,1349,564,1347,564,1344,563,1341,563,1338,563,1335,562,1333,562,1330,562,1327,561,1325,561,1322,561,1319,561,1317,561,1314,561,1312,561,1309,561,1307,561,1304,561,1302,561,1300,562,1298,562,1295,562,1293,563,1291,563,1289,563,1287,564,1285,565,1283,565,1281,566,1279,567,1277,567,1275,568,1274,569,1272,570,1270,571,1268,571,1267,572,1265,573,1264,574,1262,575,1261,577,1259,578,1258,579,1257,580,1255,581,1254,582,1253,584,1251,585,1250,586,1249,588,1248,589,1247,590,1246,592,1245,593,1244,594,1243,596,1242,597,1241,599,1240,600,1240,602,1239,603,1238,605,1237,607,1237,608,1236,610,1235,611,1235,613,1234,615,1234,616,1233,618,1233,619,1232,621,1232,623,1232,624,1231,626,1231,628,1231,629,1231,631,1230,633,1230,634,1230,636,1230,638,1230,640,1230,641,1230,643,1231,645,1231,647,1231,648,1231,650,1232,652,1232,654,1233,656,1233,657,1234,659,1234,661,1235,663,1236,665,1237,666,1238,668,1239,670,1240,672,1241,674,1242,676,1243,678,1245,679,1246,681,1248,683,1249,685,1251,687,1252,689,1254,691,1256,693,1258,695,1260,697,1262,699,1264,701,1267,703,1269,705,1272,706,1274,708,1277,710,1280,712,1282,714,1285,716,1288,718,1291,720,1294,722,1297,724,1301,726,1304,728,1307,730,1311,732,1314,734,1317,735,1321,737,1324,739,1328,741,1332,742,1335,744,1339,746,1342,747,1346,749,1350,750,1354,752,1357,753,1361,755,1365,756,1368,757,1372,759,1376,760,1380,761,1383,762,1387,763,1391,764,1394,765,1398,766,1401,766,1405,767,1408,768,1412,768,1415,769,1419,769,1422,769,1425,770,1429,770,1432,770,1435,770,1438,769,1441,769,1444,769,1447,768,1450,768,1452,767,1455,767,1458,766,1460,765,1463,764,1465,763,1467,762,1470,761,1472,760,1474,759,1476,757,1478,756,1480,754,1482,753,1484,751,1485,750,1487,748,1489,746,1490,745,1492,743,1493,741,1495,739,1496,737,1497,735,1498,733,1499,731,1501,729,1502,727,1502,725,1503,723,1504,721,1505,719,1506,716,1506,714,1507,712,1507,710,1508,708,1508,705,1509,703,1509,701,1509,699,1509,697,1509,694,1509,692,1509,690,1509,688" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
+              
+            
+             
         </svg>
           
       </div>
@@ -1522,14 +1679,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Mon Sep 14 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical<br>Storm Norbert, located well east of the Hawaiian Islands, and on<br>Tropical Depression Fifteen-E, located several hundred<br>miles southwest of the southern tip of the Baja California<br>Peninsula.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>&&<br>Public advisories on Tropical Depression Fifteen-E are issued under<br>WMO header WTPZ35 KNHC and under AWIPS header MIATCPEP5.<br>Forecast/Advisories on Tropical Depression Fifteen-E are issued<br>under WMO header WTPZ25 KNHC and under AWIPS header MIATCMEP5.<br><br>$$<br>Forecaster Katz/Beven<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 PM HST Mon Sep 14 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical<br>Storm Norbert, located well east of the Hawaiian Islands, and on<br>Tropical Depression Fifteen-E, located well west-southwest of the<br>southern tip of the Baja California Peninsula.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Hagen<br><br><br></pre>
       </div>
           
     </div>
         
     <div id="two-cpac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">396 <br />ACPN51 PHFO 141724<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />800 AM HST lunes 14 de septiembre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la tormenta tropical Norbert, ubicada al este de<br />las islas hawaianas, y sobre la depresión tropical quince-E, ubicada<br />varios cientos de millas al suroeste del extremo sur de la península<br />de Baja California.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />/<br />Se emiten advertencias públicas sobre la Depresión Tropical Quince-E<br />bajo el encabezado de la OMM WTPZ35 KNHC y bajo el encabezado de<br />AWIPS MIATCPEP5. Pronóstico/Advertencias sobre la Depresión Tropical<br />Quince-E se emiten bajo el encabezado de la OMM WTPZ25 KNHC y bajo<br />el encabezado de AWIPS MIATCMEP5.<br /><br />$$<br />Pronosticador Katz/Beven <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">947 <br />ACPN51 PHFO 142322<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />200 PM HST lunes 14 de septiembre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la tormenta tropical Norbert, ubicada al este de<br />las islas hawaianas, y sobre la depresión tropical quince-E, ubicada<br />al oeste-suroeste del extremo sur de la península de Baja<br />California.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Hagen <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
     </div>
@@ -1540,7 +1697,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 AM PDT Mon Sep 14 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical <br>Storm Norbert, located well east of the Hawaiian Islands, and on <br>Tropical Depression Fifteen-E, located several hundred <br>miles southwest of the southern tip of the Baja California <br>Peninsula. <br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>&&<br>Public advisories on Tropical Depression Fifteen-E are issued under <br>WMO header WTPZ35 KNHC and under AWIPS header MIATCPEP5. <br>Forecast/Advisories on Tropical Depression Fifteen-E are issued <br>under WMO header WTPZ25 KNHC and under AWIPS header MIATCMEP5.<br><br>$$<br>Forecaster Katz/Beven<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 PM PDT Mon Sep 14 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical <br>Storm Norbert, located well east of the Hawaiian Islands, and on <br>Tropical Depression Fifteen-E, located well west-southwest of the<br>southern tip of the Baja California Peninsula.<br><br>1. Southwest of Southwestern Mexico:<br>An area of low pressure could form well to the south of southwestern <br>Mexico near the end of this week. Environmental conditions appear <br>conducive for some development over the weekend as the system moves <br>west-northwestward to northwestward around 10 mph.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...low...20 percent.<br>
+<br><br>Forecaster Hagen<br><br></pre>
       </div>
           
             
@@ -1555,7 +1713,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">283 <br />ABPZ21 KNHC 141724<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1100 AM PDT lunes 14 de septiembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la tormenta tropical Norbert, ubicada al este de<br />las islas hawaianas, y sobre la depresión tropical quince-E, ubicada<br />varios cientos de millas al suroeste del extremo sur de la península<br />de Baja California.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />/<br />Se emiten advertencias públicas sobre la Depresión Tropical Quince-E<br />bajo el encabezado de la OMM WTPZ35 KNHC y bajo el encabezado de<br />AWIPS MIATCPEP5. Pronóstico/Advertencias sobre la Depresión Tropical<br />Quince-E se emiten bajo el encabezado de la OMM WTPZ25 KNHC y bajo<br />el encabezado de AWIPS MIATCMEP5.<br /><br />$$<br />Pronosticador Katz/Beven<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">946 <br />ABPZ21 KNHC 142322<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />500 PM PDT lunes 14 de septiembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la tormenta tropical Norbert, ubicada al este de<br />las islas hawaianas, y sobre la depresión tropical quince-E, ubicada<br />al oeste-suroeste del extremo sur de la península de Baja<br />California.<br /><br />Suroeste del suroeste de México: Podría formarse un área de baja<br />presión en el sur del suroeste de México hacia el final de esta<br />semana. Las condiciones ambientales parecen propicias para algún<br />desarrollo durante el fin de semana, a medida que el sistema se<br />mueve hacia el oeste-noroeste a alrededor de 10 mph.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...baja...20 por ciento.<br /><br />$$<br />Pronosticador Hagen<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
