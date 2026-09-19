@@ -601,148 +601,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <!-- 1. Stripped height-4/overflow-hidden and added inline grid settings -->
     <div id="gtwo-menu-container" class="width-full bg-primary-lighter" style="display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;">
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-atl-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
-      
-      <div id="menu-atl-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
-      <div id="menu-atl-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
       
@@ -1959,92 +1841,23 @@ document.addEventListener('DOMContentLoaded', function() {
           
 
           
+  
+  
+  
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="90"
+    data-name="TROPICAL DEPRESSION SIX"
+    data-risk="storm"
+    data-prob="N/A"
     data-details="
   
-  <b>As of 8:00 AM EDT Sat Sep 19 2026...</b><br>Eastern Subtropical Atlantic (AL99):<br>Showers and thunderstorms have become more concentrated near the center of a low pressure system located several hundred miles southwest of the western Azores since yesterday. A short-lived tropical depression or tropical storm is expected to form later today or tonight while moving north-northeastward at about 5 mph, but remaining well to the southwest of the Azores. Upper-level winds are forecast to become less conducive for development beginning late Sunday.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 0300 PM GMT Sat Sep 19 (Advisory #1)</b><br>Maximum Sustained Winds: 30 knots; 35 mph<br>Minimum Central Pressure: 1009 mb<br>Located at: 32.6N 33.6W<br>Movement: north at 2 knots; 2 mph<br>
 "
-    data-action="switchDisturbance:1">
-  
+    data-action="/refresh/graphics_at1+shtml/191448.shtml?cone#contents">
     
-      
-    <circle cx="1442" cy="597" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
+      <circle cx="1442" cy="597" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
-  
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-atl-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_atl_2d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_atl_2d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_atl_2d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_atl_2d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_atl_2d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_atl_2d1_w1024.png" 
-          alt="2 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-
-           
-            
-            
-              
-                
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="90"
-    data-details="
-  
-  <b>As of 8:00 AM EDT Sat Sep 19 2026...</b><br>Eastern Subtropical Atlantic (AL99):<br>Showers and thunderstorms have become more concentrated near the center of a low pressure system located several hundred miles southwest of the western Azores since yesterday. A short-lived tropical depression or tropical storm is expected to form later today or tonight while moving north-northeastward at about 5 mph, but remaining well to the southwest of the Azores. Upper-level winds are forecast to become less conducive for development beginning late Sunday.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
-"
-    data-action="switchDisturbance:0">
-  
-    <circle cx="965" cy="723" r="50" fill="transparent" pointer-events="all" />
-  
-  </g>
-
-              
-            
-             
         </svg>
           
       </div>
@@ -2090,110 +1903,23 @@ document.addEventListener('DOMContentLoaded', function() {
           
 
           
+  
+  
+  
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="90"
+    data-name="TROPICAL DEPRESSION SIX"
+    data-risk="storm"
+    data-prob="N/A"
     data-details="
   
-  <b>As of 8:00 AM EDT Sat Sep 19 2026...</b><br>Eastern Subtropical Atlantic (AL99):<br>Showers and thunderstorms have become more concentrated near the center of a low pressure system located several hundred miles southwest of the western Azores since yesterday. A short-lived tropical depression or tropical storm is expected to form later today or tonight while moving north-northeastward at about 5 mph, but remaining well to the southwest of the Azores. Upper-level winds are forecast to become less conducive for development beginning late Sunday.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 0300 PM GMT Sat Sep 19 (Advisory #1)</b><br>Maximum Sustained Winds: 30 knots; 35 mph<br>Minimum Central Pressure: 1009 mb<br>Located at: 32.6N 33.6W<br>Movement: north at 2 knots; 2 mph<br>
 "
-    data-action="switchDisturbance:1">
-  
+    data-action="/refresh/graphics_at1+shtml/191448.shtml?cone#contents">
     
-      
-    <circle cx="1442" cy="597" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
+      <circle cx="1442" cy="597" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
-      
-    <polygon points="1441,525,1440,526,1439,526,1438,527,1438,528,1437,528,1436,529,1435,530,1435,530,1434,531,1433,532,1432,532,1432,533,1431,534,1430,535,1430,535,1429,536,1428,537,1428,538,1427,539,1427,539,1426,540,1425,541,1425,542,1424,543,1424,544,1423,545,1423,546,1422,547,1422,547,1421,548,1421,549,1420,550,1420,551,1420,552,1419,553,1419,554,1418,555,1418,556,1418,557,1417,558,1417,559,1417,560,1416,561,1416,562,1416,563,1416,564,1415,565,1415,566,1415,567,1415,568,1414,570,1414,571,1414,572,1414,573,1414,574,1414,575,1414,576,1414,577,1414,578,1413,579,1413,580,1413,581,1413,582,1413,583,1413,584,1413,585,1414,586,1414,587,1414,589,1414,590,1414,591,1414,592,1414,593,1414,594,1415,595,1415,596,1415,597,1415,598,1415,599,1416,600,1416,601,1416,602,1417,603,1417,604,1417,604,1418,605,1418,606,1419,607,1419,608,1420,609,1420,610,1421,610,1421,611,1422,612,1422,613,1423,614,1424,614,1424,615,1425,616,1426,616,1426,617,1427,618,1428,618,1429,619,1430,619,1430,620,1431,620,1432,621,1433,621,1434,622,1435,622,1436,623,1437,623,1438,623,1439,624,1440,624,1441,624,1442,624,1443,625,1444,625,1445,625,1446,625,1447,625,1448,626,1449,626,1450,626,1451,626,1452,626,1454,626,1455,626,1456,626,1457,626,1458,626,1459,626,1460,625,1461,625,1462,625,1463,625,1464,625,1465,624,1466,624,1467,624,1468,623,1469,623,1470,623,1471,622,1472,622,1473,621,1474,621,1474,620,1475,620,1476,619,1477,619,1478,618,1479,618,1480,617,1481,616,1481,616,1482,615,1483,614,1484,613,1485,613,1486,612,1486,611,1487,610,1488,609,1489,608,1489,607,1490,606,1491,605,1491,604,1492,603,1493,602,1493,601,1494,600,1495,599,1495,598,1496,597,1496,596,1497,594,1498,593,1498,592,1499,591,1499,590,1500,588,1500,587,1501,586,1501,585,1501,583,1502,582,1502,581,1503,580,1503,578,1503,577,1503,576,1504,575,1504,573,1504,572,1504,571,1505,569,1505,568,1505,567,1505,566,1505,564,1505,563,1505,562,1505,561,1505,559,1505,558,1505,557,1505,556,1505,555,1505,553,1505,552,1505,551,1505,550,1505,549,1504,548,1504,547,1504,546,1504,544,1503,543,1503,542,1503,541,1502,540,1502,539,1502,538,1501,537,1501,536,1500,536,1500,535,1499,534,1499,533,1498,532,1498,531,1497,530,1496,530,1496,529,1495,528,1494,527,1493,527,1493,526,1492,525,1491,525,1490,524,1490,524,1489,523,1488,523,1487,522,1486,522,1485,521,1485,521,1484,520,1483,520,1482,520,1481,519,1480,519,1479,519,1478,518,1477,518,1476,518,1475,518,1474,517,1473,517,1472,517,1471,517,1470,517,1469,517,1468,517,1467,517,1466,517,1466,517,1465,517,1464,517,1463,517,1462,517,1461,517,1460,517,1459,518,1458,518,1457,518,1456,518,1455,519,1454,519,1453,519,1452,519,1451,520,1450,520,1449,520,1449,521,1448,521,1447,522,1446,522,1445,523,1444,523,1443,524,1442,524,1442,525,1441,525" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-atl-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_atl_7d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_atl_7d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_atl_7d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_atl_7d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_atl_7d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_atl_7d1_w1024.png" 
-          alt="7 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="View Pacific Outlook" 
-    onclick="switchBasin('pac')">
-    <polygon points="0,898,21,909,26,911,28,917,43,926,62,928,72,939,77,939,85,945,100,951,107,955,117,955,132,962,145,968,150,970,162,974,177,976,207,963,215,965,222,969,228,972,235,976,241,983,249,994,269,1008,277,1012,292,1012,301,1016,309,1020,318,1020,324,1024,333,1026,343,1028,350,1022,352,1022,354,1026,354,1037,367,1048,371,1054,386,1067,388,1075,386,1086,386,1090,399,1099,405,1095,409,1095,409,1101,416,1101,422,1105,431,1111,431,1118,448,1126,467,1128,474,1137,484,1139,484,1147,491,1152,510,1143,506,1135,499,1128,503,1126,510,1122,512,1116,518,1112,527,1111,533,1119,538,1124,535,1131,542,1139,546,1145,552,1156,557,1165,552,1167,559,1175,555,1179,557,1184,557,1203,555,1209,559,1216,557,1224,553,1228,548,1239,538,1239,531,1243,531,1254,525,1254,521,1260,527,1262,521,1269,0,1269" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-
-          
-
-           
-            
-            
-              
-                
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="90"
-    data-details="
-  
-  <b>As of 8:00 AM EDT Sat Sep 19 2026...</b><br>Eastern Subtropical Atlantic (AL99):<br>Showers and thunderstorms have become more concentrated near the center of a low pressure system located several hundred miles southwest of the western Azores since yesterday. A short-lived tropical depression or tropical storm is expected to form later today or tonight while moving north-northeastward at about 5 mph, but remaining well to the southwest of the Azores. Upper-level winds are forecast to become less conducive for development beginning late Sunday.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1442" cy="597" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-      
-    <polygon points="1441,525,1440,526,1439,526,1438,527,1438,528,1437,528,1436,529,1435,530,1435,530,1434,531,1433,532,1432,532,1432,533,1431,534,1430,535,1430,535,1429,536,1428,537,1428,538,1427,539,1427,539,1426,540,1425,541,1425,542,1424,543,1424,544,1423,545,1423,546,1422,547,1422,547,1421,548,1421,549,1420,550,1420,551,1420,552,1419,553,1419,554,1418,555,1418,556,1418,557,1417,558,1417,559,1417,560,1416,561,1416,562,1416,563,1416,564,1415,565,1415,566,1415,567,1415,568,1414,570,1414,571,1414,572,1414,573,1414,574,1414,575,1414,576,1414,577,1414,578,1413,579,1413,580,1413,581,1413,582,1413,583,1413,584,1413,585,1414,586,1414,587,1414,589,1414,590,1414,591,1414,592,1414,593,1414,594,1415,595,1415,596,1415,597,1415,598,1415,599,1416,600,1416,601,1416,602,1417,603,1417,604,1417,604,1418,605,1418,606,1419,607,1419,608,1420,609,1420,610,1421,610,1421,611,1422,612,1422,613,1423,614,1424,614,1424,615,1425,616,1426,616,1426,617,1427,618,1428,618,1429,619,1430,619,1430,620,1431,620,1432,621,1433,621,1434,622,1435,622,1436,623,1437,623,1438,623,1439,624,1440,624,1441,624,1442,624,1443,625,1444,625,1445,625,1446,625,1447,625,1448,626,1449,626,1450,626,1451,626,1452,626,1454,626,1455,626,1456,626,1457,626,1458,626,1459,626,1460,625,1461,625,1462,625,1463,625,1464,625,1465,624,1466,624,1467,624,1468,623,1469,623,1470,623,1471,622,1472,622,1473,621,1474,621,1474,620,1475,620,1476,619,1477,619,1478,618,1479,618,1480,617,1481,616,1481,616,1482,615,1483,614,1484,613,1485,613,1486,612,1486,611,1487,610,1488,609,1489,608,1489,607,1490,606,1491,605,1491,604,1492,603,1493,602,1493,601,1494,600,1495,599,1495,598,1496,597,1496,596,1497,594,1498,593,1498,592,1499,591,1499,590,1500,588,1500,587,1501,586,1501,585,1501,583,1502,582,1502,581,1503,580,1503,578,1503,577,1503,576,1504,575,1504,573,1504,572,1504,571,1505,569,1505,568,1505,567,1505,566,1505,564,1505,563,1505,562,1505,561,1505,559,1505,558,1505,557,1505,556,1505,555,1505,553,1505,552,1505,551,1505,550,1505,549,1504,548,1504,547,1504,546,1504,544,1503,543,1503,542,1503,541,1502,540,1502,539,1502,538,1501,537,1501,536,1500,536,1500,535,1499,534,1499,533,1498,532,1498,531,1497,530,1496,530,1496,529,1495,528,1494,527,1493,527,1493,526,1492,525,1491,525,1490,524,1490,524,1489,523,1488,523,1487,522,1486,522,1485,521,1485,521,1484,520,1483,520,1482,520,1481,519,1480,519,1479,519,1478,518,1477,518,1476,518,1475,518,1474,517,1473,517,1472,517,1471,517,1470,517,1469,517,1468,517,1467,517,1466,517,1466,517,1465,517,1464,517,1463,517,1462,517,1461,517,1460,517,1459,518,1458,518,1457,518,1456,518,1455,519,1454,519,1453,519,1452,519,1451,520,1450,520,1449,520,1449,521,1448,521,1447,522,1446,522,1445,523,1444,523,1443,524,1442,524,1442,525,1441,525" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
-              
-            
-             
         </svg>
           
       </div>
@@ -2247,13 +1973,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="10"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located well east of the Hawaiian Islands, remain disorganized. Environmental conditions appear conducive for some development of this system next week as it moves westward to west-southwestward, and a tropical depression could form well to the south or southeast of the Hawaiian Islands towards the middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...50 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located well east of the Hawaiian Islands, remain persistent, but disorganized. Environmental conditions appear conducive for some development of this system next week as it moves westward to west-southwestward, and a tropical depression could form well to the south or southeast of the Hawaiian Islands towards the middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
 "
     data-action="switchDisturbance:3">
   
     
       
-    <circle cx="821" cy="584" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="816" cy="585" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -2265,13 +1991,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in association with an area of low pressure located well southwest of the southern tip of the Baja California Peninsula. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern tip of the Baja California Peninsula continues to produce disorganized showers and thunderstorms. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:2">
   
     
       
-    <circle cx="1122" cy="679" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1114" cy="674" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -2283,13 +2009,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Recent satellite-derived wind data show that the area of low pressure located well south-southwest of the southwestern coast of Mexico is still elongated, and the shower and thunderstorm activity remains disorganized. However, environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Persistent but disorganized shower and thunderstorm activity is associated with a broad area of low pressure well south-southwest of the southwestern coast of Mexico. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1397" cy="734" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1394" cy="708" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -2352,7 +2078,7 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Recent satellite-derived wind data show that the area of low pressure located well south-southwest of the southwestern coast of Mexico is still elongated, and the shower and thunderstorm activity remains disorganized. However, environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Persistent but disorganized shower and thunderstorm activity is associated with a broad area of low pressure well south-southwest of the southwestern coast of Mexico. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:0">
   
@@ -2420,7 +2146,7 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Recent satellite-derived wind data show that the area of low pressure located well south-southwest of the southwestern coast of Mexico is still elongated, and the shower and thunderstorm activity remains disorganized. However, environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Persistent but disorganized shower and thunderstorm activity is associated with a broad area of low pressure well south-southwest of the southwestern coast of Mexico. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:0">
   
@@ -2488,7 +2214,7 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Recent satellite-derived wind data show that the area of low pressure located well south-southwest of the southwestern coast of Mexico is still elongated, and the shower and thunderstorm activity remains disorganized. However, environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Persistent but disorganized shower and thunderstorm activity is associated with a broad area of low pressure well south-southwest of the southwestern coast of Mexico. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:0">
   
@@ -2547,18 +2273,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 3: 50% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 3: 60% Chance of Cyclone Formation in 7 Days"
     data-risk="medium"
-    data-prob="50"
+    data-prob="60"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located well east of the Hawaiian Islands, remain disorganized. Environmental conditions appear conducive for some development of this system next week as it moves westward to west-southwestward, and a tropical depression could form well to the south or southeast of the Hawaiian Islands towards the middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...50 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located well east of the Hawaiian Islands, remain persistent, but disorganized. Environmental conditions appear conducive for some development of this system next week as it moves westward to west-southwestward, and a tropical depression could form well to the south or southeast of the Hawaiian Islands towards the middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
 "
     data-action="switchDisturbance:3">
   
     
       
-    <circle cx="821" cy="584" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="816" cy="585" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
@@ -2574,13 +2300,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in association with an area of low pressure located well southwest of the southern tip of the Baja California Peninsula. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern tip of the Baja California Peninsula continues to produce disorganized showers and thunderstorms. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:2">
   
     
       
-    <circle cx="1122" cy="679" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1114" cy="674" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
@@ -2596,17 +2322,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="90"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Recent satellite-derived wind data show that the area of low pressure located well south-southwest of the southwestern coast of Mexico is still elongated, and the shower and thunderstorm activity remains disorganized. However, environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Persistent but disorganized shower and thunderstorm activity is associated with a broad area of low pressure well south-southwest of the southwestern coast of Mexico. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1397" cy="734" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1394" cy="708" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1440,728,1439,726,1439,725,1439,723,1439,722,1439,720,1439,719,1439,718,1439,716,1439,715,1439,714,1439,712,1440,711,1440,709,1440,708,1440,707,1441,705,1441,704,1442,702,1442,700,1443,699,1443,697,1444,695,1445,693,1446,691,1447,689,1448,687,1449,685,1450,683,1451,680,1452,678,1453,676,1454,673,1455,671,1457,668,1458,666,1459,663,1460,661,1461,658,1462,656,1463,653,1464,651,1465,648,1466,645,1467,643,1468,640,1469,638,1470,635,1470,633,1471,630,1472,628,1472,625,1472,623,1473,620,1473,618,1473,615,1474,613,1474,610,1474,608,1474,606,1473,603,1473,601,1473,599,1473,596,1472,594,1472,592,1471,589,1470,587,1469,585,1469,583,1468,580,1467,578,1466,576,1464,574,1463,572,1462,570,1461,569,1459,567,1458,565,1456,563,1454,562,1453,560,1451,559,1449,557,1448,556,1446,555,1444,554,1442,553,1440,552,1438,551,1436,550,1434,550,1431,549,1429,549,1427,548,1425,548,1422,548,1420,547,1418,547,1416,547,1413,547,1411,547,1408,547,1406,547,1404,547,1401,547,1399,547,1396,547,1394,547,1392,547,1389,547,1387,547,1384,547,1382,547,1380,548,1377,548,1375,548,1372,549,1370,549,1368,549,1365,550,1363,551,1361,551,1359,552,1356,553,1354,554,1352,555,1350,556,1348,557,1346,558,1343,560,1341,561,1339,563,1337,565,1336,566,1334,568,1332,570,1330,572,1329,574,1327,577,1325,579,1324,581,1323,584,1321,586,1320,589,1319,591,1318,594,1317,597,1317,600,1316,603,1316,605,1315,608,1315,612,1315,615,1315,618,1315,621,1315,624,1315,627,1315,630,1316,634,1316,637,1316,640,1317,643,1317,646,1318,650,1318,653,1319,656,1320,659,1320,662,1321,665,1321,668,1322,671,1322,674,1322,677,1323,680,1323,682,1323,685,1324,687,1324,690,1324,693,1324,695,1325,697,1325,700,1325,702,1325,704,1326,706,1326,709,1326,711,1326,713,1326,715,1327,717,1327,719,1327,721,1327,722,1328,724,1328,726,1328,728,1329,729,1329,731,1329,733,1330,734,1330,736,1330,737,1331,739,1331,740,1332,741,1332,743,1333,744,1333,745,1334,747,1334,748,1335,749,1335,750,1336,751,1337,752,1337,753,1338,754,1338,755,1339,756,1340,757,1340,758,1341,759,1342,760,1343,761,1344,762,1345,763,1346,763,1346,764,1348,765,1349,766,1350,767,1351,767,1352,768,1353,769,1355,770,1356,770,1358,771,1359,772,1361,773,1363,773,1364,774,1366,775,1368,775,1370,776,1372,776,1374,777,1375,778,1377,778,1379,778,1382,779,1384,779,1386,779,1388,780,1390,780,1392,780,1394,780,1396,780,1398,780,1401,780,1403,779,1405,779,1407,779,1409,778,1411,778,1413,777,1415,776,1417,776,1419,775,1420,774,1422,773,1424,772,1425,771,1427,770,1428,769,1430,768,1431,766,1432,765,1433,764,1434,762,1435,761,1436,759,1437,758,1437,756,1438,754,1438,753,1439,751,1439,749,1439,748,1440,746,1440,744,1440,742,1440,741,1440,739,1440,737,1440,736,1440,734,1440,732,1440,731,1440,729,1440,728" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1446,727,1446,726,1446,724,1446,723,1446,721,1447,720,1447,718,1447,716,1447,714,1448,713,1448,711,1449,709,1449,707,1450,705,1450,703,1451,702,1451,700,1452,698,1453,696,1454,693,1455,691,1456,689,1457,687,1458,685,1459,683,1461,681,1462,679,1463,676,1465,674,1466,672,1468,670,1469,667,1471,665,1472,663,1474,661,1475,658,1476,656,1478,654,1479,651,1480,649,1482,647,1483,644,1484,642,1485,640,1486,637,1487,635,1488,633,1488,630,1489,628,1489,626,1490,623,1490,621,1490,619,1490,616,1490,614,1490,612,1490,609,1490,607,1489,605,1489,603,1488,600,1488,598,1487,596,1486,594,1485,592,1484,589,1482,587,1481,585,1480,583,1478,581,1476,579,1475,577,1473,575,1471,573,1469,571,1467,570,1465,568,1463,566,1461,564,1459,563,1457,561,1455,560,1452,559,1450,557,1448,556,1446,555,1444,554,1441,553,1439,552,1437,551,1435,551,1432,550,1430,549,1428,549,1426,548,1424,548,1421,548,1419,547,1417,547,1415,547,1412,547,1410,547,1408,547,1406,547,1403,547,1401,547,1399,547,1396,547,1394,547,1392,547,1389,547,1387,547,1385,547,1382,547,1380,548,1377,548,1375,548,1373,548,1370,549,1368,549,1366,550,1363,551,1361,551,1359,552,1356,553,1354,554,1352,555,1350,556,1348,557,1346,558,1343,560,1341,561,1339,563,1337,565,1335,566,1334,568,1332,570,1330,572,1328,574,1327,577,1325,579,1324,581,1323,584,1321,586,1320,589,1319,591,1318,594,1317,597,1317,600,1316,603,1316,605,1315,608,1315,612,1315,615,1315,618,1315,621,1315,624,1315,627,1316,630,1316,634,1316,637,1317,640,1317,643,1318,647,1318,650,1319,653,1319,656,1320,659,1320,662,1321,665,1321,668,1322,671,1322,674,1322,677,1323,679,1323,682,1323,685,1323,687,1323,690,1324,692,1324,695,1324,697,1324,699,1324,702,1324,704,1325,706,1325,708,1325,710,1325,712,1326,715,1326,717,1327,719,1327,721,1327,723,1328,724,1329,726,1329,728,1330,730,1331,732,1331,734,1332,735,1333,737,1334,738,1335,740,1335,742,1336,743,1337,744,1338,746,1339,747,1340,748,1340,749,1341,750,1342,751,1343,752,1344,753,1344,754,1345,754,1346,755,1346,756,1347,756,1347,757,1348,757,1349,757,1349,758,1350,758,1351,758,1351,759,1352,759,1353,759,1354,759,1355,760,1356,760,1357,760,1358,760,1360,761,1361,761,1362,762,1364,762,1366,762,1367,763,1369,763,1371,764,1373,765,1375,765,1377,766,1379,766,1381,767,1383,767,1385,767,1387,768,1390,768,1392,768,1394,769,1396,769,1398,769,1400,769,1403,769,1405,769,1407,768,1409,768,1411,768,1413,767,1415,767,1417,766,1418,765,1420,765,1422,764,1424,763,1425,762,1427,761,1428,760,1430,760,1431,759,1432,758,1434,757,1435,755,1436,754,1437,753,1438,752,1439,751,1440,750,1440,749,1441,748,1441,747,1442,746,1442,745,1443,744,1443,743,1444,741,1444,740,1444,739,1444,738,1445,737,1445,735,1445,734,1445,733,1445,732,1445,730,1446,729,1446,727" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -2677,17 +2403,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="90"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Recent satellite-derived wind data show that the area of low pressure located well south-southwest of the southwestern coast of Mexico is still elongated, and the shower and thunderstorm activity remains disorganized. However, environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Persistent but disorganized shower and thunderstorm activity is associated with a broad area of low pressure well south-southwest of the southwestern coast of Mexico. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1397" cy="734" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1394" cy="708" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1440,728,1439,726,1439,725,1439,723,1439,722,1439,720,1439,719,1439,718,1439,716,1439,715,1439,714,1439,712,1440,711,1440,709,1440,708,1440,707,1441,705,1441,704,1442,702,1442,700,1443,699,1443,697,1444,695,1445,693,1446,691,1447,689,1448,687,1449,685,1450,683,1451,680,1452,678,1453,676,1454,673,1455,671,1457,668,1458,666,1459,663,1460,661,1461,658,1462,656,1463,653,1464,651,1465,648,1466,645,1467,643,1468,640,1469,638,1470,635,1470,633,1471,630,1472,628,1472,625,1472,623,1473,620,1473,618,1473,615,1474,613,1474,610,1474,608,1474,606,1473,603,1473,601,1473,599,1473,596,1472,594,1472,592,1471,589,1470,587,1469,585,1469,583,1468,580,1467,578,1466,576,1464,574,1463,572,1462,570,1461,569,1459,567,1458,565,1456,563,1454,562,1453,560,1451,559,1449,557,1448,556,1446,555,1444,554,1442,553,1440,552,1438,551,1436,550,1434,550,1431,549,1429,549,1427,548,1425,548,1422,548,1420,547,1418,547,1416,547,1413,547,1411,547,1408,547,1406,547,1404,547,1401,547,1399,547,1396,547,1394,547,1392,547,1389,547,1387,547,1384,547,1382,547,1380,548,1377,548,1375,548,1372,549,1370,549,1368,549,1365,550,1363,551,1361,551,1359,552,1356,553,1354,554,1352,555,1350,556,1348,557,1346,558,1343,560,1341,561,1339,563,1337,565,1336,566,1334,568,1332,570,1330,572,1329,574,1327,577,1325,579,1324,581,1323,584,1321,586,1320,589,1319,591,1318,594,1317,597,1317,600,1316,603,1316,605,1315,608,1315,612,1315,615,1315,618,1315,621,1315,624,1315,627,1315,630,1316,634,1316,637,1316,640,1317,643,1317,646,1318,650,1318,653,1319,656,1320,659,1320,662,1321,665,1321,668,1322,671,1322,674,1322,677,1323,680,1323,682,1323,685,1324,687,1324,690,1324,693,1324,695,1325,697,1325,700,1325,702,1325,704,1326,706,1326,709,1326,711,1326,713,1326,715,1327,717,1327,719,1327,721,1327,722,1328,724,1328,726,1328,728,1329,729,1329,731,1329,733,1330,734,1330,736,1330,737,1331,739,1331,740,1332,741,1332,743,1333,744,1333,745,1334,747,1334,748,1335,749,1335,750,1336,751,1337,752,1337,753,1338,754,1338,755,1339,756,1340,757,1340,758,1341,759,1342,760,1343,761,1344,762,1345,763,1346,763,1346,764,1348,765,1349,766,1350,767,1351,767,1352,768,1353,769,1355,770,1356,770,1358,771,1359,772,1361,773,1363,773,1364,774,1366,775,1368,775,1370,776,1372,776,1374,777,1375,778,1377,778,1379,778,1382,779,1384,779,1386,779,1388,780,1390,780,1392,780,1394,780,1396,780,1398,780,1401,780,1403,779,1405,779,1407,779,1409,778,1411,778,1413,777,1415,776,1417,776,1419,775,1420,774,1422,773,1424,772,1425,771,1427,770,1428,769,1430,768,1431,766,1432,765,1433,764,1434,762,1435,761,1436,759,1437,758,1437,756,1438,754,1438,753,1439,751,1439,749,1439,748,1440,746,1440,744,1440,742,1440,741,1440,739,1440,737,1440,736,1440,734,1440,732,1440,731,1440,729,1440,728" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1446,727,1446,726,1446,724,1446,723,1446,721,1447,720,1447,718,1447,716,1447,714,1448,713,1448,711,1449,709,1449,707,1450,705,1450,703,1451,702,1451,700,1452,698,1453,696,1454,693,1455,691,1456,689,1457,687,1458,685,1459,683,1461,681,1462,679,1463,676,1465,674,1466,672,1468,670,1469,667,1471,665,1472,663,1474,661,1475,658,1476,656,1478,654,1479,651,1480,649,1482,647,1483,644,1484,642,1485,640,1486,637,1487,635,1488,633,1488,630,1489,628,1489,626,1490,623,1490,621,1490,619,1490,616,1490,614,1490,612,1490,609,1490,607,1489,605,1489,603,1488,600,1488,598,1487,596,1486,594,1485,592,1484,589,1482,587,1481,585,1480,583,1478,581,1476,579,1475,577,1473,575,1471,573,1469,571,1467,570,1465,568,1463,566,1461,564,1459,563,1457,561,1455,560,1452,559,1450,557,1448,556,1446,555,1444,554,1441,553,1439,552,1437,551,1435,551,1432,550,1430,549,1428,549,1426,548,1424,548,1421,548,1419,547,1417,547,1415,547,1412,547,1410,547,1408,547,1406,547,1403,547,1401,547,1399,547,1396,547,1394,547,1392,547,1389,547,1387,547,1385,547,1382,547,1380,548,1377,548,1375,548,1373,548,1370,549,1368,549,1366,550,1363,551,1361,551,1359,552,1356,553,1354,554,1352,555,1350,556,1348,557,1346,558,1343,560,1341,561,1339,563,1337,565,1335,566,1334,568,1332,570,1330,572,1328,574,1327,577,1325,579,1324,581,1323,584,1321,586,1320,589,1319,591,1318,594,1317,597,1317,600,1316,603,1316,605,1315,608,1315,612,1315,615,1315,618,1315,621,1315,624,1315,627,1316,630,1316,634,1316,637,1317,640,1317,643,1318,647,1318,650,1319,653,1319,656,1320,659,1320,662,1321,665,1321,668,1322,671,1322,674,1322,677,1323,679,1323,682,1323,685,1323,687,1323,690,1324,692,1324,695,1324,697,1324,699,1324,702,1324,704,1325,706,1325,708,1325,710,1325,712,1326,715,1326,717,1327,719,1327,721,1327,723,1328,724,1329,726,1329,728,1330,730,1331,732,1331,734,1332,735,1333,737,1334,738,1335,740,1335,742,1336,743,1337,744,1338,746,1339,747,1340,748,1340,749,1341,750,1342,751,1343,752,1344,753,1344,754,1345,754,1346,755,1346,756,1347,756,1347,757,1348,757,1349,757,1349,758,1350,758,1351,758,1351,759,1352,759,1353,759,1354,759,1355,760,1356,760,1357,760,1358,760,1360,761,1361,761,1362,762,1364,762,1366,762,1367,763,1369,763,1371,764,1373,765,1375,765,1377,766,1379,766,1381,767,1383,767,1385,767,1387,768,1390,768,1392,768,1394,769,1396,769,1398,769,1400,769,1403,769,1405,769,1407,768,1409,768,1411,768,1413,767,1415,767,1417,766,1418,765,1420,765,1422,764,1424,763,1425,762,1427,761,1428,760,1430,760,1431,759,1432,758,1434,757,1435,755,1436,754,1437,753,1438,752,1439,751,1440,750,1440,749,1441,748,1441,747,1442,746,1442,745,1443,744,1443,743,1444,741,1444,740,1444,739,1444,738,1445,737,1445,735,1445,734,1445,733,1445,732,1445,730,1446,729,1446,727" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -2761,17 +2487,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="90"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Recent satellite-derived wind data show that the area of low pressure located well south-southwest of the southwestern coast of Mexico is still elongated, and the shower and thunderstorm activity remains disorganized. However, environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Persistent but disorganized shower and thunderstorm activity is associated with a broad area of low pressure well south-southwest of the southwestern coast of Mexico. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1397" cy="734" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1394" cy="708" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1440,728,1439,726,1439,725,1439,723,1439,722,1439,720,1439,719,1439,718,1439,716,1439,715,1439,714,1439,712,1440,711,1440,709,1440,708,1440,707,1441,705,1441,704,1442,702,1442,700,1443,699,1443,697,1444,695,1445,693,1446,691,1447,689,1448,687,1449,685,1450,683,1451,680,1452,678,1453,676,1454,673,1455,671,1457,668,1458,666,1459,663,1460,661,1461,658,1462,656,1463,653,1464,651,1465,648,1466,645,1467,643,1468,640,1469,638,1470,635,1470,633,1471,630,1472,628,1472,625,1472,623,1473,620,1473,618,1473,615,1474,613,1474,610,1474,608,1474,606,1473,603,1473,601,1473,599,1473,596,1472,594,1472,592,1471,589,1470,587,1469,585,1469,583,1468,580,1467,578,1466,576,1464,574,1463,572,1462,570,1461,569,1459,567,1458,565,1456,563,1454,562,1453,560,1451,559,1449,557,1448,556,1446,555,1444,554,1442,553,1440,552,1438,551,1436,550,1434,550,1431,549,1429,549,1427,548,1425,548,1422,548,1420,547,1418,547,1416,547,1413,547,1411,547,1408,547,1406,547,1404,547,1401,547,1399,547,1396,547,1394,547,1392,547,1389,547,1387,547,1384,547,1382,547,1380,548,1377,548,1375,548,1372,549,1370,549,1368,549,1365,550,1363,551,1361,551,1359,552,1356,553,1354,554,1352,555,1350,556,1348,557,1346,558,1343,560,1341,561,1339,563,1337,565,1336,566,1334,568,1332,570,1330,572,1329,574,1327,577,1325,579,1324,581,1323,584,1321,586,1320,589,1319,591,1318,594,1317,597,1317,600,1316,603,1316,605,1315,608,1315,612,1315,615,1315,618,1315,621,1315,624,1315,627,1315,630,1316,634,1316,637,1316,640,1317,643,1317,646,1318,650,1318,653,1319,656,1320,659,1320,662,1321,665,1321,668,1322,671,1322,674,1322,677,1323,680,1323,682,1323,685,1324,687,1324,690,1324,693,1324,695,1325,697,1325,700,1325,702,1325,704,1326,706,1326,709,1326,711,1326,713,1326,715,1327,717,1327,719,1327,721,1327,722,1328,724,1328,726,1328,728,1329,729,1329,731,1329,733,1330,734,1330,736,1330,737,1331,739,1331,740,1332,741,1332,743,1333,744,1333,745,1334,747,1334,748,1335,749,1335,750,1336,751,1337,752,1337,753,1338,754,1338,755,1339,756,1340,757,1340,758,1341,759,1342,760,1343,761,1344,762,1345,763,1346,763,1346,764,1348,765,1349,766,1350,767,1351,767,1352,768,1353,769,1355,770,1356,770,1358,771,1359,772,1361,773,1363,773,1364,774,1366,775,1368,775,1370,776,1372,776,1374,777,1375,778,1377,778,1379,778,1382,779,1384,779,1386,779,1388,780,1390,780,1392,780,1394,780,1396,780,1398,780,1401,780,1403,779,1405,779,1407,779,1409,778,1411,778,1413,777,1415,776,1417,776,1419,775,1420,774,1422,773,1424,772,1425,771,1427,770,1428,769,1430,768,1431,766,1432,765,1433,764,1434,762,1435,761,1436,759,1437,758,1437,756,1438,754,1438,753,1439,751,1439,749,1439,748,1440,746,1440,744,1440,742,1440,741,1440,739,1440,737,1440,736,1440,734,1440,732,1440,731,1440,729,1440,728" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1446,727,1446,726,1446,724,1446,723,1446,721,1447,720,1447,718,1447,716,1447,714,1448,713,1448,711,1449,709,1449,707,1450,705,1450,703,1451,702,1451,700,1452,698,1453,696,1454,693,1455,691,1456,689,1457,687,1458,685,1459,683,1461,681,1462,679,1463,676,1465,674,1466,672,1468,670,1469,667,1471,665,1472,663,1474,661,1475,658,1476,656,1478,654,1479,651,1480,649,1482,647,1483,644,1484,642,1485,640,1486,637,1487,635,1488,633,1488,630,1489,628,1489,626,1490,623,1490,621,1490,619,1490,616,1490,614,1490,612,1490,609,1490,607,1489,605,1489,603,1488,600,1488,598,1487,596,1486,594,1485,592,1484,589,1482,587,1481,585,1480,583,1478,581,1476,579,1475,577,1473,575,1471,573,1469,571,1467,570,1465,568,1463,566,1461,564,1459,563,1457,561,1455,560,1452,559,1450,557,1448,556,1446,555,1444,554,1441,553,1439,552,1437,551,1435,551,1432,550,1430,549,1428,549,1426,548,1424,548,1421,548,1419,547,1417,547,1415,547,1412,547,1410,547,1408,547,1406,547,1403,547,1401,547,1399,547,1396,547,1394,547,1392,547,1389,547,1387,547,1385,547,1382,547,1380,548,1377,548,1375,548,1373,548,1370,549,1368,549,1366,550,1363,551,1361,551,1359,552,1356,553,1354,554,1352,555,1350,556,1348,557,1346,558,1343,560,1341,561,1339,563,1337,565,1335,566,1334,568,1332,570,1330,572,1328,574,1327,577,1325,579,1324,581,1323,584,1321,586,1320,589,1319,591,1318,594,1317,597,1317,600,1316,603,1316,605,1315,608,1315,612,1315,615,1315,618,1315,621,1315,624,1315,627,1316,630,1316,634,1316,637,1317,640,1317,643,1318,647,1318,650,1319,653,1319,656,1320,659,1320,662,1321,665,1321,668,1322,671,1322,674,1322,677,1323,679,1323,682,1323,685,1323,687,1323,690,1324,692,1324,695,1324,697,1324,699,1324,702,1324,704,1325,706,1325,708,1325,710,1325,712,1326,715,1326,717,1327,719,1327,721,1327,723,1328,724,1329,726,1329,728,1330,730,1331,732,1331,734,1332,735,1333,737,1334,738,1335,740,1335,742,1336,743,1337,744,1338,746,1339,747,1340,748,1340,749,1341,750,1342,751,1343,752,1344,753,1344,754,1345,754,1346,755,1346,756,1347,756,1347,757,1348,757,1349,757,1349,758,1350,758,1351,758,1351,759,1352,759,1353,759,1354,759,1355,760,1356,760,1357,760,1358,760,1360,761,1361,761,1362,762,1364,762,1366,762,1367,763,1369,763,1371,764,1373,765,1375,765,1377,766,1379,766,1381,767,1383,767,1385,767,1387,768,1390,768,1392,768,1394,769,1396,769,1398,769,1400,769,1403,769,1405,769,1407,768,1409,768,1411,768,1413,767,1415,767,1417,766,1418,765,1420,765,1422,764,1424,763,1425,762,1427,761,1428,760,1430,760,1431,759,1432,758,1434,757,1435,755,1436,754,1437,753,1438,752,1439,751,1440,750,1440,749,1441,748,1441,747,1442,746,1442,745,1443,744,1443,743,1444,741,1444,740,1444,739,1444,738,1445,737,1445,735,1445,734,1445,733,1445,732,1445,730,1446,729,1446,727" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -2845,17 +2571,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="90"
     data-details="
   
-  <b>As of 5:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Recent satellite-derived wind data show that the area of low pressure located well south-southwest of the southwestern coast of Mexico is still elongated, and the shower and thunderstorm activity remains disorganized. However, environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 AM PDT Sat Sep 19 2026...</b><br>South-Southwest of Southwestern Mexico (EP99):<br>Persistent but disorganized shower and thunderstorm activity is associated with a broad area of low pressure well south-southwest of the southwestern coast of Mexico. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next couple of days as the system moves generally northward off the coast of southwestern Mexico. Interests along the southwestern and west-central coast of Mexico should monitor the progress of this system.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1397" cy="734" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1394" cy="708" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1440,728,1439,726,1439,725,1439,723,1439,722,1439,720,1439,719,1439,718,1439,716,1439,715,1439,714,1439,712,1440,711,1440,709,1440,708,1440,707,1441,705,1441,704,1442,702,1442,700,1443,699,1443,697,1444,695,1445,693,1446,691,1447,689,1448,687,1449,685,1450,683,1451,680,1452,678,1453,676,1454,673,1455,671,1457,668,1458,666,1459,663,1460,661,1461,658,1462,656,1463,653,1464,651,1465,648,1466,645,1467,643,1468,640,1469,638,1470,635,1470,633,1471,630,1472,628,1472,625,1472,623,1473,620,1473,618,1473,615,1474,613,1474,610,1474,608,1474,606,1473,603,1473,601,1473,599,1473,596,1472,594,1472,592,1471,589,1470,587,1469,585,1469,583,1468,580,1467,578,1466,576,1464,574,1463,572,1462,570,1461,569,1459,567,1458,565,1456,563,1454,562,1453,560,1451,559,1449,557,1448,556,1446,555,1444,554,1442,553,1440,552,1438,551,1436,550,1434,550,1431,549,1429,549,1427,548,1425,548,1422,548,1420,547,1418,547,1416,547,1413,547,1411,547,1408,547,1406,547,1404,547,1401,547,1399,547,1396,547,1394,547,1392,547,1389,547,1387,547,1384,547,1382,547,1380,548,1377,548,1375,548,1372,549,1370,549,1368,549,1365,550,1363,551,1361,551,1359,552,1356,553,1354,554,1352,555,1350,556,1348,557,1346,558,1343,560,1341,561,1339,563,1337,565,1336,566,1334,568,1332,570,1330,572,1329,574,1327,577,1325,579,1324,581,1323,584,1321,586,1320,589,1319,591,1318,594,1317,597,1317,600,1316,603,1316,605,1315,608,1315,612,1315,615,1315,618,1315,621,1315,624,1315,627,1315,630,1316,634,1316,637,1316,640,1317,643,1317,646,1318,650,1318,653,1319,656,1320,659,1320,662,1321,665,1321,668,1322,671,1322,674,1322,677,1323,680,1323,682,1323,685,1324,687,1324,690,1324,693,1324,695,1325,697,1325,700,1325,702,1325,704,1326,706,1326,709,1326,711,1326,713,1326,715,1327,717,1327,719,1327,721,1327,722,1328,724,1328,726,1328,728,1329,729,1329,731,1329,733,1330,734,1330,736,1330,737,1331,739,1331,740,1332,741,1332,743,1333,744,1333,745,1334,747,1334,748,1335,749,1335,750,1336,751,1337,752,1337,753,1338,754,1338,755,1339,756,1340,757,1340,758,1341,759,1342,760,1343,761,1344,762,1345,763,1346,763,1346,764,1348,765,1349,766,1350,767,1351,767,1352,768,1353,769,1355,770,1356,770,1358,771,1359,772,1361,773,1363,773,1364,774,1366,775,1368,775,1370,776,1372,776,1374,777,1375,778,1377,778,1379,778,1382,779,1384,779,1386,779,1388,780,1390,780,1392,780,1394,780,1396,780,1398,780,1401,780,1403,779,1405,779,1407,779,1409,778,1411,778,1413,777,1415,776,1417,776,1419,775,1420,774,1422,773,1424,772,1425,771,1427,770,1428,769,1430,768,1431,766,1432,765,1433,764,1434,762,1435,761,1436,759,1437,758,1437,756,1438,754,1438,753,1439,751,1439,749,1439,748,1440,746,1440,744,1440,742,1440,741,1440,739,1440,737,1440,736,1440,734,1440,732,1440,731,1440,729,1440,728" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1446,727,1446,726,1446,724,1446,723,1446,721,1447,720,1447,718,1447,716,1447,714,1448,713,1448,711,1449,709,1449,707,1450,705,1450,703,1451,702,1451,700,1452,698,1453,696,1454,693,1455,691,1456,689,1457,687,1458,685,1459,683,1461,681,1462,679,1463,676,1465,674,1466,672,1468,670,1469,667,1471,665,1472,663,1474,661,1475,658,1476,656,1478,654,1479,651,1480,649,1482,647,1483,644,1484,642,1485,640,1486,637,1487,635,1488,633,1488,630,1489,628,1489,626,1490,623,1490,621,1490,619,1490,616,1490,614,1490,612,1490,609,1490,607,1489,605,1489,603,1488,600,1488,598,1487,596,1486,594,1485,592,1484,589,1482,587,1481,585,1480,583,1478,581,1476,579,1475,577,1473,575,1471,573,1469,571,1467,570,1465,568,1463,566,1461,564,1459,563,1457,561,1455,560,1452,559,1450,557,1448,556,1446,555,1444,554,1441,553,1439,552,1437,551,1435,551,1432,550,1430,549,1428,549,1426,548,1424,548,1421,548,1419,547,1417,547,1415,547,1412,547,1410,547,1408,547,1406,547,1403,547,1401,547,1399,547,1396,547,1394,547,1392,547,1389,547,1387,547,1385,547,1382,547,1380,548,1377,548,1375,548,1373,548,1370,549,1368,549,1366,550,1363,551,1361,551,1359,552,1356,553,1354,554,1352,555,1350,556,1348,557,1346,558,1343,560,1341,561,1339,563,1337,565,1335,566,1334,568,1332,570,1330,572,1328,574,1327,577,1325,579,1324,581,1323,584,1321,586,1320,589,1319,591,1318,594,1317,597,1317,600,1316,603,1316,605,1315,608,1315,612,1315,615,1315,618,1315,621,1315,624,1315,627,1316,630,1316,634,1316,637,1317,640,1317,643,1318,647,1318,650,1319,653,1319,656,1320,659,1320,662,1321,665,1321,668,1322,671,1322,674,1322,677,1323,679,1323,682,1323,685,1323,687,1323,690,1324,692,1324,695,1324,697,1324,699,1324,702,1324,704,1325,706,1325,708,1325,710,1325,712,1326,715,1326,717,1327,719,1327,721,1327,723,1328,724,1329,726,1329,728,1330,730,1331,732,1331,734,1332,735,1333,737,1334,738,1335,740,1335,742,1336,743,1337,744,1338,746,1339,747,1340,748,1340,749,1341,750,1342,751,1343,752,1344,753,1344,754,1345,754,1346,755,1346,756,1347,756,1347,757,1348,757,1349,757,1349,758,1350,758,1351,758,1351,759,1352,759,1353,759,1354,759,1355,760,1356,760,1357,760,1358,760,1360,761,1361,761,1362,762,1364,762,1366,762,1367,763,1369,763,1371,764,1373,765,1375,765,1377,766,1379,766,1381,767,1383,767,1385,767,1387,768,1390,768,1392,768,1394,769,1396,769,1398,769,1400,769,1403,769,1405,769,1407,768,1409,768,1411,768,1413,767,1415,767,1417,766,1418,765,1420,765,1422,764,1424,763,1425,762,1427,761,1428,760,1430,760,1431,759,1432,758,1434,757,1435,755,1436,754,1437,753,1438,752,1439,751,1440,750,1440,749,1441,748,1441,747,1442,746,1442,745,1443,744,1443,743,1444,741,1444,740,1444,739,1444,738,1445,737,1445,735,1445,734,1445,733,1445,732,1445,730,1446,729,1446,727" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -2915,13 +2641,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="10"
     data-details="
   
-  <b>As of 2:00 AM HST Sat Sep 19 2026...</b><br>Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located well east of the Hawaiian Islands, remain disorganized. Environmental conditions appear conducive for some development of this system next week as it moves westward to west-southwestward, and a tropical depression could form well to the south or southeast of the Hawaiian Islands towards the middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...50 percent..<br>
+  <b>As of 8:00 AM HST Sat Sep 19 2026...</b><br>Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located well east of the Hawaiian Islands, remain persistent, but disorganized. Environmental conditions appear conducive for some development of this system next week as it moves westward to west-southwestward, and a tropical depression could form well to the south or southeast of the Hawaiian Islands towards the middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
 "
     data-action="switchDisturbance:2">
   
     
       
-    <circle cx="1404" cy="812" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1396" cy="815" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -2933,13 +2659,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 2:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in association with an area of low pressure located well southwest of the southern tip of the Baja California Peninsula. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 8:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern tip of the Baja California Peninsula continues to produce disorganized showers and thunderstorms. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1868" cy="953" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1857" cy="946" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -3002,7 +2728,7 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 2:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in association with an area of low pressure located well southwest of the southern tip of the Baja California Peninsula. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 8:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern tip of the Baja California Peninsula continues to produce disorganized showers and thunderstorms. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:0">
   
@@ -3070,7 +2796,7 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 2:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in association with an area of low pressure located well southwest of the southern tip of the Baja California Peninsula. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 8:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern tip of the Baja California Peninsula continues to produce disorganized showers and thunderstorms. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:0">
   
@@ -3127,18 +2853,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 2: 50% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 2: 60% Chance of Cyclone Formation in 7 Days"
     data-risk="medium"
-    data-prob="50"
+    data-prob="60"
     data-details="
   
-  <b>As of 2:00 AM HST Sat Sep 19 2026...</b><br>Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located well east of the Hawaiian Islands, remain disorganized. Environmental conditions appear conducive for some development of this system next week as it moves westward to west-southwestward, and a tropical depression could form well to the south or southeast of the Hawaiian Islands towards the middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...50 percent..<br>
+  <b>As of 8:00 AM HST Sat Sep 19 2026...</b><br>Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located well east of the Hawaiian Islands, remain persistent, but disorganized. Environmental conditions appear conducive for some development of this system next week as it moves westward to west-southwestward, and a tropical depression could form well to the south or southeast of the Hawaiian Islands towards the middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
 "
     data-action="switchDisturbance:2">
   
     
       
-    <circle cx="1404" cy="812" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1396" cy="815" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
@@ -3154,13 +2880,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 2:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in association with an area of low pressure located well southwest of the southern tip of the Baja California Peninsula. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 8:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern tip of the Baja California Peninsula continues to produce disorganized showers and thunderstorms. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1868" cy="953" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1857" cy="946" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
@@ -3233,13 +2959,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 2:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in association with an area of low pressure located well southwest of the southern tip of the Baja California Peninsula. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 8:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern tip of the Baja California Peninsula continues to produce disorganized showers and thunderstorms. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1868" cy="953" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1857" cy="946" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
@@ -3315,13 +3041,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 2:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in association with an area of low pressure located well southwest of the southern tip of the Baja California Peninsula. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 8:00 AM HST Sat Sep 19 2026...</b><br>Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern tip of the Baja California Peninsula continues to produce disorganized showers and thunderstorms. Environmental conditions are conducive for development, and a tropical depression is expected to form over the next several days as it moves westward to west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1868" cy="953" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1857" cy="946" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
@@ -3458,8 +3184,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 AM HST Sat Sep 19 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>1. Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in<br>association with an area of low pressure located well southwest of<br>the southern tip of the Baja California Peninsula. Environmental<br>conditions are conducive for development, and a tropical depression<br>is expected to form over the next several days as it moves westward<br>to west-northwestward at 10 to 15 mph across the western East<br>Pacific.<br>* Formation chance through 48 hours...high...80 percent.<br>* Formation chance through 7 days...high...80 percent.<br>
-2. Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical<br>Depression Fifteen-E, located well east of the Hawaiian Islands,<br>remain disorganized. Environmental conditions appear conducive for<br>some development of this system next week as it moves westward to<br>west-southwestward, and a tropical depression could form well to the<br>south or southeast of the Hawaiian Islands towards the middle to<br>latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...medium...50 percent.<br>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Sat Sep 19 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>1. Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern<br>tip of the Baja California Peninsula continues to produce<br>disorganized showers and thunderstorms. Environmental conditions are<br>conducive for development, and a tropical depression is expected to<br>form over the next several days as it moves westward to<br>west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.<br>* Formation chance through 7 days...high...80 percent.<br>
+2. Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical<br>Depression Fifteen-E, located well east of the Hawaiian Islands,<br>remain persistent, but disorganized. Environmental conditions appear<br>conducive for some development of this system next week as it moves<br>westward to west-southwestward, and a tropical depression could form<br>well to the south or southeast of the Hawaiian Islands towards the<br>middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...medium...60 percent.<br>
 <br><br>Forecaster Katz/Berg<br><br></pre>
       </div>
           
@@ -3467,7 +3193,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">986 <br />ACPN51 PHFO 191151<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />200 AM HST sábado 19 de septiembre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Pacífico Este Oeste (EP98): Continúan las precipitaciones y<br />tormentas eléctricas desorganizadas, así como un área de baja<br />presión situada al suroeste del extremo sur de la Península de Baja<br />California. Las condiciones ambientales son propicias para el<br />desarrollo y se espera que se forme una depresión tropical en los<br />próximos días a medida que se desplazará hacia el oeste a noroeste a<br />una velocidad de 10 a 15 mph a través del Pacífico oriental<br />occidental.<br />* Probabilidad de formación hasta 48 horas...alta...80 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...80 por ciento.<br /><br />Bien este-sureste de las islas hawaianas (antiguo TD 15-E): Los<br />aguaceros y tormentas eléctricas asociadas con los remanentes de la<br />Depresión Tropical Quince-E, ubicados en el este de las islas<br />hawaianas, seguirán siendo desorganizados. Las condiciones<br />ambientales parecen propicias para que se desarrolle este sistema la<br />próxima semana, a medida que se mueve hacia el oeste y el suroeste,<br />y podría formarse una depresión tropical al sur o sureste de las<br />islas de Hawái a mediados o finales de la próxima semana.<br />* Probabilidad de formación hasta 48 horas...baja...10 por ciento.<br />* Probabilidad de formación hasta 7 días...media...50 por ciento.<br /><br />$$<br />Pronosticador Katz/Berg <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">207 <br />ACPN51 PHFO 191739<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />800 AM HST sábado 19 de septiembre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Oeste del Pacífico Este (EP98): Una amplia área de baja presión<br />ubicada al suroeste del extremo sur de la Península de Baja<br />California continúa produciendo aguaceros y tormentas<br />desorganizadas. Las condiciones ambientales son propicias para el<br />desarrollo y se espera que se forme una depresión tropical en los<br />próximos días a medida que se desplazará hacia el oeste a noroeste a<br />una velocidad de 10 a 15 mph a través del Pacífico oriental<br />occidental.<br />* Probabilidad de formación hasta 48 horas...alta...80 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...80 por ciento.<br /><br />Bien este-sureste de las islas hawaianas (antiguo TD 15-E):<br />Aguaceros y tormentas eléctricas asociadas con los remanentes de la<br />Depresión Tropical Quince-E, ubicadas en el este de las islas<br />hawaianas, siguen siendo persistentes, pero desorganizados. Las<br />condiciones ambientales parecen propicias para que se desarrolle<br />este sistema la próxima semana, a medida que se mueve hacia el oeste<br />y el suroeste, y podría formarse una depresión tropical al sur o<br />sureste de las islas de Hawái a mediados o finales de la próxima<br />semana.<br />* Probabilidad de formación hasta 48 horas...baja...10 por ciento.<br />* Probabilidad de formación en 7 días...mediana...60 por ciento.<br /><br />$$<br />Pronosticador Katz/Berg <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
     </div>
@@ -3478,9 +3204,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 AM PDT Sat Sep 19 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>1. South-Southwest of Southwestern Mexico (EP99):<br>Recent satellite-derived wind data show that the area of low <br>pressure located well south-southwest of the southwestern coast of <br>Mexico is still elongated, and the shower and thunderstorm activity <br>remains disorganized. However, environmental conditions are <br>conducive for development, and a tropical depression is expected to <br>form over the next couple of days as the system moves generally <br>northward off the coast of southwestern Mexico. Interests along the <br>southwestern and west-central coast of Mexico should monitor the <br>progress of this system.<br>* Formation chance through 48 hours...high...80 percent.<br>* Formation chance through 7 days...high...90 percent.<br>
-2. Western East Pacific (EP98):<br>Disorganized showers and thunderstorms continue to persist in <br>association with an area of low pressure located well southwest of <br>the southern tip of the Baja California Peninsula. Environmental <br>conditions are conducive for development, and a tropical depression <br>is expected to form over the next several days as it moves westward <br>to west-northwestward at 10 to 15 mph across the western East <br>Pacific.<br>* Formation chance through 48 hours...high...80 percent.<br>* Formation chance through 7 days...high...80 percent.<br>
-3. Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical <br>Depression Fifteen-E, located well east of the Hawaiian Islands, <br>remain disorganized. Environmental conditions appear conducive for <br>some development of this system next week as it moves westward to <br>west-southwestward, and a tropical depression could form well to the <br>south or southeast of the Hawaiian Islands towards the middle to <br>latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...medium...50 percent.<br>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 AM PDT Sat Sep 19 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>1. South-Southwest of Southwestern Mexico (EP99):<br>Persistent but disorganized shower and thunderstorm activity is <br>associated with a broad area of low pressure well south-southwest <br>of the southwestern coast of Mexico. Environmental conditions are <br>conducive for development, and a tropical depression is expected to <br>form over the next couple of days as the system moves generally <br>northward off the coast of southwestern Mexico. Interests along the <br>southwestern and west-central coast of Mexico should monitor the <br>progress of this system.<br>* Formation chance through 48 hours...high...80 percent.<br>* Formation chance through 7 days...high...90 percent.<br>
+2. Western East Pacific (EP98):<br>A broad area of low pressure located well southwest of the southern <br>tip of the Baja California Peninsula continues to produce <br>disorganized showers and thunderstorms. Environmental conditions are <br>conducive for development, and a tropical depression is expected to <br>form over the next several days as it moves westward to <br>west-northwestward at 10 to 15 mph across the western East Pacific.<br>* Formation chance through 48 hours...high...80 percent.<br>* Formation chance through 7 days...high...80 percent.<br>
+3. Well East-Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical <br>Depression Fifteen-E, located well east of the Hawaiian Islands, <br>remain persistent, but disorganized. Environmental conditions appear <br>conducive for some development of this system next week as it moves <br>westward to west-southwestward, and a tropical depression could form <br>well to the south or southeast of the Hawaiian Islands towards the <br>middle to latter portion of next week.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...medium...60 percent.<br>
 <br><br>Forecaster Katz/Berg<br><br></pre>
       </div>
           
@@ -3496,7 +3222,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">132 <br />ABPZ21 KNHC 191151<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />500 AM PDT sábado 19 de septiembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sur-suroeste del suroeste de México (EP99): Datos recientes de<br />viento obtenidos por satélite muestran que el área de baja presión<br />ubicada en el sur-suroeste de la costa suroeste de México todavía<br />está alargada, y la actividad de aguaceros y tormentas eléctricas<br />sigue siendo desorganizada. Sin embargo, las condiciones ambientales<br />son propicias para el desarrollo y se espera que se forme una<br />depresión tropical en los próximos dos días, a medida que el sistema<br />se mueve hacia el norte, frente a la costa del suroeste de México.<br />Las personas a lo largo de la costa suroeste y centro-oeste de<br />México deben monitorear el progreso de este sistema.<br />* Probabilidad de formación hasta 48 horas...alta...80 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...90 por ciento.<br /><br />Pacífico Este Oeste (EP98): Continúan las precipitaciones y<br />tormentas eléctricas desorganizadas, así como un área de baja<br />presión situada al suroeste del extremo sur de la Península de Baja<br />California. Las condiciones ambientales son propicias para el<br />desarrollo y se espera que se forme una depresión tropical en los<br />próximos días a medida que se desplazará hacia el oeste a noroeste a<br />una velocidad de 10 a 15 mph a través del Pacífico oriental<br />occidental.<br />* Probabilidad de formación hasta 48 horas...alta...80 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...80 por ciento.<br /><br />Bien este-sureste de las islas hawaianas (antiguo TD 15-E): Los<br />aguaceros y tormentas eléctricas asociadas con los remanentes de la<br />Depresión Tropical Quince-E, ubicados en el este de las islas<br />hawaianas, seguirán siendo desorganizados. Las condiciones<br />ambientales parecen propicias para que se desarrolle este sistema la<br />próxima semana, a medida que se mueve hacia el oeste y el suroeste,<br />y podría formarse una depresión tropical al sur o sureste de las<br />islas de Hawái a mediados o finales de la próxima semana.<br />* Probabilidad de formación hasta 48 horas...baja...10 por ciento.<br />* Probabilidad de formación hasta 7 días...media...50 por ciento.<br /><br />$$<br />Pronosticador Katz/Berg<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">206 <br />ABPZ21 KNHC 191739<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1100 AM PDT sábado 19 de septiembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sur-suroeste del suroeste de México (EP99): La actividad de<br />aguaceros y tormentas eléctricas persistentes pero desorganizadas se<br />asocia con una amplia área de baja presión en el sur-suroeste de la<br />costa suroeste de México. Las condiciones ambientales son propicias<br />para el desarrollo y se espera que se forme una depresión tropical<br />en los próximos dos días, a medida que el sistema se mueve hacia el<br />norte, frente a la costa del suroeste de México. Las personas a lo<br />largo de la costa suroeste y centro-oeste de México deben monitorear<br />el progreso de este sistema.<br />* Probabilidad de formación hasta 48 horas...alta...80 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...90 por ciento.<br /><br />Oeste del Pacífico Este (EP98): Una amplia área de baja presión<br />ubicada al suroeste del extremo sur de la Península de Baja<br />California continúa produciendo aguaceros y tormentas<br />desorganizadas. Las condiciones ambientales son propicias para el<br />desarrollo y se espera que se forme una depresión tropical en los<br />próximos días a medida que se desplazará hacia el oeste a noroeste a<br />una velocidad de 10 a 15 mph a través del Pacífico oriental<br />occidental.<br />* Probabilidad de formación hasta 48 horas...alta...80 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...80 por ciento.<br /><br />Bien este-sureste de las islas hawaianas (antiguo TD 15-E):<br />Aguaceros y tormentas eléctricas asociadas con los remanentes de la<br />Depresión Tropical Quince-E, ubicadas en el este de las islas<br />hawaianas, siguen siendo persistentes, pero desorganizados. Las<br />condiciones ambientales parecen propicias para que se desarrolle<br />este sistema la próxima semana, a medida que se mueve hacia el oeste<br />y el suroeste, y podría formarse una depresión tropical al sur o<br />sureste de las islas de Hawái a mediados o finales de la próxima<br />semana.<br />* Probabilidad de formación hasta 48 horas...baja...10 por ciento.<br />* Probabilidad de formación en 7 días...mediana...60 por ciento.<br /><br />$$<br />Pronosticador Katz/Berg<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
@@ -3515,8 +3241,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>800 AM EDT Sat Sep 19 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>1. Eastern Subtropical Atlantic (AL99):<br>Showers and thunderstorms have become more concentrated near the <br>center of a low pressure system located several hundred miles <br>southwest of the western Azores since yesterday. A short-lived <br>tropical depression or tropical storm is expected to form later <br>today or tonight while moving north-northeastward at about 5 mph, <br>but remaining well to the southwest of the Azores. Upper-level winds <br>are forecast to become less conducive for development beginning <br>late Sunday.<br>* Formation chance through 48 hours...high...90 percent.<br>* Formation chance through 7 days...high...90 percent.<br>
-<br><br>Forecaster Berg<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>200 PM EDT Sat Sep 19 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on newly formed <br>Tropical Depression Six, located several hundred miles southwest of <br>the Azores.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>&&<br><br>Public Advisories on Tropical Depression Six are issued under WMO <br>header WTNT31 KNHC and under AWIPS header MIATCPAT1. <br>Forecast/Advisories on Tropical Depression Six are issued under WMO <br>header WTNT21 KNHC and under AWIPS header MIATCMAT1.<br><br>$$<br>Forecaster Berg<br>NNNN<br><br></pre>
       </div>
           
             
@@ -3531,7 +3256,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">356 <br />ACCA62 KNHC 191153<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />800 AM EDT sábado 19 de septiembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Atlántico Subtropical Este (AL99): Desde ayer, las lluvias y las<br />tormentas eléctricas se han vuelto más concentradas cerca del centro<br />de un sistema de baja presión situado a varios cientos de millas al<br />suroeste del oeste de las Azores. Se prevé que se forme una<br />depresión tropical o tormenta tropical de corta duración a última<br />hora de hoy o esta noche, desplazándose hacia el norte-noreste a una<br />velocidad de 5 mph, pero permaneciendo al suroeste de las Azores. Se<br />pronostica que los vientos de nivel superior se volverán menos<br />propicios para el desarrollo a partir de la última hora del domingo.<br />* Probabilidad de formación hasta 48 horas...alta...90 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...90 por ciento.<br /><br />$$<br />Pronosticador Berg<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">859 <br />ACCA62 KNHC 191732<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />200 PM EDT sábado 19 de septiembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la recién formada Depresión Tropical Seis,<br />ubicada a varios cientos de millas al suroeste de las Azores.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />/<br /><br />Advertencias públicas sobre la Depresión Tropical Seis se emiten<br />bajo el encabezado de la OMM WTNT31 KNHC y bajo el encabezado de<br />AWIPS MIATCPAT1. Pronóstico/Advertencias sobre la Depresión Tropical<br />Seis se emiten bajo el encabezado de la OMM WTNT21 KNHC y bajo el<br />encabezado de AWIPS MIATCMAT1.<br /><br />$$<br />Pronosticador Berg<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
