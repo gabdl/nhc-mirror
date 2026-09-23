@@ -745,76 +745,17 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </div>
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-pac-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
-      <div id="menu-pac-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
       
@@ -835,120 +776,6 @@ document.addEventListener('DOMContentLoaded', function() {
             onclick="switchDisturbance('0')"
           >
             ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-2"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('2')"
-          >
-            2
-          </button>
-          </div>
-        </div>
-      </div>
-      
-      <div id="menu-pac-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-2"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('2')"
-          >
-            2
-          </button>
-          </div>
-        </div>
-      </div>
-      
-      <div id="menu-pac-7d," class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
           </button>
             
               
@@ -993,20 +820,6 @@ document.addEventListener('DOMContentLoaded', function() {
               
             
           <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
             id="dist-btn-2"
             class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
             style="box-shadow: 1px 2px 2px black;"
@@ -1017,148 +830,30 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </div>
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-cpac-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
-      
-      <div id="menu-cpac-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-cpac-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
-      <div id="menu-cpac-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
     </div>
@@ -1489,38 +1184,37 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
+  
+  
+  
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="90"
+    data-name="TROPICAL DEPRESSION FIFTEEN-E"
+    data-risk="storm"
+    data-prob="N/A"
     data-details="
   
-  <b>As of 11:00 PM PDT Tue Sep 22 2026...</b><br>Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast the Big Island of Hawaii, have become better organized. Environmental conditions remain conducive for development, and a tropical depression could form tonight or Wednesday while the system moves slowly west-northwestward. Heavy rains associated with this system are forecast to spread over the southeastern Hawaiian Islands starting on Wednesday and continuing through Saturday, possibly resulting in life-threatening flash flooding and mudslides for portions of the Big Island and Maui. Interests in the Hawaiian Islands should continue to monitor the progress of this system.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 1100 PM HST Tue Sep 22 (Advisory #11)</b><br>Maximum Sustained Winds: 30 knots; 35 mph<br>Minimum Central Pressure: 1006 mb<br>Located at: 14.0N 153.7W<br>Movement: west-northwest at 10 knots; 12 mph<br>
 "
-    data-action="switchDisturbance:1">
-  
+    data-action="/refresh/graphics_cp2+shtml/230844.shtml?key_messages#contents">
     
-      
-    <circle cx="575" cy="637" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
+      <circle cx="556" cy="634" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
-  
   </g>
 
   
   
   
   <g class="storm-system cursor-pointer" 
-    data-name="TROPICAL STORM ODALYS"
+    data-name="HURRICANE ODALYS"
     data-risk="storm"
     data-prob="N/A"
     data-details="
   
-  <b>As of 0800 PM PDT Tue Sep 22 (Advisory #12)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 994 mb<br>Located at: 15.5N 129.0W<br>Movement: east-northeast at 8 knots; 9 mph<br>
+  <b>As of 0200 AM PDT Wed Sep 23 (Advisory #13)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 989 mb<br>Located at: 15.9N 128.4W<br>Movement: east-northeast at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_ep1+shtml/230240.shtml?cone#contents">
+    data-action="/refresh/graphics_ep1+shtml/230840.shtml?cone#contents">
     
-      <circle cx="995" cy="606" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1005" cy="598" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1533,82 +1227,14 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1200 AM CST Wed Sep 23 (Advisory #10A)</b><br>Maximum Sustained Winds: 145 knots; 165 mph<br>Minimum Central Pressure: 905 mb<br>Located at: 14.8N 101.2W<br>Movement: stationary at 0 knots; 0 mph<br>
+  <b>As of 0300 AM CST Wed Sep 23 (Advisory #11)</b><br>Maximum Sustained Winds: 135 knots; 155 mph<br>Minimum Central Pressure: 918 mb<br>Located at: 15.0N 101.4W<br>Movement: north at 2 knots; 2 mph<br>
 "
-    data-action="/refresh/graphics_ep2+shtml/230545.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep2+shtml/230834.shtml?key_messages#contents">
     
-      <circle cx="1489" cy="619" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1485" cy="615" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-pac-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_pac_2d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_pac_2d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_pac_2d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_pac_2d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_pac_2d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_pac_2d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_pac_2d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_pac_2d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_pac_2d1_w1024.png" 
-          alt="2 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-
-           
-            
-            
-              
-                
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="90"
-    data-details="
-  
-  <b>As of 11:00 PM PDT Tue Sep 22 2026...</b><br>Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast the Big Island of Hawaii, have become better organized. Environmental conditions remain conducive for development, and a tropical depression could form tonight or Wednesday while the system moves slowly west-northwestward. Heavy rains associated with this system are forecast to spread over the southeastern Hawaiian Islands starting on Wednesday and continuing through Saturday, possibly resulting in life-threatening flash flooding and mudslides for portions of the Big Island and Maui. Interests in the Hawaiian Islands should continue to monitor the progress of this system.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
-"
-    data-action="switchDisturbance:0">
-  
-    <circle cx="965" cy="582" r="50" fill="transparent" pointer-events="all" />
-  
-  </g>
-
-              
-            
-             
         </svg>
           
       </div>
@@ -1674,42 +1300,37 @@ document.addEventListener('DOMContentLoaded', function() {
   
   </g>
 
+  
+  
+  
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="90"
+    data-name="TROPICAL DEPRESSION FIFTEEN-E"
+    data-risk="storm"
+    data-prob="N/A"
     data-details="
   
-  <b>As of 11:00 PM PDT Tue Sep 22 2026...</b><br>Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast the Big Island of Hawaii, have become better organized. Environmental conditions remain conducive for development, and a tropical depression could form tonight or Wednesday while the system moves slowly west-northwestward. Heavy rains associated with this system are forecast to spread over the southeastern Hawaiian Islands starting on Wednesday and continuing through Saturday, possibly resulting in life-threatening flash flooding and mudslides for portions of the Big Island and Maui. Interests in the Hawaiian Islands should continue to monitor the progress of this system.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 1100 PM HST Tue Sep 22 (Advisory #11)</b><br>Maximum Sustained Winds: 30 knots; 35 mph<br>Minimum Central Pressure: 1006 mb<br>Located at: 14.0N 153.7W<br>Movement: west-northwest at 10 knots; 12 mph<br>
 "
-    data-action="switchDisturbance:1">
-  
+    data-action="/refresh/graphics_cp2+shtml/230844.shtml?key_messages#contents">
     
-      
-    <circle cx="575" cy="637" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
+      <circle cx="556" cy="634" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
-      
-    <polygon points="599,631,598,632,598,633,598,634,597,635,597,636,596,637,595,638,595,639,594,640,594,641,593,642,592,643,592,644,591,645,590,645,589,646,588,647,588,648,587,649,586,649,585,650,584,651,583,651,582,652,581,652,580,653,579,654,579,654,578,655,577,655,576,656,575,656,574,656,573,657,572,657,571,658,570,658,569,658,568,658,567,659,566,659,565,659,564,659,563,659,562,659,561,660,560,660,559,660,558,660,557,660,556,660,555,660,554,660,553,660,552,660,551,659,550,659,549,659,548,659,547,659,546,659,545,659,544,658,543,658,542,658,541,658,540,658,539,657,538,657,537,657,536,657,535,656,534,656,533,656,532,655,531,655,531,655,530,654,529,654,528,654,527,653,526,653,525,653,524,652,523,652,522,652,521,651,520,651,519,650,519,650,518,649,517,649,516,648,515,648,514,647,513,647,513,646,512,645,511,645,510,644,509,644,508,643,508,642,507,641,506,641,505,640,505,639,504,638,503,637,502,636,502,636,501,635,500,634,499,633,499,632,498,630,497,629,497,628,496,627,496,626,495,625,495,624,494,622,493,621,493,620,492,619,492,617,492,616,491,615,491,613,490,612,490,611,490,609,490,608,489,606,489,605,489,604,489,602,489,601,489,600,489,598,489,597,489,595,489,594,489,593,489,591,489,590,489,589,490,587,490,586,490,584,491,583,491,582,492,581,492,579,493,578,493,577,494,576,495,574,495,573,496,572,497,571,498,570,498,569,499,568,500,566,501,565,502,564,503,563,504,563,505,562,506,561,507,560,508,559,509,558,510,558,511,557,512,556,514,555,515,555,516,554,517,554,518,553,519,553,521,552,522,552,523,552,524,551,525,551,527,551,528,551,529,551,530,551,531,551,533,551,534,551,535,551,536,551,538,551,539,551,540,552,541,552,542,552,543,552,545,553,546,553,547,553,548,554,549,554,550,555,552,555,553,555,554,556,555,556,556,557,557,557,558,558,559,558,560,559,561,559,562,560,563,561,564,561,565,562,566,562,567,563,568,563,569,564,570,564,571,565,572,566,573,566,574,567,574,567,575,568,576,568,577,569,578,570,578,570,579,571,580,572,581,572,581,573,582,574,583,574,583,575,584,576,585,576,585,577,586,578,586,579,587,579,588,580,588,581,589,582,589,583,590,584,590,584,591,585,592,586,592,587,593,588,593,589,594,590,594,591,594,592,595,593,595,595,596,596,596,597,597,598,597,599,597,600,598,601,598,603,598,604,599,605,599,606,599,607,599,609,600,610,600,611,600,612,600,614,600,615,600,616,600,617,600,618,600,620,600,621,600,622,600,623,600,624,600,626,600,627,600,628,599,629,599,630,599,631" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
   </g>
 
   
   
   
   <g class="storm-system cursor-pointer" 
-    data-name="TROPICAL STORM ODALYS"
+    data-name="HURRICANE ODALYS"
     data-risk="storm"
     data-prob="N/A"
     data-details="
   
-  <b>As of 0800 PM PDT Tue Sep 22 (Advisory #12)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 994 mb<br>Located at: 15.5N 129.0W<br>Movement: east-northeast at 8 knots; 9 mph<br>
+  <b>As of 0200 AM PDT Wed Sep 23 (Advisory #13)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 989 mb<br>Located at: 15.9N 128.4W<br>Movement: east-northeast at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_ep1+shtml/230240.shtml?cone#contents">
+    data-action="/refresh/graphics_ep1+shtml/230840.shtml?cone#contents">
     
-      <circle cx="995" cy="606" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1005" cy="598" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1722,98 +1343,14 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1200 AM CST Wed Sep 23 (Advisory #10A)</b><br>Maximum Sustained Winds: 145 knots; 165 mph<br>Minimum Central Pressure: 905 mb<br>Located at: 14.8N 101.2W<br>Movement: stationary at 0 knots; 0 mph<br>
+  <b>As of 0300 AM CST Wed Sep 23 (Advisory #11)</b><br>Maximum Sustained Winds: 135 knots; 155 mph<br>Minimum Central Pressure: 918 mb<br>Located at: 15.0N 101.4W<br>Movement: north at 2 knots; 2 mph<br>
 "
-    data-action="/refresh/graphics_ep2+shtml/230545.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep2+shtml/230834.shtml?key_messages#contents">
     
-      <circle cx="1489" cy="619" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1485" cy="615" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-pac-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_pac_7d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_pac_7d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_pac_7d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_pac_7d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_pac_7d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_pac_7d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_pac_7d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_pac_7d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_pac_7d1_w1024.png" 
-          alt="7 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="View Atlantic Outlook" 
-    onclick="switchBasin('atl')">
-    <polygon points="1916,218,1903,228,1884,239,1875,254,1856,264,1847,283,1841,300,1849,328,1858,347,1867,368,1864,391,1864,417,1843,415,1837,402,1828,381,1819,355,1815,336,1807,321,1785,321,1771,319,1751,311,1726,313,1704,317,1698,330,1672,336,1657,330,1636,326,1611,326,1593,336,1576,345,1566,360,1566,381,1564,400,1553,419,1549,446,1555,472,1564,499,1578,516,1596,537,1617,544,1636,544,1657,535,1672,518,1675,495,1694,489,1711,480,1730,480,1749,493,1745,510,1738,527,1734,544,1728,565,1721,584,1711,594,1736,594,1751,590,1775,590,1794,599,1811,607,1817,624,1809,637,1805,656,1805,679,1809,698,1828,713,1843,726,1860,720,1884,711,1901,711,1918,724" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-           
-            
-            
-              
-                
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="90"
-    data-details="
-  
-  <b>As of 11:00 PM PDT Tue Sep 22 2026...</b><br>Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast the Big Island of Hawaii, have become better organized. Environmental conditions remain conducive for development, and a tropical depression could form tonight or Wednesday while the system moves slowly west-northwestward. Heavy rains associated with this system are forecast to spread over the southeastern Hawaiian Islands starting on Wednesday and continuing through Saturday, possibly resulting in life-threatening flash flooding and mudslides for portions of the Big Island and Maui. Interests in the Hawaiian Islands should continue to monitor the progress of this system.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="575" cy="637" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-      
-    <polygon points="599,631,598,632,598,633,598,634,597,635,597,636,596,637,595,638,595,639,594,640,594,641,593,642,592,643,592,644,591,645,590,645,589,646,588,647,588,648,587,649,586,649,585,650,584,651,583,651,582,652,581,652,580,653,579,654,579,654,578,655,577,655,576,656,575,656,574,656,573,657,572,657,571,658,570,658,569,658,568,658,567,659,566,659,565,659,564,659,563,659,562,659,561,660,560,660,559,660,558,660,557,660,556,660,555,660,554,660,553,660,552,660,551,659,550,659,549,659,548,659,547,659,546,659,545,659,544,658,543,658,542,658,541,658,540,658,539,657,538,657,537,657,536,657,535,656,534,656,533,656,532,655,531,655,531,655,530,654,529,654,528,654,527,653,526,653,525,653,524,652,523,652,522,652,521,651,520,651,519,650,519,650,518,649,517,649,516,648,515,648,514,647,513,647,513,646,512,645,511,645,510,644,509,644,508,643,508,642,507,641,506,641,505,640,505,639,504,638,503,637,502,636,502,636,501,635,500,634,499,633,499,632,498,630,497,629,497,628,496,627,496,626,495,625,495,624,494,622,493,621,493,620,492,619,492,617,492,616,491,615,491,613,490,612,490,611,490,609,490,608,489,606,489,605,489,604,489,602,489,601,489,600,489,598,489,597,489,595,489,594,489,593,489,591,489,590,489,589,490,587,490,586,490,584,491,583,491,582,492,581,492,579,493,578,493,577,494,576,495,574,495,573,496,572,497,571,498,570,498,569,499,568,500,566,501,565,502,564,503,563,504,563,505,562,506,561,507,560,508,559,509,558,510,558,511,557,512,556,514,555,515,555,516,554,517,554,518,553,519,553,521,552,522,552,523,552,524,551,525,551,527,551,528,551,529,551,530,551,531,551,533,551,534,551,535,551,536,551,538,551,539,551,540,552,541,552,542,552,543,552,545,553,546,553,547,553,548,554,549,554,550,555,552,555,553,555,554,556,555,556,556,557,557,557,558,558,559,558,560,559,561,559,562,560,563,561,564,561,565,562,566,562,567,563,568,563,569,564,570,564,571,565,572,566,573,566,574,567,574,567,575,568,576,568,577,569,578,570,578,570,579,571,580,572,581,572,581,573,582,574,583,574,583,575,584,576,585,576,585,577,586,578,586,579,587,579,588,580,588,581,589,582,589,583,590,584,590,584,591,585,592,586,592,587,593,588,593,589,594,590,594,591,594,592,595,593,595,595,596,596,596,597,597,598,597,599,597,600,598,601,598,603,598,604,599,605,599,606,599,607,599,609,600,610,600,611,600,612,600,614,600,615,600,616,600,617,600,618,600,620,600,621,600,622,600,623,600,624,600,626,600,627,600,628,599,629,599,630,599,631" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
-              
-            
-             
         </svg>
           
       </div>
@@ -1874,22 +1411,18 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 2: 70% Chance of Cyclone Formation in 7 Days"
     data-risk="high"
-    data-prob="90"
+    data-prob="70"
     data-details="
   
-  <b>As of 11:00 PM PDT Tue Sep 22 2026...</b><br>Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast the Big Island of Hawaii, have become better organized. Environmental conditions remain conducive for development, and a tropical depression could form tonight or Wednesday while the system moves slowly west-northwestward. Heavy rains associated with this system are forecast to spread over the southeastern Hawaiian Islands starting on Wednesday and continuing through Saturday, possibly resulting in life-threatening flash flooding and mudslides for portions of the Big Island and Maui. Interests in the Hawaiian Islands should continue to monitor the progress of this system.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 PM PDT Tue Sep 22 2026...</b><br>South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to the south of the Gulf of Tehuantepec. Afterwards, environmental conditions should be favorable for gradual development, and a tropical depression is likely to form late this week or this weekend as the system moves slowly west-northwestward to northwestward, parallel to the coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
 "
-    data-action="switchDisturbance:1">
+    data-action="switchDisturbance:2">
   
     
       
-    <circle cx="575" cy="637" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-      
-    <polygon points="599,631,598,632,598,633,598,634,597,635,597,636,596,637,595,638,595,639,594,640,594,641,593,642,592,643,592,644,591,645,590,645,589,646,588,647,588,648,587,649,586,649,585,650,584,651,583,651,582,652,581,652,580,653,579,654,579,654,578,655,577,655,576,656,575,656,574,656,573,657,572,657,571,658,570,658,569,658,568,658,567,659,566,659,565,659,564,659,563,659,562,659,561,660,560,660,559,660,558,660,557,660,556,660,555,660,554,660,553,660,552,660,551,659,550,659,549,659,548,659,547,659,546,659,545,659,544,658,543,658,542,658,541,658,540,658,539,657,538,657,537,657,536,657,535,656,534,656,533,656,532,655,531,655,531,655,530,654,529,654,528,654,527,653,526,653,525,653,524,652,523,652,522,652,521,651,520,651,519,650,519,650,518,649,517,649,516,648,515,648,514,647,513,647,513,646,512,645,511,645,510,644,509,644,508,643,508,642,507,641,506,641,505,640,505,639,504,638,503,637,502,636,502,636,501,635,500,634,499,633,499,632,498,630,497,629,497,628,496,627,496,626,495,625,495,624,494,622,493,621,493,620,492,619,492,617,492,616,491,615,491,613,490,612,490,611,490,609,490,608,489,606,489,605,489,604,489,602,489,601,489,600,489,598,489,597,489,595,489,594,489,593,489,591,489,590,489,589,490,587,490,586,490,584,491,583,491,582,492,581,492,579,493,578,493,577,494,576,495,574,495,573,496,572,497,571,498,570,498,569,499,568,500,566,501,565,502,564,503,563,504,563,505,562,506,561,507,560,508,559,509,558,510,558,511,557,512,556,514,555,515,555,516,554,517,554,518,553,519,553,521,552,522,552,523,552,524,551,525,551,527,551,528,551,529,551,530,551,531,551,533,551,534,551,535,551,536,551,538,551,539,551,540,552,541,552,542,552,543,552,545,553,546,553,547,553,548,554,549,554,550,555,552,555,553,555,554,556,555,556,556,557,557,557,558,558,559,558,560,559,561,559,562,560,563,561,564,561,565,562,566,562,567,563,568,563,569,564,570,564,571,565,572,566,573,566,574,567,574,567,575,568,576,568,577,569,578,570,578,570,579,571,580,572,581,572,581,573,582,574,583,574,583,575,584,576,585,576,585,577,586,578,586,579,587,579,588,580,588,581,589,582,589,583,590,584,590,584,591,585,592,586,592,587,593,588,593,589,594,590,594,591,594,592,595,593,595,595,596,596,596,597,597,598,597,599,597,600,598,601,598,603,598,604,599,605,599,606,599,607,599,609,600,610,600,611,600,612,600,614,600,615,600,616,600,617,600,618,600,620,600,621,600,622,600,623,600,624,600,626,600,627,600,628,599,629,599,630,599,631" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1605,636,1602,633,1599,631,1596,629,1592,627,1589,625,1585,622,1581,620,1578,618,1574,615,1570,613,1566,610,1561,608,1557,605,1553,603,1549,601,1544,598,1540,596,1535,593,1531,591,1526,589,1522,586,1517,584,1513,582,1508,580,1504,577,1499,575,1495,573,1490,571,1486,569,1482,568,1478,566,1474,564,1470,563,1466,561,1462,560,1458,558,1454,557,1451,556,1448,555,1444,554,1441,553,1438,553,1435,552,1432,552,1430,551,1427,551,1425,551,1422,551,1420,551,1418,551,1415,551,1413,551,1411,552,1409,552,1408,553,1406,553,1404,554,1402,555,1401,555,1399,556,1398,557,1396,558,1395,559,1394,560,1392,561,1391,563,1390,564,1388,565,1387,566,1386,568,1385,569,1384,571,1383,572,1382,574,1380,575,1379,577,1378,578,1377,580,1376,582,1375,583,1374,585,1373,587,1372,589,1371,590,1370,592,1369,594,1368,596,1367,598,1366,599,1366,601,1365,603,1364,605,1363,607,1363,609,1362,610,1362,612,1361,614,1361,616,1360,618,1360,620,1360,621,1359,623,1359,625,1359,627,1359,628,1359,630,1359,632,1360,633,1360,635,1360,637,1361,638,1361,640,1362,641,1363,643,1363,644,1364,646,1365,647,1366,649,1367,650,1368,651,1370,653,1371,654,1372,655,1374,657,1375,658,1377,659,1379,660,1380,662,1382,663,1384,664,1386,665,1388,666,1390,668,1392,669,1394,670,1396,671,1399,672,1401,673,1403,675,1406,676,1408,677,1410,678,1413,679,1416,680,1418,682,1421,683,1423,684,1426,685,1429,687,1431,688,1434,689,1437,690,1440,692,1443,693,1446,694,1448,695,1451,697,1454,698,1457,699,1460,701,1463,702,1466,703,1469,705,1472,706,1475,707,1478,708,1481,710,1484,711,1487,712,1490,713,1492,714,1495,716,1498,717,1501,718,1504,719,1507,720,1510,721,1513,722,1515,723,1518,724,1521,724,1524,725,1526,726,1529,727,1531,727,1534,728,1537,729,1539,729,1542,730,1544,730,1546,730,1549,731,1551,731,1553,731,1556,731,1558,732,1560,732,1562,732,1564,732,1566,732,1568,732,1570,732,1572,732,1574,731,1576,731,1578,731,1579,731,1581,730,1583,730,1585,730,1586,729,1588,729,1589,729,1591,728,1592,728,1594,727,1595,726,1597,726,1598,725,1600,725,1601,724,1602,723,1603,723,1605,722,1606,721,1607,720,1608,720,1609,719,1610,718,1612,717,1613,716,1614,716,1615,715,1616,714,1616,713,1617,712,1618,711,1619,710,1620,709,1621,708,1622,707,1622,706,1623,705,1624,705,1624,704,1625,703,1626,702,1626,701,1627,700,1628,698,1628,697,1629,696,1629,695,1630,694,1630,693,1631,692,1631,691,1632,690,1632,689,1633,688,1633,687,1633,686,1634,685,1634,684,1635,683,1635,682,1635,681,1635,680,1636,679,1636,678,1636,677,1636,676,1636,674,1636,673,1636,672,1636,671,1636,670,1635,669,1635,667,1634,666,1634,665,1633,664,1632,662,1632,661,1631,660,1630,658,1629,657,1627,655,1626,654,1624,652,1623,650,1621,649,1619,647,1617,645,1615,643,1613,642,1610,640,1608,638,1605,636" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1943,109 +1476,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
           
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="90"
-    data-details="
-  
-  <b>As of 8:00 PM HST Tue Sep 22 2026...</b><br>Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast the Big Island of Hawaii, have become better organized. Environmental conditions remain conducive for development, and a tropical depression could form tonight or Wednesday while the system moves slowly west-northwestward. Heavy rains associated with this system are forecast to spread over the southeastern Hawaiian Islands starting on Wednesday and continuing through Saturday, possibly resulting in life-threatening flash flooding and mudslides for portions of the Big Island and Maui. Interests in the Hawaiian Islands should continue to monitor the progress of this system.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1025" cy="892" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
   
   
   
   <g class="storm-system cursor-pointer" 
-    data-name="TROPICAL STORM ODALYS"
+    data-name="TROPICAL DEPRESSION FIFTEEN-E"
     data-risk="storm"
     data-prob="N/A"
     data-details="
   
-  <b>As of 0800 PM PDT Tue Sep 22 (Advisory #12)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 994 mb<br>Located at: 15.5N 129.0W<br>Movement: east-northeast at 8 knots; 9 mph<br>
+  <b>As of 1100 PM HST Tue Sep 22 (Advisory #11)</b><br>Maximum Sustained Winds: 30 knots; 35 mph<br>Minimum Central Pressure: 1006 mb<br>Located at: 14.0N 153.7W<br>Movement: west-northwest at 10 knots; 12 mph<br>
 "
-    data-action="/refresh/graphics_ep1+shtml/230240.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/230844.shtml?key_messages#contents">
     
-      <circle cx="1672" cy="845" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="995" cy="887" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    
+  </g>
+
+  
+  
+  
+  <g class="storm-system cursor-pointer" 
+    data-name="HURRICANE ODALYS"
+    data-risk="storm"
+    data-prob="N/A"
+    data-details="
+  
+  <b>As of 0200 AM PDT Wed Sep 23 (Advisory #13)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 989 mb<br>Located at: 15.9N 128.4W<br>Movement: east-northeast at 8 knots; 9 mph<br>
+"
+    data-action="/refresh/graphics_ep1+shtml/230840.shtml?cone#contents">
+    
+      <circle cx="1688" cy="833" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-cpac-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_cpac_2d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_cpac_2d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_cpac_2d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_cpac_2d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_cpac_2d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_cpac_2d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_cpac_2d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_cpac_2d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_cpac_2d1_w1024.png" 
-          alt="2 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-
-           
-            
-            
-              
-                
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="90"
-    data-details="
-  
-  <b>As of 8:00 PM HST Tue Sep 22 2026...</b><br>Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast the Big Island of Hawaii, have become better organized. Environmental conditions remain conducive for development, and a tropical depression could form tonight or Wednesday while the system moves slowly west-northwestward. Heavy rains associated with this system are forecast to spread over the southeastern Hawaiian Islands starting on Wednesday and continuing through Saturday, possibly resulting in life-threatening flash flooding and mudslides for portions of the Big Island and Maui. Interests in the Hawaiian Islands should continue to monitor the progress of this system.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
-"
-    data-action="switchDisturbance:0">
-  
-    <circle cx="965" cy="723" r="50" fill="transparent" pointer-events="all" />
-  
-  </g>
-
-              
-            
-             
         </svg>
           
       </div>
@@ -2091,127 +1555,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
           
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="90"
-    data-details="
-  
-  <b>As of 8:00 PM HST Tue Sep 22 2026...</b><br>Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast the Big Island of Hawaii, have become better organized. Environmental conditions remain conducive for development, and a tropical depression could form tonight or Wednesday while the system moves slowly west-northwestward. Heavy rains associated with this system are forecast to spread over the southeastern Hawaiian Islands starting on Wednesday and continuing through Saturday, possibly resulting in life-threatening flash flooding and mudslides for portions of the Big Island and Maui. Interests in the Hawaiian Islands should continue to monitor the progress of this system.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1025" cy="892" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-      
-    <polygon points="1061,883,1060,884,1060,886,1059,887,1058,889,1058,890,1057,892,1056,893,1055,895,1054,896,1053,898,1052,899,1051,900,1050,901,1049,903,1048,904,1046,905,1045,906,1044,907,1043,908,1041,909,1040,911,1039,912,1037,912,1036,913,1034,914,1033,915,1031,916,1030,917,1028,918,1027,918,1025,919,1024,920,1022,920,1021,921,1019,921,1018,922,1016,922,1015,923,1013,923,1011,923,1010,924,1008,924,1007,924,1005,925,1004,925,1002,925,1001,925,999,925,998,925,996,925,995,925,993,925,992,925,990,925,989,925,987,925,986,925,984,924,983,924,981,924,980,924,978,923,977,923,975,923,974,923,972,922,971,922,969,922,968,921,966,921,965,920,963,920,962,920,960,919,959,919,957,918,956,918,954,917,953,917,952,916,950,916,949,915,947,915,946,914,944,914,943,913,942,912,940,912,939,911,937,910,936,910,935,909,933,908,932,907,931,907,929,906,928,905,927,904,926,903,924,902,923,901,922,900,921,899,919,898,918,897,917,896,916,894,915,893,913,892,912,891,911,889,910,888,909,886,908,885,907,883,906,882,905,880,904,878,903,877,902,875,901,873,900,871,899,870,899,868,898,866,897,864,896,862,896,860,895,858,895,856,894,854,894,852,893,850,893,848,892,846,892,844,892,842,892,840,891,838,891,836,891,834,891,832,891,829,891,827,892,825,892,823,892,821,892,819,893,817,893,815,894,813,894,811,895,809,896,807,897,806,898,804,899,802,899,800,901,798,902,796,903,795,904,793,905,791,906,790,908,788,909,787,910,785,912,783,913,782,915,781,916,779,918,778,920,777,921,775,923,774,925,773,926,772,928,771,930,770,931,769,933,768,935,768,937,767,939,766,941,766,942,765,944,765,946,764,948,764,950,764,952,763,954,763,955,763,957,763,959,763,961,763,963,763,965,764,967,764,968,764,970,764,972,765,974,765,976,766,978,766,980,766,981,767,983,768,985,768,987,769,988,769,990,770,992,771,994,772,995,772,997,773,999,774,1000,775,1002,775,1004,776,1005,777,1007,778,1008,779,1010,779,1011,780,1013,781,1014,782,1016,783,1017,783,1018,784,1020,785,1021,786,1022,787,1024,788,1025,789,1026,789,1027,790,1028,791,1030,792,1031,793,1032,794,1033,795,1034,796,1035,797,1036,798,1037,799,1038,800,1039,801,1040,802,1041,803,1042,804,1043,806,1044,807,1045,808,1046,809,1047,811,1048,812,1048,813,1049,815,1050,816,1051,817,1052,819,1052,820,1053,822,1054,823,1055,825,1055,827,1056,828,1057,830,1057,832,1058,833,1058,835,1059,837,1060,838,1060,840,1061,842,1061,844,1061,846,1062,847,1062,849,1062,851,1063,853,1063,855,1063,856,1063,858,1064,860,1064,862,1064,864,1064,865,1064,867,1064,869,1063,871,1063,873,1063,874,1063,876,1062,878,1062,879,1062,881,1061,883" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
   
   
   
   <g class="storm-system cursor-pointer" 
-    data-name="TROPICAL STORM ODALYS"
+    data-name="TROPICAL DEPRESSION FIFTEEN-E"
     data-risk="storm"
     data-prob="N/A"
     data-details="
   
-  <b>As of 0800 PM PDT Tue Sep 22 (Advisory #12)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 994 mb<br>Located at: 15.5N 129.0W<br>Movement: east-northeast at 8 knots; 9 mph<br>
+  <b>As of 1100 PM HST Tue Sep 22 (Advisory #11)</b><br>Maximum Sustained Winds: 30 knots; 35 mph<br>Minimum Central Pressure: 1006 mb<br>Located at: 14.0N 153.7W<br>Movement: west-northwest at 10 knots; 12 mph<br>
 "
-    data-action="/refresh/graphics_ep1+shtml/230240.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/230844.shtml?key_messages#contents">
     
-      <circle cx="1672" cy="845" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="995" cy="887" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    
+  </g>
+
+  
+  
+  
+  <g class="storm-system cursor-pointer" 
+    data-name="HURRICANE ODALYS"
+    data-risk="storm"
+    data-prob="N/A"
+    data-details="
+  
+  <b>As of 0200 AM PDT Wed Sep 23 (Advisory #13)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 989 mb<br>Located at: 15.9N 128.4W<br>Movement: east-northeast at 8 knots; 9 mph<br>
+"
+    data-action="/refresh/graphics_ep1+shtml/230840.shtml?cone#contents">
+    
+      <circle cx="1688" cy="833" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-cpac-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_cpac_7d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_cpac_7d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_cpac_7d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_cpac_7d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_cpac_7d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_cpac_7d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_cpac_7d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_cpac_7d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_cpac_7d1_w1024.png" 
-          alt="7 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="View Eastern Pacific Outlook" 
-    onclick="switchBasin('pac')">
-    <polygon points="1920,137,1920,1246,1370,1246,1370,137,1920,137" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-
-           
-            
-            
-              
-                
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 90% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="90"
-    data-details="
-  
-  <b>As of 8:00 PM HST Tue Sep 22 2026...</b><br>Southeast of the Hawaiian Islands (Former TD 15-E):<br>Showers and thunderstorms associated with the remnants of Tropical Depression Fifteen-E, located a few hundred miles south-southeast the Big Island of Hawaii, have become better organized. Environmental conditions remain conducive for development, and a tropical depression could form tonight or Wednesday while the system moves slowly west-northwestward. Heavy rains associated with this system are forecast to spread over the southeastern Hawaiian Islands starting on Wednesday and continuing through Saturday, possibly resulting in life-threatening flash flooding and mudslides for portions of the Big Island and Maui. Interests in the Hawaiian Islands should continue to monitor the progress of this system.<br>* Formation chance through 48 hours...high...90 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1025" cy="892" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-      
-    <polygon points="1061,883,1060,884,1060,886,1059,887,1058,889,1058,890,1057,892,1056,893,1055,895,1054,896,1053,898,1052,899,1051,900,1050,901,1049,903,1048,904,1046,905,1045,906,1044,907,1043,908,1041,909,1040,911,1039,912,1037,912,1036,913,1034,914,1033,915,1031,916,1030,917,1028,918,1027,918,1025,919,1024,920,1022,920,1021,921,1019,921,1018,922,1016,922,1015,923,1013,923,1011,923,1010,924,1008,924,1007,924,1005,925,1004,925,1002,925,1001,925,999,925,998,925,996,925,995,925,993,925,992,925,990,925,989,925,987,925,986,925,984,924,983,924,981,924,980,924,978,923,977,923,975,923,974,923,972,922,971,922,969,922,968,921,966,921,965,920,963,920,962,920,960,919,959,919,957,918,956,918,954,917,953,917,952,916,950,916,949,915,947,915,946,914,944,914,943,913,942,912,940,912,939,911,937,910,936,910,935,909,933,908,932,907,931,907,929,906,928,905,927,904,926,903,924,902,923,901,922,900,921,899,919,898,918,897,917,896,916,894,915,893,913,892,912,891,911,889,910,888,909,886,908,885,907,883,906,882,905,880,904,878,903,877,902,875,901,873,900,871,899,870,899,868,898,866,897,864,896,862,896,860,895,858,895,856,894,854,894,852,893,850,893,848,892,846,892,844,892,842,892,840,891,838,891,836,891,834,891,832,891,829,891,827,892,825,892,823,892,821,892,819,893,817,893,815,894,813,894,811,895,809,896,807,897,806,898,804,899,802,899,800,901,798,902,796,903,795,904,793,905,791,906,790,908,788,909,787,910,785,912,783,913,782,915,781,916,779,918,778,920,777,921,775,923,774,925,773,926,772,928,771,930,770,931,769,933,768,935,768,937,767,939,766,941,766,942,765,944,765,946,764,948,764,950,764,952,763,954,763,955,763,957,763,959,763,961,763,963,763,965,764,967,764,968,764,970,764,972,765,974,765,976,766,978,766,980,766,981,767,983,768,985,768,987,769,988,769,990,770,992,771,994,772,995,772,997,773,999,774,1000,775,1002,775,1004,776,1005,777,1007,778,1008,779,1010,779,1011,780,1013,781,1014,782,1016,783,1017,783,1018,784,1020,785,1021,786,1022,787,1024,788,1025,789,1026,789,1027,790,1028,791,1030,792,1031,793,1032,794,1033,795,1034,796,1035,797,1036,798,1037,799,1038,800,1039,801,1040,802,1041,803,1042,804,1043,806,1044,807,1045,808,1046,809,1047,811,1048,812,1048,813,1049,815,1050,816,1051,817,1052,819,1052,820,1053,822,1054,823,1055,825,1055,827,1056,828,1057,830,1057,832,1058,833,1058,835,1059,837,1060,838,1060,840,1061,842,1061,844,1061,846,1062,847,1062,849,1062,851,1063,853,1063,855,1063,856,1063,858,1064,860,1064,862,1064,864,1064,865,1064,867,1064,869,1063,871,1063,873,1063,874,1063,876,1062,878,1062,879,1062,881,1061,883" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
-              
-            
-             
         </svg>
           
       </div>
