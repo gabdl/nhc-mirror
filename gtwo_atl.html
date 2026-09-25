@@ -745,17 +745,76 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-pac-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-pac-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
       
@@ -1090,18 +1149,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 48 Hours"
+    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 48 Hours"
     data-risk="high"
-    data-prob="70"
+    data-prob="80"
     data-details="
   
-  <b>As of 2:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>An elongated area of low pressure located a few hundred miles south-southeast of the Cabo Verde Islands is producing a large area of disorganized showers and thunderstorms.  This system could become a short-lived tropical depression or tropical storm later today or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend.  Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...70 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
+  <b>As of 8:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>Recent satellite-derived wind data indicates that an area of low pressure located less than 200 miles to the south-southeast of the Cabo Verde Islands is producing winds of 40-45 mph to the north of its center, which is gradually becoming better defined. In addition, the system is producing a large area of showers and thunderstorms that are also showing signs of organization. If these current trends continue, the system is likely to become a short-lived tropical storm as soon as later tonight or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend. Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1713" cy="1030" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1682" cy="1022" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1176,12 +1235,12 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 48 Hours"
+    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 48 Hours"
     data-risk="high"
-    data-prob="70"
+    data-prob="80"
     data-details="
   
-  <b>As of 2:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>An elongated area of low pressure located a few hundred miles south-southeast of the Cabo Verde Islands is producing a large area of disorganized showers and thunderstorms.  This system could become a short-lived tropical depression or tropical storm later today or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend.  Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...70 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
+  <b>As of 8:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>Recent satellite-derived wind data indicates that an area of low pressure located less than 200 miles to the south-southeast of the Cabo Verde Islands is producing winds of 40-45 mph to the north of its center, which is gradually becoming better defined. In addition, the system is producing a large area of showers and thunderstorms that are also showing signs of organization. If these current trends continue, the system is likely to become a short-lived tropical storm as soon as later tonight or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend. Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:0">
   
@@ -1238,22 +1297,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 7 Days"
     data-risk="high"
-    data-prob="70"
+    data-prob="80"
     data-details="
   
-  <b>As of 2:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>An elongated area of low pressure located a few hundred miles south-southeast of the Cabo Verde Islands is producing a large area of disorganized showers and thunderstorms.  This system could become a short-lived tropical depression or tropical storm later today or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend.  Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...70 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
+  <b>As of 8:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>Recent satellite-derived wind data indicates that an area of low pressure located less than 200 miles to the south-southeast of the Cabo Verde Islands is producing winds of 40-45 mph to the north of its center, which is gradually becoming better defined. In addition, the system is producing a large area of showers and thunderstorms that are also showing signs of organization. If these current trends continue, the system is likely to become a short-lived tropical storm as soon as later tonight or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend. Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1713" cy="1030" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1682" cy="1022" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1756,1015,1755,1013,1755,1011,1755,1009,1754,1007,1754,1005,1753,1002,1753,1000,1752,998,1751,995,1751,993,1750,991,1749,988,1749,986,1748,983,1747,980,1746,978,1745,975,1745,973,1744,970,1743,967,1742,965,1741,962,1740,959,1739,956,1738,954,1737,951,1736,948,1734,946,1733,943,1732,940,1731,938,1729,935,1728,932,1727,930,1725,927,1724,925,1723,922,1721,920,1720,917,1718,915,1717,912,1715,910,1713,908,1712,905,1710,903,1709,901,1707,899,1705,897,1703,895,1702,892,1700,890,1698,889,1697,887,1695,885,1693,883,1691,881,1689,880,1688,878,1686,876,1684,875,1682,873,1680,872,1678,871,1677,869,1675,868,1673,867,1671,866,1669,865,1668,864,1666,863,1664,862,1662,861,1661,860,1659,860,1657,859,1656,859,1654,858,1652,858,1651,857,1649,857,1647,857,1646,857,1644,857,1643,857,1641,857,1640,857,1638,857,1637,858,1635,858,1634,858,1632,859,1631,859,1630,860,1628,861,1627,861,1626,862,1624,863,1623,864,1622,865,1620,866,1619,867,1618,868,1617,869,1616,870,1614,871,1613,872,1612,874,1611,875,1610,877,1609,878,1608,880,1607,881,1606,883,1605,884,1604,886,1603,888,1602,889,1601,891,1600,893,1599,895,1598,897,1597,899,1597,901,1596,903,1595,905,1595,907,1594,909,1594,911,1593,913,1593,916,1593,918,1592,920,1592,922,1592,925,1592,927,1592,930,1592,932,1592,934,1592,937,1593,939,1593,942,1594,944,1594,947,1595,949,1596,952,1596,955,1597,957,1598,960,1600,963,1601,965,1602,968,1604,971,1605,973,1607,976,1609,979,1610,981,1612,984,1614,987,1616,989,1618,992,1620,995,1623,998,1625,1000,1627,1003,1629,1005,1632,1008,1634,1011,1637,1013,1639,1016,1641,1018,1644,1021,1646,1023,1649,1025,1651,1028,1653,1030,1656,1032,1658,1034,1660,1036,1663,1039,1665,1041,1667,1043,1669,1044,1672,1046,1674,1048,1676,1050,1678,1051,1679,1053,1681,1054,1683,1056,1685,1057,1686,1058,1688,1060,1689,1061,1691,1062,1692,1063,1693,1064,1695,1065,1696,1066,1697,1066,1698,1067,1699,1068,1700,1068,1701,1069,1702,1069,1703,1070,1704,1070,1705,1071,1705,1071,1706,1071,1707,1072,1708,1072,1709,1072,1709,1072,1710,1072,1711,1073,1712,1073,1712,1073,1713,1073,1714,1073,1715,1073,1715,1073,1716,1072,1717,1072,1718,1072,1718,1072,1719,1072,1720,1072,1721,1072,1722,1072,1723,1071,1723,1071,1724,1071,1725,1071,1726,1071,1727,1070,1728,1070,1729,1070,1730,1069,1731,1069,1732,1069,1733,1068,1734,1068,1735,1068,1736,1067,1736,1067,1737,1067,1738,1066,1739,1066,1740,1065,1741,1065,1742,1064,1743,1064,1744,1063,1744,1063,1745,1062,1746,1062,1747,1061,1747,1061,1748,1060,1749,1059,1750,1059,1750,1058,1751,1058,1751,1057,1752,1056,1753,1056,1753,1055,1754,1054,1754,1053,1755,1053,1755,1052,1755,1051,1756,1050,1756,1049,1756,1048,1757,1047,1757,1047,1757,1046,1757,1045,1758,1043,1758,1042,1758,1041,1758,1040,1758,1039,1758,1038,1758,1036,1758,1035,1758,1034,1758,1032,1758,1031,1758,1029,1758,1028,1757,1026,1757,1024,1757,1023,1757,1021,1756,1019,1756,1017,1756,1015" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1738,1017,1738,1015,1738,1013,1739,1011,1739,1009,1739,1006,1739,1004,1739,1002,1739,999,1739,997,1739,994,1738,992,1738,989,1738,987,1738,984,1738,981,1737,979,1737,976,1737,973,1736,971,1736,968,1736,965,1735,963,1734,960,1734,957,1733,954,1733,952,1732,949,1731,946,1730,943,1730,941,1729,938,1728,935,1727,933,1726,930,1725,927,1724,925,1723,922,1721,920,1720,917,1719,915,1717,912,1716,910,1715,907,1713,905,1712,903,1710,901,1708,898,1707,896,1705,894,1703,892,1702,890,1700,888,1698,886,1696,884,1695,882,1693,881,1691,879,1689,877,1687,876,1685,874,1683,873,1682,871,1680,870,1678,869,1676,867,1674,866,1672,865,1670,864,1668,863,1666,862,1665,862,1663,861,1661,860,1659,860,1657,859,1656,859,1654,858,1652,858,1650,858,1649,858,1647,858,1645,858,1644,858,1642,858,1640,858,1639,858,1637,858,1636,859,1634,859,1633,860,1631,860,1630,861,1629,862,1627,862,1626,863,1624,864,1623,865,1622,865,1621,866,1619,867,1618,868,1617,869,1616,870,1615,871,1614,873,1613,874,1611,875,1610,876,1609,877,1608,879,1608,880,1607,881,1606,882,1605,884,1604,885,1603,886,1603,888,1602,889,1601,891,1600,892,1600,894,1599,895,1599,897,1598,898,1598,900,1597,901,1597,903,1596,904,1596,906,1596,908,1595,909,1595,911,1595,913,1595,915,1595,916,1595,918,1595,920,1595,922,1595,924,1595,926,1595,927,1595,929,1595,931,1595,933,1596,935,1596,937,1596,939,1597,942,1597,944,1598,946,1599,948,1599,950,1600,952,1601,955,1601,957,1602,959,1603,961,1604,964,1605,966,1606,968,1607,970,1608,973,1609,975,1610,977,1611,980,1612,982,1613,984,1614,986,1615,989,1617,991,1618,993,1619,995,1620,997,1621,1000,1622,1002,1624,1004,1625,1006,1626,1008,1627,1010,1628,1012,1630,1014,1631,1016,1632,1018,1633,1020,1634,1022,1635,1023,1637,1025,1638,1027,1639,1028,1640,1030,1641,1031,1642,1033,1643,1034,1644,1036,1645,1037,1646,1038,1647,1040,1648,1041,1649,1042,1650,1043,1651,1044,1651,1045,1652,1046,1653,1047,1654,1048,1655,1049,1656,1050,1657,1051,1658,1052,1659,1053,1660,1053,1661,1054,1662,1055,1663,1055,1664,1056,1665,1057,1666,1057,1667,1058,1668,1058,1669,1059,1670,1059,1671,1060,1672,1060,1673,1061,1674,1061,1675,1061,1676,1062,1677,1062,1678,1062,1680,1063,1681,1063,1682,1063,1683,1063,1684,1063,1685,1064,1687,1064,1688,1064,1689,1064,1690,1064,1692,1064,1693,1064,1694,1064,1695,1064,1697,1064,1698,1064,1699,1064,1700,1064,1701,1064,1703,1064,1704,1063,1705,1063,1706,1063,1707,1063,1708,1062,1710,1062,1711,1062,1712,1061,1713,1061,1714,1061,1715,1060,1716,1060,1717,1059,1718,1059,1719,1058,1720,1058,1721,1057,1722,1057,1722,1056,1723,1055,1724,1055,1725,1054,1726,1053,1726,1052,1727,1052,1728,1051,1729,1050,1729,1049,1730,1048,1730,1047,1731,1046,1732,1045,1732,1044,1733,1043,1733,1041,1734,1040,1734,1039,1735,1037,1735,1036,1735,1035,1736,1033,1736,1031,1736,1030,1737,1028,1737,1027,1737,1025,1738,1023,1738,1021,1738,1019,1738,1017" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1334,22 +1393,22 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 7 Days"
     data-risk="high"
-    data-prob="70"
+    data-prob="80"
     data-details="
   
-  <b>As of 2:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>An elongated area of low pressure located a few hundred miles south-southeast of the Cabo Verde Islands is producing a large area of disorganized showers and thunderstorms.  This system could become a short-lived tropical depression or tropical storm later today or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend.  Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...70 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
+  <b>As of 8:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>Recent satellite-derived wind data indicates that an area of low pressure located less than 200 miles to the south-southeast of the Cabo Verde Islands is producing winds of 40-45 mph to the north of its center, which is gradually becoming better defined. In addition, the system is producing a large area of showers and thunderstorms that are also showing signs of organization. If these current trends continue, the system is likely to become a short-lived tropical storm as soon as later tonight or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend. Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1713" cy="1030" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1682" cy="1022" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1756,1015,1755,1013,1755,1011,1755,1009,1754,1007,1754,1005,1753,1002,1753,1000,1752,998,1751,995,1751,993,1750,991,1749,988,1749,986,1748,983,1747,980,1746,978,1745,975,1745,973,1744,970,1743,967,1742,965,1741,962,1740,959,1739,956,1738,954,1737,951,1736,948,1734,946,1733,943,1732,940,1731,938,1729,935,1728,932,1727,930,1725,927,1724,925,1723,922,1721,920,1720,917,1718,915,1717,912,1715,910,1713,908,1712,905,1710,903,1709,901,1707,899,1705,897,1703,895,1702,892,1700,890,1698,889,1697,887,1695,885,1693,883,1691,881,1689,880,1688,878,1686,876,1684,875,1682,873,1680,872,1678,871,1677,869,1675,868,1673,867,1671,866,1669,865,1668,864,1666,863,1664,862,1662,861,1661,860,1659,860,1657,859,1656,859,1654,858,1652,858,1651,857,1649,857,1647,857,1646,857,1644,857,1643,857,1641,857,1640,857,1638,857,1637,858,1635,858,1634,858,1632,859,1631,859,1630,860,1628,861,1627,861,1626,862,1624,863,1623,864,1622,865,1620,866,1619,867,1618,868,1617,869,1616,870,1614,871,1613,872,1612,874,1611,875,1610,877,1609,878,1608,880,1607,881,1606,883,1605,884,1604,886,1603,888,1602,889,1601,891,1600,893,1599,895,1598,897,1597,899,1597,901,1596,903,1595,905,1595,907,1594,909,1594,911,1593,913,1593,916,1593,918,1592,920,1592,922,1592,925,1592,927,1592,930,1592,932,1592,934,1592,937,1593,939,1593,942,1594,944,1594,947,1595,949,1596,952,1596,955,1597,957,1598,960,1600,963,1601,965,1602,968,1604,971,1605,973,1607,976,1609,979,1610,981,1612,984,1614,987,1616,989,1618,992,1620,995,1623,998,1625,1000,1627,1003,1629,1005,1632,1008,1634,1011,1637,1013,1639,1016,1641,1018,1644,1021,1646,1023,1649,1025,1651,1028,1653,1030,1656,1032,1658,1034,1660,1036,1663,1039,1665,1041,1667,1043,1669,1044,1672,1046,1674,1048,1676,1050,1678,1051,1679,1053,1681,1054,1683,1056,1685,1057,1686,1058,1688,1060,1689,1061,1691,1062,1692,1063,1693,1064,1695,1065,1696,1066,1697,1066,1698,1067,1699,1068,1700,1068,1701,1069,1702,1069,1703,1070,1704,1070,1705,1071,1705,1071,1706,1071,1707,1072,1708,1072,1709,1072,1709,1072,1710,1072,1711,1073,1712,1073,1712,1073,1713,1073,1714,1073,1715,1073,1715,1073,1716,1072,1717,1072,1718,1072,1718,1072,1719,1072,1720,1072,1721,1072,1722,1072,1723,1071,1723,1071,1724,1071,1725,1071,1726,1071,1727,1070,1728,1070,1729,1070,1730,1069,1731,1069,1732,1069,1733,1068,1734,1068,1735,1068,1736,1067,1736,1067,1737,1067,1738,1066,1739,1066,1740,1065,1741,1065,1742,1064,1743,1064,1744,1063,1744,1063,1745,1062,1746,1062,1747,1061,1747,1061,1748,1060,1749,1059,1750,1059,1750,1058,1751,1058,1751,1057,1752,1056,1753,1056,1753,1055,1754,1054,1754,1053,1755,1053,1755,1052,1755,1051,1756,1050,1756,1049,1756,1048,1757,1047,1757,1047,1757,1046,1757,1045,1758,1043,1758,1042,1758,1041,1758,1040,1758,1039,1758,1038,1758,1036,1758,1035,1758,1034,1758,1032,1758,1031,1758,1029,1758,1028,1757,1026,1757,1024,1757,1023,1757,1021,1756,1019,1756,1017,1756,1015" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1738,1017,1738,1015,1738,1013,1739,1011,1739,1009,1739,1006,1739,1004,1739,1002,1739,999,1739,997,1739,994,1738,992,1738,989,1738,987,1738,984,1738,981,1737,979,1737,976,1737,973,1736,971,1736,968,1736,965,1735,963,1734,960,1734,957,1733,954,1733,952,1732,949,1731,946,1730,943,1730,941,1729,938,1728,935,1727,933,1726,930,1725,927,1724,925,1723,922,1721,920,1720,917,1719,915,1717,912,1716,910,1715,907,1713,905,1712,903,1710,901,1708,898,1707,896,1705,894,1703,892,1702,890,1700,888,1698,886,1696,884,1695,882,1693,881,1691,879,1689,877,1687,876,1685,874,1683,873,1682,871,1680,870,1678,869,1676,867,1674,866,1672,865,1670,864,1668,863,1666,862,1665,862,1663,861,1661,860,1659,860,1657,859,1656,859,1654,858,1652,858,1650,858,1649,858,1647,858,1645,858,1644,858,1642,858,1640,858,1639,858,1637,858,1636,859,1634,859,1633,860,1631,860,1630,861,1629,862,1627,862,1626,863,1624,864,1623,865,1622,865,1621,866,1619,867,1618,868,1617,869,1616,870,1615,871,1614,873,1613,874,1611,875,1610,876,1609,877,1608,879,1608,880,1607,881,1606,882,1605,884,1604,885,1603,886,1603,888,1602,889,1601,891,1600,892,1600,894,1599,895,1599,897,1598,898,1598,900,1597,901,1597,903,1596,904,1596,906,1596,908,1595,909,1595,911,1595,913,1595,915,1595,916,1595,918,1595,920,1595,922,1595,924,1595,926,1595,927,1595,929,1595,931,1595,933,1596,935,1596,937,1596,939,1597,942,1597,944,1598,946,1599,948,1599,950,1600,952,1601,955,1601,957,1602,959,1603,961,1604,964,1605,966,1606,968,1607,970,1608,973,1609,975,1610,977,1611,980,1612,982,1613,984,1614,986,1615,989,1617,991,1618,993,1619,995,1620,997,1621,1000,1622,1002,1624,1004,1625,1006,1626,1008,1627,1010,1628,1012,1630,1014,1631,1016,1632,1018,1633,1020,1634,1022,1635,1023,1637,1025,1638,1027,1639,1028,1640,1030,1641,1031,1642,1033,1643,1034,1644,1036,1645,1037,1646,1038,1647,1040,1648,1041,1649,1042,1650,1043,1651,1044,1651,1045,1652,1046,1653,1047,1654,1048,1655,1049,1656,1050,1657,1051,1658,1052,1659,1053,1660,1053,1661,1054,1662,1055,1663,1055,1664,1056,1665,1057,1666,1057,1667,1058,1668,1058,1669,1059,1670,1059,1671,1060,1672,1060,1673,1061,1674,1061,1675,1061,1676,1062,1677,1062,1678,1062,1680,1063,1681,1063,1682,1063,1683,1063,1684,1063,1685,1064,1687,1064,1688,1064,1689,1064,1690,1064,1692,1064,1693,1064,1694,1064,1695,1064,1697,1064,1698,1064,1699,1064,1700,1064,1701,1064,1703,1064,1704,1063,1705,1063,1706,1063,1707,1063,1708,1062,1710,1062,1711,1062,1712,1061,1713,1061,1714,1061,1715,1060,1716,1060,1717,1059,1718,1059,1719,1058,1720,1058,1721,1057,1722,1057,1722,1056,1723,1055,1724,1055,1725,1054,1726,1053,1726,1052,1727,1052,1728,1051,1729,1050,1729,1049,1730,1048,1730,1047,1731,1046,1732,1045,1732,1044,1733,1043,1733,1041,1734,1040,1734,1039,1735,1037,1735,1036,1735,1035,1736,1033,1736,1031,1736,1030,1737,1028,1737,1027,1737,1025,1738,1023,1738,1021,1738,1019,1738,1017" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1405,6 +1464,24 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 5:00 PM PDT Thu Sep 24 2026...</b><br>South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to the south of the Gulf of Tehuantepec. Afterwards, environmental conditions should be favorable for gradual development, and a tropical depression is likely to form late this weekend or early next week as the system moves slowly west-northwestward to northwestward, parallel to the coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="1672" cy="697" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -1414,11 +1491,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1100 AM HST Thu Sep 24 (Advisory #17)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.1W<br>Movement: north at 2 knots; 2 mph<br>
+  <b>As of 0200 PM HST Thu Sep 24 (Advisory #17A)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.0W<br>Movement: north-northeast at 3 knots; 3 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/242055.shtml?key_messages#contents">
+    data-action="/refresh/graphics_cp2+shtml/242352.shtml?key_messages#contents">
     
-      <circle cx="513" cy="617" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="515" cy="617" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1456,6 +1533,74 @@ document.addEventListener('DOMContentLoaded', function() {
     
   </g>
    
+        </svg>
+          
+      </div>
+
+      <div id="view-pac-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_pac_2d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_pac_2d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_pac_2d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_pac_2d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_pac_2d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_pac_2d1_w1024.png" 
+          alt="2 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+           
+            
+            
+              
+                
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 5:00 PM PDT Thu Sep 24 2026...</b><br>South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to the south of the Gulf of Tehuantepec. Afterwards, environmental conditions should be favorable for gradual development, and a tropical depression is likely to form late this weekend or early next week as the system moves slowly west-northwestward to northwestward, parallel to the coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+"
+    data-action="switchDisturbance:0">
+  
+    <circle cx="965" cy="582" r="50" fill="transparent" pointer-events="all" />
+  
+  </g>
+
+              
+            
+             
         </svg>
           
       </div>
@@ -1509,13 +1654,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="40"
     data-details="
   
-  <b>As of 11:00 AM PDT Thu Sep 24 2026...</b><br>Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast of the Hawaiian Islands over the weekend. Environmental conditions could support some gradual development of this system, and a tropical depression could form during the early to middle portion of next week.  The system is forecast to move generally northeastward, remaining well east-southeast of the Hawaiian Islands.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...40 percent..<br>
+  <b>As of 5:00 PM PDT Thu Sep 24 2026...</b><br>Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast of the Hawaiian Islands over the weekend. Environmental conditions could support some gradual development of this system, and a tropical depression could form late this weekend or early next week. The system is forecast to move generally northeastward, remaining well east-southeast of the Hawaiian Islands.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...40 percent..<br>
 "
     data-action="switchDisturbance:2">
   
     
       
-    <polygon points="791,613,792,612,794,611,796,610,797,608,799,607,801,606,803,605,805,604,807,603,809,602,811,601,813,599,815,598,817,597,819,596,821,595,823,594,825,593,827,592,829,591,832,590,834,589,836,588,838,587,841,586,843,585,845,584,848,583,850,582,852,582,855,581,857,580,860,579,862,578,865,577,867,576,870,575,872,574,875,573,877,572,880,572,882,571,885,570,888,569,890,568,893,567,895,567,898,566,901,565,903,564,906,564,909,563,911,562,914,562,917,561,919,561,922,560,925,560,927,559,930,559,933,559,935,558,938,558,941,558,943,557,946,557,949,557,951,557,954,557,957,557,959,557,962,557,964,557,967,557,969,558,972,558,974,558,977,559,979,559,982,559,984,560,986,561,988,561,991,562,993,562,995,563,997,564,999,565,1001,566,1002,567,1004,568,1006,569,1007,570,1009,571,1010,572,1012,573,1013,574,1014,576,1015,577,1016,579,1017,580,1018,581,1018,583,1019,585,1019,586,1020,588,1020,590,1020,591,1021,593,1021,595,1021,597,1021,598,1021,600,1021,602,1020,604,1020,606,1020,608,1019,610,1019,612,1018,614,1018,615,1017,617,1016,619,1016,621,1015,623,1014,625,1014,627,1013,629,1012,631,1011,632,1010,634,1009,636,1008,638,1007,639,1006,641,1005,643,1004,644,1003,646,1002,648,1001,649,1000,651,999,652,998,654,997,655,995,657,994,658,993,660,992,661,990,662,989,664,988,665,986,666,985,667,983,669,982,670,980,671,979,672,977,673,976,674,974,675,972,677,970,678,969,679,967,680,965,681,963,682,961,683,959,683,957,684,955,685,953,686,951,687,949,688,947,689,944,689,942,690,940,691,937,692,935,693,933,693,930,694,928,695,925,695,923,696,920,697,917,697,915,698,912,699,909,699,907,700,904,701,901,701,898,702,895,702,893,703,890,704,887,704,884,705,881,705,878,706,875,706,872,707,869,708,866,708,863,709,860,709,857,710,854,710,850,711,847,711,844,711,841,712,838,712,835,713,832,713,829,713,826,713,824,713,821,714,818,714,815,714,812,714,810,714,807,713,804,713,802,713,799,713,797,712,795,712,792,712,790,711,788,710,786,710,784,709,782,708,780,707,778,706,776,705,775,704,773,703,772,702,770,700,769,699,768,698,766,696,765,695,764,693,763,692,762,690,761,689,761,687,760,686,759,684,759,682,758,680,758,679,757,677,757,675,757,674,757,672,756,670,756,668,756,667,756,665,756,663,757,661,757,660,757,658,758,656,758,655,758,653,759,652,759,650,760,648,761,647,762,645,762,644,763,642,764,641,765,639,766,638,767,636,768,635,769,633,770,632,771,630,773,629,774,628,775,626,777,625,778,623,780,622,781,621,782,620,784,618,786,617,787,616,789,614,791,613" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="791,613,793,612,795,611,797,610,800,609,802,607,804,606,807,605,809,604,811,602,814,601,816,600,819,598,821,597,824,596,826,594,829,593,832,592,834,590,837,589,840,588,843,586,845,585,848,584,851,583,854,581,857,580,860,579,863,578,866,576,869,575,872,574,875,573,878,572,881,571,884,570,887,569,891,568,894,567,897,566,900,565,903,564,907,563,910,562,913,562,916,561,920,560,923,560,926,559,930,559,933,558,936,558,939,558,943,557,946,557,949,557,952,557,956,557,959,557,962,557,965,557,968,558,971,558,974,558,977,559,980,559,983,560,986,561,989,561,991,562,994,563,996,564,999,565,1001,566,1003,567,1005,568,1007,570,1009,571,1011,572,1012,574,1014,575,1015,577,1016,579,1017,581,1018,582,1019,584,1020,586,1020,588,1020,590,1021,593,1021,595,1021,597,1021,599,1021,601,1020,604,1020,606,1020,608,1019,611,1018,613,1018,615,1017,618,1016,620,1015,622,1014,625,1013,627,1012,629,1011,632,1010,634,1009,636,1008,638,1007,640,1006,642,1004,644,1003,646,1002,648,1000,650,999,652,998,654,996,656,995,658,993,659,992,661,990,663,988,664,987,666,985,668,983,669,981,670,979,672,978,673,976,675,974,676,972,677,969,678,967,680,965,681,963,682,960,683,958,684,956,685,953,686,950,687,948,688,945,688,942,689,940,690,937,691,934,692,931,693,928,693,925,694,922,695,919,696,915,696,912,697,909,698,905,699,902,700,898,701,895,702,891,702,888,703,884,704,880,705,876,706,873,708,869,709,865,710,861,711,857,712,853,713,849,715,845,716,841,717,837,718,833,719,829,720,825,722,821,723,817,724,813,725,810,726,806,726,802,727,799,728,795,729,792,729,788,730,785,730,782,731,778,731,775,731,773,731,770,731,767,731,764,731,762,730,760,730,757,730,755,729,753,728,751,728,749,727,747,726,745,725,743,724,742,723,740,722,739,721,737,720,736,719,735,718,734,717,732,715,731,714,730,713,729,712,729,710,728,709,727,708,726,706,726,705,725,704,724,702,724,701,723,700,723,698,723,697,722,696,722,694,722,693,722,692,722,690,721,689,721,687,721,686,721,685,721,683,722,682,722,681,722,679,722,678,722,676,722,675,723,674,723,672,723,671,724,670,724,668,724,667,725,666,725,664,726,663,726,662,727,660,727,659,728,658,728,656,729,655,730,654,730,653,731,652,732,650,733,649,734,648,735,647,736,646,737,644,738,643,739,642,740,641,741,640,742,639,744,638,745,637,746,636,748,635,749,634,751,633,752,632,754,631,755,631,757,630,759,629,761,628,762,627,764,626,766,625,768,624,770,623,772,622,774,621,776,620,778,619,780,618,782,617,784,616,786,615,788,614,791,613" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1527,13 +1672,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 11:00 AM PDT Thu Sep 24 2026...</b><br>South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to the south of the Gulf of Tehuantepec. Afterwards, environmental conditions should be favorable for gradual development, and a tropical depression is likely to form early next week as the system moves slowly west-northwestward to northwestward, parallel to the coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 5:00 PM PDT Thu Sep 24 2026...</b><br>South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to the south of the Gulf of Tehuantepec. Afterwards, environmental conditions should be favorable for gradual development, and a tropical depression is likely to form late this weekend or early next week as the system moves slowly west-northwestward to northwestward, parallel to the coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1605,636,1602,634,1599,631,1596,629,1593,627,1590,625,1586,623,1583,621,1579,618,1575,616,1572,614,1568,611,1564,609,1560,607,1555,604,1551,602,1547,600,1543,597,1538,595,1534,593,1530,590,1525,588,1521,586,1516,584,1512,582,1507,579,1503,577,1498,575,1494,573,1489,571,1485,569,1480,567,1476,565,1471,564,1467,562,1463,560,1459,559,1455,557,1451,556,1447,554,1443,553,1439,552,1435,551,1431,550,1428,549,1424,548,1421,547,1417,547,1414,546,1411,545,1407,545,1404,544,1401,544,1398,544,1395,543,1392,543,1390,543,1387,543,1384,543,1382,543,1379,543,1377,544,1375,544,1372,544,1370,545,1368,545,1366,546,1364,546,1362,547,1360,547,1359,548,1357,549,1355,550,1354,551,1352,552,1351,553,1350,554,1349,555,1348,556,1346,557,1345,558,1345,559,1344,561,1343,562,1342,563,1342,565,1341,566,1340,568,1340,569,1340,571,1339,572,1339,574,1339,576,1339,577,1339,579,1338,581,1338,582,1339,584,1339,586,1339,588,1339,589,1339,591,1340,593,1340,595,1341,597,1341,599,1342,601,1342,602,1343,604,1343,606,1344,608,1345,610,1346,612,1346,614,1347,616,1348,618,1349,620,1350,622,1351,624,1352,626,1353,628,1354,630,1356,631,1357,633,1358,635,1360,637,1361,639,1362,641,1364,643,1365,645,1367,647,1369,648,1370,650,1372,652,1374,654,1376,656,1377,657,1379,659,1381,661,1383,663,1386,664,1388,666,1390,668,1392,669,1395,671,1397,672,1399,674,1402,675,1404,677,1407,678,1410,680,1412,681,1415,683,1418,684,1421,685,1424,687,1427,688,1430,689,1433,690,1436,692,1439,693,1442,694,1446,695,1449,696,1452,697,1455,698,1459,699,1462,700,1465,701,1468,702,1472,703,1475,704,1478,704,1482,705,1485,706,1488,707,1491,708,1495,708,1498,709,1501,710,1504,710,1507,711,1510,711,1513,712,1516,713,1519,713,1522,714,1525,714,1528,714,1531,715,1533,715,1536,716,1538,716,1541,716,1544,717,1546,717,1548,717,1551,717,1553,718,1555,718,1558,718,1560,718,1562,718,1564,718,1566,718,1568,718,1570,718,1572,718,1574,718,1576,718,1577,718,1579,718,1581,718,1583,718,1584,718,1586,718,1588,717,1589,717,1591,717,1592,717,1594,716,1595,716,1597,716,1598,715,1600,715,1601,714,1602,714,1604,713,1605,713,1606,712,1607,712,1609,711,1610,711,1611,710,1612,710,1613,709,1614,708,1615,708,1616,707,1617,706,1618,705,1619,705,1620,704,1621,703,1622,702,1623,702,1624,701,1624,700,1625,699,1626,698,1627,697,1627,696,1628,696,1629,695,1629,694,1630,693,1630,692,1631,691,1632,690,1632,689,1633,688,1633,687,1633,686,1634,685,1634,684,1635,683,1635,682,1635,681,1635,680,1636,679,1636,678,1636,677,1636,676,1636,675,1636,673,1636,672,1635,671,1635,670,1635,669,1634,667,1634,666,1633,665,1633,664,1632,662,1631,661,1630,659,1629,658,1628,656,1627,655,1625,653,1624,652,1622,650,1620,648,1619,647,1617,645,1615,643,1612,641,1610,639,1607,638,1605,636" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1672" cy="697" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1605,636,1602,634,1599,631,1596,629,1593,627,1590,625,1586,623,1583,621,1579,618,1575,616,1572,614,1568,611,1564,609,1560,607,1555,604,1551,602,1547,600,1543,597,1538,595,1534,593,1530,590,1525,588,1521,586,1516,584,1512,581,1507,579,1503,577,1498,575,1494,573,1489,571,1485,569,1480,567,1476,565,1472,564,1467,562,1463,560,1459,559,1455,557,1451,556,1447,555,1443,553,1439,552,1435,551,1431,550,1428,549,1424,548,1421,547,1417,547,1414,546,1410,545,1407,545,1404,544,1401,544,1398,544,1395,543,1392,543,1389,543,1387,543,1384,543,1382,543,1379,543,1377,544,1374,544,1372,544,1370,545,1368,545,1366,546,1364,546,1362,547,1360,547,1359,548,1357,549,1355,550,1354,551,1352,552,1351,553,1350,554,1349,555,1348,556,1347,557,1346,558,1345,559,1344,561,1343,562,1343,563,1342,565,1341,566,1341,568,1340,569,1340,571,1340,572,1340,574,1339,576,1339,577,1339,579,1339,581,1339,582,1339,584,1339,586,1340,588,1340,589,1340,591,1340,593,1341,595,1341,597,1342,599,1342,601,1343,602,1343,604,1344,606,1344,608,1345,610,1346,612,1346,614,1347,616,1348,618,1349,620,1349,622,1350,624,1351,626,1352,628,1353,629,1354,631,1355,633,1356,635,1358,637,1359,639,1360,641,1361,643,1363,645,1364,647,1366,648,1367,650,1369,652,1370,654,1372,656,1374,658,1375,659,1377,661,1379,663,1381,665,1383,666,1385,668,1387,670,1389,672,1392,673,1394,675,1397,677,1399,678,1402,680,1404,681,1407,683,1410,685,1413,686,1415,688,1418,689,1421,691,1424,692,1428,693,1431,695,1434,696,1437,697,1440,699,1444,700,1447,701,1450,703,1454,704,1457,705,1460,706,1464,707,1467,708,1471,709,1474,710,1478,711,1481,712,1484,713,1488,714,1491,715,1494,716,1498,716,1501,717,1504,718,1507,718,1511,719,1514,719,1517,720,1520,721,1523,721,1526,721,1528,722,1531,722,1534,722,1537,723,1539,723,1542,723,1545,723,1547,723,1549,723,1552,723,1554,723,1556,723,1559,723,1561,723,1563,723,1565,723,1567,723,1569,722,1571,722,1573,722,1575,722,1577,721,1579,721,1581,721,1582,720,1584,720,1586,719,1587,719,1589,718,1591,718,1592,717,1594,717,1595,716,1597,716,1598,715,1600,715,1601,714,1602,714,1604,713,1605,713,1606,712,1607,711,1609,711,1610,710,1611,709,1612,709,1613,708,1614,707,1615,707,1616,706,1617,705,1618,705,1619,704,1620,703,1621,702,1622,702,1623,701,1624,700,1624,699,1625,698,1626,698,1627,697,1627,696,1628,695,1629,694,1629,693,1630,693,1631,692,1631,691,1632,690,1632,689,1633,688,1633,687,1633,686,1634,685,1634,684,1635,683,1635,682,1635,681,1635,680,1636,679,1636,678,1636,677,1636,676,1636,675,1636,674,1636,673,1635,671,1635,670,1635,669,1634,668,1634,666,1633,665,1633,664,1632,662,1631,661,1630,660,1629,658,1628,657,1627,655,1625,653,1624,652,1622,650,1620,649,1619,647,1617,645,1615,643,1612,641,1610,639,1607,638,1605,636" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1548,11 +1697,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1100 AM HST Thu Sep 24 (Advisory #17)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.1W<br>Movement: north at 2 knots; 2 mph<br>
+  <b>As of 0200 PM HST Thu Sep 24 (Advisory #17A)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.0W<br>Movement: north-northeast at 3 knots; 3 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/242055.shtml?key_messages#contents">
+    data-action="/refresh/graphics_cp2+shtml/242352.shtml?key_messages#contents">
     
-      <circle cx="513" cy="617" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="515" cy="617" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1655,13 +1804,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 11:00 AM PDT Thu Sep 24 2026...</b><br>South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to the south of the Gulf of Tehuantepec. Afterwards, environmental conditions should be favorable for gradual development, and a tropical depression is likely to form early next week as the system moves slowly west-northwestward to northwestward, parallel to the coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 5:00 PM PDT Thu Sep 24 2026...</b><br>South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to the south of the Gulf of Tehuantepec. Afterwards, environmental conditions should be favorable for gradual development, and a tropical depression is likely to form late this weekend or early next week as the system moves slowly west-northwestward to northwestward, parallel to the coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1605,636,1602,634,1599,631,1596,629,1593,627,1590,625,1586,623,1583,621,1579,618,1575,616,1572,614,1568,611,1564,609,1560,607,1555,604,1551,602,1547,600,1543,597,1538,595,1534,593,1530,590,1525,588,1521,586,1516,584,1512,582,1507,579,1503,577,1498,575,1494,573,1489,571,1485,569,1480,567,1476,565,1471,564,1467,562,1463,560,1459,559,1455,557,1451,556,1447,554,1443,553,1439,552,1435,551,1431,550,1428,549,1424,548,1421,547,1417,547,1414,546,1411,545,1407,545,1404,544,1401,544,1398,544,1395,543,1392,543,1390,543,1387,543,1384,543,1382,543,1379,543,1377,544,1375,544,1372,544,1370,545,1368,545,1366,546,1364,546,1362,547,1360,547,1359,548,1357,549,1355,550,1354,551,1352,552,1351,553,1350,554,1349,555,1348,556,1346,557,1345,558,1345,559,1344,561,1343,562,1342,563,1342,565,1341,566,1340,568,1340,569,1340,571,1339,572,1339,574,1339,576,1339,577,1339,579,1338,581,1338,582,1339,584,1339,586,1339,588,1339,589,1339,591,1340,593,1340,595,1341,597,1341,599,1342,601,1342,602,1343,604,1343,606,1344,608,1345,610,1346,612,1346,614,1347,616,1348,618,1349,620,1350,622,1351,624,1352,626,1353,628,1354,630,1356,631,1357,633,1358,635,1360,637,1361,639,1362,641,1364,643,1365,645,1367,647,1369,648,1370,650,1372,652,1374,654,1376,656,1377,657,1379,659,1381,661,1383,663,1386,664,1388,666,1390,668,1392,669,1395,671,1397,672,1399,674,1402,675,1404,677,1407,678,1410,680,1412,681,1415,683,1418,684,1421,685,1424,687,1427,688,1430,689,1433,690,1436,692,1439,693,1442,694,1446,695,1449,696,1452,697,1455,698,1459,699,1462,700,1465,701,1468,702,1472,703,1475,704,1478,704,1482,705,1485,706,1488,707,1491,708,1495,708,1498,709,1501,710,1504,710,1507,711,1510,711,1513,712,1516,713,1519,713,1522,714,1525,714,1528,714,1531,715,1533,715,1536,716,1538,716,1541,716,1544,717,1546,717,1548,717,1551,717,1553,718,1555,718,1558,718,1560,718,1562,718,1564,718,1566,718,1568,718,1570,718,1572,718,1574,718,1576,718,1577,718,1579,718,1581,718,1583,718,1584,718,1586,718,1588,717,1589,717,1591,717,1592,717,1594,716,1595,716,1597,716,1598,715,1600,715,1601,714,1602,714,1604,713,1605,713,1606,712,1607,712,1609,711,1610,711,1611,710,1612,710,1613,709,1614,708,1615,708,1616,707,1617,706,1618,705,1619,705,1620,704,1621,703,1622,702,1623,702,1624,701,1624,700,1625,699,1626,698,1627,697,1627,696,1628,696,1629,695,1629,694,1630,693,1630,692,1631,691,1632,690,1632,689,1633,688,1633,687,1633,686,1634,685,1634,684,1635,683,1635,682,1635,681,1635,680,1636,679,1636,678,1636,677,1636,676,1636,675,1636,673,1636,672,1635,671,1635,670,1635,669,1634,667,1634,666,1633,665,1633,664,1632,662,1631,661,1630,659,1629,658,1628,656,1627,655,1625,653,1624,652,1622,650,1620,648,1619,647,1617,645,1615,643,1612,641,1610,639,1607,638,1605,636" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1672" cy="697" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1605,636,1602,634,1599,631,1596,629,1593,627,1590,625,1586,623,1583,621,1579,618,1575,616,1572,614,1568,611,1564,609,1560,607,1555,604,1551,602,1547,600,1543,597,1538,595,1534,593,1530,590,1525,588,1521,586,1516,584,1512,581,1507,579,1503,577,1498,575,1494,573,1489,571,1485,569,1480,567,1476,565,1472,564,1467,562,1463,560,1459,559,1455,557,1451,556,1447,555,1443,553,1439,552,1435,551,1431,550,1428,549,1424,548,1421,547,1417,547,1414,546,1410,545,1407,545,1404,544,1401,544,1398,544,1395,543,1392,543,1389,543,1387,543,1384,543,1382,543,1379,543,1377,544,1374,544,1372,544,1370,545,1368,545,1366,546,1364,546,1362,547,1360,547,1359,548,1357,549,1355,550,1354,551,1352,552,1351,553,1350,554,1349,555,1348,556,1347,557,1346,558,1345,559,1344,561,1343,562,1343,563,1342,565,1341,566,1341,568,1340,569,1340,571,1340,572,1340,574,1339,576,1339,577,1339,579,1339,581,1339,582,1339,584,1339,586,1340,588,1340,589,1340,591,1340,593,1341,595,1341,597,1342,599,1342,601,1343,602,1343,604,1344,606,1344,608,1345,610,1346,612,1346,614,1347,616,1348,618,1349,620,1349,622,1350,624,1351,626,1352,628,1353,629,1354,631,1355,633,1356,635,1358,637,1359,639,1360,641,1361,643,1363,645,1364,647,1366,648,1367,650,1369,652,1370,654,1372,656,1374,658,1375,659,1377,661,1379,663,1381,665,1383,666,1385,668,1387,670,1389,672,1392,673,1394,675,1397,677,1399,678,1402,680,1404,681,1407,683,1410,685,1413,686,1415,688,1418,689,1421,691,1424,692,1428,693,1431,695,1434,696,1437,697,1440,699,1444,700,1447,701,1450,703,1454,704,1457,705,1460,706,1464,707,1467,708,1471,709,1474,710,1478,711,1481,712,1484,713,1488,714,1491,715,1494,716,1498,716,1501,717,1504,718,1507,718,1511,719,1514,719,1517,720,1520,721,1523,721,1526,721,1528,722,1531,722,1534,722,1537,723,1539,723,1542,723,1545,723,1547,723,1549,723,1552,723,1554,723,1556,723,1559,723,1561,723,1563,723,1565,723,1567,723,1569,722,1571,722,1573,722,1575,722,1577,721,1579,721,1581,721,1582,720,1584,720,1586,719,1587,719,1589,718,1591,718,1592,717,1594,717,1595,716,1597,716,1598,715,1600,715,1601,714,1602,714,1604,713,1605,713,1606,712,1607,711,1609,711,1610,710,1611,709,1612,709,1613,708,1614,707,1615,707,1616,706,1617,705,1618,705,1619,704,1620,703,1621,702,1622,702,1623,701,1624,700,1624,699,1625,698,1626,698,1627,697,1627,696,1628,695,1629,694,1629,693,1630,693,1631,692,1631,691,1632,690,1632,689,1633,688,1633,687,1633,686,1634,685,1634,684,1635,683,1635,682,1635,681,1635,680,1636,679,1636,678,1636,677,1636,676,1636,675,1636,674,1636,673,1635,671,1635,670,1635,669,1634,668,1634,666,1633,665,1633,664,1632,662,1631,661,1630,660,1629,658,1628,657,1627,655,1625,653,1624,652,1622,650,1620,649,1619,647,1617,645,1615,643,1612,641,1610,639,1607,638,1605,636" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1735,13 +1888,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="80"
     data-details="
   
-  <b>As of 11:00 AM PDT Thu Sep 24 2026...</b><br>South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to the south of the Gulf of Tehuantepec. Afterwards, environmental conditions should be favorable for gradual development, and a tropical depression is likely to form early next week as the system moves slowly west-northwestward to northwestward, parallel to the coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+  <b>As of 5:00 PM PDT Thu Sep 24 2026...</b><br>South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to the south of the Gulf of Tehuantepec. Afterwards, environmental conditions should be favorable for gradual development, and a tropical depression is likely to form late this weekend or early next week as the system moves slowly west-northwestward to northwestward, parallel to the coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1605,636,1602,634,1599,631,1596,629,1593,627,1590,625,1586,623,1583,621,1579,618,1575,616,1572,614,1568,611,1564,609,1560,607,1555,604,1551,602,1547,600,1543,597,1538,595,1534,593,1530,590,1525,588,1521,586,1516,584,1512,582,1507,579,1503,577,1498,575,1494,573,1489,571,1485,569,1480,567,1476,565,1471,564,1467,562,1463,560,1459,559,1455,557,1451,556,1447,554,1443,553,1439,552,1435,551,1431,550,1428,549,1424,548,1421,547,1417,547,1414,546,1411,545,1407,545,1404,544,1401,544,1398,544,1395,543,1392,543,1390,543,1387,543,1384,543,1382,543,1379,543,1377,544,1375,544,1372,544,1370,545,1368,545,1366,546,1364,546,1362,547,1360,547,1359,548,1357,549,1355,550,1354,551,1352,552,1351,553,1350,554,1349,555,1348,556,1346,557,1345,558,1345,559,1344,561,1343,562,1342,563,1342,565,1341,566,1340,568,1340,569,1340,571,1339,572,1339,574,1339,576,1339,577,1339,579,1338,581,1338,582,1339,584,1339,586,1339,588,1339,589,1339,591,1340,593,1340,595,1341,597,1341,599,1342,601,1342,602,1343,604,1343,606,1344,608,1345,610,1346,612,1346,614,1347,616,1348,618,1349,620,1350,622,1351,624,1352,626,1353,628,1354,630,1356,631,1357,633,1358,635,1360,637,1361,639,1362,641,1364,643,1365,645,1367,647,1369,648,1370,650,1372,652,1374,654,1376,656,1377,657,1379,659,1381,661,1383,663,1386,664,1388,666,1390,668,1392,669,1395,671,1397,672,1399,674,1402,675,1404,677,1407,678,1410,680,1412,681,1415,683,1418,684,1421,685,1424,687,1427,688,1430,689,1433,690,1436,692,1439,693,1442,694,1446,695,1449,696,1452,697,1455,698,1459,699,1462,700,1465,701,1468,702,1472,703,1475,704,1478,704,1482,705,1485,706,1488,707,1491,708,1495,708,1498,709,1501,710,1504,710,1507,711,1510,711,1513,712,1516,713,1519,713,1522,714,1525,714,1528,714,1531,715,1533,715,1536,716,1538,716,1541,716,1544,717,1546,717,1548,717,1551,717,1553,718,1555,718,1558,718,1560,718,1562,718,1564,718,1566,718,1568,718,1570,718,1572,718,1574,718,1576,718,1577,718,1579,718,1581,718,1583,718,1584,718,1586,718,1588,717,1589,717,1591,717,1592,717,1594,716,1595,716,1597,716,1598,715,1600,715,1601,714,1602,714,1604,713,1605,713,1606,712,1607,712,1609,711,1610,711,1611,710,1612,710,1613,709,1614,708,1615,708,1616,707,1617,706,1618,705,1619,705,1620,704,1621,703,1622,702,1623,702,1624,701,1624,700,1625,699,1626,698,1627,697,1627,696,1628,696,1629,695,1629,694,1630,693,1630,692,1631,691,1632,690,1632,689,1633,688,1633,687,1633,686,1634,685,1634,684,1635,683,1635,682,1635,681,1635,680,1636,679,1636,678,1636,677,1636,676,1636,675,1636,673,1636,672,1635,671,1635,670,1635,669,1634,667,1634,666,1633,665,1633,664,1632,662,1631,661,1630,659,1629,658,1628,656,1627,655,1625,653,1624,652,1622,650,1620,648,1619,647,1617,645,1615,643,1612,641,1610,639,1607,638,1605,636" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1672" cy="697" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1605,636,1602,634,1599,631,1596,629,1593,627,1590,625,1586,623,1583,621,1579,618,1575,616,1572,614,1568,611,1564,609,1560,607,1555,604,1551,602,1547,600,1543,597,1538,595,1534,593,1530,590,1525,588,1521,586,1516,584,1512,581,1507,579,1503,577,1498,575,1494,573,1489,571,1485,569,1480,567,1476,565,1472,564,1467,562,1463,560,1459,559,1455,557,1451,556,1447,555,1443,553,1439,552,1435,551,1431,550,1428,549,1424,548,1421,547,1417,547,1414,546,1410,545,1407,545,1404,544,1401,544,1398,544,1395,543,1392,543,1389,543,1387,543,1384,543,1382,543,1379,543,1377,544,1374,544,1372,544,1370,545,1368,545,1366,546,1364,546,1362,547,1360,547,1359,548,1357,549,1355,550,1354,551,1352,552,1351,553,1350,554,1349,555,1348,556,1347,557,1346,558,1345,559,1344,561,1343,562,1343,563,1342,565,1341,566,1341,568,1340,569,1340,571,1340,572,1340,574,1339,576,1339,577,1339,579,1339,581,1339,582,1339,584,1339,586,1340,588,1340,589,1340,591,1340,593,1341,595,1341,597,1342,599,1342,601,1343,602,1343,604,1344,606,1344,608,1345,610,1346,612,1346,614,1347,616,1348,618,1349,620,1349,622,1350,624,1351,626,1352,628,1353,629,1354,631,1355,633,1356,635,1358,637,1359,639,1360,641,1361,643,1363,645,1364,647,1366,648,1367,650,1369,652,1370,654,1372,656,1374,658,1375,659,1377,661,1379,663,1381,665,1383,666,1385,668,1387,670,1389,672,1392,673,1394,675,1397,677,1399,678,1402,680,1404,681,1407,683,1410,685,1413,686,1415,688,1418,689,1421,691,1424,692,1428,693,1431,695,1434,696,1437,697,1440,699,1444,700,1447,701,1450,703,1454,704,1457,705,1460,706,1464,707,1467,708,1471,709,1474,710,1478,711,1481,712,1484,713,1488,714,1491,715,1494,716,1498,716,1501,717,1504,718,1507,718,1511,719,1514,719,1517,720,1520,721,1523,721,1526,721,1528,722,1531,722,1534,722,1537,723,1539,723,1542,723,1545,723,1547,723,1549,723,1552,723,1554,723,1556,723,1559,723,1561,723,1563,723,1565,723,1567,723,1569,722,1571,722,1573,722,1575,722,1577,721,1579,721,1581,721,1582,720,1584,720,1586,719,1587,719,1589,718,1591,718,1592,717,1594,717,1595,716,1597,716,1598,715,1600,715,1601,714,1602,714,1604,713,1605,713,1606,712,1607,711,1609,711,1610,710,1611,709,1612,709,1613,708,1614,707,1615,707,1616,706,1617,705,1618,705,1619,704,1620,703,1621,702,1622,702,1623,701,1624,700,1624,699,1625,698,1626,698,1627,697,1627,696,1628,695,1629,694,1629,693,1630,693,1631,692,1631,691,1632,690,1632,689,1633,688,1633,687,1633,686,1634,685,1634,684,1635,683,1635,682,1635,681,1635,680,1636,679,1636,678,1636,677,1636,676,1636,675,1636,674,1636,673,1635,671,1635,670,1635,669,1634,668,1634,666,1633,665,1633,664,1632,662,1631,661,1630,660,1629,658,1628,657,1627,655,1625,653,1624,652,1622,650,1620,649,1619,647,1617,645,1615,643,1612,641,1610,639,1607,638,1605,636" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1804,11 +1961,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1100 AM HST Thu Sep 24 (Advisory #17)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.1W<br>Movement: north at 2 knots; 2 mph<br>
+  <b>As of 0200 PM HST Thu Sep 24 (Advisory #17A)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.0W<br>Movement: north-northeast at 3 knots; 3 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/242055.shtml?key_messages#contents">
+    data-action="/refresh/graphics_cp2+shtml/242352.shtml?key_messages#contents">
     
-      <circle cx="929" cy="862" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="932" cy="862" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1880,13 +2037,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="40"
     data-details="
   
-  <b>As of 8:00 AM HST Thu Sep 24 2026...</b><br>Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast of the Hawaiian Islands over the weekend. Environmental conditions could support some gradual development of this system, and a tropical depression could form during the early to middle portion of next week.  The system is forecast to move generally northeastward, remaining well east-southeast of the Hawaiian Islands.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...40 percent..<br>
+  <b>As of 2:00 PM HST Thu Sep 24 2026...</b><br>Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast of the Hawaiian Islands over the weekend. Environmental conditions could support some gradual development of this system, and a tropical depression could form late this weekend or early next week. The system is forecast to move generally northeastward, remaining well east-southeast of the Hawaiian Islands.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...40 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1357,856,1360,854,1362,852,1365,851,1368,849,1370,847,1373,845,1376,844,1379,842,1382,840,1385,839,1388,837,1391,836,1394,834,1397,832,1401,831,1404,829,1407,828,1410,826,1414,825,1417,823,1420,822,1424,820,1427,819,1431,817,1434,816,1438,815,1442,813,1445,812,1449,810,1453,809,1456,807,1460,806,1464,805,1468,803,1471,802,1475,801,1479,799,1483,798,1487,797,1491,795,1495,794,1499,793,1503,791,1507,790,1511,789,1515,788,1519,787,1523,786,1527,785,1531,783,1535,782,1539,781,1543,781,1547,780,1552,779,1556,778,1560,777,1564,777,1568,776,1572,775,1576,775,1580,774,1585,774,1589,773,1593,773,1597,773,1601,773,1605,772,1609,772,1613,772,1617,772,1621,773,1625,773,1629,773,1633,773,1637,774,1641,774,1644,775,1648,775,1652,776,1655,777,1659,778,1662,779,1666,780,1669,781,1672,782,1675,783,1678,784,1681,785,1684,787,1686,788,1689,790,1691,791,1694,793,1696,795,1698,796,1700,798,1702,800,1703,802,1705,804,1706,807,1707,809,1709,811,1709,813,1710,816,1711,818,1711,821,1712,823,1712,826,1712,829,1712,831,1712,834,1712,837,1712,840,1712,842,1711,845,1711,848,1710,851,1709,854,1708,856,1708,859,1707,862,1706,865,1705,868,1703,871,1702,873,1701,876,1700,879,1698,882,1697,884,1696,887,1694,890,1693,892,1691,895,1690,898,1688,900,1687,902,1685,905,1684,907,1682,910,1680,912,1678,914,1677,916,1675,919,1673,921,1671,923,1669,925,1667,927,1665,929,1663,931,1661,933,1659,935,1657,936,1655,938,1652,940,1650,942,1647,944,1645,945,1643,947,1640,949,1637,950,1635,952,1632,953,1629,955,1626,956,1623,958,1620,959,1617,960,1614,962,1611,963,1608,964,1605,966,1601,967,1598,968,1594,969,1591,970,1587,972,1584,973,1580,974,1576,975,1572,976,1568,977,1565,978,1561,979,1557,980,1553,981,1549,982,1544,983,1540,984,1536,985,1532,986,1528,987,1523,988,1519,989,1514,989,1510,990,1505,991,1501,992,1496,993,1492,994,1487,995,1482,995,1478,996,1473,997,1468,998,1464,999,1459,999,1454,1000,1449,1001,1445,1001,1440,1002,1435,1003,1431,1003,1426,1004,1422,1004,1417,1004,1412,1005,1408,1005,1404,1005,1399,1005,1395,1005,1391,1005,1387,1005,1382,1005,1378,1005,1374,1004,1371,1004,1367,1003,1363,1003,1360,1002,1356,1001,1353,1000,1350,999,1347,998,1344,997,1341,996,1338,994,1335,993,1333,991,1330,989,1328,987,1326,986,1324,984,1322,982,1320,980,1318,977,1317,975,1315,973,1314,971,1312,968,1311,966,1310,963,1309,961,1308,958,1307,956,1306,953,1306,951,1305,948,1305,946,1305,943,1304,941,1304,938,1304,935,1304,933,1304,930,1305,928,1305,925,1306,923,1306,920,1307,918,1307,915,1308,913,1309,911,1310,908,1311,906,1312,904,1313,901,1315,899,1316,897,1318,894,1319,892,1321,890,1322,888,1324,886,1326,884,1328,881,1330,879,1332,877,1334,875,1336,873,1338,871,1340,869,1342,867,1345,865,1347,863,1349,862,1352,860,1354,858,1357,856" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1357,856,1360,854,1364,853,1367,851,1371,849,1374,847,1378,845,1382,844,1385,842,1389,840,1393,838,1397,836,1401,834,1405,832,1408,830,1412,828,1416,826,1421,824,1425,822,1429,820,1433,818,1437,816,1442,814,1446,812,1450,810,1455,808,1459,807,1464,805,1468,803,1473,801,1478,799,1482,798,1487,796,1492,794,1497,793,1502,791,1506,790,1511,788,1516,787,1521,785,1526,784,1531,783,1536,781,1541,780,1546,779,1551,778,1556,777,1561,777,1567,776,1572,775,1577,774,1582,774,1587,773,1592,773,1597,773,1602,773,1607,772,1612,772,1617,773,1622,773,1627,773,1631,773,1636,774,1641,775,1645,775,1650,776,1654,777,1659,778,1663,779,1667,780,1671,781,1675,783,1678,784,1682,786,1685,788,1688,789,1691,791,1694,793,1697,795,1699,798,1701,800,1703,802,1705,805,1707,808,1708,810,1709,813,1710,816,1711,819,1712,822,1712,825,1712,828,1712,832,1712,835,1712,838,1712,842,1711,845,1710,849,1710,852,1709,856,1708,859,1706,863,1705,866,1704,870,1702,873,1701,876,1699,880,1698,883,1696,887,1694,890,1693,893,1691,896,1689,899,1687,902,1685,905,1683,908,1681,911,1679,914,1677,917,1674,919,1672,922,1670,925,1667,927,1665,930,1662,932,1660,934,1657,937,1654,939,1651,941,1649,943,1646,945,1643,947,1639,949,1636,951,1633,953,1630,955,1626,956,1623,958,1619,959,1615,961,1612,962,1608,964,1604,965,1600,966,1596,968,1591,969,1587,970,1583,971,1578,973,1574,974,1569,975,1564,976,1559,977,1555,979,1550,980,1544,981,1539,982,1534,983,1529,985,1523,986,1518,987,1512,989,1507,990,1501,991,1495,993,1489,995,1484,996,1478,998,1472,1000,1465,1001,1459,1003,1453,1005,1447,1007,1441,1008,1435,1010,1428,1012,1422,1014,1416,1015,1410,1017,1404,1019,1398,1020,1392,1022,1386,1023,1381,1024,1375,1025,1369,1027,1364,1028,1359,1029,1353,1029,1348,1030,1343,1030,1338,1031,1334,1031,1329,1031,1325,1031,1321,1031,1317,1031,1313,1030,1309,1030,1306,1029,1302,1028,1299,1027,1296,1026,1293,1025,1290,1024,1287,1023,1284,1021,1282,1020,1279,1018,1277,1017,1275,1015,1273,1013,1271,1012,1269,1010,1267,1008,1266,1006,1264,1004,1263,1002,1261,1000,1260,998,1259,996,1258,994,1257,992,1256,990,1255,988,1254,986,1254,984,1253,982,1252,980,1252,978,1251,976,1251,974,1251,972,1251,970,1250,968,1250,966,1250,964,1250,962,1250,960,1251,958,1251,956,1251,954,1251,952,1251,950,1252,948,1252,946,1253,944,1253,942,1254,940,1254,938,1255,936,1255,934,1256,932,1257,930,1258,928,1258,926,1259,924,1260,922,1261,920,1262,918,1263,917,1264,915,1266,913,1267,911,1268,909,1269,908,1271,906,1272,904,1274,902,1276,901,1277,899,1279,898,1281,896,1283,894,1285,893,1287,891,1289,890,1291,889,1293,887,1296,886,1298,884,1300,883,1303,882,1305,880,1308,879,1311,878,1314,876,1316,875,1319,874,1322,872,1325,871,1328,870,1331,868,1334,867,1337,865,1340,864,1344,862,1347,861,1350,859,1354,858,1357,856" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1901,11 +2058,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1100 AM HST Thu Sep 24 (Advisory #17)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.1W<br>Movement: north at 2 knots; 2 mph<br>
+  <b>As of 0200 PM HST Thu Sep 24 (Advisory #17A)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.0W<br>Movement: north-northeast at 3 knots; 3 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/242055.shtml?key_messages#contents">
+    data-action="/refresh/graphics_cp2+shtml/242352.shtml?key_messages#contents">
     
-      <circle cx="929" cy="862" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="932" cy="862" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1989,13 +2146,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="40"
     data-details="
   
-  <b>As of 8:00 AM HST Thu Sep 24 2026...</b><br>Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast of the Hawaiian Islands over the weekend. Environmental conditions could support some gradual development of this system, and a tropical depression could form during the early to middle portion of next week.  The system is forecast to move generally northeastward, remaining well east-southeast of the Hawaiian Islands.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...40 percent..<br>
+  <b>As of 2:00 PM HST Thu Sep 24 2026...</b><br>Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast of the Hawaiian Islands over the weekend. Environmental conditions could support some gradual development of this system, and a tropical depression could form late this weekend or early next week. The system is forecast to move generally northeastward, remaining well east-southeast of the Hawaiian Islands.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...40 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1357,856,1360,854,1362,852,1365,851,1368,849,1370,847,1373,845,1376,844,1379,842,1382,840,1385,839,1388,837,1391,836,1394,834,1397,832,1401,831,1404,829,1407,828,1410,826,1414,825,1417,823,1420,822,1424,820,1427,819,1431,817,1434,816,1438,815,1442,813,1445,812,1449,810,1453,809,1456,807,1460,806,1464,805,1468,803,1471,802,1475,801,1479,799,1483,798,1487,797,1491,795,1495,794,1499,793,1503,791,1507,790,1511,789,1515,788,1519,787,1523,786,1527,785,1531,783,1535,782,1539,781,1543,781,1547,780,1552,779,1556,778,1560,777,1564,777,1568,776,1572,775,1576,775,1580,774,1585,774,1589,773,1593,773,1597,773,1601,773,1605,772,1609,772,1613,772,1617,772,1621,773,1625,773,1629,773,1633,773,1637,774,1641,774,1644,775,1648,775,1652,776,1655,777,1659,778,1662,779,1666,780,1669,781,1672,782,1675,783,1678,784,1681,785,1684,787,1686,788,1689,790,1691,791,1694,793,1696,795,1698,796,1700,798,1702,800,1703,802,1705,804,1706,807,1707,809,1709,811,1709,813,1710,816,1711,818,1711,821,1712,823,1712,826,1712,829,1712,831,1712,834,1712,837,1712,840,1712,842,1711,845,1711,848,1710,851,1709,854,1708,856,1708,859,1707,862,1706,865,1705,868,1703,871,1702,873,1701,876,1700,879,1698,882,1697,884,1696,887,1694,890,1693,892,1691,895,1690,898,1688,900,1687,902,1685,905,1684,907,1682,910,1680,912,1678,914,1677,916,1675,919,1673,921,1671,923,1669,925,1667,927,1665,929,1663,931,1661,933,1659,935,1657,936,1655,938,1652,940,1650,942,1647,944,1645,945,1643,947,1640,949,1637,950,1635,952,1632,953,1629,955,1626,956,1623,958,1620,959,1617,960,1614,962,1611,963,1608,964,1605,966,1601,967,1598,968,1594,969,1591,970,1587,972,1584,973,1580,974,1576,975,1572,976,1568,977,1565,978,1561,979,1557,980,1553,981,1549,982,1544,983,1540,984,1536,985,1532,986,1528,987,1523,988,1519,989,1514,989,1510,990,1505,991,1501,992,1496,993,1492,994,1487,995,1482,995,1478,996,1473,997,1468,998,1464,999,1459,999,1454,1000,1449,1001,1445,1001,1440,1002,1435,1003,1431,1003,1426,1004,1422,1004,1417,1004,1412,1005,1408,1005,1404,1005,1399,1005,1395,1005,1391,1005,1387,1005,1382,1005,1378,1005,1374,1004,1371,1004,1367,1003,1363,1003,1360,1002,1356,1001,1353,1000,1350,999,1347,998,1344,997,1341,996,1338,994,1335,993,1333,991,1330,989,1328,987,1326,986,1324,984,1322,982,1320,980,1318,977,1317,975,1315,973,1314,971,1312,968,1311,966,1310,963,1309,961,1308,958,1307,956,1306,953,1306,951,1305,948,1305,946,1305,943,1304,941,1304,938,1304,935,1304,933,1304,930,1305,928,1305,925,1306,923,1306,920,1307,918,1307,915,1308,913,1309,911,1310,908,1311,906,1312,904,1313,901,1315,899,1316,897,1318,894,1319,892,1321,890,1322,888,1324,886,1326,884,1328,881,1330,879,1332,877,1334,875,1336,873,1338,871,1340,869,1342,867,1345,865,1347,863,1349,862,1352,860,1354,858,1357,856" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1357,856,1360,854,1364,853,1367,851,1371,849,1374,847,1378,845,1382,844,1385,842,1389,840,1393,838,1397,836,1401,834,1405,832,1408,830,1412,828,1416,826,1421,824,1425,822,1429,820,1433,818,1437,816,1442,814,1446,812,1450,810,1455,808,1459,807,1464,805,1468,803,1473,801,1478,799,1482,798,1487,796,1492,794,1497,793,1502,791,1506,790,1511,788,1516,787,1521,785,1526,784,1531,783,1536,781,1541,780,1546,779,1551,778,1556,777,1561,777,1567,776,1572,775,1577,774,1582,774,1587,773,1592,773,1597,773,1602,773,1607,772,1612,772,1617,773,1622,773,1627,773,1631,773,1636,774,1641,775,1645,775,1650,776,1654,777,1659,778,1663,779,1667,780,1671,781,1675,783,1678,784,1682,786,1685,788,1688,789,1691,791,1694,793,1697,795,1699,798,1701,800,1703,802,1705,805,1707,808,1708,810,1709,813,1710,816,1711,819,1712,822,1712,825,1712,828,1712,832,1712,835,1712,838,1712,842,1711,845,1710,849,1710,852,1709,856,1708,859,1706,863,1705,866,1704,870,1702,873,1701,876,1699,880,1698,883,1696,887,1694,890,1693,893,1691,896,1689,899,1687,902,1685,905,1683,908,1681,911,1679,914,1677,917,1674,919,1672,922,1670,925,1667,927,1665,930,1662,932,1660,934,1657,937,1654,939,1651,941,1649,943,1646,945,1643,947,1639,949,1636,951,1633,953,1630,955,1626,956,1623,958,1619,959,1615,961,1612,962,1608,964,1604,965,1600,966,1596,968,1591,969,1587,970,1583,971,1578,973,1574,974,1569,975,1564,976,1559,977,1555,979,1550,980,1544,981,1539,982,1534,983,1529,985,1523,986,1518,987,1512,989,1507,990,1501,991,1495,993,1489,995,1484,996,1478,998,1472,1000,1465,1001,1459,1003,1453,1005,1447,1007,1441,1008,1435,1010,1428,1012,1422,1014,1416,1015,1410,1017,1404,1019,1398,1020,1392,1022,1386,1023,1381,1024,1375,1025,1369,1027,1364,1028,1359,1029,1353,1029,1348,1030,1343,1030,1338,1031,1334,1031,1329,1031,1325,1031,1321,1031,1317,1031,1313,1030,1309,1030,1306,1029,1302,1028,1299,1027,1296,1026,1293,1025,1290,1024,1287,1023,1284,1021,1282,1020,1279,1018,1277,1017,1275,1015,1273,1013,1271,1012,1269,1010,1267,1008,1266,1006,1264,1004,1263,1002,1261,1000,1260,998,1259,996,1258,994,1257,992,1256,990,1255,988,1254,986,1254,984,1253,982,1252,980,1252,978,1251,976,1251,974,1251,972,1251,970,1250,968,1250,966,1250,964,1250,962,1250,960,1251,958,1251,956,1251,954,1251,952,1251,950,1252,948,1252,946,1253,944,1253,942,1254,940,1254,938,1255,936,1255,934,1256,932,1257,930,1258,928,1258,926,1259,924,1260,922,1261,920,1262,918,1263,917,1264,915,1266,913,1267,911,1268,909,1269,908,1271,906,1272,904,1274,902,1276,901,1277,899,1279,898,1281,896,1283,894,1285,893,1287,891,1289,890,1291,889,1293,887,1296,886,1298,884,1300,883,1303,882,1305,880,1308,879,1311,878,1314,876,1316,875,1319,874,1322,872,1325,871,1328,870,1331,868,1334,867,1337,865,1340,864,1344,862,1347,861,1350,859,1354,858,1357,856" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -2114,7 +2271,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           
             
-              <option value="es" disabled>Español (Unavailable)</option>
+              <option value="es" >Español</option>
             
           
         </select>
@@ -2128,15 +2285,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Thu Sep 24 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Polo, located about 100 miles offshore of southwestern Mexico, on<br>Hurricane Odalys, located well west-southwest of the southern tip of<br>Baja California, and on Tropical Storm Nolo, located a few hundred<br>miles south of the Big Island of Hawaii.<br><br>1. Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast<br>of the Hawaiian Islands over the weekend. Environmental conditions<br>could support some gradual development of this system, and a<br>tropical depression could form during the early to middle portion<br>of next week.  The system is forecast to move generally<br>northeastward, remaining well east-southeast of the Hawaiian<br>Islands.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...medium...40 percent.<br>
-<br><br>Forecaster Pierce/Brown<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 PM HST Thu Sep 24 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Polo, located about 150 miles offshore of southwestern Mexico, on<br>Hurricane Odalys, located well west-southwest of the southern tip of<br>Baja California, and on Tropical Storm Nolo, located a few hundred<br>miles south of the Big Island of Hawaii.<br><br>1. Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast<br>of the Hawaiian Islands over the weekend. Environmental conditions<br>could support some gradual development of this system, and a<br>tropical depression could form late this weekend or early next week.<br>The system is forecast to move generally northeastward, remaining<br>well east-southeast of the Hawaiian Islands.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...medium...40 percent.<br>
+<br><br>Forecaster Pierce/Evans/Pasch<br><br></pre>
       </div>
           
     </div>
         
     <div id="two-cpac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite"></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">513 <br />ACPN51 PHFO 242308<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />200 PM HST jueves 24 de septiembre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Polo, ubicado a unas 150 millas de la<br />costa del suroeste de México, sobre el Huracán Odalys, ubicado a<br />gran distancia del oeste-suroeste del extremo sur de Baja<br />California, y sobre la Tormenta Tropical Nolo, ubicada a unos<br />cientos de millas al sur de la Isla Grande de Hawai.<br /><br />Bien al este-sureste de las Islas Hawaii: Un área de baja presión<br />podría formarse a unas 1000 millas al este-sureste de las Islas<br />Hawaii durante el fin de semana. Las condiciones ambientales podrían<br />apoyar algún desarrollo gradual de este sistema, y una depresión<br />tropical podría formarse a última hora de este fin de semana o a<br />principios de la próxima semana. Se pronostica que el sistema se<br />desplazará generalmente hacia el noreste, permaneciendo al<br />este-sureste de las Islas Hawaii.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...medio...40 por ciento.<br /><br />$$<br />Pronosticador Pierce/Evans/Pasch <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
     </div>
@@ -2147,9 +2304,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 AM PDT Thu Sep 24 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Polo, located about 100 miles offshore of southwestern Mexico, on <br>Hurricane Odalys, located well west-southwest of the southern tip of <br>Baja California, and on Tropical Storm Nolo, located a few hundred <br>miles south of the Big Island of Hawaii.<br><br>1. South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to <br>the south of the Gulf of Tehuantepec. Afterwards, environmental <br>conditions should be favorable for gradual development, and a <br>tropical depression is likely to form early next week as the system <br>moves slowly west-northwestward to northwestward, parallel to the <br>coast of southern and southwestern Mexico.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...high...80 percent.<br>
-2. Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast <br>of the Hawaiian Islands over the weekend. Environmental conditions <br>could support some gradual development of this system, and a <br>tropical depression could form during the early to middle portion <br>of next week.  The system is forecast to move generally <br>northeastward, remaining well east-southeast of the Hawaiian <br>Islands.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...medium...40 percent.<br>
-<br><br>Forecaster Pierce/Brown<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 PM PDT Thu Sep 24 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Polo, located about 150 miles offshore of southwestern Mexico, on <br>Hurricane Odalys, located well west-southwest of the southern tip of <br>Baja California, and on Tropical Storm Nolo, located a few hundred <br>miles south of the Big Island of Hawaii.<br><br>1. South of the Gulf of Tehuantepec:<br>An area of low pressure is expected to form in a couple of days to <br>the south of the Gulf of Tehuantepec. Afterwards, environmental <br>conditions should be favorable for gradual development, and a <br>tropical depression is likely to form late this weekend or early <br>next week as the system moves slowly west-northwestward to <br>northwestward, parallel to the coast of southern and southwestern <br>Mexico.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...high...80 percent.<br>
+2. Well East-Southeast of the Hawaiian Islands:<br>An area of low pressure could form about 1000 miles east-southeast <br>of the Hawaiian Islands over the weekend. Environmental conditions <br>could support some gradual development of this system, and a <br>tropical depression could form late this weekend or early next week. <br>The system is forecast to move generally northeastward, remaining <br>well east-southeast of the Hawaiian Islands.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...medium...40 percent.<br>
+<br><br>Forecaster Pierce/Evans/Pasch<br><br></pre>
       </div>
           
             
@@ -2164,7 +2321,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite"></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">514 <br />ABPZ21 KNHC 242308<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />500 PM PDT jueves 24 de septiembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Polo, ubicado a unas 150 millas de la<br />costa del suroeste de México, sobre el Huracán Odalys, ubicado a<br />gran distancia del oeste-suroeste del extremo sur de Baja<br />California, y sobre la Tormenta Tropical Nolo, ubicada a unos<br />cientos de millas al sur de la Isla Grande de Hawai.<br /><br />Sur del Golfo de Tehuantepec: Se anticipa que se forme un área de<br />baja presión en un par de días al sur del Golfo de Tehuantepec.<br />Después, las condiciones ambientales deberían ser favorables para un<br />desarrollo gradual, y es probable que se forme una depresión<br />tropical a última hora de este fin de semana o a principios de la<br />próxima semana a medida que el sistema se mueve lentamente hacia el<br />oeste-noroeste a noroeste, paralelo a la costa del sur y suroeste de<br />México.<br />* Probabilidad de formación hasta 48 horas...baja...10 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...80 por ciento.<br /><br />Bien al este-sureste de las Islas Hawaii: Un área de baja presión<br />podría formarse a unas 1000 millas al este-sureste de las Islas<br />Hawaii durante el fin de semana. Las condiciones ambientales podrían<br />apoyar algún desarrollo gradual de este sistema, y una depresión<br />tropical podría formarse a última hora de este fin de semana o a<br />principios de la próxima semana. Se pronostica que el sistema se<br />desplazará generalmente hacia el noreste, permaneciendo al<br />este-sureste de las Islas Hawaii.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...medio...40 por ciento.<br /><br />$$<br />Pronosticador Pierce/Evans/Pasch<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
@@ -2183,8 +2340,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>200 PM EDT Thu Sep 24 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical <br>Storm Fay, located several hundred miles southwest of the Azores.<br><br>1. Far Eastern Tropical Atlantic (AL90):<br>An elongated area of low pressure located a few hundred miles <br>south-southeast of the Cabo Verde Islands is producing a large <br>area of disorganized showers and thunderstorms.  This system could <br>become a short-lived tropical depression or tropical storm later <br>today or on Friday while it moves northwestward to northward.  <br>Increasing upper-level winds, however, should prevent further <br>development over the weekend.  Interests in the Cabo Verde Islands <br>should monitor the progress of this system as gusty winds, areas of <br>heavy rain, and flash flooding are possible over the islands by <br>Friday.  Heavy rain and flash flooding could also occur well to the <br>east along the coast of western Africa, particularly in western <br>portions of Senegal, The Gambia, Guinea-Bissau, and southwest <br>portions of Mauritania.<br>* Formation chance through 48 hours...high...70 percent.<br>* Formation chance through 7 days...high...70 percent.<br>
-<br><br>Forecaster Roberts<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>800 PM EDT Thu Sep 24 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical <br>Storm Fay, located several hundred miles southwest of the Azores.<br><br>1. Far Eastern Tropical Atlantic (AL90):<br>Recent satellite-derived wind data indicates that an area of low <br>pressure located less than 200 miles to the south-southeast of the <br>Cabo Verde Islands is producing winds of 40-45 mph to the north of <br>its center, which is gradually becoming better defined. In addition, <br>the system is producing a large area of showers and thunderstorms <br>that are also showing signs of organization. If these current trends <br>continue, the system is likely to become a short-lived tropical <br>storm as soon as later tonight or on Friday while it moves <br>northwestward to northward. Increasing upper-level winds, however, <br>should prevent further development over the weekend. Interests in <br>the Cabo Verde Islands should monitor the progress of this system as <br>gusty winds, areas of heavy rain, and flash flooding are possible <br>over the islands by Friday.  Heavy rain and flash flooding could <br>also occur well to the east along the coast of western Africa, <br>particularly in western portions of Senegal, The Gambia, <br>Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...80 percent.<br>* Formation chance through 7 days...high...80 percent.<br>
+<br><br>Forecaster Papin<br><br></pre>
       </div>
           
             
@@ -2199,7 +2356,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite"></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">571 <br />ACCA62 KNHC 242337<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />800 PM EDT jueves 24 de septiembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la Tormenta Tropical Fay, ubicada a varios<br />cientos de millas al suroeste de las Azores.<br /><br />Lejano Oriente Atlántico Tropical (AL90): Datos recientes de viento<br />derivados de satélite indican que un área de baja presión ubicada a<br />menos de 200 millas al sur-sureste de las Islas de Cabo Verde está<br />produciendo vientos de 40-45 mph al norte de su centro, que se está<br />definiendo mejor. Además, el sistema está produciendo una gran área<br />de aguaceros y tormentas eléctricas que también están mostrando<br />signos de organización. Si estas tendencias actuales continúan, es<br />probable que el sistema se convierta en una tormenta tropical de<br />corta duración tan pronto como esta noche o el viernes, a medida que<br />se mueve de noroeste a norte. Sin embargo, el aumento de los vientos<br />de nivel superior debería evitar un mayor desarrollo durante el fin<br />de semana. Las personas interesadas en las Islas de Cabo Verde deben<br />monitorear el progreso de este sistema, ya que es posible que se<br />produzcan ráfagas de viento, áreas de lluvia intensa e inundaciones<br />repentinas sobre las islas para el viernes. Fuertes lluvias e<br />inundaciones repentinas también podrían ocurrir al este a lo largo<br />de la costa de África occidental, particularmente en las porciones<br />occidentales de Senegal, Gambia, Guinea-Bissau y porciones del<br />suroeste de Mauritania.<br />* Probabilidad de formación hasta 48 horas...alta...80 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...80 por ciento.<br /><br />$$<br />Pronosticador Papin<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
