@@ -601,148 +601,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <!-- 1. Stripped height-4/overflow-hidden and added inline grid settings -->
     <div id="gtwo-menu-container" class="width-full bg-primary-lighter" style="display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;">
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-atl-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
-      
-      <div id="menu-atl-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
-      <div id="menu-atl-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
       
@@ -1148,24 +1030,6 @@ document.addEventListener('DOMContentLoaded', function() {
           
 
           
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="80"
-    data-details="
-  
-  <b>As of 8:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>Recent satellite-derived wind data indicates that an area of low pressure located less than 200 miles to the south-southeast of the Cabo Verde Islands is producing winds of 40-45 mph to the north of its center, which is gradually becoming better defined. In addition, the system is producing a large area of showers and thunderstorms that are also showing signs of organization. If these current trends continue, the system is likely to become a short-lived tropical storm as soon as later tonight or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend. Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1682" cy="1022" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
   
   
   
@@ -1175,82 +1039,31 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0900 PM GMT Thu Sep 24 (Advisory #19)</b><br>Maximum Sustained Winds: 45 knots; 50 mph<br>Minimum Central Pressure: 1005 mb<br>Located at: 29.8N 41.8W<br>Movement: west at 5 knots; 6 mph<br>
+  <b>As of 0300 AM GMT Fri Sep 25 (Advisory #20)</b><br>Maximum Sustained Winds: 45 knots; 50 mph<br>Minimum Central Pressure: 1005 mb<br>Located at: 29.8N 42.3W<br>Movement: west at 5 knots; 6 mph<br>
 "
-    data-action="/refresh/graphics_at1+shtml/242032.shtml?cone#contents">
+    data-action="/refresh/graphics_at1+shtml/250248.shtml?cone#contents">
     
-      <circle cx="1276" cy="663" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1266" cy="663" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    
+  </g>
+
+  
+  
+  
+  <g class="storm-system cursor-pointer" 
+    data-name="TROPICAL STORM GONZALO"
+    data-risk="storm"
+    data-prob="N/A"
+    data-details="
+  
+  <b>As of 0200 AM CVT Fri Sep 25 (Advisory #1)</b><br>Maximum Sustained Winds: 40 knots; 45 mph<br>Minimum Central Pressure: 1004 mb<br>Located at: 13.2N 22.1W<br>Movement: north-northwest at 7 knots; 8 mph<br>
+"
+    data-action="/refresh/graphics_at2+shtml/250245.shtml?cone#contents">
+    
+      <circle cx="1674" cy="1024" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-atl-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_atl_2d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_atl_2d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_atl_2d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_atl_2d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_atl_2d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_atl_2d1_w1024.png" 
-          alt="2 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-
-           
-            
-            
-              
-                
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="80"
-    data-details="
-  
-  <b>As of 8:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>Recent satellite-derived wind data indicates that an area of low pressure located less than 200 miles to the south-southeast of the Cabo Verde Islands is producing winds of 40-45 mph to the north of its center, which is gradually becoming better defined. In addition, the system is producing a large area of showers and thunderstorms that are also showing signs of organization. If these current trends continue, the system is likely to become a short-lived tropical storm as soon as later tonight or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend. Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
-"
-    data-action="switchDisturbance:0">
-  
-    <circle cx="965" cy="723" r="50" fill="transparent" pointer-events="all" />
-  
-  </g>
-
-              
-            
-             
         </svg>
           
       </div>
@@ -1296,28 +1109,6 @@ document.addEventListener('DOMContentLoaded', function() {
           
 
           
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="80"
-    data-details="
-  
-  <b>As of 8:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>Recent satellite-derived wind data indicates that an area of low pressure located less than 200 miles to the south-southeast of the Cabo Verde Islands is producing winds of 40-45 mph to the north of its center, which is gradually becoming better defined. In addition, the system is producing a large area of showers and thunderstorms that are also showing signs of organization. If these current trends continue, the system is likely to become a short-lived tropical storm as soon as later tonight or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend. Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1682" cy="1022" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-      
-    <polygon points="1738,1017,1738,1015,1738,1013,1739,1011,1739,1009,1739,1006,1739,1004,1739,1002,1739,999,1739,997,1739,994,1738,992,1738,989,1738,987,1738,984,1738,981,1737,979,1737,976,1737,973,1736,971,1736,968,1736,965,1735,963,1734,960,1734,957,1733,954,1733,952,1732,949,1731,946,1730,943,1730,941,1729,938,1728,935,1727,933,1726,930,1725,927,1724,925,1723,922,1721,920,1720,917,1719,915,1717,912,1716,910,1715,907,1713,905,1712,903,1710,901,1708,898,1707,896,1705,894,1703,892,1702,890,1700,888,1698,886,1696,884,1695,882,1693,881,1691,879,1689,877,1687,876,1685,874,1683,873,1682,871,1680,870,1678,869,1676,867,1674,866,1672,865,1670,864,1668,863,1666,862,1665,862,1663,861,1661,860,1659,860,1657,859,1656,859,1654,858,1652,858,1650,858,1649,858,1647,858,1645,858,1644,858,1642,858,1640,858,1639,858,1637,858,1636,859,1634,859,1633,860,1631,860,1630,861,1629,862,1627,862,1626,863,1624,864,1623,865,1622,865,1621,866,1619,867,1618,868,1617,869,1616,870,1615,871,1614,873,1613,874,1611,875,1610,876,1609,877,1608,879,1608,880,1607,881,1606,882,1605,884,1604,885,1603,886,1603,888,1602,889,1601,891,1600,892,1600,894,1599,895,1599,897,1598,898,1598,900,1597,901,1597,903,1596,904,1596,906,1596,908,1595,909,1595,911,1595,913,1595,915,1595,916,1595,918,1595,920,1595,922,1595,924,1595,926,1595,927,1595,929,1595,931,1595,933,1596,935,1596,937,1596,939,1597,942,1597,944,1598,946,1599,948,1599,950,1600,952,1601,955,1601,957,1602,959,1603,961,1604,964,1605,966,1606,968,1607,970,1608,973,1609,975,1610,977,1611,980,1612,982,1613,984,1614,986,1615,989,1617,991,1618,993,1619,995,1620,997,1621,1000,1622,1002,1624,1004,1625,1006,1626,1008,1627,1010,1628,1012,1630,1014,1631,1016,1632,1018,1633,1020,1634,1022,1635,1023,1637,1025,1638,1027,1639,1028,1640,1030,1641,1031,1642,1033,1643,1034,1644,1036,1645,1037,1646,1038,1647,1040,1648,1041,1649,1042,1650,1043,1651,1044,1651,1045,1652,1046,1653,1047,1654,1048,1655,1049,1656,1050,1657,1051,1658,1052,1659,1053,1660,1053,1661,1054,1662,1055,1663,1055,1664,1056,1665,1057,1666,1057,1667,1058,1668,1058,1669,1059,1670,1059,1671,1060,1672,1060,1673,1061,1674,1061,1675,1061,1676,1062,1677,1062,1678,1062,1680,1063,1681,1063,1682,1063,1683,1063,1684,1063,1685,1064,1687,1064,1688,1064,1689,1064,1690,1064,1692,1064,1693,1064,1694,1064,1695,1064,1697,1064,1698,1064,1699,1064,1700,1064,1701,1064,1703,1064,1704,1063,1705,1063,1706,1063,1707,1063,1708,1062,1710,1062,1711,1062,1712,1061,1713,1061,1714,1061,1715,1060,1716,1060,1717,1059,1718,1059,1719,1058,1720,1058,1721,1057,1722,1057,1722,1056,1723,1055,1724,1055,1725,1054,1726,1053,1726,1052,1727,1052,1728,1051,1729,1050,1729,1049,1730,1048,1730,1047,1731,1046,1732,1045,1732,1044,1733,1043,1733,1041,1734,1040,1734,1039,1735,1037,1735,1036,1735,1035,1736,1033,1736,1031,1736,1030,1737,1028,1737,1027,1737,1025,1738,1023,1738,1021,1738,1019,1738,1017" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
   
   
   
@@ -1327,96 +1118,31 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0900 PM GMT Thu Sep 24 (Advisory #19)</b><br>Maximum Sustained Winds: 45 knots; 50 mph<br>Minimum Central Pressure: 1005 mb<br>Located at: 29.8N 41.8W<br>Movement: west at 5 knots; 6 mph<br>
+  <b>As of 0300 AM GMT Fri Sep 25 (Advisory #20)</b><br>Maximum Sustained Winds: 45 knots; 50 mph<br>Minimum Central Pressure: 1005 mb<br>Located at: 29.8N 42.3W<br>Movement: west at 5 knots; 6 mph<br>
 "
-    data-action="/refresh/graphics_at1+shtml/242032.shtml?cone#contents">
+    data-action="/refresh/graphics_at1+shtml/250248.shtml?cone#contents">
     
-      <circle cx="1276" cy="663" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1266" cy="663" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    
+  </g>
+
+  
+  
+  
+  <g class="storm-system cursor-pointer" 
+    data-name="TROPICAL STORM GONZALO"
+    data-risk="storm"
+    data-prob="N/A"
+    data-details="
+  
+  <b>As of 0200 AM CVT Fri Sep 25 (Advisory #1)</b><br>Maximum Sustained Winds: 40 knots; 45 mph<br>Minimum Central Pressure: 1004 mb<br>Located at: 13.2N 22.1W<br>Movement: north-northwest at 7 knots; 8 mph<br>
+"
+    data-action="/refresh/graphics_at2+shtml/250245.shtml?cone#contents">
+    
+      <circle cx="1674" cy="1024" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-atl-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_atl_7d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_atl_7d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_atl_7d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_atl_7d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_atl_7d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_atl_7d1_w1024.png" 
-          alt="7 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="View Pacific Outlook" 
-    onclick="switchBasin('pac')">
-    <polygon points="0,898,21,909,26,911,28,917,43,926,62,928,72,939,77,939,85,945,100,951,107,955,117,955,132,962,145,968,150,970,162,974,177,976,207,963,215,965,222,969,228,972,235,976,241,983,249,994,269,1008,277,1012,292,1012,301,1016,309,1020,318,1020,324,1024,333,1026,343,1028,350,1022,352,1022,354,1026,354,1037,367,1048,371,1054,386,1067,388,1075,386,1086,386,1090,399,1099,405,1095,409,1095,409,1101,416,1101,422,1105,431,1111,431,1118,448,1126,467,1128,474,1137,484,1139,484,1147,491,1152,510,1143,506,1135,499,1128,503,1126,510,1122,512,1116,518,1112,527,1111,533,1119,538,1124,535,1131,542,1139,546,1145,552,1156,557,1165,552,1167,559,1175,555,1179,557,1184,557,1203,555,1209,559,1216,557,1224,553,1228,548,1239,538,1239,531,1243,531,1254,525,1254,521,1260,527,1262,521,1269,0,1269" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-
-          
-
-           
-            
-            
-              
-                
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="80"
-    data-details="
-  
-  <b>As of 8:00 PM EDT Thu Sep 24 2026...</b><br>Far Eastern Tropical Atlantic (AL90):<br>Recent satellite-derived wind data indicates that an area of low pressure located less than 200 miles to the south-southeast of the Cabo Verde Islands is producing winds of 40-45 mph to the north of its center, which is gradually becoming better defined. In addition, the system is producing a large area of showers and thunderstorms that are also showing signs of organization. If these current trends continue, the system is likely to become a short-lived tropical storm as soon as later tonight or on Friday while it moves northwestward to northward. Increasing upper-level winds, however, should prevent further development over the weekend. Interests in the Cabo Verde Islands should monitor the progress of this system as gusty winds, areas of heavy rain, and flash flooding are possible over the islands by Friday.  Heavy rain and flash flooding could also occur well to the east along the coast of western Africa, particularly in western portions of Senegal, The Gambia, Guinea-Bissau, and southwest portions of Mauritania.<br>* Formation chance through 48 hours...high...80 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1682" cy="1022" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-      
-    <polygon points="1738,1017,1738,1015,1738,1013,1739,1011,1739,1009,1739,1006,1739,1004,1739,1002,1739,999,1739,997,1739,994,1738,992,1738,989,1738,987,1738,984,1738,981,1737,979,1737,976,1737,973,1736,971,1736,968,1736,965,1735,963,1734,960,1734,957,1733,954,1733,952,1732,949,1731,946,1730,943,1730,941,1729,938,1728,935,1727,933,1726,930,1725,927,1724,925,1723,922,1721,920,1720,917,1719,915,1717,912,1716,910,1715,907,1713,905,1712,903,1710,901,1708,898,1707,896,1705,894,1703,892,1702,890,1700,888,1698,886,1696,884,1695,882,1693,881,1691,879,1689,877,1687,876,1685,874,1683,873,1682,871,1680,870,1678,869,1676,867,1674,866,1672,865,1670,864,1668,863,1666,862,1665,862,1663,861,1661,860,1659,860,1657,859,1656,859,1654,858,1652,858,1650,858,1649,858,1647,858,1645,858,1644,858,1642,858,1640,858,1639,858,1637,858,1636,859,1634,859,1633,860,1631,860,1630,861,1629,862,1627,862,1626,863,1624,864,1623,865,1622,865,1621,866,1619,867,1618,868,1617,869,1616,870,1615,871,1614,873,1613,874,1611,875,1610,876,1609,877,1608,879,1608,880,1607,881,1606,882,1605,884,1604,885,1603,886,1603,888,1602,889,1601,891,1600,892,1600,894,1599,895,1599,897,1598,898,1598,900,1597,901,1597,903,1596,904,1596,906,1596,908,1595,909,1595,911,1595,913,1595,915,1595,916,1595,918,1595,920,1595,922,1595,924,1595,926,1595,927,1595,929,1595,931,1595,933,1596,935,1596,937,1596,939,1597,942,1597,944,1598,946,1599,948,1599,950,1600,952,1601,955,1601,957,1602,959,1603,961,1604,964,1605,966,1606,968,1607,970,1608,973,1609,975,1610,977,1611,980,1612,982,1613,984,1614,986,1615,989,1617,991,1618,993,1619,995,1620,997,1621,1000,1622,1002,1624,1004,1625,1006,1626,1008,1627,1010,1628,1012,1630,1014,1631,1016,1632,1018,1633,1020,1634,1022,1635,1023,1637,1025,1638,1027,1639,1028,1640,1030,1641,1031,1642,1033,1643,1034,1644,1036,1645,1037,1646,1038,1647,1040,1648,1041,1649,1042,1650,1043,1651,1044,1651,1045,1652,1046,1653,1047,1654,1048,1655,1049,1656,1050,1657,1051,1658,1052,1659,1053,1660,1053,1661,1054,1662,1055,1663,1055,1664,1056,1665,1057,1666,1057,1667,1058,1668,1058,1669,1059,1670,1059,1671,1060,1672,1060,1673,1061,1674,1061,1675,1061,1676,1062,1677,1062,1678,1062,1680,1063,1681,1063,1682,1063,1683,1063,1684,1063,1685,1064,1687,1064,1688,1064,1689,1064,1690,1064,1692,1064,1693,1064,1694,1064,1695,1064,1697,1064,1698,1064,1699,1064,1700,1064,1701,1064,1703,1064,1704,1063,1705,1063,1706,1063,1707,1063,1708,1062,1710,1062,1711,1062,1712,1061,1713,1061,1714,1061,1715,1060,1716,1060,1717,1059,1718,1059,1719,1058,1720,1058,1721,1057,1722,1057,1722,1056,1723,1055,1724,1055,1725,1054,1726,1053,1726,1052,1727,1052,1728,1051,1729,1050,1729,1049,1730,1048,1730,1047,1731,1046,1732,1045,1732,1044,1733,1043,1733,1041,1734,1040,1734,1039,1735,1037,1735,1036,1735,1035,1736,1033,1736,1031,1736,1030,1737,1028,1737,1027,1737,1025,1738,1023,1738,1021,1738,1019,1738,1017" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
-              
-            
-             
         </svg>
           
       </div>
@@ -1486,16 +1212,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   <g class="storm-system cursor-pointer" 
-    data-name="TROPICAL STORM NOLO"
+    data-name="HURRICANE NOLO"
     data-risk="storm"
     data-prob="N/A"
     data-details="
   
-  <b>As of 0200 PM HST Thu Sep 24 (Advisory #17A)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.0W<br>Movement: north-northeast at 3 knots; 3 mph<br>
+  <b>As of 0500 PM HST Thu Sep 24 (Advisory #18)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 984 mb<br>Located at: 15.1N 155.9W<br>Movement: north-northeast at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/242352.shtml?key_messages#contents">
+    data-action="/refresh/graphics_cp2+shtml/250250.shtml?key_messages#contents">
     
-      <circle cx="515" cy="617" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="517" cy="613" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1508,11 +1234,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0200 PM PDT Thu Sep 24 (Advisory #19)</b><br>Maximum Sustained Winds: 80 knots; 90 mph<br>Minimum Central Pressure: 976 mb<br>Located at: 16.8N 124.9W<br>Movement: east-northeast at 7 knots; 8 mph<br>
+  <b>As of 0800 PM PDT Thu Sep 24 (Advisory #20)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 966 mb<br>Located at: 17.1N 124.2W<br>Movement: east-northeast at 7 knots; 8 mph<br>
 "
-    data-action="/refresh/graphics_ep1+shtml/242033.shtml?cone#contents">
+    data-action="/refresh/graphics_ep1+shtml/250254.shtml?cone#contents">
     
-      <circle cx="1067" cy="581" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1080" cy="575" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1525,11 +1251,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0300 PM CST Thu Sep 24 (Advisory #17)</b><br>Maximum Sustained Winds: 130 knots; 150 mph<br>Minimum Central Pressure: 935 mb<br>Located at: 17.1N 105.5W<br>Movement: west-northwest at 9 knots; 10 mph<br>
+  <b>As of 0800 PM MST Thu Sep 24 (Advisory #18)</b><br>Maximum Sustained Winds: 130 knots; 150 mph<br>Minimum Central Pressure: 935 mb<br>Located at: 17.1N 106.5W<br>Movement: west at 10 knots; 12 mph<br>
 "
-    data-action="/refresh/graphics_ep2+shtml/242050.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep2+shtml/250247.shtml?key_messages#contents">
     
-      <circle cx="1412" cy="575" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1394" cy="575" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
@@ -1692,16 +1418,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   <g class="storm-system cursor-pointer" 
-    data-name="TROPICAL STORM NOLO"
+    data-name="HURRICANE NOLO"
     data-risk="storm"
     data-prob="N/A"
     data-details="
   
-  <b>As of 0200 PM HST Thu Sep 24 (Advisory #17A)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.0W<br>Movement: north-northeast at 3 knots; 3 mph<br>
+  <b>As of 0500 PM HST Thu Sep 24 (Advisory #18)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 984 mb<br>Located at: 15.1N 155.9W<br>Movement: north-northeast at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/242352.shtml?key_messages#contents">
+    data-action="/refresh/graphics_cp2+shtml/250250.shtml?key_messages#contents">
     
-      <circle cx="515" cy="617" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="517" cy="613" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1714,11 +1440,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0200 PM PDT Thu Sep 24 (Advisory #19)</b><br>Maximum Sustained Winds: 80 knots; 90 mph<br>Minimum Central Pressure: 976 mb<br>Located at: 16.8N 124.9W<br>Movement: east-northeast at 7 knots; 8 mph<br>
+  <b>As of 0800 PM PDT Thu Sep 24 (Advisory #20)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 966 mb<br>Located at: 17.1N 124.2W<br>Movement: east-northeast at 7 knots; 8 mph<br>
 "
-    data-action="/refresh/graphics_ep1+shtml/242033.shtml?cone#contents">
+    data-action="/refresh/graphics_ep1+shtml/250254.shtml?cone#contents">
     
-      <circle cx="1067" cy="581" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1080" cy="575" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1731,11 +1457,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0300 PM CST Thu Sep 24 (Advisory #17)</b><br>Maximum Sustained Winds: 130 knots; 150 mph<br>Minimum Central Pressure: 935 mb<br>Located at: 17.1N 105.5W<br>Movement: west-northwest at 9 knots; 10 mph<br>
+  <b>As of 0800 PM MST Thu Sep 24 (Advisory #18)</b><br>Maximum Sustained Winds: 130 knots; 150 mph<br>Minimum Central Pressure: 935 mb<br>Located at: 17.1N 106.5W<br>Movement: west at 10 knots; 12 mph<br>
 "
-    data-action="/refresh/graphics_ep2+shtml/242050.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep2+shtml/250247.shtml?key_messages#contents">
     
-      <circle cx="1412" cy="575" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1394" cy="575" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
@@ -1956,16 +1682,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   <g class="storm-system cursor-pointer" 
-    data-name="TROPICAL STORM NOLO"
+    data-name="HURRICANE NOLO"
     data-risk="storm"
     data-prob="N/A"
     data-details="
   
-  <b>As of 0200 PM HST Thu Sep 24 (Advisory #17A)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.0W<br>Movement: north-northeast at 3 knots; 3 mph<br>
+  <b>As of 0500 PM HST Thu Sep 24 (Advisory #18)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 984 mb<br>Located at: 15.1N 155.9W<br>Movement: north-northeast at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/242352.shtml?key_messages#contents">
+    data-action="/refresh/graphics_cp2+shtml/250250.shtml?key_messages#contents">
     
-      <circle cx="932" cy="862" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="934" cy="856" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1978,11 +1704,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0200 PM PDT Thu Sep 24 (Advisory #19)</b><br>Maximum Sustained Winds: 80 knots; 90 mph<br>Minimum Central Pressure: 976 mb<br>Located at: 16.8N 124.9W<br>Movement: east-northeast at 7 knots; 8 mph<br>
+  <b>As of 0800 PM PDT Thu Sep 24 (Advisory #20)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 966 mb<br>Located at: 17.1N 124.2W<br>Movement: east-northeast at 7 knots; 8 mph<br>
 "
-    data-action="/refresh/graphics_ep1+shtml/242033.shtml?cone#contents">
+    data-action="/refresh/graphics_ep1+shtml/250254.shtml?cone#contents">
     
-      <circle cx="1784" cy="808" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1803" cy="799" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
@@ -2053,16 +1779,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   <g class="storm-system cursor-pointer" 
-    data-name="TROPICAL STORM NOLO"
+    data-name="HURRICANE NOLO"
     data-risk="storm"
     data-prob="N/A"
     data-details="
   
-  <b>As of 0200 PM HST Thu Sep 24 (Advisory #17A)</b><br>Maximum Sustained Winds: 60 knots; 70 mph<br>Minimum Central Pressure: 992 mb<br>Located at: 14.9N 156.0W<br>Movement: north-northeast at 3 knots; 3 mph<br>
+  <b>As of 0500 PM HST Thu Sep 24 (Advisory #18)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 984 mb<br>Located at: 15.1N 155.9W<br>Movement: north-northeast at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/242352.shtml?key_messages#contents">
+    data-action="/refresh/graphics_cp2+shtml/250250.shtml?key_messages#contents">
     
-      <circle cx="932" cy="862" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="934" cy="856" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -2075,11 +1801,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0200 PM PDT Thu Sep 24 (Advisory #19)</b><br>Maximum Sustained Winds: 80 knots; 90 mph<br>Minimum Central Pressure: 976 mb<br>Located at: 16.8N 124.9W<br>Movement: east-northeast at 7 knots; 8 mph<br>
+  <b>As of 0800 PM PDT Thu Sep 24 (Advisory #20)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 966 mb<br>Located at: 17.1N 124.2W<br>Movement: east-northeast at 7 knots; 8 mph<br>
 "
-    data-action="/refresh/graphics_ep1+shtml/242033.shtml?cone#contents">
+    data-action="/refresh/graphics_ep1+shtml/250254.shtml?cone#contents">
     
-      <circle cx="1784" cy="808" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1803" cy="799" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
