@@ -640,17 +640,76 @@ document.addEventListener('DOMContentLoaded', function() {
           
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-pac-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-pac-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
 
@@ -894,11 +953,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM HST Tue Sep 29 (Advisory #36)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 964 mb<br>Located at: 20.5N 164.2W<br>Movement: north at 8 knots; 9 mph<br>
+  <b>As of 0800 AM HST Tue Sep 29 (Advisory #36A)</b><br>Maximum Sustained Winds: 90 knots; 105 mph<br>Minimum Central Pressure: 968 mb<br>Located at: 20.9N 164.2W<br>Movement: north at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/291446.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/291746.shtml?cone#contents">
     
-      <circle cx="369" cy="509" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="369" cy="501" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -911,11 +970,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0800 AM MST Tue Sep 29 (Advisory #36)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 981 mb<br>Located at: 27.8N 110.9W<br>Movement: northeast at 15 knots; 17 mph<br>
+  <b>As of 1100 AM MST Tue Sep 29 (Advisory #36A)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 984 mb<br>Located at: 28.0N 110.6W<br>Movement: northeast at 15 knots; 17 mph<br>
 "
-    data-action="/refresh/graphics_ep2+shtml/291443.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep2+shtml/291742.shtml?key_messages#contents">
     
-      <circle cx="1316" cy="361" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1321" cy="356" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -928,11 +987,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0900 AM CST Tue Sep 29 (Advisory #10)</b><br>Maximum Sustained Winds: 55 knots; 65 mph<br>Minimum Central Pressure: 987 mb<br>Located at: 15.3N 105.0W<br>Movement: west-northwest at 11 knots; 13 mph<br>
+  <b>As of 1200 PM CST Tue Sep 29 (Advisory #10A)</b><br>Maximum Sustained Winds: 55 knots; 65 mph<br>Minimum Central Pressure: 987 mb<br>Located at: 15.7N 105.1W<br>Movement: northwest at 10 knots; 12 mph<br>
 "
-    data-action="/refresh/graphics_ep3+shtml/291450.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep3+shtml/291749.shtml?key_messages#contents">
     
-      <circle cx="1421" cy="609" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1419" cy="602" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1000,6 +1059,24 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 11:00 AM PDT Tue Sep 29 2026...</b><br>South of Southern Mexico:<br>An area of low pressure could form late this week or this weekend to the south of the southern coast of Mexico. Thereafter, environmental conditions appear favorable for gradual development while the system moves slowly west-northwestward to northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="1610,617,1609,616,1607,615,1605,614,1604,612,1602,612,1600,611,1598,610,1596,609,1595,608,1593,608,1591,607,1589,607,1586,606,1584,606,1582,605,1580,605,1578,605,1576,604,1574,604,1571,604,1569,604,1567,603,1565,603,1562,603,1560,603,1558,603,1556,602,1553,602,1551,602,1549,602,1546,602,1544,601,1542,601,1539,601,1537,601,1535,600,1533,600,1530,599,1528,599,1526,598,1524,598,1521,597,1519,597,1517,596,1515,596,1513,595,1511,594,1508,593,1506,593,1504,592,1502,591,1500,590,1498,590,1496,589,1494,588,1492,587,1490,587,1488,586,1486,585,1484,584,1482,584,1481,583,1479,582,1477,581,1475,581,1473,580,1472,579,1470,579,1468,578,1466,578,1465,577,1463,577,1462,576,1460,576,1459,576,1457,575,1456,575,1454,575,1453,575,1451,575,1450,575,1448,575,1447,575,1446,575,1445,575,1443,575,1442,575,1441,576,1440,576,1438,576,1437,577,1436,577,1435,577,1434,578,1433,578,1432,579,1431,580,1430,580,1429,581,1428,582,1427,582,1426,583,1425,584,1424,585,1423,586,1422,587,1421,588,1420,589,1419,590,1418,591,1417,592,1416,593,1415,594,1415,595,1414,597,1413,598,1412,599,1411,601,1411,602,1410,603,1409,605,1408,606,1408,607,1407,609,1406,610,1406,612,1405,613,1405,615,1404,616,1404,618,1403,619,1403,621,1402,622,1402,624,1402,625,1401,627,1401,628,1401,630,1401,631,1401,633,1401,634,1401,636,1401,637,1402,638,1402,640,1402,641,1403,643,1403,644,1404,645,1404,647,1405,648,1406,649,1406,650,1407,652,1408,653,1409,654,1410,655,1411,656,1412,658,1414,659,1415,660,1416,661,1418,662,1419,663,1421,664,1422,665,1424,666,1426,667,1427,668,1429,669,1431,670,1433,670,1435,671,1437,672,1439,673,1441,674,1443,675,1445,676,1447,676,1449,677,1451,678,1454,679,1456,679,1458,680,1461,681,1463,682,1465,682,1468,683,1470,684,1473,684,1475,685,1478,686,1480,686,1483,687,1485,688,1488,688,1490,689,1493,689,1496,690,1498,691,1501,691,1504,692,1506,692,1509,693,1512,693,1514,694,1517,694,1520,695,1522,695,1525,696,1528,696,1530,697,1533,697,1536,697,1538,698,1541,698,1543,699,1546,699,1549,699,1551,700,1554,700,1556,700,1559,701,1561,701,1564,701,1566,702,1569,702,1571,702,1573,703,1576,703,1578,703,1580,703,1583,703,1585,703,1587,704,1589,704,1591,704,1593,704,1595,704,1597,704,1599,703,1601,703,1603,703,1605,703,1607,703,1609,702,1610,702,1612,701,1613,701,1615,700,1616,700,1618,699,1619,698,1620,697,1622,697,1623,696,1624,695,1625,693,1626,692,1627,691,1628,690,1628,688,1629,687,1630,685,1630,684,1631,682,1631,680,1631,678,1632,676,1632,674,1632,672,1632,670,1632,668,1632,666,1632,664,1631,662,1631,660,1631,658,1630,655,1630,653,1629,651,1629,649,1628,647,1628,645,1627,642,1626,640,1625,638,1624,636,1623,634,1622,632,1621,630,1620,628,1619,627,1617,625,1616,623,1615,622,1613,620,1612,619,1610,617" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -1009,11 +1086,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM HST Tue Sep 29 (Advisory #36)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 964 mb<br>Located at: 20.5N 164.2W<br>Movement: north at 8 knots; 9 mph<br>
+  <b>As of 0800 AM HST Tue Sep 29 (Advisory #36A)</b><br>Maximum Sustained Winds: 90 knots; 105 mph<br>Minimum Central Pressure: 968 mb<br>Located at: 20.9N 164.2W<br>Movement: north at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/291446.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/291746.shtml?cone#contents">
     
-      <circle cx="369" cy="509" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="369" cy="501" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1026,11 +1103,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0800 AM MST Tue Sep 29 (Advisory #36)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 981 mb<br>Located at: 27.8N 110.9W<br>Movement: northeast at 15 knots; 17 mph<br>
+  <b>As of 1100 AM MST Tue Sep 29 (Advisory #36A)</b><br>Maximum Sustained Winds: 65 knots; 75 mph<br>Minimum Central Pressure: 984 mb<br>Located at: 28.0N 110.6W<br>Movement: northeast at 15 knots; 17 mph<br>
 "
-    data-action="/refresh/graphics_ep2+shtml/291443.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep2+shtml/291742.shtml?key_messages#contents">
     
-      <circle cx="1316" cy="361" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1321" cy="356" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1043,11 +1120,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0900 AM CST Tue Sep 29 (Advisory #10)</b><br>Maximum Sustained Winds: 55 knots; 65 mph<br>Minimum Central Pressure: 987 mb<br>Located at: 15.3N 105.0W<br>Movement: west-northwest at 11 knots; 13 mph<br>
+  <b>As of 1200 PM CST Tue Sep 29 (Advisory #10A)</b><br>Maximum Sustained Winds: 55 knots; 65 mph<br>Minimum Central Pressure: 987 mb<br>Located at: 15.7N 105.1W<br>Movement: northwest at 10 knots; 12 mph<br>
 "
-    data-action="/refresh/graphics_ep3+shtml/291450.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep3+shtml/291749.shtml?key_messages#contents">
     
-      <circle cx="1421" cy="609" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1419" cy="602" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1068,6 +1145,86 @@ document.addEventListener('DOMContentLoaded', function() {
     
   </g>
    
+        </svg>
+          
+      </div>
+
+      <div id="view-pac-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_pac_7d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_pac_7d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_pac_7d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_pac_7d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_pac_7d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_pac_7d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_pac_7d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_pac_7d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_pac_7d1_w1024.png" 
+          alt="7 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="View Atlantic Outlook" 
+    onclick="switchBasin('atl')">
+    <polygon points="1916,218,1903,228,1884,239,1875,254,1856,264,1847,283,1841,300,1849,328,1858,347,1867,368,1864,391,1864,417,1843,415,1837,402,1828,381,1819,355,1815,336,1807,321,1785,321,1771,319,1751,311,1726,313,1704,317,1698,330,1672,336,1657,330,1636,326,1611,326,1593,336,1576,345,1566,360,1566,381,1564,400,1553,419,1549,446,1555,472,1564,499,1578,516,1596,537,1617,544,1636,544,1657,535,1672,518,1675,495,1694,489,1711,480,1730,480,1749,493,1745,510,1738,527,1734,544,1728,565,1721,584,1711,594,1736,594,1751,590,1775,590,1794,599,1811,607,1817,624,1809,637,1805,656,1805,679,1809,698,1828,713,1843,726,1860,720,1884,711,1901,711,1918,724" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+           
+            
+            
+              
+                
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 11:00 AM PDT Tue Sep 29 2026...</b><br>South of Southern Mexico:<br>An area of low pressure could form late this week or this weekend to the south of the southern coast of Mexico. Thereafter, environmental conditions appear favorable for gradual development while the system moves slowly west-northwestward to northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="1610,617,1609,616,1607,615,1605,614,1604,612,1602,612,1600,611,1598,610,1596,609,1595,608,1593,608,1591,607,1589,607,1586,606,1584,606,1582,605,1580,605,1578,605,1576,604,1574,604,1571,604,1569,604,1567,603,1565,603,1562,603,1560,603,1558,603,1556,602,1553,602,1551,602,1549,602,1546,602,1544,601,1542,601,1539,601,1537,601,1535,600,1533,600,1530,599,1528,599,1526,598,1524,598,1521,597,1519,597,1517,596,1515,596,1513,595,1511,594,1508,593,1506,593,1504,592,1502,591,1500,590,1498,590,1496,589,1494,588,1492,587,1490,587,1488,586,1486,585,1484,584,1482,584,1481,583,1479,582,1477,581,1475,581,1473,580,1472,579,1470,579,1468,578,1466,578,1465,577,1463,577,1462,576,1460,576,1459,576,1457,575,1456,575,1454,575,1453,575,1451,575,1450,575,1448,575,1447,575,1446,575,1445,575,1443,575,1442,575,1441,576,1440,576,1438,576,1437,577,1436,577,1435,577,1434,578,1433,578,1432,579,1431,580,1430,580,1429,581,1428,582,1427,582,1426,583,1425,584,1424,585,1423,586,1422,587,1421,588,1420,589,1419,590,1418,591,1417,592,1416,593,1415,594,1415,595,1414,597,1413,598,1412,599,1411,601,1411,602,1410,603,1409,605,1408,606,1408,607,1407,609,1406,610,1406,612,1405,613,1405,615,1404,616,1404,618,1403,619,1403,621,1402,622,1402,624,1402,625,1401,627,1401,628,1401,630,1401,631,1401,633,1401,634,1401,636,1401,637,1402,638,1402,640,1402,641,1403,643,1403,644,1404,645,1404,647,1405,648,1406,649,1406,650,1407,652,1408,653,1409,654,1410,655,1411,656,1412,658,1414,659,1415,660,1416,661,1418,662,1419,663,1421,664,1422,665,1424,666,1426,667,1427,668,1429,669,1431,670,1433,670,1435,671,1437,672,1439,673,1441,674,1443,675,1445,676,1447,676,1449,677,1451,678,1454,679,1456,679,1458,680,1461,681,1463,682,1465,682,1468,683,1470,684,1473,684,1475,685,1478,686,1480,686,1483,687,1485,688,1488,688,1490,689,1493,689,1496,690,1498,691,1501,691,1504,692,1506,692,1509,693,1512,693,1514,694,1517,694,1520,695,1522,695,1525,696,1528,696,1530,697,1533,697,1536,697,1538,698,1541,698,1543,699,1546,699,1549,699,1551,700,1554,700,1556,700,1559,701,1561,701,1564,701,1566,702,1569,702,1571,702,1573,703,1576,703,1578,703,1580,703,1583,703,1585,703,1587,704,1589,704,1591,704,1593,704,1595,704,1597,704,1599,703,1601,703,1603,703,1605,703,1607,703,1609,702,1610,702,1612,701,1613,701,1615,700,1616,700,1618,699,1619,698,1620,697,1622,697,1623,696,1624,695,1625,693,1626,692,1627,691,1628,690,1628,688,1629,687,1630,685,1630,684,1631,682,1631,680,1631,678,1632,676,1632,674,1632,672,1632,670,1632,668,1632,666,1632,664,1631,662,1631,660,1631,658,1630,655,1630,653,1629,651,1629,649,1628,647,1628,645,1627,642,1626,640,1625,638,1624,636,1623,634,1622,632,1621,630,1620,628,1619,627,1617,625,1616,623,1615,622,1613,620,1612,619,1610,617" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
+              
+            
+             
         </svg>
           
       </div>
@@ -1122,11 +1279,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM HST Tue Sep 29 (Advisory #36)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 964 mb<br>Located at: 20.5N 164.2W<br>Movement: north at 8 knots; 9 mph<br>
+  <b>As of 0800 AM HST Tue Sep 29 (Advisory #36A)</b><br>Maximum Sustained Winds: 90 knots; 105 mph<br>Minimum Central Pressure: 968 mb<br>Located at: 20.9N 164.2W<br>Movement: north at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/291446.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/291746.shtml?cone#contents">
     
-      <circle cx="707" cy="700" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="707" cy="689" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1201,11 +1358,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM HST Tue Sep 29 (Advisory #36)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 964 mb<br>Located at: 20.5N 164.2W<br>Movement: north at 8 knots; 9 mph<br>
+  <b>As of 0800 AM HST Tue Sep 29 (Advisory #36A)</b><br>Maximum Sustained Winds: 90 knots; 105 mph<br>Minimum Central Pressure: 968 mb<br>Located at: 20.9N 164.2W<br>Movement: north at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/291446.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/291746.shtml?cone#contents">
     
-      <circle cx="707" cy="700" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="707" cy="689" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1317,7 +1474,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           
             
-              <option value="es" >Español</option>
+              <option value="es" disabled>Español (Unavailable)</option>
             
           
         </select>
@@ -1350,15 +1507,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 AM HST Tue Sep 29 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Polo, near the Baja California Peninsula of Mexico, on Hurricane<br>Nolo, located several hundred miles west of Honolulu, Hawaii, and on<br>Tropical Storm Rachel, located few hundred miles south-southwest of<br>Lazaro Cardenas, Mexico.<br><br>1. Well East-Southeast of the Hawaiian Islands (EP91):<br>An area of low pressure located well east-southeast of the Hawaiian<br>Islands is producing limited showers and thunderstorms this morning.<br>Only a slight increase in shower and thunderstorm organization is<br>needed for it to become a tropical depression during the next day or<br>two while it moves slowly east-northeastward. Environmental<br>conditions are expected to become less conducive for development<br>late this week.<br>* Formation chance through 48 hours...high...90 percent.<br>* Formation chance through 7 days...high...90 percent.<br>
-<br><br>Forecaster Kelly<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Tue Sep 29 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Polo, located just inland in Sonora, Mexico, on Hurricane Nolo,<br>located several hundred miles west-southwest of Lihue, Hawaii, on<br>Tropical Storm Rachel, located a few hundred miles southwest of<br>Lazaro Cardenas, Mexico, and on newly formed Tropical Depression<br>Nineteen-E, located over the western East Pacific.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Public Advisories on Tropical Depression Nineteen-E are issued under<br>WMO header WTPZ34 KNHC and under AWIPS header MIATCPEP4.<br>Forecast/Advisories on Tropical Depression Nineteen-E are issued<br>under WMO header WTPZ24 KNHC and under AWIPS header MIATCMEP4.<br><br><br>Forecaster Kelly<br><br><br></pre>
       </div>
           
     </div>
         
     <div id="two-cpac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">882 <br />ACPN51 PHFO 291128<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />200 AM HST martes 29 de septiembre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Polo, cerca de la Península de Baja<br />California de México, sobre el Huracán Nolo, ubicado a varios<br />cientos de millas al oeste de Honolulu, Hawaii, y sobre la Tormenta<br />Tropical Rachel, ubicada a unos cientos de millas al suroeste de<br />Lazaro Cardenas, México.<br /><br />Bien este-sureste de las Islas Hawaii (EP91): Un área de baja<br />presión ubicada en el este-sureste de las Islas Hawaii está<br />produciendo aguaceros y tormentas eléctricas limitadas esta mañana.<br />Solo se necesita un ligero aumento en la organización de aguaceros y<br />tormentas para que se convierta en una depresión tropical durante el<br />próximo día o dos, mientras que se mueve lentamente hacia el<br />este-noreste. Se espera que las condiciones ambientales se vuelvan<br />menos propicias para el desarrollo a finales de esta semana.<br />* Probabilidad de formación hasta 48 horas...alta...90 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...90 por ciento.<br /><br />$$<br />Pronosticador Kelly <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">690 <br />ACPN51 PHFO 291749<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />800 AM HST martes 29 de septiembre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Polo, ubicado justo hacia el interior<br />en Sonora, México, sobre el Huracán Nolo, ubicado varios cientos de<br />millas al oeste-suroeste de Lihue, Hawaii, sobre la Tormenta<br />Tropical Rachel, ubicada a unos cientos de millas al suroeste de<br />Lazaro Cardenas, México, y sobre la recién formada Depresión<br />Tropical Nineteen-E, ubicada sobre el Pacífico Este occidental.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />&&<br />Las Avisos Públicas sobre la Depresión Tropical Diecinueve-E se<br />emiten bajo el encabezado de la OMM WTPZ34 KNHC y bajo el encabezado<br />de AWIPS MIATCPEP4. Pronósticos/Advertencias sobre la Depresión<br />Tropical Diecinueve-E se emiten bajo el encabezado de la OMM WTPZ24<br />KNHC y bajo el encabezado de AWIPS MIATCMEP4.<br /><br />$$<br />Pronosticador Kelly <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
     </div>
@@ -1369,8 +1525,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 AM PDT Tue Sep 29 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Polo, near the Baja California Peninsula of Mexico, on Hurricane <br>Nolo, located several hundred miles west of Honolulu, Hawaii, and on <br>Tropical Storm Rachel, located few hundred miles south-southwest of <br>Lazaro Cardenas, Mexico.<br><br>1. Well East-Southeast of the Hawaiian Islands (EP91):<br>An area of low pressure located well east-southeast of the Hawaiian <br>Islands is producing limited showers and thunderstorms this morning. <br>Only a slight increase in shower and thunderstorm organization is <br>needed for it to become a tropical depression during the next day or <br>two while it moves slowly east-northeastward. Environmental <br>conditions are expected to become less conducive for development <br>late this week.<br>* Formation chance through 48 hours...high...90 percent.<br>* Formation chance through 7 days...high...90 percent.<br>
-<br><br>Forecaster Kelly<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 AM PDT Tue Sep 29 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Polo, located just inland in Sonora, Mexico, on Hurricane Nolo, <br>located several hundred miles west-southwest of Lihue, Hawaii, on <br>Tropical Storm Rachel, located a few hundred miles southwest of <br>Lazaro Cardenas, Mexico, and on newly formed Tropical Depression <br>Nineteen-E, located over the western East Pacific.<br><br>1. South of Southern Mexico:<br>An area of low pressure could form late this week or this weekend to <br>the south of the southern coast of Mexico. Thereafter, environmental <br>conditions appear favorable for gradual development while the system <br>moves slowly west-northwestward to northwestward. <br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...low...20 percent.<br>
+<br><br>Public Advisories on Tropical Depression Nineteen-E are issued under <br>WMO header WTPZ34 KNHC and under AWIPS header MIATCPEP4.<br>Forecast/Advisories on Tropical Depression Nineteen-E are issued <br>under WMO header WTPZ24 KNHC and under AWIPS header MIATCMEP4.<br><br><br>Forecaster Kelly<br><br></pre>
       </div>
           
             
@@ -1385,7 +1541,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">160 <br />ABPZ21 KNHC 291127<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />500 AM PDT martes 29 de septiembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Polo, cerca de la Península de Baja<br />California de México, sobre el Huracán Nolo, ubicado a varios<br />cientos de millas al oeste de Honolulu, Hawaii, y sobre la Tormenta<br />Tropical Rachel, ubicada a unos cientos de millas al suroeste de<br />Lazaro Cardenas, México.<br /><br />Bien este-sureste de las Islas Hawaii (EP91): Un área de baja<br />presión ubicada en el este-sureste de las Islas Hawaii está<br />produciendo aguaceros y tormentas eléctricas limitadas esta mañana.<br />Solo se necesita un ligero aumento en la organización de aguaceros y<br />tormentas para que se convierta en una depresión tropical durante el<br />próximo día o dos, mientras que se mueve lentamente hacia el<br />este-noreste. Se espera que las condiciones ambientales se vuelvan<br />menos propicias para el desarrollo a finales de esta semana.<br />* Probabilidad de formación hasta 48 horas...alta...90 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...90 por ciento.<br /><br />$$<br />Pronosticador Kelly<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite"></pre>
       </div>
           
             
