@@ -601,30 +601,148 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <!-- 1. Stripped height-4/overflow-hidden and added inline grid settings -->
     <div id="gtwo-menu-container" class="width-full bg-primary-lighter" style="display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;">
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-atl-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
-      <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+      
+      <div id="menu-atl-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-atl-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
 
@@ -783,6 +901,92 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
 
+          
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 2:00 PM EDT Thu Oct 1 2026...</b><br>Subtropical Central Atlantic (Remnants of Fay):<br>A low pressure area associated with the remnants of former Tropical Storm Fay is located several hundred miles southeast of Bermuda. While thunderstorm activity has increased since yesterday, dry air and strong upper-level winds are expected to prevent significant re-development while it moves northwestward, to the east of Bermuda. Any formation chances should end by Sunday due to very strong upper-level winds.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...10 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="965" cy="786" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+   
+        </svg>
+          
+      </div>
+
+      <div id="view-atl-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_atl_2d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_atl_2d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_atl_2d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_atl_2d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_atl_2d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_atl_2d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_atl_2d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_atl_2d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_atl_2d1_w1024.png" 
+          alt="2 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+           
+            
+            
+              
+                
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 2:00 PM EDT Thu Oct 1 2026...</b><br>Subtropical Central Atlantic (Remnants of Fay):<br>A low pressure area associated with the remnants of former Tropical Storm Fay is located several hundred miles southeast of Bermuda. While thunderstorm activity has increased since yesterday, dry air and strong upper-level winds are expected to prevent significant re-development while it moves northwestward, to the east of Bermuda. Any formation chances should end by Sunday due to very strong upper-level winds.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...10 percent..<br>
+"
+    data-action="switchDisturbance:0">
+  
+    <circle cx="965" cy="723" r="50" fill="transparent" pointer-events="all" />
+  
+  </g>
+
+              
+            
              
         </svg>
           
@@ -828,6 +1032,110 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
 
+          
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 2:00 PM EDT Thu Oct 1 2026...</b><br>Subtropical Central Atlantic (Remnants of Fay):<br>A low pressure area associated with the remnants of former Tropical Storm Fay is located several hundred miles southeast of Bermuda. While thunderstorm activity has increased since yesterday, dry air and strong upper-level winds are expected to prevent significant re-development while it moves northwestward, to the east of Bermuda. Any formation chances should end by Sunday due to very strong upper-level winds.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...10 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="965" cy="786" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="938,673,938,674,939,675,940,676,940,677,941,678,941,680,941,681,942,682,942,684,943,685,943,686,943,688,943,689,944,691,944,692,944,694,944,695,945,697,945,698,945,700,945,702,945,703,946,705,946,707,946,708,946,710,946,712,947,713,947,715,947,717,948,718,948,720,949,722,949,723,949,725,950,727,951,728,951,730,952,732,953,733,953,735,954,736,955,738,956,740,957,741,957,743,958,744,959,746,960,748,961,749,962,751,963,752,964,753,965,755,966,756,967,758,968,759,969,761,970,762,971,763,972,765,973,766,974,767,975,768,975,770,976,771,977,772,978,773,978,774,979,776,979,777,980,778,980,779,981,780,981,781,982,782,982,783,982,783,982,784,982,785,982,786,982,787,982,788,982,788,982,789,981,790,981,790,981,791,980,792,980,792,979,793,979,793,978,794,978,794,977,795,976,795,976,796,975,796,974,797,974,797,973,797,972,798,971,798,970,798,969,799,968,799,967,799,966,799,966,800,965,800,964,800,963,800,962,800,961,800,959,801,958,801,957,801,956,801,955,801,954,801,953,801,952,801,951,801,950,801,949,801,948,801,946,801,945,801,944,801,943,800,942,800,941,800,939,800,938,800,937,799,936,799,935,799,933,798,932,798,931,798,930,797,928,797,927,797,926,796,925,796,923,795,922,795,921,794,920,793,918,793,917,792,916,791,914,791,913,790,912,789,910,789,909,788,908,787,906,786,905,785,904,784,902,783,901,782,900,781,899,780,897,779,896,778,895,777,893,776,892,775,891,774,890,773,889,771,887,770,886,769,885,768,884,766,883,765,882,764,881,762,880,761,879,759,878,758,877,756,876,755,875,753,874,751,873,750,873,748,872,746,871,745,870,743,870,741,869,740,869,738,868,736,867,734,867,732,866,731,866,729,865,727,865,725,865,723,864,721,864,720,864,718,864,716,863,714,863,712,863,711,863,709,863,707,863,705,863,704,863,702,863,700,863,699,863,697,863,695,863,694,863,692,863,691,863,689,864,688,864,686,864,685,865,684,865,683,865,681,866,680,866,679,867,678,867,677,868,676,868,675,869,674,869,673,870,672,871,671,871,670,872,669,873,669,873,668,874,667,875,667,876,666,877,665,878,665,878,664,879,664,880,663,881,663,882,662,883,662,884,662,885,661,887,661,888,661,889,660,890,660,891,660,893,660,894,659,895,659,896,659,898,659,899,659,900,659,902,659,903,659,905,659,906,659,907,659,909,659,910,659,911,659,913,660,914,660,916,660,917,660,918,661,920,661,921,661,922,662,923,662,925,663,926,663,927,664,928,665,929,665,930,666,931,667,932,667,933,668,934,669,935,670,936,671,937,672,938,673" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+   
+        </svg>
+          
+      </div>
+
+      <div id="view-atl-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_atl_7d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_atl_7d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_atl_7d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_atl_7d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_atl_7d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_atl_7d1_w1024.png" 
+          alt="7 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="View Pacific Outlook" 
+    onclick="switchBasin('pac')">
+    <polygon points="0,898,21,909,26,911,28,917,43,926,62,928,72,939,77,939,85,945,100,951,107,955,117,955,132,962,145,968,150,970,162,974,177,976,207,963,215,965,222,969,228,972,235,976,241,983,249,994,269,1008,277,1012,292,1012,301,1016,309,1020,318,1020,324,1024,333,1026,343,1028,350,1022,352,1022,354,1026,354,1037,367,1048,371,1054,386,1067,388,1075,386,1086,386,1090,399,1099,405,1095,409,1095,409,1101,416,1101,422,1105,431,1111,431,1118,448,1126,467,1128,474,1137,484,1139,484,1147,491,1152,510,1143,506,1135,499,1128,503,1126,510,1122,512,1116,518,1112,527,1111,533,1119,538,1124,535,1131,542,1139,546,1145,552,1156,557,1165,552,1167,559,1175,555,1179,557,1184,557,1203,555,1209,559,1216,557,1224,553,1228,548,1239,538,1239,531,1243,531,1254,525,1254,521,1260,527,1262,521,1269,0,1269" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+
+          
+
+           
+            
+            
+              
+                
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 2:00 PM EDT Thu Oct 1 2026...</b><br>Subtropical Central Atlantic (Remnants of Fay):<br>A low pressure area associated with the remnants of former Tropical Storm Fay is located several hundred miles southeast of Bermuda. While thunderstorm activity has increased since yesterday, dry air and strong upper-level winds are expected to prevent significant re-development while it moves northwestward, to the east of Bermuda. Any formation chances should end by Sunday due to very strong upper-level winds.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...10 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="965" cy="786" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="938,673,938,674,939,675,940,676,940,677,941,678,941,680,941,681,942,682,942,684,943,685,943,686,943,688,943,689,944,691,944,692,944,694,944,695,945,697,945,698,945,700,945,702,945,703,946,705,946,707,946,708,946,710,946,712,947,713,947,715,947,717,948,718,948,720,949,722,949,723,949,725,950,727,951,728,951,730,952,732,953,733,953,735,954,736,955,738,956,740,957,741,957,743,958,744,959,746,960,748,961,749,962,751,963,752,964,753,965,755,966,756,967,758,968,759,969,761,970,762,971,763,972,765,973,766,974,767,975,768,975,770,976,771,977,772,978,773,978,774,979,776,979,777,980,778,980,779,981,780,981,781,982,782,982,783,982,783,982,784,982,785,982,786,982,787,982,788,982,788,982,789,981,790,981,790,981,791,980,792,980,792,979,793,979,793,978,794,978,794,977,795,976,795,976,796,975,796,974,797,974,797,973,797,972,798,971,798,970,798,969,799,968,799,967,799,966,799,966,800,965,800,964,800,963,800,962,800,961,800,959,801,958,801,957,801,956,801,955,801,954,801,953,801,952,801,951,801,950,801,949,801,948,801,946,801,945,801,944,801,943,800,942,800,941,800,939,800,938,800,937,799,936,799,935,799,933,798,932,798,931,798,930,797,928,797,927,797,926,796,925,796,923,795,922,795,921,794,920,793,918,793,917,792,916,791,914,791,913,790,912,789,910,789,909,788,908,787,906,786,905,785,904,784,902,783,901,782,900,781,899,780,897,779,896,778,895,777,893,776,892,775,891,774,890,773,889,771,887,770,886,769,885,768,884,766,883,765,882,764,881,762,880,761,879,759,878,758,877,756,876,755,875,753,874,751,873,750,873,748,872,746,871,745,870,743,870,741,869,740,869,738,868,736,867,734,867,732,866,731,866,729,865,727,865,725,865,723,864,721,864,720,864,718,864,716,863,714,863,712,863,711,863,709,863,707,863,705,863,704,863,702,863,700,863,699,863,697,863,695,863,694,863,692,863,691,863,689,864,688,864,686,864,685,865,684,865,683,865,681,866,680,866,679,867,678,867,677,868,676,868,675,869,674,869,673,870,672,871,671,871,670,872,669,873,669,873,668,874,667,875,667,876,666,877,665,878,665,878,664,879,664,880,663,881,663,882,662,883,662,884,662,885,661,887,661,888,661,889,660,890,660,891,660,893,660,894,659,895,659,896,659,898,659,899,659,900,659,902,659,903,659,905,659,906,659,907,659,909,659,910,659,911,659,913,660,914,660,916,660,917,660,918,661,920,661,921,661,922,662,923,662,925,663,926,663,927,664,928,665,929,665,930,666,931,667,932,667,933,668,934,669,935,670,936,671,937,672,938,673" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
+              
+            
              
         </svg>
           
@@ -885,11 +1193,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM HST Thu Oct 01 (Advisory #44)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 21.9N 165.5W<br>Movement: west-northwest at 4 knots; 5 mph<br>
+  <b>As of 0800 AM HST Thu Oct 01 (Advisory #44A)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 22.0N 165.4W<br>Movement: west-northwest at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/011449.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/011754.shtml?cone#contents">
     
-      <circle cx="346" cy="481" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="348" cy="479" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -975,12 +1283,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 7 Days"
     data-risk="high"
-    data-prob="70"
+    data-prob="80"
     data-details="
   
-  <b>As of 5:00 AM PDT Thu Oct 1 2026...</b><br>South of Southern Mexico:<br>An area of low pressure could form late this weekend or early next week south of the southern coast of Mexico. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is likely form while the system moves slowly west-northwestward to northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
+  <b>As of 11:00 AM PDT Thu Oct 1 2026...</b><br>South of Southern Mexico:<br>An area of low pressure could form late this weekend or early next week south of the southern coast of Mexico. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is likely form while the system moves slowly west-northwestward to northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
@@ -1001,11 +1309,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM HST Thu Oct 01 (Advisory #44)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 21.9N 165.5W<br>Movement: west-northwest at 4 knots; 5 mph<br>
+  <b>As of 0800 AM HST Thu Oct 01 (Advisory #44A)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 22.0N 165.4W<br>Movement: west-northwest at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/011449.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/011754.shtml?cone#contents">
     
-      <circle cx="346" cy="481" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="348" cy="479" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1103,12 +1411,12 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 7 Days"
     data-risk="high"
-    data-prob="70"
+    data-prob="80"
     data-details="
   
-  <b>As of 5:00 AM PDT Thu Oct 1 2026...</b><br>South of Southern Mexico:<br>An area of low pressure could form late this weekend or early next week south of the southern coast of Mexico. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is likely form while the system moves slowly west-northwestward to northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
+  <b>As of 11:00 AM PDT Thu Oct 1 2026...</b><br>South of Southern Mexico:<br>An area of low pressure could form late this weekend or early next week south of the southern coast of Mexico. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is likely form while the system moves slowly west-northwestward to northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
@@ -1177,11 +1485,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM HST Thu Oct 01 (Advisory #44)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 21.9N 165.5W<br>Movement: west-northwest at 4 knots; 5 mph<br>
+  <b>As of 0800 AM HST Thu Oct 01 (Advisory #44A)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 22.0N 165.4W<br>Movement: west-northwest at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/011449.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/011754.shtml?cone#contents">
     
-      <circle cx="671" cy="659" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="674" cy="656" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1256,11 +1564,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM HST Thu Oct 01 (Advisory #44)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 21.9N 165.5W<br>Movement: west-northwest at 4 knots; 5 mph<br>
+  <b>As of 0800 AM HST Thu Oct 01 (Advisory #44A)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 22.0N 165.4W<br>Movement: west-northwest at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_cp2+shtml/011449.shtml?cone#contents">
+    data-action="/refresh/graphics_cp2+shtml/011754.shtml?cone#contents">
     
-      <circle cx="671" cy="659" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="674" cy="656" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1353,7 +1661,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           
             
-              <option value="es" disabled>Español (Unavailable)</option>
+              <option value="es" >Español</option>
             
           
         </select>
@@ -1372,7 +1680,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           
             
-              <option value="es" disabled>Español (Unavailable)</option>
+              <option value="es" >Español</option>
             
           
         </select>
@@ -1405,14 +1713,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 AM HST Thu Oct 01 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical<br>Storm Nolo, located several hundred miles west of Lihue, Hawaii, on<br>Hurricane Rachel, located about a couple of hundred miles south of<br>Baja California Sur and on Tropical Depression Nineteen-E, located<br>well west-southwest of the Baja California Peninsula.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Kelly<br><br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Thu Oct 01 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical<br>Storm Nolo, located several hundred miles west of Lihue, Hawaii, on<br>Hurricane Rachel, located about a couple of hundred miles south of<br>Baja California Sur and on Tropical Depression Nineteen-E, located<br>well west-southwest of the Baja California Peninsula.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Kelly<br><br><br></pre>
       </div>
           
     </div>
         
     <div id="two-cpac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">031 <br />ACPN51 PHFO 011143<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />200 AM HST jueves 01 de octubre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la Tormenta Tropical Nolo, ubicada a varios<br />cientos de millas al oeste de Lihue, Hawaii, sobre el Huracán<br />Rachel, ubicado a unos dos cientos de millas al sur de Baja<br />California Sur y sobre la Depresión Tropical Nineteen-E, ubicada a<br />lo largo del oeste-suroeste de la Península de Baja California.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Kelly <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">103 <br />ACPN51 PHFO 011741<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />800 AM HST jueves 01 de octubre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la Tormenta Tropical Nolo, ubicada a varios<br />cientos de millas al oeste de Lihue, Hawaii, sobre el Huracán<br />Rachel, ubicado a unos dos cientos de millas al sur de Baja<br />California Sur y sobre la Depresión Tropical Diecinueve-E, ubicada a<br />lo largo del oeste-suroeste de la Península de Baja California.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Kelly <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
     </div>
@@ -1423,7 +1731,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 AM PDT Thu Oct 1 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical <br>Storm Nolo, located several hundred miles west of Lihue, Hawaii, on <br>Hurricane Rachel, located about a couple of hundred miles south of <br>Baja California Sur and on Tropical Depression Nineteen-E, located <br>well west-southwest of the Baja California Peninsula.<br><br>1. South of Southern Mexico:<br>An area of low pressure could form late this weekend or early next <br>week south of the southern coast of Mexico. Thereafter, <br>environmental conditions appear favorable for gradual development, <br>and a tropical depression is likely form while the system moves <br>slowly west-northwestward to northwestward. <br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...high...70 percent.<br>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 AM PDT Thu Oct 1 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical <br>Storm Nolo, located several hundred miles west of Lihue, Hawaii, on <br>Hurricane Rachel, located about a couple of hundred miles south of <br>Baja California Sur and on Tropical Depression Nineteen-E, located <br>well west-southwest of the Baja California Peninsula.<br><br>1. South of Southern Mexico:<br>An area of low pressure could form late this weekend or early next <br>week south of the southern coast of Mexico. Thereafter, <br>environmental conditions appear favorable for gradual development, <br>and a tropical depression is likely form while the system moves <br>slowly west-northwestward to northwestward. <br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...high...80 percent.<br>
 <br><br>Forecaster Kelly<br><br></pre>
       </div>
           
@@ -1439,7 +1747,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">277 <br />ABPZ21 KNHC 011142<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />500 AM PDT jueves 1 de octubre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la Tormenta Tropical Nolo, ubicada a varios<br />cientos de millas al oeste de Lihue, Hawaii, sobre el Huracán<br />Rachel, ubicado a unos dos cientos de millas al sur de Baja<br />California Sur y sobre la Depresión Tropical Nineteen-E, ubicada a<br />lo largo del oeste-suroeste de la Península de Baja California.<br /><br />Sur del Sur de México: Un área de baja presión podría formarse a<br />última hora de este fin de semana o a principios de la próxima<br />semana al sur de la costa sur de México. Después de eso, las<br />condiciones ambientales parecen favorables para un desarrollo<br />gradual, y es probable que se forme una depresión tropical a medida<br />que el sistema se mueve lentamente hacia el oeste-noroeste a<br />noroeste.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...alta...70 por ciento.<br /><br />$$<br />Pronosticador Kelly<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">368 <br />ABPZ21 KNHC 011741<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1100 AM PDT jueves 1 de octubre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la Tormenta Tropical Nolo, ubicada a varios<br />cientos de millas al oeste de Lihue, Hawaii, sobre el Huracán<br />Rachel, ubicado a unos dos cientos de millas al sur de Baja<br />California Sur y sobre la Depresión Tropical Diecinueve-E, ubicada a<br />lo largo del oeste-suroeste de la Península de Baja California.<br /><br />Sur del Sur de México: Un área de baja presión podría formarse a<br />última hora de este fin de semana o a principios de la próxima<br />semana al sur de la costa sur de México. Después de eso, las<br />condiciones ambientales parecen favorables para un desarrollo<br />gradual, y es probable que se forme una depresión tropical a medida<br />que el sistema se mueve lentamente hacia el oeste-noroeste a<br />noroeste.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...alta...80 por ciento.<br /><br />$$<br />Pronosticador Kelly<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
@@ -1458,7 +1766,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>800 AM EDT Thu Oct 1 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Tropical cyclone formation is not expected over the next 7 days.<br><br>$$<br>Forecaster Kelly<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>200 PM EDT Thu Oct 1 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>1. Subtropical Central Atlantic (Remnants of Fay):<br>A low pressure area associated with the remnants of former Tropical <br>Storm Fay is located several hundred miles southeast of Bermuda.  <br>While thunderstorm activity has increased since yesterday, dry air <br>and strong upper-level winds are expected to prevent significant <br>re-development while it moves northwestward, to the east of Bermuda. <br>Any formation chances should end by Sunday due to very strong <br>upper-level winds.<br>* Formation chance through 48 hours...low...10 percent. <br>* Formation chance through 7 days...low...10 percent.<br>
+<br><br>Forecaster Blake<br><br></pre>
       </div>
           
             
@@ -1473,7 +1782,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">278 <br />ACCA62 KNHC 011142<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />800 AM EDT jueves 1 de octubre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Kelly<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">115 <br />ACCA62 KNHC 011752<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />200 PM EDT jueves 1 de octubre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Atlántico Central Subtropical (Remanentes Fay): Un área de baja<br />presión asociada con los remanentes de la antigua Tormenta Tropical<br />Fay se encuentra a varios cientos de millas al sureste de las<br />Bermudas. Si bien la actividad de tormentas eléctricas ha aumentado<br />desde ayer, se espera que el aire seco y los fuertes vientos de alto<br />nivel impidan un nuevo desarrollo significativo a medida que se<br />mueve hacia el noroeste, al este de las Bermudas. Las probabilidades<br />de formación deben terminar para el domingo debido a vientos muy<br />fuertes de nivel alto.<br />* Probabilidad de formación hasta 48 horas...baja...10 por ciento.<br />* Probabilidad de formación hasta 7 días...baja...10 por ciento.<br /><br />$$<br />Pronosticador Blake<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
