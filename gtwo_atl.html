@@ -686,17 +686,76 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-pac-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-pac-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
       
@@ -889,18 +948,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 1: 30% Chance of Cyclone Formation in 7 Days"
     data-risk="low"
-    data-prob="20"
+    data-prob="30"
     data-details="
   
-  <b>As of 8:00 PM EDT Sat Oct 3 2026...</b><br>Southwestern Gulf of America:<br>A broad area of low pressure could form in a few days over the southwestern Gulf of America.  Any development of this system is expected to be slow to occur as it drifts over the southwestern Gulf waters.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 2:00 AM EDT Sun Oct 4 2026...</b><br>Southwestern Gulf of America:<br>A broad area of low pressure could form in a few days over the southwestern Gulf of America.  Some subsequent slow development of this system is possible as it drifts over the southwestern Gulf waters.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...30 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="285,851,284,852,284,854,284,855,284,856,284,857,283,858,283,859,283,860,282,862,282,863,282,864,281,865,281,866,280,867,280,868,280,869,279,870,279,871,278,872,278,872,277,873,276,874,276,875,275,876,275,877,274,878,273,878,272,879,272,880,271,881,270,881,269,882,268,883,268,884,267,884,266,885,265,886,264,886,263,887,262,887,261,888,260,888,259,889,257,890,256,890,255,891,254,891,253,891,251,892,250,892,249,893,247,893,246,893,245,894,243,894,242,894,241,895,239,895,238,895,236,895,235,896,234,896,232,896,231,896,229,896,228,896,226,896,225,897,223,897,222,897,221,897,219,897,218,896,216,896,215,896,214,896,212,896,211,896,210,896,208,895,207,895,206,895,204,894,203,894,202,894,201,893,200,893,199,892,197,892,196,891,195,891,194,890,193,890,192,889,191,889,190,888,189,887,188,887,188,886,187,885,186,884,185,884,184,883,183,882,183,881,182,880,181,879,181,879,180,878,179,877,179,876,178,875,177,874,177,873,176,872,176,871,175,870,175,869,174,868,174,867,173,866,173,865,172,864,172,863,171,861,171,860,171,859,170,858,170,857,169,856,169,855,169,854,169,852,168,851,168,850,168,849,167,848,167,847,167,846,167,844,167,843,167,842,166,841,166,840,166,839,166,837,166,836,166,835,166,834,166,833,166,832,166,830,166,829,166,828,166,827,167,826,167,825,167,824,167,823,167,821,168,820,168,819,168,818,169,817,169,816,169,815,170,814,170,813,171,812,171,811,172,810,172,809,173,808,173,807,174,806,175,805,175,804,176,804,177,803,178,802,178,801,179,800,180,799,181,799,182,798,183,797,184,796,185,796,186,795,187,794,188,794,189,793,190,792,191,792,192,791,193,790,194,790,195,789,196,789,198,788,199,788,200,787,201,787,202,786,204,786,205,786,206,785,208,785,209,785,210,784,212,784,213,784,214,784,216,783,217,783,219,783,220,783,221,783,223,783,224,783,226,782,227,782,229,782,230,782,232,783,233,783,235,783,236,783,237,783,239,783,240,783,242,784,243,784,245,784,246,784,247,785,249,785,250,785,251,786,253,786,254,787,255,787,257,788,258,788,259,789,260,790,262,790,263,791,264,792,265,792,266,793,267,794,268,795,269,796,270,796,271,797,272,798,273,799,274,800,275,801,275,802,276,803,277,805,278,806,278,807,279,808,279,809,280,810,280,812,281,813,281,814,282,815,282,817,283,818,283,819,283,821,284,822,284,823,284,825,284,826,285,827,285,829,285,830,285,831,285,833,285,834,285,835,285,837,285,838,285,839,285,841,285,842,285,843,285,845,285,846,285,847,285,849,285,850,285,851" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="285,854,284,855,284,857,284,858,284,859,284,860,283,862,283,863,283,864,283,865,282,866,282,867,282,868,282,869,281,870,281,870,281,871,280,872,280,873,280,874,279,875,279,875,279,876,278,877,278,877,277,878,277,879,276,880,276,880,275,881,274,881,274,882,273,883,272,883,272,884,271,884,270,885,269,886,268,886,267,887,266,887,265,888,264,888,263,889,262,889,261,890,260,890,259,891,257,892,256,892,255,893,253,893,252,894,250,894,249,895,247,895,246,895,244,896,243,896,241,897,240,897,238,898,237,898,235,898,233,899,232,899,230,899,229,900,227,900,225,900,224,900,222,900,221,901,219,901,217,901,216,901,214,901,213,901,211,901,210,901,208,901,207,901,205,901,204,900,203,900,201,900,200,900,199,899,197,899,196,898,195,898,194,897,193,897,192,896,191,896,190,895,189,894,188,894,187,893,186,892,185,891,184,891,183,890,183,889,182,888,181,887,180,886,180,885,179,884,178,883,178,882,177,881,177,880,176,878,176,877,175,876,175,875,174,874,174,872,173,871,173,870,172,868,172,867,172,865,171,864,171,863,171,861,170,860,170,858,170,857,170,855,169,854,169,852,169,850,169,849,169,847,168,846,168,844,168,843,168,841,168,839,168,838,168,836,168,834,168,833,168,831,168,830,168,828,168,826,168,825,168,823,168,822,168,820,168,819,168,817,168,816,169,814,169,813,169,811,169,810,169,808,170,807,170,806,170,804,171,803,171,802,171,801,172,799,172,798,173,797,173,796,174,795,174,794,175,793,175,792,176,791,176,790,177,789,178,789,178,788,179,787,180,787,180,786,181,785,182,785,183,784,184,784,184,783,185,783,186,782,187,782,188,781,189,781,190,781,191,780,192,780,193,780,194,779,195,779,196,779,198,779,199,778,200,778,201,778,202,778,204,778,205,777,206,777,208,777,209,777,210,777,212,777,213,777,215,777,216,777,218,776,219,776,221,776,222,776,224,776,226,776,227,776,229,776,230,776,232,776,234,776,235,776,237,776,239,776,240,776,242,776,244,776,245,777,247,777,249,777,250,777,252,777,254,778,255,778,257,778,258,779,260,779,261,780,263,780,264,781,265,781,267,782,268,782,269,783,271,784,272,784,273,785,274,786,275,787,276,788,277,789,278,790,279,791,280,792,281,793,281,794,282,796,283,797,283,798,284,800,284,801,285,802,285,804,286,805,286,807,286,808,286,810,287,812,287,813,287,815,287,816,287,818,287,820,287,821,287,823,287,825,287,826,287,828,287,830,287,831,287,833,287,835,287,836,287,838,287,839,286,841,286,843,286,844,286,846,286,847,285,849,285,850,285,851,285,853,285,854" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -964,18 +1023,18 @@ document.addEventListener('DOMContentLoaded', function() {
               
                 
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 1: 30% Chance of Cyclone Formation in 7 Days"
     data-risk="low"
-    data-prob="20"
+    data-prob="30"
     data-details="
   
-  <b>As of 8:00 PM EDT Sat Oct 3 2026...</b><br>Southwestern Gulf of America:<br>A broad area of low pressure could form in a few days over the southwestern Gulf of America.  Any development of this system is expected to be slow to occur as it drifts over the southwestern Gulf waters.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 2:00 AM EDT Sun Oct 4 2026...</b><br>Southwestern Gulf of America:<br>A broad area of low pressure could form in a few days over the southwestern Gulf of America.  Some subsequent slow development of this system is possible as it drifts over the southwestern Gulf waters.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...30 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="285,851,284,852,284,854,284,855,284,856,284,857,283,858,283,859,283,860,282,862,282,863,282,864,281,865,281,866,280,867,280,868,280,869,279,870,279,871,278,872,278,872,277,873,276,874,276,875,275,876,275,877,274,878,273,878,272,879,272,880,271,881,270,881,269,882,268,883,268,884,267,884,266,885,265,886,264,886,263,887,262,887,261,888,260,888,259,889,257,890,256,890,255,891,254,891,253,891,251,892,250,892,249,893,247,893,246,893,245,894,243,894,242,894,241,895,239,895,238,895,236,895,235,896,234,896,232,896,231,896,229,896,228,896,226,896,225,897,223,897,222,897,221,897,219,897,218,896,216,896,215,896,214,896,212,896,211,896,210,896,208,895,207,895,206,895,204,894,203,894,202,894,201,893,200,893,199,892,197,892,196,891,195,891,194,890,193,890,192,889,191,889,190,888,189,887,188,887,188,886,187,885,186,884,185,884,184,883,183,882,183,881,182,880,181,879,181,879,180,878,179,877,179,876,178,875,177,874,177,873,176,872,176,871,175,870,175,869,174,868,174,867,173,866,173,865,172,864,172,863,171,861,171,860,171,859,170,858,170,857,169,856,169,855,169,854,169,852,168,851,168,850,168,849,167,848,167,847,167,846,167,844,167,843,167,842,166,841,166,840,166,839,166,837,166,836,166,835,166,834,166,833,166,832,166,830,166,829,166,828,166,827,167,826,167,825,167,824,167,823,167,821,168,820,168,819,168,818,169,817,169,816,169,815,170,814,170,813,171,812,171,811,172,810,172,809,173,808,173,807,174,806,175,805,175,804,176,804,177,803,178,802,178,801,179,800,180,799,181,799,182,798,183,797,184,796,185,796,186,795,187,794,188,794,189,793,190,792,191,792,192,791,193,790,194,790,195,789,196,789,198,788,199,788,200,787,201,787,202,786,204,786,205,786,206,785,208,785,209,785,210,784,212,784,213,784,214,784,216,783,217,783,219,783,220,783,221,783,223,783,224,783,226,782,227,782,229,782,230,782,232,783,233,783,235,783,236,783,237,783,239,783,240,783,242,784,243,784,245,784,246,784,247,785,249,785,250,785,251,786,253,786,254,787,255,787,257,788,258,788,259,789,260,790,262,790,263,791,264,792,265,792,266,793,267,794,268,795,269,796,270,796,271,797,272,798,273,799,274,800,275,801,275,802,276,803,277,805,278,806,278,807,279,808,279,809,280,810,280,812,281,813,281,814,282,815,282,817,283,818,283,819,283,821,284,822,284,823,284,825,284,826,285,827,285,829,285,830,285,831,285,833,285,834,285,835,285,837,285,838,285,839,285,841,285,842,285,843,285,845,285,846,285,847,285,849,285,850,285,851" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="285,854,284,855,284,857,284,858,284,859,284,860,283,862,283,863,283,864,283,865,282,866,282,867,282,868,282,869,281,870,281,870,281,871,280,872,280,873,280,874,279,875,279,875,279,876,278,877,278,877,277,878,277,879,276,880,276,880,275,881,274,881,274,882,273,883,272,883,272,884,271,884,270,885,269,886,268,886,267,887,266,887,265,888,264,888,263,889,262,889,261,890,260,890,259,891,257,892,256,892,255,893,253,893,252,894,250,894,249,895,247,895,246,895,244,896,243,896,241,897,240,897,238,898,237,898,235,898,233,899,232,899,230,899,229,900,227,900,225,900,224,900,222,900,221,901,219,901,217,901,216,901,214,901,213,901,211,901,210,901,208,901,207,901,205,901,204,900,203,900,201,900,200,900,199,899,197,899,196,898,195,898,194,897,193,897,192,896,191,896,190,895,189,894,188,894,187,893,186,892,185,891,184,891,183,890,183,889,182,888,181,887,180,886,180,885,179,884,178,883,178,882,177,881,177,880,176,878,176,877,175,876,175,875,174,874,174,872,173,871,173,870,172,868,172,867,172,865,171,864,171,863,171,861,170,860,170,858,170,857,170,855,169,854,169,852,169,850,169,849,169,847,168,846,168,844,168,843,168,841,168,839,168,838,168,836,168,834,168,833,168,831,168,830,168,828,168,826,168,825,168,823,168,822,168,820,168,819,168,817,168,816,169,814,169,813,169,811,169,810,169,808,170,807,170,806,170,804,171,803,171,802,171,801,172,799,172,798,173,797,173,796,174,795,174,794,175,793,175,792,176,791,176,790,177,789,178,789,178,788,179,787,180,787,180,786,181,785,182,785,183,784,184,784,184,783,185,783,186,782,187,782,188,781,189,781,190,781,191,780,192,780,193,780,194,779,195,779,196,779,198,779,199,778,200,778,201,778,202,778,204,778,205,777,206,777,208,777,209,777,210,777,212,777,213,777,215,777,216,777,218,776,219,776,221,776,222,776,224,776,226,776,227,776,229,776,230,776,232,776,234,776,235,776,237,776,239,776,240,776,242,776,244,776,245,777,247,777,249,777,250,777,252,777,254,778,255,778,257,778,258,779,260,779,261,780,263,780,264,781,265,781,267,782,268,782,269,783,271,784,272,784,273,785,274,786,275,787,276,788,277,789,278,790,279,791,280,792,281,793,281,794,282,796,283,797,283,798,284,800,284,801,285,802,285,804,286,805,286,807,286,808,286,810,287,812,287,813,287,815,287,816,287,818,287,820,287,821,287,823,287,825,287,826,287,828,287,830,287,831,287,833,287,835,287,836,287,838,287,839,286,841,286,843,286,844,286,846,286,847,285,849,285,850,285,851,285,853,285,854" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1031,6 +1090,24 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 11:00 PM PDT Sat Oct 3 2026...</b><br>South of Southern Mexico:<br>A broad area of low pressure is forecast to develop over the next day or so just to the south of the Gulf of Tehuantepec. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is expected to form during the middle to latter portion of the week while the system moves slowly west-northwestward to northwestward, just offshore of the southern to southwestern coast of Mexico.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="1609" cy="654" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -1065,6 +1142,74 @@ document.addEventListener('DOMContentLoaded', function() {
     
   </g>
    
+        </svg>
+          
+      </div>
+
+      <div id="view-pac-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_pac_2d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_pac_2d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_pac_2d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_pac_2d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_pac_2d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_pac_2d1_w1024.png" 
+          alt="2 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+           
+            
+            
+              
+                
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 11:00 PM PDT Sat Oct 3 2026...</b><br>South of Southern Mexico:<br>A broad area of low pressure is forecast to develop over the next day or so just to the south of the Gulf of Tehuantepec. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is expected to form during the middle to latter portion of the week while the system moves slowly west-northwestward to northwestward, just offshore of the southern to southwestern coast of Mexico.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+"
+    data-action="switchDisturbance:0">
+  
+    <circle cx="965" cy="582" r="50" fill="transparent" pointer-events="all" />
+  
+  </g>
+
+              
+            
+             
         </svg>
           
       </div>
@@ -1118,13 +1263,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="90"
     data-details="
   
-  <b>As of 5:00 PM PDT Sat Oct 3 2026...</b><br>South of Southern Mexico:<br>An area of low pressure is forecast to form late this weekend or early next week south of the southern coast of Mexico. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is expected to form during the middle to latter portion of next week while the system moves slowly west-northwestward to northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 PM PDT Sat Oct 3 2026...</b><br>South of Southern Mexico:<br>A broad area of low pressure is forecast to develop over the next day or so just to the south of the Gulf of Tehuantepec. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is expected to form during the middle to latter portion of the week while the system moves slowly west-northwestward to northwestward, just offshore of the southern to southwestern coast of Mexico.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1634,645,1633,644,1633,642,1633,640,1632,639,1632,637,1631,636,1631,635,1630,633,1629,632,1629,631,1628,630,1627,629,1626,627,1625,626,1625,625,1624,624,1623,623,1622,622,1621,621,1620,621,1618,620,1617,619,1616,618,1615,617,1613,617,1612,616,1611,615,1609,615,1608,614,1606,614,1605,613,1603,612,1601,612,1599,612,1598,611,1596,611,1594,610,1592,610,1590,609,1588,609,1586,609,1584,608,1582,608,1579,608,1577,607,1575,607,1573,606,1570,606,1568,606,1566,605,1563,605,1561,604,1558,604,1556,604,1554,603,1551,603,1549,602,1546,601,1544,601,1541,600,1538,600,1536,599,1533,598,1531,597,1528,596,1526,596,1523,595,1521,594,1518,593,1515,591,1513,590,1510,589,1508,588,1505,587,1503,586,1500,584,1498,583,1495,582,1493,581,1490,579,1488,578,1485,577,1483,576,1480,574,1478,573,1475,572,1473,571,1470,570,1468,569,1465,568,1463,567,1461,566,1458,565,1456,564,1453,563,1451,563,1448,562,1446,562,1444,561,1441,561,1439,561,1437,560,1434,560,1432,560,1430,560,1427,561,1425,561,1423,561,1421,561,1419,562,1416,562,1414,563,1412,564,1410,564,1408,565,1406,566,1404,567,1402,568,1400,569,1398,570,1396,571,1395,572,1393,573,1391,574,1389,575,1388,577,1386,578,1384,579,1383,581,1382,582,1380,583,1379,585,1377,586,1376,588,1375,589,1374,591,1373,592,1372,594,1371,595,1370,597,1369,599,1368,600,1367,602,1367,603,1366,605,1365,607,1365,608,1364,610,1364,612,1364,613,1363,615,1363,617,1363,618,1362,620,1362,622,1362,624,1362,625,1362,627,1362,629,1362,630,1362,632,1362,634,1363,635,1363,637,1363,638,1364,640,1364,642,1365,643,1365,645,1366,646,1366,648,1367,650,1368,651,1368,653,1369,654,1370,656,1371,657,1372,659,1373,660,1374,662,1375,663,1376,664,1378,666,1379,667,1381,669,1382,670,1384,672,1385,673,1387,674,1389,676,1391,677,1393,679,1395,680,1397,681,1399,683,1401,684,1403,685,1406,687,1408,688,1411,689,1414,690,1416,692,1419,693,1422,694,1425,695,1428,697,1431,698,1434,699,1438,700,1441,701,1444,703,1448,704,1451,705,1454,706,1458,707,1461,708,1465,709,1469,710,1472,711,1476,712,1479,713,1483,713,1487,714,1490,715,1494,716,1498,716,1502,717,1505,718,1509,718,1513,719,1516,719,1520,720,1523,720,1527,721,1531,721,1534,721,1538,721,1541,721,1544,722,1548,722,1551,722,1555,722,1558,721,1561,721,1564,721,1567,721,1570,721,1573,720,1576,720,1579,719,1582,719,1585,718,1588,718,1590,717,1593,716,1596,716,1598,715,1600,714,1603,713,1605,712,1607,711,1609,710,1611,708,1613,707,1615,706,1617,705,1618,703,1620,702,1621,700,1623,699,1624,697,1625,695,1626,694,1628,692,1629,690,1629,688,1630,686,1631,684,1632,683,1632,681,1633,679,1633,677,1634,675,1634,673,1635,671,1635,669,1635,667,1635,665,1635,663,1635,661,1635,659,1635,657,1635,656,1635,654,1635,652,1635,650,1634,648,1634,647,1634,645" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1609" cy="654" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1637,650,1637,649,1637,648,1637,647,1636,645,1636,644,1636,643,1636,642,1635,641,1635,639,1635,638,1634,637,1634,636,1633,635,1632,634,1632,633,1631,632,1630,631,1629,630,1628,629,1627,628,1626,627,1625,626,1624,625,1623,624,1621,623,1620,622,1619,621,1617,621,1616,620,1614,619,1612,619,1611,618,1609,617,1607,617,1605,616,1603,616,1601,616,1599,615,1596,615,1594,614,1592,614,1589,614,1587,613,1584,613,1582,613,1579,612,1577,612,1574,612,1571,611,1568,611,1566,611,1563,610,1560,610,1557,609,1554,609,1551,608,1548,608,1545,607,1542,607,1539,606,1536,605,1533,604,1530,603,1527,602,1524,601,1521,600,1518,599,1515,598,1512,597,1509,595,1506,594,1503,593,1500,591,1497,590,1493,588,1490,586,1487,585,1484,583,1481,581,1478,580,1475,578,1472,576,1469,575,1466,573,1463,571,1461,570,1458,568,1455,566,1452,565,1449,563,1446,562,1443,561,1441,559,1438,558,1435,557,1432,556,1430,555,1427,554,1424,553,1422,552,1419,551,1417,551,1414,550,1412,550,1409,549,1407,549,1404,549,1402,549,1400,549,1397,549,1395,549,1393,550,1391,550,1389,550,1387,551,1385,551,1383,552,1381,552,1379,553,1377,554,1375,555,1373,555,1372,556,1370,557,1369,558,1367,559,1365,560,1364,561,1363,562,1361,563,1360,564,1359,565,1358,567,1357,568,1356,569,1355,570,1354,571,1353,573,1352,574,1352,575,1351,577,1350,578,1350,579,1349,580,1349,582,1348,583,1348,585,1348,586,1348,587,1347,589,1347,590,1347,592,1347,593,1347,595,1347,596,1348,598,1348,599,1348,601,1348,603,1349,604,1349,606,1350,608,1350,609,1351,611,1351,613,1352,614,1353,616,1353,618,1354,620,1355,622,1356,623,1357,625,1358,627,1359,629,1360,631,1361,633,1362,635,1364,636,1365,638,1367,640,1368,642,1370,644,1371,646,1373,648,1375,650,1377,652,1378,654,1380,656,1382,657,1385,659,1387,661,1389,663,1391,665,1394,667,1396,669,1399,670,1402,672,1405,674,1407,676,1410,678,1413,679,1417,681,1420,683,1423,684,1426,686,1430,688,1433,689,1437,691,1440,692,1444,694,1448,695,1451,697,1455,698,1459,699,1462,701,1466,702,1470,703,1474,704,1478,705,1482,706,1485,707,1489,708,1493,709,1497,710,1500,711,1504,711,1508,712,1512,712,1515,713,1519,713,1522,714,1526,714,1529,714,1532,714,1536,714,1539,714,1542,714,1545,714,1548,714,1551,713,1554,713,1557,713,1560,712,1563,712,1565,711,1568,710,1571,710,1573,709,1576,708,1578,708,1580,707,1583,706,1585,705,1587,704,1589,703,1591,702,1593,701,1595,700,1597,699,1599,698,1601,697,1603,695,1605,694,1606,693,1608,692,1610,691,1611,690,1613,688,1614,687,1616,686,1617,685,1618,684,1620,682,1621,681,1622,680,1623,679,1624,678,1625,676,1626,675,1627,674,1628,673,1629,671,1630,670,1631,669,1631,668,1632,667,1633,665,1633,664,1634,663,1634,662,1635,660,1635,659,1636,658,1636,657,1636,655,1636,654,1636,653,1637,652,1637,650" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1229,13 +1378,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="90"
     data-details="
   
-  <b>As of 5:00 PM PDT Sat Oct 3 2026...</b><br>South of Southern Mexico:<br>An area of low pressure is forecast to form late this weekend or early next week south of the southern coast of Mexico. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is expected to form during the middle to latter portion of next week while the system moves slowly west-northwestward to northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
+  <b>As of 11:00 PM PDT Sat Oct 3 2026...</b><br>South of Southern Mexico:<br>A broad area of low pressure is forecast to develop over the next day or so just to the south of the Gulf of Tehuantepec. Thereafter, environmental conditions appear favorable for gradual development, and a tropical depression is expected to form during the middle to latter portion of the week while the system moves slowly west-northwestward to northwestward, just offshore of the southern to southwestern coast of Mexico.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...high...90 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1634,645,1633,644,1633,642,1633,640,1632,639,1632,637,1631,636,1631,635,1630,633,1629,632,1629,631,1628,630,1627,629,1626,627,1625,626,1625,625,1624,624,1623,623,1622,622,1621,621,1620,621,1618,620,1617,619,1616,618,1615,617,1613,617,1612,616,1611,615,1609,615,1608,614,1606,614,1605,613,1603,612,1601,612,1599,612,1598,611,1596,611,1594,610,1592,610,1590,609,1588,609,1586,609,1584,608,1582,608,1579,608,1577,607,1575,607,1573,606,1570,606,1568,606,1566,605,1563,605,1561,604,1558,604,1556,604,1554,603,1551,603,1549,602,1546,601,1544,601,1541,600,1538,600,1536,599,1533,598,1531,597,1528,596,1526,596,1523,595,1521,594,1518,593,1515,591,1513,590,1510,589,1508,588,1505,587,1503,586,1500,584,1498,583,1495,582,1493,581,1490,579,1488,578,1485,577,1483,576,1480,574,1478,573,1475,572,1473,571,1470,570,1468,569,1465,568,1463,567,1461,566,1458,565,1456,564,1453,563,1451,563,1448,562,1446,562,1444,561,1441,561,1439,561,1437,560,1434,560,1432,560,1430,560,1427,561,1425,561,1423,561,1421,561,1419,562,1416,562,1414,563,1412,564,1410,564,1408,565,1406,566,1404,567,1402,568,1400,569,1398,570,1396,571,1395,572,1393,573,1391,574,1389,575,1388,577,1386,578,1384,579,1383,581,1382,582,1380,583,1379,585,1377,586,1376,588,1375,589,1374,591,1373,592,1372,594,1371,595,1370,597,1369,599,1368,600,1367,602,1367,603,1366,605,1365,607,1365,608,1364,610,1364,612,1364,613,1363,615,1363,617,1363,618,1362,620,1362,622,1362,624,1362,625,1362,627,1362,629,1362,630,1362,632,1362,634,1363,635,1363,637,1363,638,1364,640,1364,642,1365,643,1365,645,1366,646,1366,648,1367,650,1368,651,1368,653,1369,654,1370,656,1371,657,1372,659,1373,660,1374,662,1375,663,1376,664,1378,666,1379,667,1381,669,1382,670,1384,672,1385,673,1387,674,1389,676,1391,677,1393,679,1395,680,1397,681,1399,683,1401,684,1403,685,1406,687,1408,688,1411,689,1414,690,1416,692,1419,693,1422,694,1425,695,1428,697,1431,698,1434,699,1438,700,1441,701,1444,703,1448,704,1451,705,1454,706,1458,707,1461,708,1465,709,1469,710,1472,711,1476,712,1479,713,1483,713,1487,714,1490,715,1494,716,1498,716,1502,717,1505,718,1509,718,1513,719,1516,719,1520,720,1523,720,1527,721,1531,721,1534,721,1538,721,1541,721,1544,722,1548,722,1551,722,1555,722,1558,721,1561,721,1564,721,1567,721,1570,721,1573,720,1576,720,1579,719,1582,719,1585,718,1588,718,1590,717,1593,716,1596,716,1598,715,1600,714,1603,713,1605,712,1607,711,1609,710,1611,708,1613,707,1615,706,1617,705,1618,703,1620,702,1621,700,1623,699,1624,697,1625,695,1626,694,1628,692,1629,690,1629,688,1630,686,1631,684,1632,683,1632,681,1633,679,1633,677,1634,675,1634,673,1635,671,1635,669,1635,667,1635,665,1635,663,1635,661,1635,659,1635,657,1635,656,1635,654,1635,652,1635,650,1634,648,1634,647,1634,645" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1609" cy="654" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1637,650,1637,649,1637,648,1637,647,1636,645,1636,644,1636,643,1636,642,1635,641,1635,639,1635,638,1634,637,1634,636,1633,635,1632,634,1632,633,1631,632,1630,631,1629,630,1628,629,1627,628,1626,627,1625,626,1624,625,1623,624,1621,623,1620,622,1619,621,1617,621,1616,620,1614,619,1612,619,1611,618,1609,617,1607,617,1605,616,1603,616,1601,616,1599,615,1596,615,1594,614,1592,614,1589,614,1587,613,1584,613,1582,613,1579,612,1577,612,1574,612,1571,611,1568,611,1566,611,1563,610,1560,610,1557,609,1554,609,1551,608,1548,608,1545,607,1542,607,1539,606,1536,605,1533,604,1530,603,1527,602,1524,601,1521,600,1518,599,1515,598,1512,597,1509,595,1506,594,1503,593,1500,591,1497,590,1493,588,1490,586,1487,585,1484,583,1481,581,1478,580,1475,578,1472,576,1469,575,1466,573,1463,571,1461,570,1458,568,1455,566,1452,565,1449,563,1446,562,1443,561,1441,559,1438,558,1435,557,1432,556,1430,555,1427,554,1424,553,1422,552,1419,551,1417,551,1414,550,1412,550,1409,549,1407,549,1404,549,1402,549,1400,549,1397,549,1395,549,1393,550,1391,550,1389,550,1387,551,1385,551,1383,552,1381,552,1379,553,1377,554,1375,555,1373,555,1372,556,1370,557,1369,558,1367,559,1365,560,1364,561,1363,562,1361,563,1360,564,1359,565,1358,567,1357,568,1356,569,1355,570,1354,571,1353,573,1352,574,1352,575,1351,577,1350,578,1350,579,1349,580,1349,582,1348,583,1348,585,1348,586,1348,587,1347,589,1347,590,1347,592,1347,593,1347,595,1347,596,1348,598,1348,599,1348,601,1348,603,1349,604,1349,606,1350,608,1350,609,1351,611,1351,613,1352,614,1353,616,1353,618,1354,620,1355,622,1356,623,1357,625,1358,627,1359,629,1360,631,1361,633,1362,635,1364,636,1365,638,1367,640,1368,642,1370,644,1371,646,1373,648,1375,650,1377,652,1378,654,1380,656,1382,657,1385,659,1387,661,1389,663,1391,665,1394,667,1396,669,1399,670,1402,672,1405,674,1407,676,1410,678,1413,679,1417,681,1420,683,1423,684,1426,686,1430,688,1433,689,1437,691,1440,692,1444,694,1448,695,1451,697,1455,698,1459,699,1462,701,1466,702,1470,703,1474,704,1478,705,1482,706,1485,707,1489,708,1493,709,1497,710,1500,711,1504,711,1508,712,1512,712,1515,713,1519,713,1522,714,1526,714,1529,714,1532,714,1536,714,1539,714,1542,714,1545,714,1548,714,1551,713,1554,713,1557,713,1560,712,1563,712,1565,711,1568,710,1571,710,1573,709,1576,708,1578,708,1580,707,1583,706,1585,705,1587,704,1589,703,1591,702,1593,701,1595,700,1597,699,1599,698,1601,697,1603,695,1605,694,1606,693,1608,692,1610,691,1611,690,1613,688,1614,687,1616,686,1617,685,1618,684,1620,682,1621,681,1622,680,1623,679,1624,678,1625,676,1626,675,1627,674,1628,673,1629,671,1630,670,1631,669,1631,668,1632,667,1633,665,1633,664,1634,663,1634,662,1635,660,1635,659,1636,658,1636,657,1636,655,1636,654,1636,653,1637,652,1637,650" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1492,7 +1645,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 PM HST Sat Oct 03 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Nolo, located several hundred miles west-northwest of the main<br>Hawaiian Islands, and on Hurricane Rachel, located a few hundred<br>miles southwest of the southern tip of the Baja California<br>Peninsula.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Pierce/Blake<br><br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 PM HST Sat Oct 03 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Nolo, located well to the west-northwest of the main Hawaiian<br>Islands, and on Hurricane Rachel, located a few hundred miles<br>southwest of the southern tip of the Baja California Peninsula.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Papin<br><br><br></pre>
       </div>
           
     </div>
@@ -1510,8 +1663,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 PM PDT Sat Oct 3 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Nolo, located several hundred miles west-northwest of the main <br>Hawaiian Islands, and on Hurricane Rachel, located a few hundred <br>miles southwest of the southern tip of the Baja California <br>Peninsula.<br><br>1. South of Southern Mexico:<br>An area of low pressure is forecast to form late this weekend or <br>early next week south of the southern coast of Mexico. Thereafter, <br>environmental conditions appear favorable for gradual development, <br>and a tropical depression is expected to form during the middle to <br>latter portion of next week while the system moves slowly <br>west-northwestward to northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...high...90 percent.<br>
-<br><br>Forecaster Pierce/Blake<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 PM PDT Sat Oct 3 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Nolo, located well to the west-northwest of the main Hawaiian <br>Islands, and on Hurricane Rachel, located a few hundred miles <br>southwest of the southern tip of the Baja California Peninsula.<br><br>1. South of Southern Mexico:<br>A broad area of low pressure is forecast to develop over the next <br>day or so just to the south of the Gulf of Tehuantepec. Thereafter, <br>environmental conditions appear favorable for gradual development, <br>and a tropical depression is expected to form during the middle to <br>latter portion of the week while the system moves slowly <br>west-northwestward to northwestward, just offshore of the southern <br>to southwestern coast of Mexico.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...high...90 percent.<br>
+<br><br>Forecaster Papin<br><br></pre>
       </div>
           
             
@@ -1545,8 +1698,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>800 PM EDT Sat Oct 3 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>1. Southwestern Gulf of America:<br>A broad area of low pressure could form in a few days over the <br>southwestern Gulf of America.  Any development of this system <br>is expected to be slow to occur as it drifts over the southwestern <br>Gulf waters.  <br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...low...20 percent.<br>
-<br><br>Forecaster Blake<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>200 AM EDT Sun Oct 4 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>1. Southwestern Gulf of America:<br>A broad area of low pressure could form in a few days over the <br>southwestern Gulf of America.  Some subsequent slow development of <br>this system is possible as it drifts over the southwestern Gulf <br>waters.  <br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...low...30 percent.<br>
+<br><br>Forecaster Beven<br><br></pre>
       </div>
           
             
