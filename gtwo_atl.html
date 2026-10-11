@@ -745,17 +745,76 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-pac-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-pac-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
       
@@ -1222,6 +1281,24 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 11:00 PM PDT Sat Oct 10 2026...</b><br>South of Southern Mexico:<br>Disorganized showers and thunderstorms over the far eastern East Pacific are associated with a tropical wave.  Environmental conditions are expected to be conducive for gradual development, and a tropical depression is likely to form well south of southern Mexico by the middle or latter half of next week as the system moves generally west-northwestward at around 10 mph.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="1723" cy="738" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -1231,11 +1308,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0800 PM PDT Sat Oct 10 (Advisory #56)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 987 mb<br>Located at: 30.0N 116.5W<br>Movement: north-northeast at 31 knots; 36 mph<br>
+  <b>As of 1100 PM PDT Sat Oct 10 (Advisory #56A)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 987 mb<br>Located at: 31.5N 116.5W<br>Movement: north-northeast at 31 knots; 36 mph<br>
 "
-    data-action="/refresh/graphics_ep3+shtml/110243.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep3+shtml/110550.shtml?key_messages#contents">
     
-      <circle cx="1217" cy="314" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1217" cy="282" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1248,14 +1325,84 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0900 PM CST Sat Oct 10 (Advisory #15)</b><br>Maximum Sustained Winds: 135 knots; 155 mph<br>Minimum Central Pressure: 928 mb<br>Located at: 18.2N 104.8W<br>Movement: north at 4 knots; 5 mph<br>
+  <b>As of 1200 AM CST Sun Oct 11 (Advisory #15A)</b><br>Maximum Sustained Winds: 135 knots; 155 mph<br>Minimum Central Pressure: 928 mb<br>Located at: 18.4N 105.0W<br>Movement: north at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_ep5+shtml/110232.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep5+shtml/110559.shtml?key_messages#contents">
     
-      <circle cx="1425" cy="554" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1421" cy="550" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
+        </svg>
+          
+      </div>
+
+      <div id="view-pac-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_pac_2d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_pac_2d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_pac_2d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_pac_2d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_pac_2d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_pac_2d1_w1024.png" 
+          alt="2 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+           
+            
+            
+              
+                
+                  
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 11:00 PM PDT Sat Oct 10 2026...</b><br>South of Southern Mexico:<br>Disorganized showers and thunderstorms over the far eastern East Pacific are associated with a tropical wave.  Environmental conditions are expected to be conducive for gradual development, and a tropical depression is likely to form well south of southern Mexico by the middle or latter half of next week as the system moves generally west-northwestward at around 10 mph.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
+"
+    data-action="switchDisturbance:0">
+  
+    <circle cx="965" cy="582" r="50" fill="transparent" pointer-events="all" />
+  
+  </g>
+
+                
+              
+            
+             
         </svg>
           
       </div>
@@ -1304,18 +1451,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 7 Days"
     data-risk="high"
-    data-prob="70"
+    data-prob="80"
     data-details="
   
-  <b>As of 5:00 PM PDT Sat Oct 10 2026...</b><br>South of Southwestern Mexico:<br>An area of low pressure is forecast to develop south or southwest of the coast of Mexico by early next week. Environmental conditions are expected to be conducive for gradual development thereafter, and a tropical depression is likely to form by the middle or latter half of next week as the system moves generally west-northwestward at around 10 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
+  <b>As of 11:00 PM PDT Sat Oct 10 2026...</b><br>South of Southern Mexico:<br>Disorganized showers and thunderstorms over the far eastern East Pacific are associated with a tropical wave.  Environmental conditions are expected to be conducive for gradual development, and a tropical depression is likely to form well south of southern Mexico by the middle or latter half of next week as the system moves generally west-northwestward at around 10 mph.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1597,680,1597,678,1597,677,1597,675,1597,673,1597,671,1597,670,1597,668,1596,666,1596,665,1595,663,1595,661,1594,660,1594,658,1593,657,1592,655,1591,654,1590,652,1589,651,1588,649,1587,648,1586,646,1585,645,1583,643,1582,642,1581,641,1579,640,1578,638,1577,637,1575,636,1574,635,1572,634,1571,633,1569,632,1567,631,1566,630,1564,629,1562,628,1561,627,1559,626,1557,625,1555,625,1553,624,1552,623,1550,622,1548,622,1546,621,1544,620,1542,620,1539,619,1537,618,1535,618,1533,617,1531,616,1528,616,1526,615,1524,614,1521,614,1519,613,1516,612,1514,612,1511,611,1508,610,1506,609,1503,609,1500,608,1498,607,1495,606,1492,606,1489,605,1486,604,1483,603,1480,603,1478,602,1475,601,1472,600,1469,599,1466,598,1463,598,1460,597,1457,596,1454,595,1451,594,1448,594,1446,593,1443,592,1440,591,1437,590,1434,590,1432,589,1429,588,1426,587,1423,587,1421,586,1418,585,1416,584,1413,584,1411,583,1408,582,1406,582,1403,581,1401,581,1398,580,1396,580,1394,580,1391,579,1389,579,1387,579,1384,579,1382,579,1380,579,1377,579,1375,579,1373,579,1371,579,1368,580,1366,580,1364,581,1362,581,1359,582,1357,583,1355,584,1353,585,1350,586,1348,587,1346,588,1344,589,1341,591,1339,592,1337,594,1335,595,1333,597,1331,599,1329,601,1327,602,1325,604,1323,606,1322,608,1320,610,1318,612,1317,614,1316,616,1314,618,1313,620,1312,622,1311,624,1310,626,1309,628,1308,630,1307,632,1307,634,1306,636,1306,638,1306,640,1306,642,1306,644,1306,646,1306,648,1307,650,1307,652,1308,654,1308,656,1309,658,1310,659,1310,661,1311,663,1312,665,1313,666,1314,668,1316,670,1317,671,1318,673,1319,675,1321,676,1322,678,1323,679,1325,681,1326,682,1328,683,1330,685,1331,686,1333,687,1334,689,1336,690,1338,691,1339,692,1341,693,1343,695,1345,696,1346,697,1348,698,1350,699,1352,700,1354,701,1356,702,1358,703,1360,704,1363,705,1365,705,1367,706,1369,707,1372,708,1374,709,1376,710,1379,710,1382,711,1384,712,1387,713,1390,714,1392,714,1395,715,1398,716,1401,717,1404,717,1407,718,1411,719,1414,720,1417,720,1420,721,1424,722,1427,722,1430,723,1434,724,1437,724,1440,725,1444,725,1447,726,1451,727,1454,727,1457,728,1461,728,1464,729,1467,729,1471,729,1474,730,1477,730,1480,731,1483,731,1486,731,1489,731,1492,732,1495,732,1498,732,1501,732,1504,732,1506,733,1509,733,1511,733,1514,733,1516,733,1519,733,1521,732,1524,732,1526,732,1528,732,1531,732,1533,731,1535,731,1537,731,1539,730,1541,730,1543,729,1545,729,1547,728,1549,727,1551,727,1553,726,1555,725,1557,724,1559,723,1561,722,1563,721,1564,720,1566,719,1568,718,1570,717,1571,716,1573,714,1575,713,1576,712,1578,710,1580,709,1581,708,1582,706,1584,705,1585,703,1586,701,1588,700,1589,698,1590,697,1591,695,1592,693,1593,692,1594,690,1594,688,1595,687,1596,685,1596,683,1597,682,1597,680" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1723" cy="738" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1635,724,1634,723,1634,721,1634,719,1633,717,1632,715,1632,713,1631,712,1630,710,1629,707,1628,705,1627,703,1626,701,1624,699,1623,697,1622,695,1620,693,1619,691,1617,689,1616,687,1614,685,1612,683,1611,681,1609,679,1607,677,1605,675,1603,673,1601,672,1599,670,1597,668,1595,667,1593,665,1591,664,1589,663,1587,661,1585,660,1583,659,1581,658,1579,657,1577,656,1575,655,1572,654,1570,653,1568,652,1566,651,1563,651,1561,650,1559,649,1557,648,1554,648,1552,647,1550,646,1547,646,1545,645,1543,644,1541,644,1538,643,1536,643,1534,642,1531,641,1529,641,1527,640,1524,639,1522,639,1519,638,1517,637,1515,637,1512,636,1510,635,1508,635,1505,634,1503,633,1500,632,1498,632,1496,631,1493,630,1491,629,1488,628,1486,628,1483,627,1481,626,1478,625,1476,624,1473,623,1471,622,1468,622,1466,621,1463,620,1460,619,1458,618,1455,617,1452,616,1450,615,1447,614,1444,613,1442,612,1439,612,1436,611,1433,610,1431,609,1428,608,1425,607,1423,607,1420,606,1417,605,1415,605,1412,604,1409,604,1407,604,1404,603,1402,603,1399,603,1397,603,1394,603,1392,603,1390,603,1387,603,1385,604,1383,604,1381,605,1378,606,1376,607,1374,608,1372,609,1371,610,1369,611,1367,613,1365,614,1364,616,1362,617,1361,619,1359,621,1358,623,1356,625,1355,627,1354,629,1353,631,1352,633,1351,635,1350,637,1349,639,1348,642,1347,644,1347,646,1346,648,1345,651,1345,653,1345,655,1344,657,1344,659,1344,662,1344,664,1344,666,1344,668,1344,670,1344,672,1345,674,1345,676,1345,678,1346,680,1346,682,1347,683,1348,685,1348,687,1349,689,1350,691,1351,692,1352,694,1353,696,1354,697,1355,699,1356,700,1357,702,1358,703,1359,705,1361,706,1362,707,1363,709,1364,710,1366,711,1367,713,1369,714,1370,715,1372,716,1373,717,1375,718,1376,719,1378,720,1380,721,1381,722,1383,723,1385,724,1387,725,1389,726,1391,727,1393,727,1395,728,1397,729,1399,730,1401,730,1403,731,1406,732,1408,733,1410,733,1413,734,1415,734,1418,735,1421,736,1423,736,1426,737,1429,737,1432,738,1435,738,1438,739,1441,739,1444,740,1447,740,1450,741,1454,741,1457,742,1460,742,1464,743,1467,743,1470,744,1474,744,1477,744,1481,745,1484,745,1488,746,1491,746,1495,746,1498,747,1501,747,1505,747,1508,748,1512,748,1515,748,1518,749,1522,749,1525,749,1528,750,1532,750,1535,750,1538,750,1541,751,1544,751,1547,751,1550,751,1553,752,1556,752,1559,752,1561,752,1564,752,1567,753,1570,753,1572,753,1575,753,1577,753,1580,753,1582,753,1585,753,1587,753,1590,753,1592,753,1594,753,1596,752,1598,752,1600,752,1603,752,1605,752,1606,751,1608,751,1610,751,1612,750,1614,750,1615,749,1617,749,1619,748,1620,748,1622,747,1623,746,1624,746,1626,745,1627,744,1628,743,1629,742,1630,741,1631,740,1632,739,1632,738,1633,737,1633,736,1634,735,1634,733,1635,732,1635,731,1635,729,1635,728,1635,726,1635,724" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1330,11 +1481,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0800 PM PDT Sat Oct 10 (Advisory #56)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 987 mb<br>Located at: 30.0N 116.5W<br>Movement: north-northeast at 31 knots; 36 mph<br>
+  <b>As of 1100 PM PDT Sat Oct 10 (Advisory #56A)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 987 mb<br>Located at: 31.5N 116.5W<br>Movement: north-northeast at 31 knots; 36 mph<br>
 "
-    data-action="/refresh/graphics_ep3+shtml/110243.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep3+shtml/110550.shtml?key_messages#contents">
     
-      <circle cx="1217" cy="314" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1217" cy="282" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
 
@@ -1347,11 +1498,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0900 PM CST Sat Oct 10 (Advisory #15)</b><br>Maximum Sustained Winds: 135 knots; 155 mph<br>Minimum Central Pressure: 928 mb<br>Located at: 18.2N 104.8W<br>Movement: north at 4 knots; 5 mph<br>
+  <b>As of 1200 AM CST Sun Oct 11 (Advisory #15A)</b><br>Maximum Sustained Winds: 135 knots; 155 mph<br>Minimum Central Pressure: 928 mb<br>Located at: 18.4N 105.0W<br>Movement: north at 4 knots; 5 mph<br>
 "
-    data-action="/refresh/graphics_ep5+shtml/110232.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep5+shtml/110559.shtml?key_messages#contents">
     
-      <circle cx="1425" cy="554" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1421" cy="550" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
@@ -1416,18 +1567,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                   
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-name="Disturbance 1: 80% Chance of Cyclone Formation in 7 Days"
     data-risk="high"
-    data-prob="70"
+    data-prob="80"
     data-details="
   
-  <b>As of 5:00 PM PDT Sat Oct 10 2026...</b><br>South of Southwestern Mexico:<br>An area of low pressure is forecast to develop south or southwest of the coast of Mexico by early next week. Environmental conditions are expected to be conducive for gradual development thereafter, and a tropical depression is likely to form by the middle or latter half of next week as the system moves generally west-northwestward at around 10 mph.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
+  <b>As of 11:00 PM PDT Sat Oct 10 2026...</b><br>South of Southern Mexico:<br>Disorganized showers and thunderstorms over the far eastern East Pacific are associated with a tropical wave.  Environmental conditions are expected to be conducive for gradual development, and a tropical depression is likely to form well south of southern Mexico by the middle or latter half of next week as the system moves generally west-northwestward at around 10 mph.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...80 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="1597,680,1597,678,1597,677,1597,675,1597,673,1597,671,1597,670,1597,668,1596,666,1596,665,1595,663,1595,661,1594,660,1594,658,1593,657,1592,655,1591,654,1590,652,1589,651,1588,649,1587,648,1586,646,1585,645,1583,643,1582,642,1581,641,1579,640,1578,638,1577,637,1575,636,1574,635,1572,634,1571,633,1569,632,1567,631,1566,630,1564,629,1562,628,1561,627,1559,626,1557,625,1555,625,1553,624,1552,623,1550,622,1548,622,1546,621,1544,620,1542,620,1539,619,1537,618,1535,618,1533,617,1531,616,1528,616,1526,615,1524,614,1521,614,1519,613,1516,612,1514,612,1511,611,1508,610,1506,609,1503,609,1500,608,1498,607,1495,606,1492,606,1489,605,1486,604,1483,603,1480,603,1478,602,1475,601,1472,600,1469,599,1466,598,1463,598,1460,597,1457,596,1454,595,1451,594,1448,594,1446,593,1443,592,1440,591,1437,590,1434,590,1432,589,1429,588,1426,587,1423,587,1421,586,1418,585,1416,584,1413,584,1411,583,1408,582,1406,582,1403,581,1401,581,1398,580,1396,580,1394,580,1391,579,1389,579,1387,579,1384,579,1382,579,1380,579,1377,579,1375,579,1373,579,1371,579,1368,580,1366,580,1364,581,1362,581,1359,582,1357,583,1355,584,1353,585,1350,586,1348,587,1346,588,1344,589,1341,591,1339,592,1337,594,1335,595,1333,597,1331,599,1329,601,1327,602,1325,604,1323,606,1322,608,1320,610,1318,612,1317,614,1316,616,1314,618,1313,620,1312,622,1311,624,1310,626,1309,628,1308,630,1307,632,1307,634,1306,636,1306,638,1306,640,1306,642,1306,644,1306,646,1306,648,1307,650,1307,652,1308,654,1308,656,1309,658,1310,659,1310,661,1311,663,1312,665,1313,666,1314,668,1316,670,1317,671,1318,673,1319,675,1321,676,1322,678,1323,679,1325,681,1326,682,1328,683,1330,685,1331,686,1333,687,1334,689,1336,690,1338,691,1339,692,1341,693,1343,695,1345,696,1346,697,1348,698,1350,699,1352,700,1354,701,1356,702,1358,703,1360,704,1363,705,1365,705,1367,706,1369,707,1372,708,1374,709,1376,710,1379,710,1382,711,1384,712,1387,713,1390,714,1392,714,1395,715,1398,716,1401,717,1404,717,1407,718,1411,719,1414,720,1417,720,1420,721,1424,722,1427,722,1430,723,1434,724,1437,724,1440,725,1444,725,1447,726,1451,727,1454,727,1457,728,1461,728,1464,729,1467,729,1471,729,1474,730,1477,730,1480,731,1483,731,1486,731,1489,731,1492,732,1495,732,1498,732,1501,732,1504,732,1506,733,1509,733,1511,733,1514,733,1516,733,1519,733,1521,732,1524,732,1526,732,1528,732,1531,732,1533,731,1535,731,1537,731,1539,730,1541,730,1543,729,1545,729,1547,728,1549,727,1551,727,1553,726,1555,725,1557,724,1559,723,1561,722,1563,721,1564,720,1566,719,1568,718,1570,717,1571,716,1573,714,1575,713,1576,712,1578,710,1580,709,1581,708,1582,706,1584,705,1585,703,1586,701,1588,700,1589,698,1590,697,1591,695,1592,693,1593,692,1594,690,1594,688,1595,687,1596,685,1596,683,1597,682,1597,680" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1723" cy="738" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1635,724,1634,723,1634,721,1634,719,1633,717,1632,715,1632,713,1631,712,1630,710,1629,707,1628,705,1627,703,1626,701,1624,699,1623,697,1622,695,1620,693,1619,691,1617,689,1616,687,1614,685,1612,683,1611,681,1609,679,1607,677,1605,675,1603,673,1601,672,1599,670,1597,668,1595,667,1593,665,1591,664,1589,663,1587,661,1585,660,1583,659,1581,658,1579,657,1577,656,1575,655,1572,654,1570,653,1568,652,1566,651,1563,651,1561,650,1559,649,1557,648,1554,648,1552,647,1550,646,1547,646,1545,645,1543,644,1541,644,1538,643,1536,643,1534,642,1531,641,1529,641,1527,640,1524,639,1522,639,1519,638,1517,637,1515,637,1512,636,1510,635,1508,635,1505,634,1503,633,1500,632,1498,632,1496,631,1493,630,1491,629,1488,628,1486,628,1483,627,1481,626,1478,625,1476,624,1473,623,1471,622,1468,622,1466,621,1463,620,1460,619,1458,618,1455,617,1452,616,1450,615,1447,614,1444,613,1442,612,1439,612,1436,611,1433,610,1431,609,1428,608,1425,607,1423,607,1420,606,1417,605,1415,605,1412,604,1409,604,1407,604,1404,603,1402,603,1399,603,1397,603,1394,603,1392,603,1390,603,1387,603,1385,604,1383,604,1381,605,1378,606,1376,607,1374,608,1372,609,1371,610,1369,611,1367,613,1365,614,1364,616,1362,617,1361,619,1359,621,1358,623,1356,625,1355,627,1354,629,1353,631,1352,633,1351,635,1350,637,1349,639,1348,642,1347,644,1347,646,1346,648,1345,651,1345,653,1345,655,1344,657,1344,659,1344,662,1344,664,1344,666,1344,668,1344,670,1344,672,1345,674,1345,676,1345,678,1346,680,1346,682,1347,683,1348,685,1348,687,1349,689,1350,691,1351,692,1352,694,1353,696,1354,697,1355,699,1356,700,1357,702,1358,703,1359,705,1361,706,1362,707,1363,709,1364,710,1366,711,1367,713,1369,714,1370,715,1372,716,1373,717,1375,718,1376,719,1378,720,1380,721,1381,722,1383,723,1385,724,1387,725,1389,726,1391,727,1393,727,1395,728,1397,729,1399,730,1401,730,1403,731,1406,732,1408,733,1410,733,1413,734,1415,734,1418,735,1421,736,1423,736,1426,737,1429,737,1432,738,1435,738,1438,739,1441,739,1444,740,1447,740,1450,741,1454,741,1457,742,1460,742,1464,743,1467,743,1470,744,1474,744,1477,744,1481,745,1484,745,1488,746,1491,746,1495,746,1498,747,1501,747,1505,747,1508,748,1512,748,1515,748,1518,749,1522,749,1525,749,1528,750,1532,750,1535,750,1538,750,1541,751,1544,751,1547,751,1550,751,1553,752,1556,752,1559,752,1561,752,1564,752,1567,753,1570,753,1572,753,1575,753,1577,753,1580,753,1582,753,1585,753,1587,753,1590,753,1592,753,1594,753,1596,752,1598,752,1600,752,1603,752,1605,752,1606,751,1608,751,1610,751,1612,750,1614,750,1615,749,1617,749,1619,748,1620,748,1622,747,1623,746,1624,746,1626,745,1627,744,1628,743,1629,742,1630,741,1631,740,1632,739,1632,738,1633,737,1633,736,1634,735,1634,733,1635,732,1635,731,1635,729,1635,728,1635,726,1635,724" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1651,14 +1806,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 PM HST Sat Oct 10 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical<br>Storm Rachel, located several hundred miles south-southwest of Punta<br>Baja, Mexico, and on Hurricane Simon, located less than one hundred<br>miles south of Manzanillo, Mexico.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Adams<br><br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 PM HST Sat Oct 10 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Post-Tropical<br>Cyclone Rachel, located over Baja California and on Hurricane<br>Simon, located just southwest of southwestern Mexico.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Katz/Blake<br><br><br></pre>
       </div>
           
     </div>
         
     <div id="two-cpac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">280 <br />ACPN51 PHFO 102352<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />200 PM HST sábado 10 de octubre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la Tormenta Tropical Rachel, ubicada a varios<br />cientos de millas al suroeste de Punta Baja, México, y sobre el<br />Huracán Simon, ubicado a menos de cien millas al sur de Manzanillo,<br />México.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Adams <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">774 <br />ACPN51 PHFO 110553<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />800 PM HST sábado 10 de octubre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Ciclón Pos-Tropical Rachel, ubicado sobre Baja<br />California, y sobre el Huracán Simon, ubicado justo al suroeste del<br />suroeste de México.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Katz/Blake <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
     </div>
@@ -1669,8 +1824,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 PM PDT Sat Oct 10 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical <br>Storm Rachel, located several hundred miles south-southwest of Punta <br>Baja, Mexico, and on Hurricane Simon, located less than one hundred <br>miles south of Manzanillo, Mexico.<br><br>1. South of Southwestern Mexico:<br>An area of low pressure is forecast to develop south or southwest of <br>the coast of Mexico by early next week. Environmental conditions are <br>expected to be conducive for gradual development thereafter, and a <br>tropical depression is likely to form by the middle or latter half <br>of next week as the system moves generally west-northwestward at <br>around 10 mph.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...high...70 percent.<br>
-<br><br>Forecaster Adams<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 PM PDT Sat Oct 10 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Post-Tropical <br>Cyclone Rachel, located over Baja California and on Hurricane <br>Simon, located just southwest of southwestern Mexico.<br><br>1. South of Southern Mexico:<br>Disorganized showers and thunderstorms over the far eastern East <br>Pacific are associated with a tropical wave.  Environmental <br>conditions are expected to be conducive for gradual development, and <br>a tropical depression is likely to form well south of southern <br>Mexico by the middle or latter half of next week as the system moves <br>generally west-northwestward at around 10 mph.<br>* Formation chance through 48 hours...low...20 percent.<br>* Formation chance through 7 days...high...80 percent.<br>
+<br><br>Forecaster Katz/Blake<br><br></pre>
       </div>
           
             
@@ -1685,7 +1840,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">513 <br />ABPZ21 KNHC 102351<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />500 PM PDT sábado 10 de octubre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la Tormenta Tropical Rachel, ubicada a varios<br />cientos de millas al suroeste de Punta Baja, México, y sobre el<br />Huracán Simon, ubicado a menos de cien millas al sur de Manzanillo,<br />México.<br /><br />Sur del suroeste de México: Se pronostica que se desarrollará un<br />área de baja presión al sur o suroeste de la costa de México a<br />principios de la próxima semana. Se espera que las condiciones<br />ambientales sean propicias para un desarrollo gradual a partir de<br />entonces, y es probable que se forme una depresión tropical a<br />mediados o la segunda mitad de la próxima semana, a medida que el<br />sistema se mueve generalmente hacia el oeste-noroeste a alrededor de<br />10 mph.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...alta...70 por ciento.<br /><br />$$<br />Pronosticador Adams<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">902 <br />ABPZ21 KNHC 110553<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1100 PM PDT sábado 10 de octubre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Ciclón Pos-Tropical Rachel, ubicado sobre Baja<br />California, y sobre el Huracán Simon, ubicado justo al suroeste del<br />suroeste de México.<br /><br />Sur del sur de México: Lluvias desorganizadas y tormentas eléctricas<br />sobre el extremo este del Pacífico este se asocian con una onda<br />tropical. Se espera que las condiciones ambientales sean propicias<br />para un desarrollo gradual, y es probable que se forme una depresión<br />tropical al sur de México a mediados o la segunda mitad de la<br />próxima semana, a medida que el sistema se mueve generalmente hacia<br />el oeste-noroeste a alrededor de 10 mph.<br />* Probabilidad de formación hasta 48 horas...baja...20 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...80 por ciento.<br /><br />$$<br />Pronosticador Katz/Blake<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
