@@ -601,30 +601,148 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <!-- 1. Stripped height-4/overflow-hidden and added inline grid settings -->
     <div id="gtwo-menu-container" class="width-full bg-primary-lighter" style="display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;">
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-atl-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
-      <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+      
+      <div id="menu-atl-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-atl-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
 
@@ -784,6 +902,24 @@ document.addEventListener('DOMContentLoaded', function() {
           
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 2:00 AM EDT Sun Oct 11 2026...</b><br>Eastern Tropical Atlantic:<br>An elongated area of low pressure centered about 100 miles southwest of the Cabo Verde Islands is producing a large but disorganized area of showers and thunderstorms extending from near those islands southward for several hundred miles.  Some development of this system is possible during the next couple of days while the low north-northwestward before upper-level winds become too strong for development by midweek.  Very heavy rainfall is also possible during the next few days over portions of the Cabo Verde Islands regardless of whether the system ever becomes a tropical cyclone.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="1583" cy="1046" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -801,6 +937,76 @@ document.addEventListener('DOMContentLoaded', function() {
     
   </g>
    
+        </svg>
+          
+      </div>
+
+      <div id="view-atl-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_atl_2d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_atl_2d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_atl_2d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_atl_2d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_atl_2d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_atl_2d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_atl_2d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_atl_2d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_atl_2d1_w1024.png" 
+          alt="2 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+           
+            
+            
+              
+                
+                  
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 2:00 AM EDT Sun Oct 11 2026...</b><br>Eastern Tropical Atlantic:<br>An elongated area of low pressure centered about 100 miles southwest of the Cabo Verde Islands is producing a large but disorganized area of showers and thunderstorms extending from near those islands southward for several hundred miles.  Some development of this system is possible during the next couple of days while the low north-northwestward before upper-level winds become too strong for development by midweek.  Very heavy rainfall is also possible during the next few days over portions of the Cabo Verde Islands regardless of whether the system ever becomes a tropical cyclone.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:0">
+  
+    <circle cx="965" cy="723" r="50" fill="transparent" pointer-events="all" />
+  
+  </g>
+
+                
+              
+            
+             
         </svg>
           
       </div>
@@ -846,6 +1052,28 @@ document.addEventListener('DOMContentLoaded', function() {
           
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 2:00 AM EDT Sun Oct 11 2026...</b><br>Eastern Tropical Atlantic:<br>An elongated area of low pressure centered about 100 miles southwest of the Cabo Verde Islands is producing a large but disorganized area of showers and thunderstorms extending from near those islands southward for several hundred miles.  Some development of this system is possible during the next couple of days while the low north-northwestward before upper-level winds become too strong for development by midweek.  Very heavy rainfall is also possible during the next few days over portions of the Cabo Verde Islands regardless of whether the system ever becomes a tropical cyclone.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="1583" cy="1046" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1608,975,1608,977,1608,978,1609,980,1609,982,1609,983,1609,985,1609,987,1609,988,1609,990,1609,992,1609,993,1609,995,1609,996,1609,998,1609,1000,1609,1001,1609,1003,1609,1004,1609,1006,1609,1007,1609,1009,1609,1010,1609,1012,1609,1013,1609,1015,1609,1016,1609,1018,1608,1019,1608,1020,1608,1022,1608,1023,1608,1024,1608,1026,1607,1027,1607,1028,1607,1030,1607,1031,1606,1032,1606,1033,1606,1034,1606,1036,1605,1037,1605,1038,1605,1039,1605,1040,1604,1041,1604,1042,1604,1043,1603,1044,1603,1045,1603,1045,1602,1046,1602,1047,1602,1048,1601,1049,1601,1050,1600,1050,1600,1051,1599,1052,1599,1052,1599,1053,1598,1054,1598,1054,1597,1055,1597,1055,1596,1056,1596,1057,1595,1057,1595,1058,1594,1058,1594,1058,1593,1059,1592,1059,1592,1060,1591,1060,1591,1060,1590,1061,1589,1061,1589,1061,1588,1062,1587,1062,1587,1062,1586,1062,1585,1062,1584,1063,1584,1063,1583,1063,1582,1063,1581,1063,1581,1063,1580,1063,1579,1063,1578,1063,1577,1063,1576,1063,1575,1063,1575,1063,1574,1063,1573,1063,1572,1063,1571,1063,1570,1063,1569,1062,1568,1062,1567,1062,1566,1062,1565,1061,1564,1061,1563,1061,1562,1060,1561,1060,1560,1059,1559,1059,1558,1058,1557,1058,1556,1057,1555,1057,1554,1056,1553,1055,1552,1055,1551,1054,1550,1053,1549,1053,1548,1052,1547,1051,1545,1050,1544,1049,1543,1048,1542,1047,1541,1046,1540,1045,1539,1044,1538,1043,1537,1042,1536,1040,1534,1039,1533,1038,1532,1037,1531,1035,1530,1034,1529,1033,1528,1031,1527,1030,1526,1028,1525,1027,1524,1025,1523,1024,1522,1022,1521,1021,1520,1019,1519,1018,1518,1016,1517,1014,1516,1013,1515,1011,1514,1009,1513,1008,1512,1006,1511,1004,1510,1003,1510,1001,1509,999,1508,997,1507,996,1506,994,1506,992,1505,990,1504,988,1504,987,1503,985,1502,983,1502,981,1501,979,1501,977,1500,976,1500,974,1499,972,1499,970,1499,968,1498,967,1498,965,1498,963,1498,961,1497,960,1497,958,1497,956,1497,954,1497,953,1497,951,1497,949,1497,948,1497,946,1497,944,1497,943,1498,941,1498,940,1498,938,1498,937,1499,935,1499,934,1500,932,1500,931,1501,929,1501,928,1502,927,1503,926,1504,924,1504,923,1505,922,1506,921,1507,920,1508,919,1509,918,1510,917,1512,916,1513,915,1514,914,1515,913,1517,912,1518,912,1520,911,1521,910,1523,910,1524,909,1526,909,1527,908,1529,908,1531,907,1533,907,1534,907,1536,907,1538,906,1539,906,1541,906,1543,906,1545,906,1547,906,1548,906,1550,906,1552,906,1554,906,1555,907,1557,907,1559,907,1561,907,1562,908,1564,908,1566,909,1567,909,1569,910,1571,910,1572,911,1574,912,1575,912,1577,913,1578,914,1580,915,1581,916,1582,917,1583,918,1585,919,1586,920,1587,921,1588,922,1589,923,1590,924,1591,925,1592,927,1593,928,1594,929,1595,931,1596,932,1596,933,1597,935,1598,936,1599,938,1599,939,1600,941,1601,942,1601,944,1602,945,1602,947,1603,948,1603,950,1604,952,1604,953,1605,955,1605,957,1605,958,1606,960,1606,961,1606,963,1607,965,1607,967,1607,968,1607,970,1608,972,1608,973,1608,975" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -863,6 +1091,90 @@ document.addEventListener('DOMContentLoaded', function() {
     
   </g>
    
+        </svg>
+          
+      </div>
+
+      <div id="view-atl-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_atl_7d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_atl_7d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_atl_7d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_atl_7d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_atl_7d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_atl_7d1_w1024.png" 
+          alt="7 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="View Pacific Outlook" 
+    onclick="switchBasin('pac')">
+    <polygon points="0,898,21,909,26,911,28,917,43,926,62,928,72,939,77,939,85,945,100,951,107,955,117,955,132,962,145,968,150,970,162,974,177,976,207,963,215,965,222,969,228,972,235,976,241,983,249,994,269,1008,277,1012,292,1012,301,1016,309,1020,318,1020,324,1024,333,1026,343,1028,350,1022,352,1022,354,1026,354,1037,367,1048,371,1054,386,1067,388,1075,386,1086,386,1090,399,1099,405,1095,409,1095,409,1101,416,1101,422,1105,431,1111,431,1118,448,1126,467,1128,474,1137,484,1139,484,1147,491,1152,510,1143,506,1135,499,1128,503,1126,510,1122,512,1116,518,1112,527,1111,533,1119,538,1124,535,1131,542,1139,546,1145,552,1156,557,1165,552,1167,559,1175,555,1179,557,1184,557,1203,555,1209,559,1216,557,1224,553,1228,548,1239,538,1239,531,1243,531,1254,525,1254,521,1260,527,1262,521,1269,0,1269" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+
+          
+
+           
+            
+            
+              
+                
+                  
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 2:00 AM EDT Sun Oct 11 2026...</b><br>Eastern Tropical Atlantic:<br>An elongated area of low pressure centered about 100 miles southwest of the Cabo Verde Islands is producing a large but disorganized area of showers and thunderstorms extending from near those islands southward for several hundred miles.  Some development of this system is possible during the next couple of days while the low north-northwestward before upper-level winds become too strong for development by midweek.  Very heavy rainfall is also possible during the next few days over portions of the Cabo Verde Islands regardless of whether the system ever becomes a tropical cyclone.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="1583" cy="1046" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="1608,975,1608,977,1608,978,1609,980,1609,982,1609,983,1609,985,1609,987,1609,988,1609,990,1609,992,1609,993,1609,995,1609,996,1609,998,1609,1000,1609,1001,1609,1003,1609,1004,1609,1006,1609,1007,1609,1009,1609,1010,1609,1012,1609,1013,1609,1015,1609,1016,1609,1018,1608,1019,1608,1020,1608,1022,1608,1023,1608,1024,1608,1026,1607,1027,1607,1028,1607,1030,1607,1031,1606,1032,1606,1033,1606,1034,1606,1036,1605,1037,1605,1038,1605,1039,1605,1040,1604,1041,1604,1042,1604,1043,1603,1044,1603,1045,1603,1045,1602,1046,1602,1047,1602,1048,1601,1049,1601,1050,1600,1050,1600,1051,1599,1052,1599,1052,1599,1053,1598,1054,1598,1054,1597,1055,1597,1055,1596,1056,1596,1057,1595,1057,1595,1058,1594,1058,1594,1058,1593,1059,1592,1059,1592,1060,1591,1060,1591,1060,1590,1061,1589,1061,1589,1061,1588,1062,1587,1062,1587,1062,1586,1062,1585,1062,1584,1063,1584,1063,1583,1063,1582,1063,1581,1063,1581,1063,1580,1063,1579,1063,1578,1063,1577,1063,1576,1063,1575,1063,1575,1063,1574,1063,1573,1063,1572,1063,1571,1063,1570,1063,1569,1062,1568,1062,1567,1062,1566,1062,1565,1061,1564,1061,1563,1061,1562,1060,1561,1060,1560,1059,1559,1059,1558,1058,1557,1058,1556,1057,1555,1057,1554,1056,1553,1055,1552,1055,1551,1054,1550,1053,1549,1053,1548,1052,1547,1051,1545,1050,1544,1049,1543,1048,1542,1047,1541,1046,1540,1045,1539,1044,1538,1043,1537,1042,1536,1040,1534,1039,1533,1038,1532,1037,1531,1035,1530,1034,1529,1033,1528,1031,1527,1030,1526,1028,1525,1027,1524,1025,1523,1024,1522,1022,1521,1021,1520,1019,1519,1018,1518,1016,1517,1014,1516,1013,1515,1011,1514,1009,1513,1008,1512,1006,1511,1004,1510,1003,1510,1001,1509,999,1508,997,1507,996,1506,994,1506,992,1505,990,1504,988,1504,987,1503,985,1502,983,1502,981,1501,979,1501,977,1500,976,1500,974,1499,972,1499,970,1499,968,1498,967,1498,965,1498,963,1498,961,1497,960,1497,958,1497,956,1497,954,1497,953,1497,951,1497,949,1497,948,1497,946,1497,944,1497,943,1498,941,1498,940,1498,938,1498,937,1499,935,1499,934,1500,932,1500,931,1501,929,1501,928,1502,927,1503,926,1504,924,1504,923,1505,922,1506,921,1507,920,1508,919,1509,918,1510,917,1512,916,1513,915,1514,914,1515,913,1517,912,1518,912,1520,911,1521,910,1523,910,1524,909,1526,909,1527,908,1529,908,1531,907,1533,907,1534,907,1536,907,1538,906,1539,906,1541,906,1543,906,1545,906,1547,906,1548,906,1550,906,1552,906,1554,906,1555,907,1557,907,1559,907,1561,907,1562,908,1564,908,1566,909,1567,909,1569,910,1571,910,1572,911,1574,912,1575,912,1577,913,1578,914,1580,915,1581,916,1582,917,1583,918,1585,919,1586,920,1587,921,1588,922,1589,923,1590,924,1591,925,1592,927,1593,928,1594,929,1595,931,1596,932,1596,933,1597,935,1598,936,1599,938,1599,939,1600,941,1601,942,1601,944,1602,945,1602,947,1603,948,1603,950,1604,952,1604,953,1605,955,1605,957,1605,958,1606,960,1606,961,1606,963,1607,965,1607,967,1607,968,1607,970,1608,972,1608,973,1608,975" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
+                
+              
+            
+             
         </svg>
           
       </div>
@@ -1392,7 +1704,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>800 PM EDT Sat Oct 10 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Active Systems:<br>The Weather Prediction Center is issuing advisories on <br>Post-Tropical Cyclone Isaias, located inland over northern Alabama.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Adams <br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>200 AM EDT Sun Oct 11 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Active Systems:<br>The Weather Prediction Center is issuing advisories on <br>Post-Tropical Cyclone Isaias, located inland over Tennessee.<br><br>1. Eastern Tropical Atlantic:<br>An elongated area of low pressure centered about 100 miles <br>southwest of the Cabo Verde Islands is producing a large but <br>disorganized area of showers and thunderstorms extending from <br>near those islands southward for several hundred miles.  Some <br>development of this system is possible during the next couple of <br>days while the low north-northwestward before upper-level winds <br>become too strong for development by midweek.  Very heavy rainfall <br>is also possible during the next few days over portions of the Cabo <br>Verde Islands regardless of whether the system ever becomes a <br>tropical cyclone.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...low...20 percent.<br>
+<br><br>Forecaster Blake<br><br></pre>
       </div>
           
             
@@ -1407,7 +1720,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">163 <br />ACCA62 KNHC 102348<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />800 PM EDT sábado 10 de octubre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Sistemas activos: El Centro de Predicción del Tiempo está emitiendo<br />advertencias sobre el Ciclón Pos-Tropical Isaias, ubicado hacia el<br />interior sobre el norte de Alabama.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Adams<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">088 <br />ACCA62 KNHC 110527<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />200 AM EDT domingo 11 de octubre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Sistemas activos: El Centro de Predicción del Tiempo está emitiendo<br />advertencias sobre el Ciclón Pos-Tropical Isaias, ubicado tierra<br />adentro sobre Tennessee.<br /><br />Atlántico Tropical Este: Un área alargada de baja presión centrada a<br />unas 100 millas al suroeste de las Islas Cabo Verde está produciendo<br />un área grande pero desorganizada de aguaceros y tormentas<br />eléctricas que se extienden desde cerca de esas islas hacia el sur<br />durante varios cientos de millas. Es posible que se desarrolle este<br />sistema durante los próximos dos días, mientras que los vientos<br />bajos del norte-noroeste antes de que los niveles altos se vuelvan<br />demasiado fuertes para que se desarrolle a mediados de semana.<br />También es posible que lluvias muy fuertes se produzcan durante los<br />próximos días sobre porciones de las Islas Cabo Verde,<br />independientemente de si el sistema se convierte en un ciclón<br />tropical.<br />* Probabilidad de formación hasta 48 horas...baja...10 por ciento.<br />* Probabilidad de formación hasta 7 días...baja...20 por ciento.<br /><br />$$<br />Pronosticador Blake<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
