@@ -745,148 +745,30 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </div>
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-pac-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
-      
-      <div id="menu-pac-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-pac-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
-      <div id="menu-pac-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
 
@@ -1239,24 +1121,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 100% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="100"
-    data-details="
-  
-  <b>As of 5:00 AM PDT Tue Oct 13 2026...</b><br>South of Southern Mexico (EP93):<br>Showers and thunderstorms are becoming better organized in association with an area of low pressure located a few hundred miles south of the coast of southern Mexico, and recent satellite-derived wind data indicate that the circulation is becoming better defined. If current trends continue, advisories will likely be initiated later today on a tropical depression or tropical storm.  The system is expected to move generally west-northwestward around 10 mph. Interests in southwestern Mexico should continue to monitor the progress of this system.  For additional information, including Gale Warnings, see High Seas Forecasts issued by the National Weather Service.<br>* Formation chance through 48 hours...high...near 100 percent.. <br>* Formation chance through 7 days...high...near 100 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1584" cy="717" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
   
   
   
@@ -1266,84 +1130,31 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM MST Tue Oct 13 (Advisory #24A)</b><br>Maximum Sustained Winds: 80 knots; 90 mph<br>Minimum Central Pressure: 977 mb<br>Located at: 20.4N 107.2W<br>Movement: west-northwest at 3 knots; 3 mph<br>
+  <b>As of 0800 AM MST Tue Oct 13 (Advisory #25)</b><br>Maximum Sustained Winds: 80 knots; 90 mph<br>Minimum Central Pressure: 977 mb<br>Located at: 20.3N 107.3W<br>Movement: west at 2 knots; 2 mph<br>
 "
-    data-action="/refresh/graphics_ep5+shtml/131137.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep5+shtml/131454.shtml?key_messages#contents">
     
-      <circle cx="1382" cy="510" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1380" cy="512" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    
+  </g>
+
+  
+  
+  
+  <g class="storm-system cursor-pointer" 
+    data-name="TROPICAL DEPRESSION TWENTY-ONE-E"
+    data-risk="storm"
+    data-prob="N/A"
+    data-details="
+  
+  <b>As of 0900 AM CST Tue Oct 13 (Advisory #1)</b><br>Maximum Sustained Winds: 30 knots; 35 mph<br>Minimum Central Pressure: 1006 mb<br>Located at: 9.8N 96.5W<br>Movement: northwest at 9 knots; 10 mph<br>
+"
+    data-action="/refresh/graphics_ep1+shtml/131449.shtml?cone#contents">
+    
+      <circle cx="1572" cy="713" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-pac-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_pac_2d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_pac_2d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_pac_2d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_pac_2d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_pac_2d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_pac_2d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_pac_2d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_pac_2d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_pac_2d1_w1024.png" 
-          alt="2 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-
-           
-            
-            
-              
-                
-                  
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 100% Chance of Cyclone Formation in 48 Hours"
-    data-risk="high"
-    data-prob="100"
-    data-details="
-  
-  <b>As of 5:00 AM PDT Tue Oct 13 2026...</b><br>South of Southern Mexico (EP93):<br>Showers and thunderstorms are becoming better organized in association with an area of low pressure located a few hundred miles south of the coast of southern Mexico, and recent satellite-derived wind data indicate that the circulation is becoming better defined. If current trends continue, advisories will likely be initiated later today on a tropical depression or tropical storm.  The system is expected to move generally west-northwestward around 10 mph. Interests in southwestern Mexico should continue to monitor the progress of this system.  For additional information, including Gale Warnings, see High Seas Forecasts issued by the National Weather Service.<br>* Formation chance through 48 hours...high...near 100 percent.. <br>* Formation chance through 7 days...high...near 100 percent..<br>
-"
-    data-action="switchDisturbance:0">
-  
-    <circle cx="965" cy="582" r="50" fill="transparent" pointer-events="all" />
-  
-  </g>
-
-                
-              
-            
-             
         </svg>
           
       </div>
@@ -1391,28 +1202,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 100% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="100"
-    data-details="
-  
-  <b>As of 5:00 AM PDT Tue Oct 13 2026...</b><br>South of Southern Mexico (EP93):<br>Showers and thunderstorms are becoming better organized in association with an area of low pressure located a few hundred miles south of the coast of southern Mexico, and recent satellite-derived wind data indicate that the circulation is becoming better defined. If current trends continue, advisories will likely be initiated later today on a tropical depression or tropical storm.  The system is expected to move generally west-northwestward around 10 mph. Interests in southwestern Mexico should continue to monitor the progress of this system.  For additional information, including Gale Warnings, see High Seas Forecasts issued by the National Weather Service.<br>* Formation chance through 48 hours...high...near 100 percent.. <br>* Formation chance through 7 days...high...near 100 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1584" cy="717" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-      
-    <polygon points="1588,756,1589,755,1591,755,1592,755,1593,755,1595,754,1596,754,1597,754,1598,753,1599,753,1600,752,1601,752,1602,751,1603,750,1604,750,1605,749,1606,749,1606,748,1607,747,1608,746,1609,746,1610,745,1610,744,1611,743,1612,742,1612,741,1613,740,1613,739,1614,738,1615,737,1615,736,1616,735,1616,733,1617,732,1617,731,1618,730,1618,729,1618,727,1619,726,1619,725,1619,723,1620,722,1620,720,1620,719,1620,718,1620,716,1621,715,1621,713,1621,712,1621,710,1621,709,1621,707,1621,706,1621,705,1620,703,1620,702,1620,700,1620,699,1619,697,1619,696,1618,695,1618,693,1617,692,1617,691,1616,689,1616,688,1615,687,1614,686,1613,684,1613,683,1612,682,1611,681,1610,679,1609,678,1608,677,1607,676,1606,675,1605,674,1604,672,1603,671,1602,670,1600,669,1599,668,1598,667,1597,666,1596,665,1594,664,1593,662,1592,661,1590,660,1589,659,1588,658,1587,657,1585,656,1584,655,1583,654,1581,653,1580,652,1578,651,1577,650,1576,649,1574,648,1573,647,1571,646,1570,645,1569,644,1567,643,1566,643,1564,642,1563,641,1561,640,1560,639,1558,639,1557,638,1555,637,1554,636,1552,636,1551,635,1549,635,1548,634,1546,633,1545,633,1543,632,1541,632,1540,631,1538,631,1537,631,1535,630,1534,630,1532,630,1531,630,1529,629,1527,629,1526,629,1524,629,1523,629,1521,629,1520,629,1518,629,1517,629,1515,629,1514,629,1512,629,1511,630,1510,630,1508,630,1507,631,1505,631,1504,631,1503,632,1501,632,1500,633,1499,634,1498,634,1496,635,1495,636,1494,636,1493,637,1492,638,1490,639,1489,639,1488,640,1487,641,1486,642,1485,643,1484,644,1483,645,1482,646,1482,647,1481,648,1480,649,1479,651,1478,652,1477,653,1477,654,1476,655,1475,656,1475,658,1474,659,1474,660,1473,661,1472,663,1472,664,1472,665,1471,666,1471,668,1470,669,1470,670,1470,671,1469,673,1469,674,1469,675,1469,677,1469,678,1468,679,1468,680,1468,682,1468,683,1468,684,1468,686,1468,687,1469,688,1469,690,1469,691,1469,692,1469,693,1470,695,1470,696,1470,697,1470,698,1471,700,1471,701,1472,702,1472,703,1473,704,1473,706,1474,707,1475,708,1475,709,1476,710,1477,711,1477,713,1478,714,1479,715,1480,716,1480,717,1481,718,1482,719,1483,720,1484,721,1485,722,1486,723,1487,724,1488,725,1489,726,1490,727,1491,728,1492,729,1493,730,1495,731,1496,732,1497,733,1498,733,1499,734,1501,735,1502,736,1503,737,1504,738,1506,738,1507,739,1508,740,1510,741,1511,741,1513,742,1514,743,1516,743,1517,744,1518,745,1520,745,1521,746,1523,746,1525,747,1526,748,1528,748,1529,749,1531,749,1533,750,1534,750,1536,751,1538,751,1539,752,1541,752,1543,752,1545,753,1546,753,1548,754,1550,754,1552,754,1553,755,1555,755,1557,755,1559,755,1561,756,1562,756,1564,756,1566,756,1568,756,1569,756,1571,756,1573,756,1574,757,1576,757,1578,757,1579,757,1581,756,1582,756,1584,756,1585,756,1587,756,1588,756" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
   
   
   
@@ -1422,100 +1211,31 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0500 AM MST Tue Oct 13 (Advisory #24A)</b><br>Maximum Sustained Winds: 80 knots; 90 mph<br>Minimum Central Pressure: 977 mb<br>Located at: 20.4N 107.2W<br>Movement: west-northwest at 3 knots; 3 mph<br>
+  <b>As of 0800 AM MST Tue Oct 13 (Advisory #25)</b><br>Maximum Sustained Winds: 80 knots; 90 mph<br>Minimum Central Pressure: 977 mb<br>Located at: 20.3N 107.3W<br>Movement: west at 2 knots; 2 mph<br>
 "
-    data-action="/refresh/graphics_ep5+shtml/131137.shtml?key_messages#contents">
+    data-action="/refresh/graphics_ep5+shtml/131454.shtml?key_messages#contents">
     
-      <circle cx="1382" cy="510" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1380" cy="512" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    
+  </g>
+
+  
+  
+  
+  <g class="storm-system cursor-pointer" 
+    data-name="TROPICAL DEPRESSION TWENTY-ONE-E"
+    data-risk="storm"
+    data-prob="N/A"
+    data-details="
+  
+  <b>As of 0900 AM CST Tue Oct 13 (Advisory #1)</b><br>Maximum Sustained Winds: 30 knots; 35 mph<br>Minimum Central Pressure: 1006 mb<br>Located at: 9.8N 96.5W<br>Movement: northwest at 9 knots; 10 mph<br>
+"
+    data-action="/refresh/graphics_ep1+shtml/131449.shtml?cone#contents">
+    
+      <circle cx="1572" cy="713" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
-        </svg>
-          
-      </div>
-
-      <div id="view-pac-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_pac_7d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_pac_7d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_pac_7d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_pac_7d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_pac_7d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_pac_7d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_pac_7d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_pac_7d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_pac_7d1_w1024.png" 
-          alt="7 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="View Atlantic Outlook" 
-    onclick="switchBasin('atl')">
-    <polygon points="1916,218,1903,228,1884,239,1875,254,1856,264,1847,283,1841,300,1849,328,1858,347,1867,368,1864,391,1864,417,1843,415,1837,402,1828,381,1819,355,1815,336,1807,321,1785,321,1771,319,1751,311,1726,313,1704,317,1698,330,1672,336,1657,330,1636,326,1611,326,1593,336,1576,345,1566,360,1566,381,1564,400,1553,419,1549,446,1555,472,1564,499,1578,516,1596,537,1617,544,1636,544,1657,535,1672,518,1675,495,1694,489,1711,480,1730,480,1749,493,1745,510,1738,527,1734,544,1728,565,1721,584,1711,594,1736,594,1751,590,1775,590,1794,599,1811,607,1817,624,1809,637,1805,656,1805,679,1809,698,1828,713,1843,726,1860,720,1884,711,1901,711,1918,724" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-           
-            
-            
-              
-                
-                  
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 100% Chance of Cyclone Formation in 7 Days"
-    data-risk="high"
-    data-prob="100"
-    data-details="
-  
-  <b>As of 5:00 AM PDT Tue Oct 13 2026...</b><br>South of Southern Mexico (EP93):<br>Showers and thunderstorms are becoming better organized in association with an area of low pressure located a few hundred miles south of the coast of southern Mexico, and recent satellite-derived wind data indicate that the circulation is becoming better defined. If current trends continue, advisories will likely be initiated later today on a tropical depression or tropical storm.  The system is expected to move generally west-northwestward around 10 mph. Interests in southwestern Mexico should continue to monitor the progress of this system.  For additional information, including Gale Warnings, see High Seas Forecasts issued by the National Weather Service.<br>* Formation chance through 48 hours...high...near 100 percent.. <br>* Formation chance through 7 days...high...near 100 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="1584" cy="717" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-      
-    <polygon points="1588,756,1589,755,1591,755,1592,755,1593,755,1595,754,1596,754,1597,754,1598,753,1599,753,1600,752,1601,752,1602,751,1603,750,1604,750,1605,749,1606,749,1606,748,1607,747,1608,746,1609,746,1610,745,1610,744,1611,743,1612,742,1612,741,1613,740,1613,739,1614,738,1615,737,1615,736,1616,735,1616,733,1617,732,1617,731,1618,730,1618,729,1618,727,1619,726,1619,725,1619,723,1620,722,1620,720,1620,719,1620,718,1620,716,1621,715,1621,713,1621,712,1621,710,1621,709,1621,707,1621,706,1621,705,1620,703,1620,702,1620,700,1620,699,1619,697,1619,696,1618,695,1618,693,1617,692,1617,691,1616,689,1616,688,1615,687,1614,686,1613,684,1613,683,1612,682,1611,681,1610,679,1609,678,1608,677,1607,676,1606,675,1605,674,1604,672,1603,671,1602,670,1600,669,1599,668,1598,667,1597,666,1596,665,1594,664,1593,662,1592,661,1590,660,1589,659,1588,658,1587,657,1585,656,1584,655,1583,654,1581,653,1580,652,1578,651,1577,650,1576,649,1574,648,1573,647,1571,646,1570,645,1569,644,1567,643,1566,643,1564,642,1563,641,1561,640,1560,639,1558,639,1557,638,1555,637,1554,636,1552,636,1551,635,1549,635,1548,634,1546,633,1545,633,1543,632,1541,632,1540,631,1538,631,1537,631,1535,630,1534,630,1532,630,1531,630,1529,629,1527,629,1526,629,1524,629,1523,629,1521,629,1520,629,1518,629,1517,629,1515,629,1514,629,1512,629,1511,630,1510,630,1508,630,1507,631,1505,631,1504,631,1503,632,1501,632,1500,633,1499,634,1498,634,1496,635,1495,636,1494,636,1493,637,1492,638,1490,639,1489,639,1488,640,1487,641,1486,642,1485,643,1484,644,1483,645,1482,646,1482,647,1481,648,1480,649,1479,651,1478,652,1477,653,1477,654,1476,655,1475,656,1475,658,1474,659,1474,660,1473,661,1472,663,1472,664,1472,665,1471,666,1471,668,1470,669,1470,670,1470,671,1469,673,1469,674,1469,675,1469,677,1469,678,1468,679,1468,680,1468,682,1468,683,1468,684,1468,686,1468,687,1469,688,1469,690,1469,691,1469,692,1469,693,1470,695,1470,696,1470,697,1470,698,1471,700,1471,701,1472,702,1472,703,1473,704,1473,706,1474,707,1475,708,1475,709,1476,710,1477,711,1477,713,1478,714,1479,715,1480,716,1480,717,1481,718,1482,719,1483,720,1484,721,1485,722,1486,723,1487,724,1488,725,1489,726,1490,727,1491,728,1492,729,1493,730,1495,731,1496,732,1497,733,1498,733,1499,734,1501,735,1502,736,1503,737,1504,738,1506,738,1507,739,1508,740,1510,741,1511,741,1513,742,1514,743,1516,743,1517,744,1518,745,1520,745,1521,746,1523,746,1525,747,1526,748,1528,748,1529,749,1531,749,1533,750,1534,750,1536,751,1538,751,1539,752,1541,752,1543,752,1545,753,1546,753,1548,754,1550,754,1552,754,1553,755,1555,755,1557,755,1559,755,1561,756,1562,756,1564,756,1566,756,1568,756,1569,756,1571,756,1573,756,1574,757,1576,757,1578,757,1579,757,1581,756,1582,756,1584,756,1585,756,1587,756,1588,756" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
-                
-              
-            
-             
         </svg>
           
       </div>
