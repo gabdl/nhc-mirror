@@ -640,17 +640,76 @@ document.addEventListener('DOMContentLoaded', function() {
           
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-pac-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-pac-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
 
@@ -898,6 +957,24 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 5:00 PM PDT Wed Oct 14 2026...</b><br>South of Southern Mexico:<br>An area of low pressure is forecast to form offshore of southern Mexico during the early to middle part of next week. Environmental conditions appear conducive for some gradual development thereafter while the system moves generally westward to west-northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="1588,756,1591,756,1593,756,1596,756,1598,756,1600,756,1602,756,1604,756,1607,756,1609,755,1611,755,1613,755,1615,755,1617,754,1618,754,1620,754,1622,754,1624,753,1626,753,1627,752,1629,752,1631,751,1632,751,1634,750,1635,750,1637,749,1638,749,1639,748,1641,747,1642,747,1643,746,1645,745,1646,744,1647,743,1648,742,1649,741,1650,740,1651,739,1652,738,1653,737,1654,736,1655,735,1655,734,1656,733,1657,731,1657,730,1658,729,1658,728,1659,726,1659,725,1659,724,1659,722,1660,721,1660,720,1660,718,1660,717,1659,716,1659,714,1659,713,1658,712,1658,710,1657,709,1657,708,1656,706,1655,705,1655,704,1654,702,1653,701,1652,700,1651,698,1650,697,1648,696,1647,695,1646,693,1644,692,1643,691,1642,689,1640,688,1639,687,1637,686,1636,685,1634,683,1632,682,1631,681,1629,680,1627,679,1625,678,1624,676,1622,675,1620,674,1618,673,1617,672,1615,671,1613,670,1611,669,1609,668,1607,667,1605,666,1604,665,1602,664,1600,663,1598,662,1596,661,1594,660,1592,659,1590,658,1588,658,1586,657,1583,656,1581,655,1579,654,1577,653,1575,653,1572,652,1570,651,1568,650,1565,649,1563,649,1561,648,1558,647,1556,646,1553,646,1550,645,1548,644,1545,643,1542,643,1540,642,1537,641,1534,641,1531,640,1529,639,1526,639,1523,638,1520,637,1517,637,1514,636,1511,636,1508,635,1505,635,1502,634,1499,633,1496,633,1492,632,1489,632,1486,631,1483,631,1480,631,1477,630,1473,630,1470,629,1467,629,1464,629,1461,628,1457,628,1454,628,1451,627,1448,627,1444,627,1441,627,1438,627,1435,627,1432,627,1429,627,1426,627,1423,627,1420,627,1417,627,1414,628,1411,628,1408,628,1406,629,1403,630,1400,630,1398,631,1395,632,1393,633,1391,634,1388,635,1386,636,1384,638,1382,639,1380,641,1378,642,1377,644,1375,646,1374,648,1372,650,1371,652,1370,654,1368,656,1367,658,1366,660,1366,662,1365,665,1364,667,1363,669,1363,672,1363,674,1362,676,1362,678,1362,681,1362,683,1362,685,1362,687,1362,690,1363,692,1363,694,1363,696,1364,698,1365,700,1366,701,1366,703,1367,705,1369,706,1370,708,1371,709,1372,711,1374,712,1375,713,1377,715,1378,716,1380,717,1382,718,1384,719,1385,720,1387,721,1389,722,1391,723,1393,724,1396,725,1398,726,1400,726,1402,727,1405,728,1407,729,1409,729,1412,730,1414,731,1417,732,1419,732,1422,733,1424,734,1427,734,1430,735,1432,736,1435,737,1438,737,1440,738,1443,739,1446,740,1449,740,1451,741,1454,742,1457,742,1460,743,1463,744,1465,744,1468,745,1471,746,1474,746,1477,747,1480,747,1483,748,1486,748,1489,749,1492,749,1495,750,1498,750,1501,751,1503,751,1506,752,1509,752,1512,753,1515,753,1518,753,1521,754,1524,754,1527,754,1530,754,1533,755,1536,755,1539,755,1542,755,1545,756,1548,756,1551,756,1554,756,1557,756,1559,756,1562,756,1565,756,1568,756,1570,756,1573,756,1576,756,1578,756,1581,756,1583,756,1586,756,1588,756" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -932,6 +1009,88 @@ document.addEventListener('DOMContentLoaded', function() {
     
   </g>
    
+        </svg>
+          
+      </div>
+
+      <div id="view-pac-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_pac_7d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_pac_7d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_pac_7d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_pac_7d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_pac_7d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_pac_7d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_pac_7d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_pac_7d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_pac_7d1_w1024.png" 
+          alt="7 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="View Atlantic Outlook" 
+    onclick="switchBasin('atl')">
+    <polygon points="1916,218,1903,228,1884,239,1875,254,1856,264,1847,283,1841,300,1849,328,1858,347,1867,368,1864,391,1864,417,1843,415,1837,402,1828,381,1819,355,1815,336,1807,321,1785,321,1771,319,1751,311,1726,313,1704,317,1698,330,1672,336,1657,330,1636,326,1611,326,1593,336,1576,345,1566,360,1566,381,1564,400,1553,419,1549,446,1555,472,1564,499,1578,516,1596,537,1617,544,1636,544,1657,535,1672,518,1675,495,1694,489,1711,480,1730,480,1749,493,1745,510,1738,527,1734,544,1728,565,1721,584,1711,594,1736,594,1751,590,1775,590,1794,599,1811,607,1817,624,1809,637,1805,656,1805,679,1809,698,1828,713,1843,726,1860,720,1884,711,1901,711,1918,724" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+           
+            
+            
+              
+                
+                  
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="20"
+    data-details="
+  
+  <b>As of 5:00 PM PDT Wed Oct 14 2026...</b><br>South of Southern Mexico:<br>An area of low pressure is forecast to form offshore of southern Mexico during the early to middle part of next week. Environmental conditions appear conducive for some gradual development thereafter while the system moves generally westward to west-northwestward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="1588,756,1591,756,1593,756,1596,756,1598,756,1600,756,1602,756,1604,756,1607,756,1609,755,1611,755,1613,755,1615,755,1617,754,1618,754,1620,754,1622,754,1624,753,1626,753,1627,752,1629,752,1631,751,1632,751,1634,750,1635,750,1637,749,1638,749,1639,748,1641,747,1642,747,1643,746,1645,745,1646,744,1647,743,1648,742,1649,741,1650,740,1651,739,1652,738,1653,737,1654,736,1655,735,1655,734,1656,733,1657,731,1657,730,1658,729,1658,728,1659,726,1659,725,1659,724,1659,722,1660,721,1660,720,1660,718,1660,717,1659,716,1659,714,1659,713,1658,712,1658,710,1657,709,1657,708,1656,706,1655,705,1655,704,1654,702,1653,701,1652,700,1651,698,1650,697,1648,696,1647,695,1646,693,1644,692,1643,691,1642,689,1640,688,1639,687,1637,686,1636,685,1634,683,1632,682,1631,681,1629,680,1627,679,1625,678,1624,676,1622,675,1620,674,1618,673,1617,672,1615,671,1613,670,1611,669,1609,668,1607,667,1605,666,1604,665,1602,664,1600,663,1598,662,1596,661,1594,660,1592,659,1590,658,1588,658,1586,657,1583,656,1581,655,1579,654,1577,653,1575,653,1572,652,1570,651,1568,650,1565,649,1563,649,1561,648,1558,647,1556,646,1553,646,1550,645,1548,644,1545,643,1542,643,1540,642,1537,641,1534,641,1531,640,1529,639,1526,639,1523,638,1520,637,1517,637,1514,636,1511,636,1508,635,1505,635,1502,634,1499,633,1496,633,1492,632,1489,632,1486,631,1483,631,1480,631,1477,630,1473,630,1470,629,1467,629,1464,629,1461,628,1457,628,1454,628,1451,627,1448,627,1444,627,1441,627,1438,627,1435,627,1432,627,1429,627,1426,627,1423,627,1420,627,1417,627,1414,628,1411,628,1408,628,1406,629,1403,630,1400,630,1398,631,1395,632,1393,633,1391,634,1388,635,1386,636,1384,638,1382,639,1380,641,1378,642,1377,644,1375,646,1374,648,1372,650,1371,652,1370,654,1368,656,1367,658,1366,660,1366,662,1365,665,1364,667,1363,669,1363,672,1363,674,1362,676,1362,678,1362,681,1362,683,1362,685,1362,687,1362,690,1363,692,1363,694,1363,696,1364,698,1365,700,1366,701,1366,703,1367,705,1369,706,1370,708,1371,709,1372,711,1374,712,1375,713,1377,715,1378,716,1380,717,1382,718,1384,719,1385,720,1387,721,1389,722,1391,723,1393,724,1396,725,1398,726,1400,726,1402,727,1405,728,1407,729,1409,729,1412,730,1414,731,1417,732,1419,732,1422,733,1424,734,1427,734,1430,735,1432,736,1435,737,1438,737,1440,738,1443,739,1446,740,1449,740,1451,741,1454,742,1457,742,1460,743,1463,744,1465,744,1468,745,1471,746,1474,746,1477,747,1480,747,1483,748,1486,748,1489,749,1492,749,1495,750,1498,750,1501,751,1503,751,1506,752,1509,752,1512,753,1515,753,1518,753,1521,754,1524,754,1527,754,1530,754,1533,755,1536,755,1539,755,1542,755,1545,756,1548,756,1551,756,1554,756,1557,756,1559,756,1562,756,1565,756,1568,756,1570,756,1573,756,1576,756,1578,756,1581,756,1583,756,1586,756,1588,756" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
+                
+              
+            
+             
         </svg>
           
       </div>
@@ -1146,14 +1305,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Wed Oct 14 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Simon, located a couple hundred miles south-southeast of the<br>southern tip of the Baja California peninsula, and on Tropical Storm<br>Trudy, located several hundred miles south of Acapulco, Mexico.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Hagen<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 PM HST Wed Oct 14 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Simon, located a few hundred miles south-southeast of the southern<br>tip of the Baja California Peninsula, and on Tropical Storm Trudy,<br>located several hundred miles south of Acapulco, Mexico.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Gibbs<br><br><br></pre>
       </div>
           
     </div>
         
     <div id="two-cpac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">027 <br />ACPN51 PHFO 141742<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />800 AM HST miércoles 14 de octubre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Simon, ubicado a un par de cientos de<br />millas al sureste del extremo sur de la península de Baja<br />California, y sobre la Tormenta Tropical Trudy, ubicada a varios<br />cientos de millas al sur de Acapulco, México.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Hagen <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">028 <br />ACPN51 PHFO 142331<br />TWOSCP<br /><br />Perspectiva de tiempo tropical<br />Centro de Huracanes del Pacífico Central del SNM Honolulu HI<br />Emitido por el Centro Nacional de Huracanes del SNM Miami FL<br />200 PM HST miércoles 14 de octubre de 2026<br /><br />Para el Pacífico Norte central…entre 140 y 180 longitud oeste<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Simon, ubicado a unos cientos de<br />millas al sureste del extremo sur de la Península de Baja<br />California, y sobre la Tormenta Tropical Trudy, ubicada a varios<br />cientos de millas al sur de Acapulco, México.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Gibbs <br /><br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
     </div>
@@ -1164,7 +1323,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 AM PDT Wed Oct 14 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Simon, located a couple hundred miles south-southeast of the <br>southern tip of the Baja California peninsula, and on Tropical Storm <br>Trudy, located several hundred miles south of Acapulco, Mexico.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Hagen<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 PM PDT Wed Oct 14 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Simon, located a few hundred miles south-southeast of the southern <br>tip of the Baja California Peninsula, and on Tropical Storm Trudy, <br>located several hundred miles south of Acapulco, Mexico.<br><br>1. South of Southern Mexico:<br>An area of low pressure is forecast to form offshore of southern <br>Mexico during the early to middle part of next week. Environmental <br>conditions appear conducive for some gradual development thereafter <br>while the system moves generally westward to west-northwestward.<br>* Formation chance through 48 hours...low...near 0 percent. <br>* Formation chance through 7 days...low...20 percent.<br>
+<br><br>Forecaster Gibbs<br><br></pre>
       </div>
           
             
@@ -1179,7 +1339,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">026 <br />ABPZ21 KNHC 141742<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1100 AM PDT miércoles 14 de octubre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Simon, ubicado a un par de cientos de<br />millas al sureste del extremo sur de la península de Baja<br />California, y sobre la Tormenta Tropical Trudy, ubicada a varios<br />cientos de millas al sur de Acapulco, México.<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Hagen<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">027 <br />ABPZ21 KNHC 142331<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />500 PM PDT miércoles 14 de octubre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Simon, ubicado a unos cientos de<br />millas al sureste del extremo sur de la Península de Baja<br />California, y sobre la Tormenta Tropical Trudy, ubicada a varios<br />cientos de millas al sur de Acapulco, México.<br /><br />Sur del sur de México: Se pronostica que se forme un área de baja<br />presión hacia el mar frente al sur de México durante la primera<br />parte de la próxima semana. Las condiciones ambientales parecen<br />propicias para algún desarrollo gradual a partir de entonces,<br />mientras que el sistema se mueve generalmente hacia el oeste a<br />oeste-noroeste.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...baja...20 por ciento.<br /><br />$$<br />Pronosticador Gibbs<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
