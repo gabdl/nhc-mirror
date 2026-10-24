@@ -627,17 +627,76 @@ document.addEventListener('DOMContentLoaded', function() {
           
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-pac-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-pac-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
       
@@ -712,17 +771,76 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-cpac-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-cpac-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
       
@@ -935,6 +1053,24 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
           
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 11:00 PM PDT Fri Oct 23 2026...</b><br>Western Central Pacific:<br>A broad area of low pressure located near or just west of the International Date Line, several hundred miles west of Johnston Atoll, is producing disorganized showers and thunderstorms. Environmental conditions could support some slow development while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="17" cy="644" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
   
   
   
@@ -944,14 +1080,84 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0300 PM CST Fri Oct 23 (Advisory #10)</b><br>Maximum Sustained Winds: 90 knots; 105 mph<br>Minimum Central Pressure: 971 mb<br>Located at: 11.2N 102.3W<br>Movement: northwest at 4 knots; 5 mph<br>
+  <b>As of 0900 PM CST Fri Oct 23 (Advisory #11)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 965 mb<br>Located at: 12.0N 102.6W<br>Movement: north-northwest at 6 knots; 7 mph<br>
 "
-    data-action="/refresh/graphics_ep2+shtml/232038.shtml?cone#contents">
+    data-action="/refresh/graphics_ep2+shtml/240245.shtml?cone#contents">
     
-      <circle cx="1469" cy="687" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1464" cy="672" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
+        </svg>
+          
+      </div>
+
+      <div id="view-pac-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_pac_2d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_pac_2d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_pac_2d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_pac_2d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_pac_2d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_pac_2d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_pac_2d1_w1024.png" 
+          alt="2 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1166" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="852" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+           
+            
+            
+              
+                
+                  
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 11:00 PM PDT Fri Oct 23 2026...</b><br>Western Central Pacific:<br>A broad area of low pressure located near or just west of the International Date Line, several hundred miles west of Johnston Atoll, is producing disorganized showers and thunderstorms. Environmental conditions could support some slow development while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:0">
+  
+    <circle cx="965" cy="582" r="50" fill="transparent" pointer-events="all" />
+  
+  </g>
+
+                
+              
+            
+             
         </svg>
           
       </div>
@@ -1005,13 +1211,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="20"
     data-details="
   
-  <b>As of 5:00 PM PDT Fri Oct 23 2026...</b><br>Western Central Pacific:<br>An area of low pressure is forecast to form near the International Date Line, several hundred miles west of Johnston Atoll late this weekend or early next week. Environmental conditions could support some slow development thereafter while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 11:00 PM PDT Fri Oct 23 2026...</b><br>Western Central Pacific:<br>A broad area of low pressure located near or just west of the International Date Line, several hundred miles west of Johnston Atoll, is producing disorganized showers and thunderstorms. Environmental conditions could support some slow development while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="283,493,280,492,277,492,273,491,270,491,266,490,263,490,259,490,256,490,252,490,248,490,245,490,241,490,237,491,233,491,229,492,226,492,222,493,218,493,214,494,210,495,206,496,202,497,198,498,194,499,190,500,186,501,182,502,178,504,174,505,170,506,166,508,162,509,158,511,154,512,151,514,147,516,143,517,139,519,135,521,131,523,128,524,124,526,120,528,117,530,113,532,110,534,106,536,103,538,100,540,96,542,93,544,90,546,87,548,84,550,81,552,78,555,75,557,72,559,70,561,67,563,65,565,62,567,60,569,58,572,55,574,53,576,51,578,49,580,47,582,46,585,44,587,42,589,41,591,39,593,38,595,37,597,35,599,34,601,33,603,32,606,31,608,30,610,29,612,28,614,28,616,27,618,27,620,26,622,26,623,25,625,25,627,25,629,25,631,24,633,24,635,24,637,25,638,25,640,25,642,25,643,25,645,26,647,26,648,27,650,27,652,28,653,29,655,29,656,30,658,31,659,32,661,33,662,34,663,35,665,36,666,37,667,38,668,39,669,41,671,42,672,43,673,45,674,46,675,48,676,49,677,51,677,52,678,54,679,56,680,58,681,59,681,61,682,63,683,65,683,67,684,69,684,71,685,73,685,75,686,77,686,80,687,82,687,84,687,86,688,89,688,91,688,94,689,96,689,99,689,101,689,104,689,106,689,109,689,111,689,114,690,117,690,119,690,122,690,125,689,128,689,131,689,134,689,136,689,139,689,142,689,145,689,148,688,151,688,154,688,157,688,160,687,163,687,167,687,170,686,173,686,176,686,179,685,183,685,186,685,189,684,192,684,196,683,199,683,202,682,205,682,209,681,212,681,215,680,219,680,222,679,225,679,229,678,232,677,235,677,239,676,242,675,245,675,249,674,252,673,255,672,258,672,262,671,265,670,268,669,271,668,274,667,277,666,280,665,283,664,286,663,289,662,292,661,295,660,298,659,301,658,303,656,306,655,309,654,311,653,314,651,316,650,319,649,321,647,324,646,326,644,328,643,330,641,332,639,334,638,336,636,338,634,340,632,342,631,343,629,345,627,346,625,348,623,349,621,350,619,352,617,353,615,354,612,355,610,355,608,356,606,357,603,357,601,358,598,358,596,359,594,359,591,359,589,359,586,359,584,359,581,359,579,359,576,358,573,358,571,358,568,357,566,356,563,356,561,355,558,354,556,353,553,352,551,351,548,350,546,349,543,347,541,346,538,345,536,343,534,341,532,340,529,338,527,336,525,334,523,333,521,331,519,328,517,326,515,324,513,322,511,319,509,317,508,315,506,312,504,309,503,307,501,304,500,301,499,298,498,295,496,292,495,289,494,286,494,283,493" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="17" cy="644" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="287,500,283,499,278,498,273,497,268,497,263,497,258,497,252,497,247,498,242,498,236,499,231,500,225,501,219,502,214,504,208,505,202,507,196,509,191,511,185,513,179,515,173,517,168,519,162,522,156,524,151,527,145,529,140,531,135,534,129,537,124,539,119,542,114,544,109,547,104,549,99,552,95,554,91,556,86,559,82,561,78,563,74,565,71,567,67,569,64,571,61,573,57,575,54,577,51,578,49,580,46,582,43,584,41,585,39,587,36,588,34,590,32,591,30,593,28,594,27,596,25,597,23,598,22,600,20,601,19,602,18,604,16,605,15,606,14,607,13,609,12,610,11,611,10,613,9,614,8,615,8,616,7,618,6,619,5,620,5,622,4,623,3,624,3,625,2,627,2,628,1,629,1,631,1,632,0,633,0,635,0,636,0,637,0,639,0,640,1,641,1,643,1,644,1,645,1,647,1,648,2,649,2,651,2,652,2,653,2,655,2,656,2,657,2,659,2,660,2,661,2,662,2,664,2,665,2,666,2,667,2,669,2,670,2,671,2,672,1,673,1,675,1,676,1,677,1,678,1,679,0,680,0,682,0,683,0,684,0,685,1,686,1,687,2,688,2,689,3,690,3,691,4,692,5,693,6,694,7,694,7,695,8,696,9,697,11,698,12,698,13,699,14,700,16,700,17,701,19,702,20,702,22,703,24,703,25,704,27,704,29,705,31,705,33,706,35,706,38,706,40,707,42,707,45,707,47,707,49,708,52,708,54,708,57,708,60,708,62,708,65,708,68,708,70,708,73,708,76,708,79,708,82,708,85,708,87,707,90,707,93,707,96,707,99,706,102,706,105,705,108,705,111,705,114,704,117,704,120,703,123,702,126,702,129,701,132,701,135,700,137,699,140,698,143,698,146,697,149,696,152,695,155,695,159,694,162,693,165,692,168,691,171,691,174,690,177,689,180,688,184,687,187,686,190,686,193,685,197,684,200,683,204,682,207,681,211,681,214,680,218,679,221,678,225,678,229,677,232,676,236,675,240,675,244,674,248,673,252,673,256,672,260,671,264,671,268,670,272,669,275,669,279,668,283,667,287,666,291,665,295,665,299,664,302,663,306,661,310,660,313,659,316,658,320,657,323,655,326,654,329,652,332,650,335,649,338,647,340,645,343,643,345,640,347,638,349,636,351,633,352,630,354,627,355,624,356,621,357,618,358,615,359,611,359,607,359,604,359,600,359,596,359,592,359,588,358,584,357,580,356,576,355,572,354,568,353,564,351,560,349,556,347,552,345,548,343,544,341,540,338,537,335,533,333,529,330,526,326,523,323,520,320,517,316,514,313,511,309,509,305,507,301,505,296,503,292,501,287,500" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1026,11 +1236,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 0300 PM CST Fri Oct 23 (Advisory #10)</b><br>Maximum Sustained Winds: 90 knots; 105 mph<br>Minimum Central Pressure: 971 mb<br>Located at: 11.2N 102.3W<br>Movement: northwest at 4 knots; 5 mph<br>
+  <b>As of 0900 PM CST Fri Oct 23 (Advisory #11)</b><br>Maximum Sustained Winds: 95 knots; 110 mph<br>Minimum Central Pressure: 965 mb<br>Located at: 12.0N 102.6W<br>Movement: north-northwest at 6 knots; 7 mph<br>
 "
-    data-action="/refresh/graphics_ep2+shtml/232038.shtml?cone#contents">
+    data-action="/refresh/graphics_ep2+shtml/240245.shtml?cone#contents">
     
-      <circle cx="1469" cy="687" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="1464" cy="672" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
@@ -1100,13 +1310,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="20"
     data-details="
   
-  <b>As of 5:00 PM PDT Fri Oct 23 2026...</b><br>Western Central Pacific:<br>An area of low pressure is forecast to form near the International Date Line, several hundred miles west of Johnston Atoll late this weekend or early next week. Environmental conditions could support some slow development thereafter while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 11:00 PM PDT Fri Oct 23 2026...</b><br>Western Central Pacific:<br>A broad area of low pressure located near or just west of the International Date Line, several hundred miles west of Johnston Atoll, is producing disorganized showers and thunderstorms. Environmental conditions could support some slow development while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="283,493,280,492,277,492,273,491,270,491,266,490,263,490,259,490,256,490,252,490,248,490,245,490,241,490,237,491,233,491,229,492,226,492,222,493,218,493,214,494,210,495,206,496,202,497,198,498,194,499,190,500,186,501,182,502,178,504,174,505,170,506,166,508,162,509,158,511,154,512,151,514,147,516,143,517,139,519,135,521,131,523,128,524,124,526,120,528,117,530,113,532,110,534,106,536,103,538,100,540,96,542,93,544,90,546,87,548,84,550,81,552,78,555,75,557,72,559,70,561,67,563,65,565,62,567,60,569,58,572,55,574,53,576,51,578,49,580,47,582,46,585,44,587,42,589,41,591,39,593,38,595,37,597,35,599,34,601,33,603,32,606,31,608,30,610,29,612,28,614,28,616,27,618,27,620,26,622,26,623,25,625,25,627,25,629,25,631,24,633,24,635,24,637,25,638,25,640,25,642,25,643,25,645,26,647,26,648,27,650,27,652,28,653,29,655,29,656,30,658,31,659,32,661,33,662,34,663,35,665,36,666,37,667,38,668,39,669,41,671,42,672,43,673,45,674,46,675,48,676,49,677,51,677,52,678,54,679,56,680,58,681,59,681,61,682,63,683,65,683,67,684,69,684,71,685,73,685,75,686,77,686,80,687,82,687,84,687,86,688,89,688,91,688,94,689,96,689,99,689,101,689,104,689,106,689,109,689,111,689,114,690,117,690,119,690,122,690,125,689,128,689,131,689,134,689,136,689,139,689,142,689,145,689,148,688,151,688,154,688,157,688,160,687,163,687,167,687,170,686,173,686,176,686,179,685,183,685,186,685,189,684,192,684,196,683,199,683,202,682,205,682,209,681,212,681,215,680,219,680,222,679,225,679,229,678,232,677,235,677,239,676,242,675,245,675,249,674,252,673,255,672,258,672,262,671,265,670,268,669,271,668,274,667,277,666,280,665,283,664,286,663,289,662,292,661,295,660,298,659,301,658,303,656,306,655,309,654,311,653,314,651,316,650,319,649,321,647,324,646,326,644,328,643,330,641,332,639,334,638,336,636,338,634,340,632,342,631,343,629,345,627,346,625,348,623,349,621,350,619,352,617,353,615,354,612,355,610,355,608,356,606,357,603,357,601,358,598,358,596,359,594,359,591,359,589,359,586,359,584,359,581,359,579,359,576,358,573,358,571,358,568,357,566,356,563,356,561,355,558,354,556,353,553,352,551,351,548,350,546,349,543,347,541,346,538,345,536,343,534,341,532,340,529,338,527,336,525,334,523,333,521,331,519,328,517,326,515,324,513,322,511,319,509,317,508,315,506,312,504,309,503,307,501,304,500,301,499,298,498,295,496,292,495,289,494,286,494,283,493" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="17" cy="644" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="287,500,283,499,278,498,273,497,268,497,263,497,258,497,252,497,247,498,242,498,236,499,231,500,225,501,219,502,214,504,208,505,202,507,196,509,191,511,185,513,179,515,173,517,168,519,162,522,156,524,151,527,145,529,140,531,135,534,129,537,124,539,119,542,114,544,109,547,104,549,99,552,95,554,91,556,86,559,82,561,78,563,74,565,71,567,67,569,64,571,61,573,57,575,54,577,51,578,49,580,46,582,43,584,41,585,39,587,36,588,34,590,32,591,30,593,28,594,27,596,25,597,23,598,22,600,20,601,19,602,18,604,16,605,15,606,14,607,13,609,12,610,11,611,10,613,9,614,8,615,8,616,7,618,6,619,5,620,5,622,4,623,3,624,3,625,2,627,2,628,1,629,1,631,1,632,0,633,0,635,0,636,0,637,0,639,0,640,1,641,1,643,1,644,1,645,1,647,1,648,2,649,2,651,2,652,2,653,2,655,2,656,2,657,2,659,2,660,2,661,2,662,2,664,2,665,2,666,2,667,2,669,2,670,2,671,2,672,1,673,1,675,1,676,1,677,1,678,1,679,0,680,0,682,0,683,0,684,0,685,1,686,1,687,2,688,2,689,3,690,3,691,4,692,5,693,6,694,7,694,7,695,8,696,9,697,11,698,12,698,13,699,14,700,16,700,17,701,19,702,20,702,22,703,24,703,25,704,27,704,29,705,31,705,33,706,35,706,38,706,40,707,42,707,45,707,47,707,49,708,52,708,54,708,57,708,60,708,62,708,65,708,68,708,70,708,73,708,76,708,79,708,82,708,85,708,87,707,90,707,93,707,96,707,99,706,102,706,105,705,108,705,111,705,114,704,117,704,120,703,123,702,126,702,129,701,132,701,135,700,137,699,140,698,143,698,146,697,149,696,152,695,155,695,159,694,162,693,165,692,168,691,171,691,174,690,177,689,180,688,184,687,187,686,190,686,193,685,197,684,200,683,204,682,207,681,211,681,214,680,218,679,221,678,225,678,229,677,232,676,236,675,240,675,244,674,248,673,252,673,256,672,260,671,264,671,268,670,272,669,275,669,279,668,283,667,287,666,291,665,295,665,299,664,302,663,306,661,310,660,313,659,316,658,320,657,323,655,326,654,329,652,332,650,335,649,338,647,340,645,343,643,345,640,347,638,349,636,351,633,352,630,354,627,355,624,356,621,357,618,358,615,359,611,359,607,359,604,359,600,359,596,359,592,359,588,358,584,357,580,356,576,355,572,354,568,353,564,351,560,349,556,347,552,345,548,343,544,341,540,338,537,335,533,333,529,330,526,326,523,323,520,320,517,316,514,313,511,309,509,305,507,301,505,296,503,292,501,287,500" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1160,6 +1374,94 @@ document.addEventListener('DOMContentLoaded', function() {
   </g>
 
 
+          
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 8:00 PM HST Fri Oct 23 2026...</b><br>Western Central Pacific:<br>A broad area of low pressure located near or just west of the International Date Line, several hundred miles west of Johnston Atoll, is producing disorganized showers and thunderstorms. Environmental conditions could support some slow development while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <circle cx="164" cy="901" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+   
+        </svg>
+          
+      </div>
+
+      <div id="view-cpac-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_cpac_2d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_cpac_2d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_cpac_2d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_cpac_2d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_cpac_2d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_cpac_2d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_cpac_2d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_cpac_2d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_cpac_2d1_w1024.png" 
+          alt="2 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+
+          
+
+           
+            
+            
+              
+                
+                  
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-risk="low"
+    data-prob="10"
+    data-details="
+  
+  <b>As of 8:00 PM HST Fri Oct 23 2026...</b><br>Western Central Pacific:<br>A broad area of low pressure located near or just west of the International Date Line, several hundred miles west of Johnston Atoll, is producing disorganized showers and thunderstorms. Environmental conditions could support some slow development while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+"
+    data-action="switchDisturbance:0">
+  
+    <circle cx="965" cy="723" r="50" fill="transparent" pointer-events="all" />
+  
+  </g>
+
+                
+              
+            
              
         </svg>
           
@@ -1212,13 +1514,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="20"
     data-details="
   
-  <b>As of 2:00 PM HST Fri Oct 23 2026...</b><br>Western Central Pacific:<br>An area of low pressure is forecast to form near the International Date Line, several hundred miles west of Johnston Atoll late this weekend or early next week. Environmental conditions could support some slow development thereafter while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 8:00 PM HST Fri Oct 23 2026...</b><br>Western Central Pacific:<br>A broad area of low pressure located near or just west of the International Date Line, several hundred miles west of Johnston Atoll, is producing disorganized showers and thunderstorms. Environmental conditions could support some slow development while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="574,677,569,676,564,675,559,674,554,674,548,673,543,673,537,673,532,673,526,673,521,673,515,673,509,673,503,674,497,675,491,675,485,676,479,677,473,678,467,679,461,680,455,682,449,683,443,685,437,686,431,688,424,690,418,691,412,693,406,695,400,697,394,699,388,702,382,704,376,706,370,709,364,711,358,713,352,716,346,719,340,721,334,724,329,727,323,730,318,732,312,735,307,738,301,741,296,744,291,747,286,750,281,753,276,756,271,759,267,762,262,766,258,769,253,772,249,775,245,778,241,781,237,785,233,788,230,791,226,794,223,797,220,801,216,804,213,807,211,810,208,813,205,816,203,820,200,823,198,826,196,829,194,832,192,835,190,838,188,841,187,845,185,848,184,851,182,854,181,857,180,860,179,863,178,865,178,868,177,871,176,874,176,877,176,880,175,882,175,885,175,888,175,891,175,893,175,896,176,898,176,901,177,903,177,906,178,908,179,911,179,913,180,915,181,918,182,920,184,922,185,924,186,926,188,928,189,930,191,932,192,934,194,936,196,938,198,940,200,941,202,943,204,944,206,946,208,947,211,949,213,950,216,951,218,953,221,954,223,955,226,956,229,957,232,958,235,959,238,960,241,961,244,962,247,963,250,963,254,964,257,965,260,965,264,966,267,966,271,967,274,967,278,968,282,968,286,968,289,969,293,969,297,969,301,969,305,969,309,969,313,969,318,969,322,969,326,969,330,969,335,969,339,969,343,969,348,969,352,968,357,968,361,968,366,968,371,967,375,967,380,967,385,966,390,966,394,965,399,965,404,964,409,964,414,963,419,963,424,962,429,961,434,961,439,960,444,959,449,959,454,958,459,957,465,956,470,956,475,955,480,954,485,953,490,952,495,951,501,950,506,949,511,948,516,947,521,946,526,945,531,944,536,943,541,942,546,940,551,939,556,938,560,936,565,935,570,933,574,932,579,930,584,929,588,927,593,926,597,924,601,922,605,920,610,918,614,917,618,915,622,913,626,911,629,908,633,906,637,904,640,902,643,900,647,897,650,895,653,892,656,890,659,887,662,885,664,882,667,879,669,876,672,873,674,870,676,867,678,864,680,861,681,858,683,855,684,851,686,848,687,845,688,841,689,838,689,834,690,830,691,827,691,823,691,819,691,816,691,812,691,808,691,804,691,801,690,797,690,793,689,789,688,786,687,782,686,778,685,774,684,770,682,767,681,763,679,759,677,756,675,752,673,748,671,745,669,741,667,738,664,735,662,731,659,728,656,725,653,722,650,718,647,715,644,712,641,710,637,707,634,704,630,701,627,699,623,696,619,694,615,692,611,690,606,688,602,686,598,684,593,682,589,681,584,679,579,678,574,677" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="164" cy="901" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="581,688,574,686,566,685,559,684,551,683,543,683,535,683,527,684,519,684,510,685,502,686,493,688,484,690,476,691,467,694,458,696,449,698,440,701,431,704,423,707,414,710,405,713,396,717,387,720,379,724,370,727,362,731,353,734,345,738,337,742,329,746,321,750,313,753,305,757,298,761,291,764,284,768,277,771,270,775,264,778,258,781,252,785,246,788,241,791,236,793,231,796,226,799,221,802,217,804,212,807,208,809,204,812,201,814,197,817,193,819,190,821,187,823,184,826,181,828,178,830,176,832,173,834,171,836,169,838,166,840,164,842,162,844,161,846,159,847,157,849,156,851,154,853,153,855,151,857,150,859,149,861,148,863,147,864,146,866,145,868,144,870,143,872,142,874,141,876,140,878,140,880,139,882,138,884,138,886,137,888,137,890,136,892,136,894,135,896,135,898,135,900,134,902,134,904,134,906,134,908,133,910,133,912,133,914,133,916,133,918,133,919,133,921,133,923,133,925,133,927,133,929,133,931,133,933,133,935,133,937,133,938,133,940,133,942,133,944,134,946,134,947,134,949,134,951,135,953,135,954,135,956,136,958,136,959,137,961,138,962,138,964,139,965,140,967,141,968,142,970,143,971,144,973,145,974,146,975,147,977,149,978,150,979,152,980,154,981,155,983,157,984,159,985,161,986,164,987,166,988,168,988,171,989,174,990,177,991,179,992,182,992,186,993,189,993,192,994,195,994,199,995,202,995,206,996,210,996,214,996,217,997,221,997,225,997,229,997,233,997,238,997,242,997,246,997,250,997,255,997,259,997,263,996,268,996,272,996,277,995,281,995,286,995,290,994,295,994,299,993,304,992,308,992,313,991,318,990,322,989,327,989,331,988,336,987,340,986,345,985,349,984,354,983,359,982,363,981,368,979,373,978,377,977,382,976,387,975,391,973,396,972,401,971,406,970,411,969,416,967,421,966,426,965,431,964,436,962,441,961,446,960,451,959,457,957,462,956,468,955,473,954,479,953,484,952,490,951,496,949,502,948,508,947,514,946,520,945,526,944,532,944,538,943,544,942,550,940,556,939,562,938,568,937,574,936,580,935,586,934,592,932,598,931,604,929,609,928,615,926,620,924,626,922,631,920,636,918,641,916,645,914,650,911,654,909,658,906,662,903,666,900,669,896,673,893,676,889,679,885,681,881,683,877,685,873,687,868,689,863,690,858,691,853,691,847,692,842,692,836,692,830,691,825,691,819,690,813,689,807,687,801,685,795,683,789,681,783,679,777,676,771,673,765,670,759,667,753,663,748,659,742,655,737,650,732,646,727,641,722,636,717,631,713,625,709,620,705,614,701,607,698,601,695,595,692,588,690,581,688" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1288,13 +1594,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="20"
     data-details="
   
-  <b>As of 2:00 PM HST Fri Oct 23 2026...</b><br>Western Central Pacific:<br>An area of low pressure is forecast to form near the International Date Line, several hundred miles west of Johnston Atoll late this weekend or early next week. Environmental conditions could support some slow development thereafter while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 8:00 PM HST Fri Oct 23 2026...</b><br>Western Central Pacific:<br>A broad area of low pressure located near or just west of the International Date Line, several hundred miles west of Johnston Atoll, is producing disorganized showers and thunderstorms. Environmental conditions could support some slow development while the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <polygon points="574,677,569,676,564,675,559,674,554,674,548,673,543,673,537,673,532,673,526,673,521,673,515,673,509,673,503,674,497,675,491,675,485,676,479,677,473,678,467,679,461,680,455,682,449,683,443,685,437,686,431,688,424,690,418,691,412,693,406,695,400,697,394,699,388,702,382,704,376,706,370,709,364,711,358,713,352,716,346,719,340,721,334,724,329,727,323,730,318,732,312,735,307,738,301,741,296,744,291,747,286,750,281,753,276,756,271,759,267,762,262,766,258,769,253,772,249,775,245,778,241,781,237,785,233,788,230,791,226,794,223,797,220,801,216,804,213,807,211,810,208,813,205,816,203,820,200,823,198,826,196,829,194,832,192,835,190,838,188,841,187,845,185,848,184,851,182,854,181,857,180,860,179,863,178,865,178,868,177,871,176,874,176,877,176,880,175,882,175,885,175,888,175,891,175,893,175,896,176,898,176,901,177,903,177,906,178,908,179,911,179,913,180,915,181,918,182,920,184,922,185,924,186,926,188,928,189,930,191,932,192,934,194,936,196,938,198,940,200,941,202,943,204,944,206,946,208,947,211,949,213,950,216,951,218,953,221,954,223,955,226,956,229,957,232,958,235,959,238,960,241,961,244,962,247,963,250,963,254,964,257,965,260,965,264,966,267,966,271,967,274,967,278,968,282,968,286,968,289,969,293,969,297,969,301,969,305,969,309,969,313,969,318,969,322,969,326,969,330,969,335,969,339,969,343,969,348,969,352,968,357,968,361,968,366,968,371,967,375,967,380,967,385,966,390,966,394,965,399,965,404,964,409,964,414,963,419,963,424,962,429,961,434,961,439,960,444,959,449,959,454,958,459,957,465,956,470,956,475,955,480,954,485,953,490,952,495,951,501,950,506,949,511,948,516,947,521,946,526,945,531,944,536,943,541,942,546,940,551,939,556,938,560,936,565,935,570,933,574,932,579,930,584,929,588,927,593,926,597,924,601,922,605,920,610,918,614,917,618,915,622,913,626,911,629,908,633,906,637,904,640,902,643,900,647,897,650,895,653,892,656,890,659,887,662,885,664,882,667,879,669,876,672,873,674,870,676,867,678,864,680,861,681,858,683,855,684,851,686,848,687,845,688,841,689,838,689,834,690,830,691,827,691,823,691,819,691,816,691,812,691,808,691,804,691,801,690,797,690,793,689,789,688,786,687,782,686,778,685,774,684,770,682,767,681,763,679,759,677,756,675,752,673,748,671,745,669,741,667,738,664,735,662,731,659,728,656,725,653,722,650,718,647,715,644,712,641,710,637,707,634,704,630,701,627,699,623,696,619,694,615,692,611,690,606,688,602,686,598,684,593,682,589,681,584,679,579,678,574,677" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="164" cy="901" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+      
+    <polygon points="581,688,574,686,566,685,559,684,551,683,543,683,535,683,527,684,519,684,510,685,502,686,493,688,484,690,476,691,467,694,458,696,449,698,440,701,431,704,423,707,414,710,405,713,396,717,387,720,379,724,370,727,362,731,353,734,345,738,337,742,329,746,321,750,313,753,305,757,298,761,291,764,284,768,277,771,270,775,264,778,258,781,252,785,246,788,241,791,236,793,231,796,226,799,221,802,217,804,212,807,208,809,204,812,201,814,197,817,193,819,190,821,187,823,184,826,181,828,178,830,176,832,173,834,171,836,169,838,166,840,164,842,162,844,161,846,159,847,157,849,156,851,154,853,153,855,151,857,150,859,149,861,148,863,147,864,146,866,145,868,144,870,143,872,142,874,141,876,140,878,140,880,139,882,138,884,138,886,137,888,137,890,136,892,136,894,135,896,135,898,135,900,134,902,134,904,134,906,134,908,133,910,133,912,133,914,133,916,133,918,133,919,133,921,133,923,133,925,133,927,133,929,133,931,133,933,133,935,133,937,133,938,133,940,133,942,133,944,134,946,134,947,134,949,134,951,135,953,135,954,135,956,136,958,136,959,137,961,138,962,138,964,139,965,140,967,141,968,142,970,143,971,144,973,145,974,146,975,147,977,149,978,150,979,152,980,154,981,155,983,157,984,159,985,161,986,164,987,166,988,168,988,171,989,174,990,177,991,179,992,182,992,186,993,189,993,192,994,195,994,199,995,202,995,206,996,210,996,214,996,217,997,221,997,225,997,229,997,233,997,238,997,242,997,246,997,250,997,255,997,259,997,263,996,268,996,272,996,277,995,281,995,286,995,290,994,295,994,299,993,304,992,308,992,313,991,318,990,322,989,327,989,331,988,336,987,340,986,345,985,349,984,354,983,359,982,363,981,368,979,373,978,377,977,382,976,387,975,391,973,396,972,401,971,406,970,411,969,416,967,421,966,426,965,431,964,436,962,441,961,446,960,451,959,457,957,462,956,468,955,473,954,479,953,484,952,490,951,496,949,502,948,508,947,514,946,520,945,526,944,532,944,538,943,544,942,550,940,556,939,562,938,568,937,574,936,580,935,586,934,592,932,598,931,604,929,609,928,615,926,620,924,626,922,631,920,636,918,641,916,645,914,650,911,654,909,658,906,662,903,666,900,669,896,673,893,676,889,679,885,681,881,683,877,685,873,687,868,689,863,690,858,691,853,691,847,692,842,692,836,692,830,691,825,691,819,690,813,689,807,687,801,685,795,683,789,681,783,679,777,676,771,673,765,670,759,667,753,663,748,659,742,655,737,650,732,646,727,641,722,636,717,631,713,625,709,620,705,614,701,607,698,601,695,595,692,588,690,581,688" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1428,8 +1738,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 PM HST Fri Oct 23 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Vance, located several hundred miles south-southwest of Acapulco,<br>Mexico.<br><br>1. Western Central Pacific:<br>An area of low pressure is forecast to form near the International<br>Date Line, several hundred miles west of Johnston Atoll late this<br>weekend or early next week. Environmental conditions could support<br>some slow development thereafter while the system moves generally<br>eastward to east-northeastward.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...low...20 percent.<br>
-<br><br>Forecaster Gibbs<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 PM HST Fri Oct 23 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane<br>Vance, located several hundred miles south-southwest of Acapulco,<br>Mexico.<br><br>1. Western Central Pacific:<br>A broad area of low pressure located near or just west of the<br>International Date Line, several hundred miles west of Johnston<br>Atoll, is producing disorganized showers and thunderstorms.<br>Environmental conditions could support some slow development while<br>the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...low...20 percent.<br>
+<br><br>Forecaster Gibbs/Pierce<br><br></pre>
       </div>
           
     </div>
@@ -1447,8 +1757,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>500 PM PDT Fri Oct 23 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Vance, located several hundred miles south-southwest of Acapulco, <br>Mexico.<br><br>1. Western Central Pacific:<br>An area of low pressure is forecast to form near the International <br>Date Line, several hundred miles west of Johnston Atoll late this <br>weekend or early next week. Environmental conditions could support <br>some slow development thereafter while the system moves generally <br>eastward to east-northeastward.<br>* Formation chance through 48 hours...low...near 0 percent. <br>* Formation chance through 7 days...low...20 percent.<br>
-<br><br>Forecaster Gibbs<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1100 PM PDT Fri Oct 23 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Hurricane <br>Vance, located several hundred miles south-southwest of Acapulco, <br>Mexico.<br><br>1. Western Central Pacific:<br>A broad area of low pressure located near or just west of the <br>International Date Line, several hundred miles west of Johnston <br>Atoll, is producing disorganized showers and thunderstorms. <br>Environmental conditions could support some slow development while <br>the system moves generally eastward to east-northeastward.<br>* Formation chance through 48 hours...low...10 percent. <br>* Formation chance through 7 days...low...20 percent.<br>
+<br><br>Forecaster Gibbs/Pierce<br><br></pre>
       </div>
           
             
@@ -1463,7 +1773,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">945 <br />ABPZ21 KNHC 232302<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />500 PM PDT viernes 23 de octubre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Vance, ubicado a varios cientos de<br />millas al suroeste de Acapulco, México.<br /><br />Pacífico Central Oeste: Se pronostica que se forme un área de baja<br />presión cerca de la Línea de Fecha Internacional, varios cientos de<br />millas al oeste de Johnston Atoll a última hora de este fin de<br />semana o a principios de la próxima semana. Las condiciones<br />ambientales podrían permitir un desarrollo lento a partir de<br />entonces, mientras que el sistema se mueve generalmente hacia el<br />este a este-noreste.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...baja...20 por ciento.<br /><br />$$<br />Pronosticador Gibbs<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">001 <br />ABPZ21 KNHC 240526<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1100 PM PDT viernes 23 de octubre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre el Huracán Vance, ubicado a varios cientos de<br />millas al suroeste de Acapulco, México.<br /><br />Pacífico Central oeste: Una amplia área de baja presión ubicada<br />cerca o justo al oeste de la Línea Internacional de Fecha, varios<br />cientos de millas al oeste de Johnston Atoll, está produciendo<br />aguaceros y tormentas desorganizadas. Las condiciones ambientales<br />podrían permitir un desarrollo lento mientras que el sistema se<br />mueve generalmente hacia el este y el noreste.<br />* Probabilidad de formación hasta 48 horas...baja...10 por ciento.<br />* Probabilidad de formación hasta 7 días...baja...20 por ciento.<br /><br />$$<br />Pronosticador Gibbs/Pierce<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
@@ -1482,7 +1792,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>800 PM EDT Fri Oct 23 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Gibbs<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>200 AM EDT Sat Oct 24 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Pierce/Gibbs<br>NNNN<br><br></pre>
       </div>
           
             
@@ -1497,7 +1807,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">351 <br />ACCA62 KNHC 232303<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />800 PM EDT viernes 23 de octubre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Gibbs<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">035 <br />ACCA62 KNHC 240525<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />200 AM EDT sábado 24 de octubre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Pierce/Gibbs<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
