@@ -614,17 +614,76 @@ document.addEventListener('DOMContentLoaded', function() {
           
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-atl-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-low text-on-gtwo-low text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
       
@@ -712,7 +771,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           <button
             id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium text-bold border-gray-90"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
             style="box-shadow: 1px 2px 2px black;"
             onclick="switchDisturbance('0')"
           >
@@ -726,7 +785,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           <button
             id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium "
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
             
             onclick="switchDisturbance('1')"
           >
@@ -748,7 +807,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           <button
             id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium "
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
             
             onclick="switchDisturbance('0')"
           >
@@ -762,7 +821,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           <button
             id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium text-bold border-gray-90"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
             style="box-shadow: 1px 2px 2px black;"
             onclick="switchDisturbance('1')"
           >
@@ -856,7 +915,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           <button
             id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium text-bold border-gray-90"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
             style="box-shadow: 1px 2px 2px black;"
             onclick="switchDisturbance('0')"
           >
@@ -870,7 +929,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           <button
             id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium "
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
             
             onclick="switchDisturbance('1')"
           >
@@ -892,7 +951,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           <button
             id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium "
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high "
             
             onclick="switchDisturbance('0')"
           >
@@ -906,7 +965,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           <button
             id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium text-bold border-gray-90"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-high text-on-gtwo-high text-bold border-gray-90"
             style="box-shadow: 1px 2px 2px black;"
             onclick="switchDisturbance('1')"
           >
@@ -1005,6 +1064,104 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
 
+          
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 30% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="30"
+    data-details="
+  
+  <b>As of 1:00 PM EST Mon Nov 2 2026...</b><br>Western Atlantic:<br>An area of low pressure is likely to form along a weakening frontal boundary a few hundred miles northeast of the Bahamas in a couple of days. This system could acquire some subtropical characteristics late this week while it drifts over the western Atlantic. The chances of subtropical development should end by the weekend when the system is expected to move eastward or northeastward into unfavorable environmental conditions.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...30 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="894,621,893,618,893,615,892,612,891,609,890,607,889,604,888,602,887,599,885,597,884,595,882,592,881,590,879,588,878,586,876,585,874,583,872,581,870,579,868,578,866,576,864,575,862,573,860,572,857,571,855,569,853,568,850,567,848,566,846,565,843,564,841,563,838,562,836,561,833,560,830,560,828,559,825,558,823,557,820,557,817,556,815,555,812,555,809,554,807,554,804,553,801,553,799,553,796,552,793,552,791,552,788,552,785,551,783,551,780,551,777,551,775,551,772,551,769,551,767,551,764,551,762,552,759,552,757,552,754,552,752,553,749,553,747,554,744,554,742,555,740,555,737,556,735,556,733,557,731,558,729,559,726,559,724,560,722,561,720,562,718,563,716,564,714,565,712,566,710,567,708,568,706,569,704,570,702,571,701,573,699,574,697,575,695,576,694,578,692,579,690,580,689,582,687,583,685,584,684,586,682,587,681,588,679,590,678,591,676,593,675,594,673,596,672,597,671,599,669,600,668,602,667,603,666,605,664,607,663,608,662,610,661,612,660,613,659,615,658,617,657,619,656,620,655,622,654,624,653,626,652,628,651,630,651,632,650,634,649,636,648,638,648,640,647,642,646,644,646,647,645,649,645,651,644,653,644,656,644,658,643,660,643,663,643,665,642,668,642,670,642,672,642,675,641,677,641,680,641,682,641,685,641,687,641,690,641,692,641,695,641,697,641,699,641,702,642,704,642,707,642,709,642,711,642,714,643,716,643,718,643,721,644,723,644,725,644,727,645,730,645,732,646,734,646,736,647,738,647,740,648,742,648,744,649,746,650,748,650,750,651,752,652,753,653,755,654,757,655,759,656,761,657,762,658,764,659,765,660,767,662,769,663,770,664,772,666,773,667,775,669,776,671,777,672,779,674,780,676,781,678,783,680,784,682,785,684,786,687,787,689,789,691,790,694,791,696,792,699,792,701,793,704,794,707,795,710,796,712,797,715,797,718,798,721,798,724,799,727,799,730,800,733,800,736,800,739,801,742,801,745,801,748,801,751,801,755,801,758,801,761,800,764,800,767,800,770,799,774,799,777,798,780,798,783,797,786,796,789,795,792,794,796,793,799,792,802,791,805,790,808,789,811,787,814,786,817,784,820,782,823,781,825,779,828,777,831,775,834,773,837,771,839,769,842,766,844,764,847,762,850,759,852,756,854,754,857,751,859,748,861,745,863,742,866,739,868,735,870,732,871,728,873,725,875,721,877,718,879,714,880,710,882,707,883,703,884,699,886,695,887,691,888,687,889,683,890,679,891,676,892,672,893,668,893,664,894,660,894,656,895,652,895,649,895,645,895,641,895,638,895,634,895,631,895,628,894,624,894,621" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+   
+        </svg>
+          
+      </div>
+
+      <div id="view-atl-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_atl_7d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_atl_7d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_atl_7d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_atl_7d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_atl_7d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_atl_7d1_w1024.png" 
+          alt="7 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="View Pacific Outlook" 
+    onclick="switchBasin('pac')">
+    <polygon points="0,898,21,909,26,911,28,917,43,926,62,928,72,939,77,939,85,945,100,951,107,955,117,955,132,962,145,968,150,970,162,974,177,976,207,963,215,965,222,969,228,972,235,976,241,983,249,994,269,1008,277,1012,292,1012,301,1016,309,1020,318,1020,324,1024,333,1026,343,1028,350,1022,352,1022,354,1026,354,1037,367,1048,371,1054,386,1067,388,1075,386,1086,386,1090,399,1099,405,1095,409,1095,409,1101,416,1101,422,1105,431,1111,431,1118,448,1126,467,1128,474,1137,484,1139,484,1147,491,1152,510,1143,506,1135,499,1128,503,1126,510,1122,512,1116,518,1112,527,1111,533,1119,538,1124,535,1131,542,1139,546,1145,552,1156,557,1165,552,1167,559,1175,555,1179,557,1184,557,1203,555,1209,559,1216,557,1224,553,1228,548,1239,538,1239,531,1243,531,1254,525,1254,521,1260,527,1262,521,1269,0,1269" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+
+          
+
+           
+            
+            
+              
+                
+                  
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 30% Chance of Cyclone Formation in 7 Days"
+    data-risk="low"
+    data-prob="30"
+    data-details="
+  
+  <b>As of 1:00 PM EST Mon Nov 2 2026...</b><br>Western Atlantic:<br>An area of low pressure is likely to form along a weakening frontal boundary a few hundred miles northeast of the Bahamas in a couple of days. This system could acquire some subtropical characteristics late this week while it drifts over the western Atlantic. The chances of subtropical development should end by the weekend when the system is expected to move eastward or northeastward into unfavorable environmental conditions.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...30 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="894,621,893,618,893,615,892,612,891,609,890,607,889,604,888,602,887,599,885,597,884,595,882,592,881,590,879,588,878,586,876,585,874,583,872,581,870,579,868,578,866,576,864,575,862,573,860,572,857,571,855,569,853,568,850,567,848,566,846,565,843,564,841,563,838,562,836,561,833,560,830,560,828,559,825,558,823,557,820,557,817,556,815,555,812,555,809,554,807,554,804,553,801,553,799,553,796,552,793,552,791,552,788,552,785,551,783,551,780,551,777,551,775,551,772,551,769,551,767,551,764,551,762,552,759,552,757,552,754,552,752,553,749,553,747,554,744,554,742,555,740,555,737,556,735,556,733,557,731,558,729,559,726,559,724,560,722,561,720,562,718,563,716,564,714,565,712,566,710,567,708,568,706,569,704,570,702,571,701,573,699,574,697,575,695,576,694,578,692,579,690,580,689,582,687,583,685,584,684,586,682,587,681,588,679,590,678,591,676,593,675,594,673,596,672,597,671,599,669,600,668,602,667,603,666,605,664,607,663,608,662,610,661,612,660,613,659,615,658,617,657,619,656,620,655,622,654,624,653,626,652,628,651,630,651,632,650,634,649,636,648,638,648,640,647,642,646,644,646,647,645,649,645,651,644,653,644,656,644,658,643,660,643,663,643,665,642,668,642,670,642,672,642,675,641,677,641,680,641,682,641,685,641,687,641,690,641,692,641,695,641,697,641,699,641,702,642,704,642,707,642,709,642,711,642,714,643,716,643,718,643,721,644,723,644,725,644,727,645,730,645,732,646,734,646,736,647,738,647,740,648,742,648,744,649,746,650,748,650,750,651,752,652,753,653,755,654,757,655,759,656,761,657,762,658,764,659,765,660,767,662,769,663,770,664,772,666,773,667,775,669,776,671,777,672,779,674,780,676,781,678,783,680,784,682,785,684,786,687,787,689,789,691,790,694,791,696,792,699,792,701,793,704,794,707,795,710,796,712,797,715,797,718,798,721,798,724,799,727,799,730,800,733,800,736,800,739,801,742,801,745,801,748,801,751,801,755,801,758,801,761,800,764,800,767,800,770,799,774,799,777,798,780,798,783,797,786,796,789,795,792,794,796,793,799,792,802,791,805,790,808,789,811,787,814,786,817,784,820,782,823,781,825,779,828,777,831,775,834,773,837,771,839,769,842,766,844,764,847,762,850,759,852,756,854,754,857,751,859,748,861,745,863,742,866,739,868,735,870,732,871,728,873,725,875,721,877,718,879,714,880,710,882,707,883,703,884,699,886,695,887,691,888,687,889,683,890,679,891,676,892,672,893,668,893,664,894,660,894,656,895,652,895,649,895,645,895,641,895,638,895,634,895,631,895,628,894,624,894,621" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
+                
+              
+            
              
         </svg>
           
@@ -1054,18 +1211,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 48 Hours"
     data-risk="low"
-    data-prob="10"
+    data-prob="20"
     data-details="
   
-  <b>As of 10:00 PM PST Sun Nov 1 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>Showers and thunderstorms associated with a broad area of low pressure located well east-southeast of the Hawaiian Islands remain disorganized. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression could form during the middle to latter portions of this week as it moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 10:00 AM PST Mon Nov 2 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>A broad area of low pressure located well east-southeast of the Hawaiian Islands is producing disorganized showers and thunderstorms. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression is likely to form during the middle to latter portions of this week as it moves westward to west-northwestward around 10 to 15 mph over the Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="953" cy="764" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="947" cy="767" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1124,12 +1281,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                   
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 48 Hours"
     data-risk="low"
-    data-prob="10"
+    data-prob="20"
     data-details="
   
-  <b>As of 10:00 PM PST Sun Nov 1 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>Showers and thunderstorms associated with a broad area of low pressure located well east-southeast of the Hawaiian Islands remain disorganized. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression could form during the middle to latter portions of this week as it moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 10:00 AM PST Mon Nov 2 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>A broad area of low pressure located well east-southeast of the Hawaiian Islands is producing disorganized showers and thunderstorms. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression is likely to form during the middle to latter portions of this week as it moves westward to west-northwestward around 10 to 15 mph over the Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
 "
     data-action="switchDisturbance:0">
   
@@ -1189,22 +1346,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 60% Chance of Cyclone Formation in 7 Days"
-    data-risk="medium"
-    data-prob="60"
+    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-risk="high"
+    data-prob="70"
     data-details="
   
-  <b>As of 10:00 PM PST Sun Nov 1 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>Showers and thunderstorms associated with a broad area of low pressure located well east-southeast of the Hawaiian Islands remain disorganized. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression could form during the middle to latter portions of this week as it moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 10:00 AM PST Mon Nov 2 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>A broad area of low pressure located well east-southeast of the Hawaiian Islands is producing disorganized showers and thunderstorms. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression is likely to form during the middle to latter portions of this week as it moves westward to west-northwestward around 10 to 15 mph over the Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="953" cy="764" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="947" cy="767" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="739,797,732,796,725,795,718,794,711,793,704,792,696,791,689,790,681,788,673,787,665,786,657,785,649,783,641,782,633,781,625,779,617,778,609,776,601,775,593,773,585,772,577,770,570,769,562,767,555,765,548,764,541,762,534,760,528,758,522,757,516,755,510,753,505,751,500,749,495,748,491,746,486,744,483,742,479,740,476,738,473,736,471,734,468,732,466,731,465,729,463,727,462,725,461,723,460,721,459,719,458,717,458,715,458,713,458,711,458,708,458,706,458,704,459,702,459,700,460,698,461,696,461,694,462,692,463,690,464,688,465,686,466,684,467,681,468,679,469,677,470,675,471,673,472,671,473,669,475,667,476,665,477,663,478,661,479,659,480,657,482,655,483,653,484,651,486,649,487,647,488,645,490,643,491,641,493,640,494,638,496,636,497,634,499,633,501,631,502,630,504,628,506,627,508,625,510,624,512,622,514,621,516,620,518,619,520,618,522,617,524,616,527,615,529,614,531,613,534,612,536,611,539,610,541,610,544,609,546,608,549,608,551,607,554,607,557,606,559,606,562,606,565,605,567,605,570,605,573,604,576,604,578,604,581,604,584,604,586,604,589,603,592,603,594,603,597,603,600,603,602,603,605,604,608,604,610,604,613,604,616,604,618,604,621,604,624,605,626,605,629,605,632,606,634,606,637,606,640,607,642,607,645,607,648,608,651,608,654,609,656,609,659,610,662,610,665,611,668,612,671,612,674,613,677,614,680,614,684,615,687,616,690,617,694,618,697,618,700,619,704,620,707,621,711,622,715,623,718,624,722,625,725,626,729,627,733,628,737,630,740,631,744,632,748,633,751,634,755,636,759,637,763,638,766,640,770,641,774,643,777,644,781,646,784,647,788,649,792,650,795,652,798,654,802,656,805,657,808,659,812,661,815,663,818,665,821,666,824,668,827,670,830,672,833,674,835,676,838,679,841,681,843,683,846,685,848,687,850,689,853,691,855,694,857,696,859,698,861,700,863,703,864,705,866,707,868,709,869,712,870,714,872,716,873,719,874,721,875,723,876,726,877,728,878,730,878,733,879,735,879,737,880,740,880,742,880,744,880,747,880,749,880,751,880,753,880,755,879,758,879,760,879,762,878,764,877,766,877,768,876,770,875,772,874,774,873,776,872,778,871,779,870,781,868,783,867,784,866,786,864,788,863,789,861,790,860,792,858,793,857,794,855,795,853,796,851,797,849,798,848,799,846,800,844,800,841,801,839,802,837,802,835,803,832,803,829,803,827,803,824,804,821,804,818,804,815,804,811,804,808,804,804,804,800,803,796,803,792,803,787,802,783,802,778,801,773,801,768,800,762,800,757,799,751,798,745,797,739,797" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="729,782,724,780,719,779,713,778,707,777,702,775,696,774,690,773,684,771,678,770,672,769,666,767,659,766,653,764,647,763,641,761,635,760,629,758,623,757,617,755,611,754,605,752,599,751,594,749,588,747,583,746,577,744,572,743,567,741,562,740,557,738,552,737,548,735,543,733,539,732,535,730,532,729,528,727,525,726,521,724,518,723,515,721,513,720,510,718,508,717,506,715,503,714,501,712,500,711,498,709,497,708,495,706,494,704,493,703,492,701,491,700,490,698,489,696,489,695,489,693,488,691,488,689,488,688,488,686,488,684,488,682,488,680,489,678,489,677,490,675,490,673,491,671,491,669,492,667,493,665,494,663,495,660,496,658,497,656,498,654,499,652,501,650,502,648,503,646,505,644,506,642,508,640,509,638,511,637,512,635,514,633,516,631,518,629,519,628,521,626,523,624,525,623,527,621,529,620,531,618,533,617,535,616,537,615,539,614,541,613,543,612,545,611,547,610,549,609,551,608,553,607,556,607,558,606,560,605,562,605,564,604,567,604,569,603,571,603,574,603,576,602,578,602,581,602,583,601,585,601,588,601,590,601,592,601,595,600,597,600,600,600,602,600,605,600,607,600,610,600,612,600,615,600,617,600,620,600,622,600,625,600,628,600,630,600,633,600,636,600,638,600,641,600,644,600,647,600,649,600,652,601,655,601,658,601,661,601,664,602,667,602,670,602,673,603,676,603,679,604,682,604,686,604,689,605,692,606,696,606,699,607,702,607,706,608,710,609,713,610,717,611,720,611,724,612,728,613,732,614,735,615,739,616,743,617,747,618,750,620,754,621,758,622,762,623,766,625,770,626,773,627,777,629,781,630,785,631,789,633,792,634,796,636,800,638,803,639,807,641,810,643,814,644,817,646,821,648,824,650,828,651,831,653,834,655,837,657,840,659,843,661,846,663,849,665,852,667,855,669,857,671,860,673,862,676,865,678,867,680,869,682,872,684,874,687,876,689,878,691,879,694,881,696,883,698,884,701,886,703,887,705,888,708,889,710,890,713,891,715,892,718,892,720,893,723,893,725,894,728,894,730,894,733,894,735,893,738,893,740,893,743,892,745,892,747,891,750,890,752,889,755,888,757,887,759,886,762,885,764,883,766,882,768,880,770,879,772,877,774,875,776,873,778,871,780,869,781,867,783,865,784,863,786,861,787,859,789,856,790,854,791,851,792,849,793,846,794,844,794,841,795,838,795,836,796,833,796,830,797,827,797,824,797,821,797,818,797,814,797,811,796,808,796,804,796,800,795,797,795,793,794,789,794,785,793,781,792,777,792,773,791,768,790,764,789,759,788,755,787,750,786,745,785,740,784,735,783,729,782" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1271,22 +1428,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                   
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 60% Chance of Cyclone Formation in 7 Days"
-    data-risk="medium"
-    data-prob="60"
+    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-risk="high"
+    data-prob="70"
     data-details="
   
-  <b>As of 10:00 PM PST Sun Nov 1 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>Showers and thunderstorms associated with a broad area of low pressure located well east-southeast of the Hawaiian Islands remain disorganized. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression could form during the middle to latter portions of this week as it moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 10:00 AM PST Mon Nov 2 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>A broad area of low pressure located well east-southeast of the Hawaiian Islands is producing disorganized showers and thunderstorms. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression is likely to form during the middle to latter portions of this week as it moves westward to west-northwestward around 10 to 15 mph over the Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="953" cy="764" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="947" cy="767" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="739,797,732,796,725,795,718,794,711,793,704,792,696,791,689,790,681,788,673,787,665,786,657,785,649,783,641,782,633,781,625,779,617,778,609,776,601,775,593,773,585,772,577,770,570,769,562,767,555,765,548,764,541,762,534,760,528,758,522,757,516,755,510,753,505,751,500,749,495,748,491,746,486,744,483,742,479,740,476,738,473,736,471,734,468,732,466,731,465,729,463,727,462,725,461,723,460,721,459,719,458,717,458,715,458,713,458,711,458,708,458,706,458,704,459,702,459,700,460,698,461,696,461,694,462,692,463,690,464,688,465,686,466,684,467,681,468,679,469,677,470,675,471,673,472,671,473,669,475,667,476,665,477,663,478,661,479,659,480,657,482,655,483,653,484,651,486,649,487,647,488,645,490,643,491,641,493,640,494,638,496,636,497,634,499,633,501,631,502,630,504,628,506,627,508,625,510,624,512,622,514,621,516,620,518,619,520,618,522,617,524,616,527,615,529,614,531,613,534,612,536,611,539,610,541,610,544,609,546,608,549,608,551,607,554,607,557,606,559,606,562,606,565,605,567,605,570,605,573,604,576,604,578,604,581,604,584,604,586,604,589,603,592,603,594,603,597,603,600,603,602,603,605,604,608,604,610,604,613,604,616,604,618,604,621,604,624,605,626,605,629,605,632,606,634,606,637,606,640,607,642,607,645,607,648,608,651,608,654,609,656,609,659,610,662,610,665,611,668,612,671,612,674,613,677,614,680,614,684,615,687,616,690,617,694,618,697,618,700,619,704,620,707,621,711,622,715,623,718,624,722,625,725,626,729,627,733,628,737,630,740,631,744,632,748,633,751,634,755,636,759,637,763,638,766,640,770,641,774,643,777,644,781,646,784,647,788,649,792,650,795,652,798,654,802,656,805,657,808,659,812,661,815,663,818,665,821,666,824,668,827,670,830,672,833,674,835,676,838,679,841,681,843,683,846,685,848,687,850,689,853,691,855,694,857,696,859,698,861,700,863,703,864,705,866,707,868,709,869,712,870,714,872,716,873,719,874,721,875,723,876,726,877,728,878,730,878,733,879,735,879,737,880,740,880,742,880,744,880,747,880,749,880,751,880,753,880,755,879,758,879,760,879,762,878,764,877,766,877,768,876,770,875,772,874,774,873,776,872,778,871,779,870,781,868,783,867,784,866,786,864,788,863,789,861,790,860,792,858,793,857,794,855,795,853,796,851,797,849,798,848,799,846,800,844,800,841,801,839,802,837,802,835,803,832,803,829,803,827,803,824,804,821,804,818,804,815,804,811,804,808,804,804,804,800,803,796,803,792,803,787,802,783,802,778,801,773,801,768,800,762,800,757,799,751,798,745,797,739,797" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="729,782,724,780,719,779,713,778,707,777,702,775,696,774,690,773,684,771,678,770,672,769,666,767,659,766,653,764,647,763,641,761,635,760,629,758,623,757,617,755,611,754,605,752,599,751,594,749,588,747,583,746,577,744,572,743,567,741,562,740,557,738,552,737,548,735,543,733,539,732,535,730,532,729,528,727,525,726,521,724,518,723,515,721,513,720,510,718,508,717,506,715,503,714,501,712,500,711,498,709,497,708,495,706,494,704,493,703,492,701,491,700,490,698,489,696,489,695,489,693,488,691,488,689,488,688,488,686,488,684,488,682,488,680,489,678,489,677,490,675,490,673,491,671,491,669,492,667,493,665,494,663,495,660,496,658,497,656,498,654,499,652,501,650,502,648,503,646,505,644,506,642,508,640,509,638,511,637,512,635,514,633,516,631,518,629,519,628,521,626,523,624,525,623,527,621,529,620,531,618,533,617,535,616,537,615,539,614,541,613,543,612,545,611,547,610,549,609,551,608,553,607,556,607,558,606,560,605,562,605,564,604,567,604,569,603,571,603,574,603,576,602,578,602,581,602,583,601,585,601,588,601,590,601,592,601,595,600,597,600,600,600,602,600,605,600,607,600,610,600,612,600,615,600,617,600,620,600,622,600,625,600,628,600,630,600,633,600,636,600,638,600,641,600,644,600,647,600,649,600,652,601,655,601,658,601,661,601,664,602,667,602,670,602,673,603,676,603,679,604,682,604,686,604,689,605,692,606,696,606,699,607,702,607,706,608,710,609,713,610,717,611,720,611,724,612,728,613,732,614,735,615,739,616,743,617,747,618,750,620,754,621,758,622,762,623,766,625,770,626,773,627,777,629,781,630,785,631,789,633,792,634,796,636,800,638,803,639,807,641,810,643,814,644,817,646,821,648,824,650,828,651,831,653,834,655,837,657,840,659,843,661,846,663,849,665,852,667,855,669,857,671,860,673,862,676,865,678,867,680,869,682,872,684,874,687,876,689,878,691,879,694,881,696,883,698,884,701,886,703,887,705,888,708,889,710,890,713,891,715,892,718,892,720,893,723,893,725,894,728,894,730,894,733,894,735,893,738,893,740,893,743,892,745,892,747,891,750,890,752,889,755,888,757,887,759,886,762,885,764,883,766,882,768,880,770,879,772,877,774,875,776,873,778,871,780,869,781,867,783,865,784,863,786,861,787,859,789,856,790,854,791,851,792,849,793,846,794,844,794,841,795,838,795,836,796,833,796,830,797,827,797,824,797,821,797,818,797,814,797,811,796,808,796,804,796,800,795,797,795,793,794,789,794,785,793,781,792,777,792,773,791,768,790,764,789,759,788,755,787,750,786,745,785,740,784,735,783,729,782" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1342,18 +1499,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 48 Hours"
     data-risk="low"
-    data-prob="10"
+    data-prob="20"
     data-details="
   
-  <b>As of 8:00 PM HST Sun Nov 01 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>Showers and thunderstorms associated with a broad area of low pressure located well east-southeast of the Hawaiian Islands remain disorganized. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression could form during the middle to latter portions of this week as it moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 8:00 AM HST Mon Nov 02 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>A broad area of low pressure located well east-southeast of the Hawaiian Islands is producing disorganized showers and thunderstorms. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression is likely to form during the middle to latter portions of this week as it moves westward to west-northwestward around 10 to 15 mph over the Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1608" cy="1080" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1599" cy="1084" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1412,12 +1569,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                   
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 10% Chance of Cyclone Formation in 48 Hours"
+    data-name="Disturbance 1: 20% Chance of Cyclone Formation in 48 Hours"
     data-risk="low"
-    data-prob="10"
+    data-prob="20"
     data-details="
   
-  <b>As of 8:00 PM HST Sun Nov 01 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>Showers and thunderstorms associated with a broad area of low pressure located well east-southeast of the Hawaiian Islands remain disorganized. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression could form during the middle to latter portions of this week as it moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 8:00 AM HST Mon Nov 02 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>A broad area of low pressure located well east-southeast of the Hawaiian Islands is producing disorganized showers and thunderstorms. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression is likely to form during the middle to latter portions of this week as it moves westward to west-northwestward around 10 to 15 mph over the Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
 "
     data-action="switchDisturbance:0">
   
@@ -1475,22 +1632,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 60% Chance of Cyclone Formation in 7 Days"
-    data-risk="medium"
-    data-prob="60"
+    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-risk="high"
+    data-prob="70"
     data-details="
   
-  <b>As of 8:00 PM HST Sun Nov 01 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>Showers and thunderstorms associated with a broad area of low pressure located well east-southeast of the Hawaiian Islands remain disorganized. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression could form during the middle to latter portions of this week as it moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 8:00 AM HST Mon Nov 02 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>A broad area of low pressure located well east-southeast of the Hawaiian Islands is producing disorganized showers and thunderstorms. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression is likely to form during the middle to latter portions of this week as it moves westward to west-northwestward around 10 to 15 mph over the Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1608" cy="1080" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1599" cy="1084" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1277,1128,1267,1127,1256,1126,1246,1124,1235,1123,1223,1121,1212,1120,1200,1118,1188,1116,1176,1115,1164,1113,1151,1111,1139,1109,1126,1107,1114,1105,1101,1103,1089,1101,1076,1098,1064,1096,1052,1094,1040,1092,1028,1089,1016,1087,1005,1084,993,1082,983,1079,972,1077,962,1074,952,1072,942,1069,933,1067,924,1064,916,1061,908,1059,901,1056,894,1053,888,1050,882,1047,877,1045,872,1042,868,1039,864,1036,860,1033,857,1030,854,1027,852,1024,850,1022,848,1019,846,1016,845,1013,844,1010,844,1007,843,1004,843,1001,843,998,844,994,844,991,845,988,846,985,847,982,848,979,849,976,850,973,852,970,853,967,855,964,856,960,858,957,860,954,861,951,863,948,864,945,866,942,868,939,869,936,871,932,873,929,875,926,877,923,879,920,880,917,882,915,884,912,886,909,888,906,891,903,893,900,895,898,897,895,900,892,902,890,905,887,907,885,910,883,912,880,915,878,918,876,921,874,924,872,927,870,930,868,933,866,936,864,940,863,943,861,946,860,950,858,954,857,957,855,961,854,965,853,969,852,972,851,976,850,980,849,984,848,988,847,992,847,996,846,1000,845,1004,845,1009,844,1013,844,1017,843,1021,843,1025,843,1029,842,1034,842,1038,842,1042,842,1046,842,1050,841,1054,841,1059,841,1063,841,1067,841,1071,842,1075,842,1079,842,1083,842,1087,842,1091,843,1095,843,1099,843,1104,844,1108,844,1112,845,1116,845,1120,846,1124,846,1128,847,1133,847,1137,848,1141,849,1146,849,1150,850,1155,851,1159,852,1164,853,1168,854,1173,855,1178,856,1182,857,1187,858,1192,859,1197,860,1202,861,1207,863,1213,864,1218,865,1223,866,1229,868,1234,869,1240,871,1245,872,1251,874,1257,875,1262,877,1268,879,1274,880,1279,882,1285,884,1291,886,1297,888,1302,890,1308,892,1314,894,1320,896,1325,898,1331,900,1337,902,1342,904,1348,907,1353,909,1359,911,1364,914,1369,916,1374,919,1380,921,1385,924,1390,927,1395,929,1399,932,1404,935,1409,938,1413,941,1418,944,1422,947,1426,950,1430,953,1434,956,1438,959,1442,962,1446,966,1449,969,1453,972,1456,975,1459,979,1462,982,1465,985,1468,989,1471,992,1473,996,1476,999,1478,1002,1480,1006,1482,1009,1484,1013,1486,1016,1488,1020,1489,1023,1490,1027,1492,1030,1493,1034,1493,1037,1494,1040,1495,1044,1495,1047,1495,1051,1496,1054,1496,1057,1495,1061,1495,1064,1495,1067,1494,1071,1494,1074,1493,1077,1492,1080,1491,1083,1490,1086,1489,1089,1487,1092,1486,1095,1484,1098,1483,1100,1481,1103,1479,1106,1477,1108,1475,1110,1473,1113,1471,1115,1469,1117,1466,1119,1464,1121,1461,1123,1459,1125,1456,1126,1454,1128,1451,1129,1448,1131,1445,1132,1442,1133,1439,1134,1436,1135,1432,1136,1429,1137,1425,1137,1421,1138,1417,1138,1413,1139,1408,1139,1404,1139,1399,1139,1394,1139,1389,1139,1383,1139,1378,1139,1372,1138,1365,1138,1359,1138,1352,1137,1345,1136,1338,1136,1330,1135,1322,1134,1314,1133,1305,1132,1296,1131,1287,1130,1277,1128" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1263,1106,1255,1105,1246,1103,1237,1101,1229,1099,1220,1097,1211,1095,1201,1093,1192,1091,1183,1089,1174,1087,1164,1085,1155,1083,1145,1080,1136,1078,1126,1076,1117,1074,1108,1072,1098,1069,1089,1067,1080,1065,1071,1062,1062,1060,1053,1058,1045,1056,1036,1053,1028,1051,1020,1049,1012,1046,1004,1044,997,1042,989,1039,982,1037,976,1035,969,1032,963,1030,957,1028,952,1026,947,1023,942,1021,937,1019,933,1017,928,1014,924,1012,921,1010,917,1008,914,1005,911,1003,908,1001,906,998,903,996,901,994,899,991,898,989,896,987,895,984,894,982,893,979,892,977,891,974,891,972,890,969,890,967,890,964,890,961,890,959,891,956,891,953,892,950,893,947,893,944,894,941,896,938,897,935,898,932,899,929,901,926,902,923,904,920,906,917,908,914,910,911,912,908,914,905,916,902,918,899,921,896,923,893,925,891,928,888,931,885,933,883,936,880,939,877,941,875,944,873,947,870,950,868,953,866,956,864,959,862,962,860,965,858,968,857,972,855,975,853,978,852,981,851,985,849,988,848,991,847,994,846,998,845,1001,844,1005,843,1008,843,1012,842,1015,841,1019,841,1022,840,1026,840,1029,839,1033,839,1037,838,1040,838,1044,838,1048,838,1051,837,1055,837,1059,837,1063,837,1067,837,1070,836,1074,836,1078,836,1082,836,1086,836,1090,836,1094,836,1098,836,1102,836,1106,836,1110,836,1114,836,1118,836,1122,836,1126,836,1131,837,1135,837,1139,837,1144,837,1148,838,1153,838,1157,838,1162,839,1166,839,1171,840,1176,840,1181,841,1185,842,1190,842,1195,843,1200,844,1205,845,1211,845,1216,846,1221,847,1227,848,1232,850,1238,851,1243,852,1249,853,1254,855,1260,856,1266,857,1272,859,1278,860,1283,862,1289,864,1295,865,1301,867,1307,869,1313,871,1319,873,1325,875,1331,877,1337,879,1342,881,1348,883,1354,885,1360,888,1365,890,1371,892,1377,895,1382,897,1388,900,1393,902,1399,905,1404,907,1409,910,1414,913,1419,916,1424,918,1429,921,1434,924,1438,927,1443,930,1447,933,1452,936,1456,939,1460,942,1464,946,1468,949,1472,952,1475,955,1479,959,1482,962,1485,965,1488,969,1491,972,1494,975,1497,979,1499,982,1502,986,1504,989,1506,993,1508,997,1509,1000,1511,1004,1512,1007,1513,1011,1514,1015,1515,1018,1516,1022,1516,1026,1516,1030,1516,1033,1516,1037,1516,1041,1515,1044,1515,1048,1514,1052,1513,1055,1512,1059,1511,1063,1509,1066,1508,1070,1506,1073,1504,1076,1502,1080,1500,1083,1498,1086,1495,1089,1493,1092,1490,1095,1488,1098,1485,1101,1482,1103,1479,1106,1476,1108,1472,1111,1469,1113,1466,1115,1462,1117,1458,1118,1455,1120,1451,1122,1447,1123,1443,1124,1439,1125,1435,1126,1431,1127,1427,1127,1422,1128,1418,1128,1413,1129,1408,1129,1404,1129,1399,1129,1394,1129,1389,1128,1383,1128,1378,1127,1372,1127,1367,1126,1361,1125,1355,1124,1349,1123,1342,1122,1336,1121,1330,1120,1323,1119,1316,1117,1309,1116,1302,1114,1294,1113,1287,1111,1279,1110,1271,1108,1263,1106" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1555,22 +1712,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                   
   <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 60% Chance of Cyclone Formation in 7 Days"
-    data-risk="medium"
-    data-prob="60"
+    data-name="Disturbance 1: 70% Chance of Cyclone Formation in 7 Days"
+    data-risk="high"
+    data-prob="70"
     data-details="
   
-  <b>As of 8:00 PM HST Sun Nov 01 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>Showers and thunderstorms associated with a broad area of low pressure located well east-southeast of the Hawaiian Islands remain disorganized. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression could form during the middle to latter portions of this week as it moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.. <br>* Formation chance through 7 days...medium...60 percent..<br>
+  <b>As of 8:00 AM HST Mon Nov 02 2026...</b><br>Well Southeast of the Hawaiian Islands:<br>A broad area of low pressure located well east-southeast of the Hawaiian Islands is producing disorganized showers and thunderstorms. Environmental conditions appear generally favorable for gradual development of this system, and a tropical depression is likely to form during the middle to latter portions of this week as it moves westward to west-northwestward around 10 to 15 mph over the Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...high...70 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1608" cy="1080" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1599" cy="1084" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1277,1128,1267,1127,1256,1126,1246,1124,1235,1123,1223,1121,1212,1120,1200,1118,1188,1116,1176,1115,1164,1113,1151,1111,1139,1109,1126,1107,1114,1105,1101,1103,1089,1101,1076,1098,1064,1096,1052,1094,1040,1092,1028,1089,1016,1087,1005,1084,993,1082,983,1079,972,1077,962,1074,952,1072,942,1069,933,1067,924,1064,916,1061,908,1059,901,1056,894,1053,888,1050,882,1047,877,1045,872,1042,868,1039,864,1036,860,1033,857,1030,854,1027,852,1024,850,1022,848,1019,846,1016,845,1013,844,1010,844,1007,843,1004,843,1001,843,998,844,994,844,991,845,988,846,985,847,982,848,979,849,976,850,973,852,970,853,967,855,964,856,960,858,957,860,954,861,951,863,948,864,945,866,942,868,939,869,936,871,932,873,929,875,926,877,923,879,920,880,917,882,915,884,912,886,909,888,906,891,903,893,900,895,898,897,895,900,892,902,890,905,887,907,885,910,883,912,880,915,878,918,876,921,874,924,872,927,870,930,868,933,866,936,864,940,863,943,861,946,860,950,858,954,857,957,855,961,854,965,853,969,852,972,851,976,850,980,849,984,848,988,847,992,847,996,846,1000,845,1004,845,1009,844,1013,844,1017,843,1021,843,1025,843,1029,842,1034,842,1038,842,1042,842,1046,842,1050,841,1054,841,1059,841,1063,841,1067,841,1071,842,1075,842,1079,842,1083,842,1087,842,1091,843,1095,843,1099,843,1104,844,1108,844,1112,845,1116,845,1120,846,1124,846,1128,847,1133,847,1137,848,1141,849,1146,849,1150,850,1155,851,1159,852,1164,853,1168,854,1173,855,1178,856,1182,857,1187,858,1192,859,1197,860,1202,861,1207,863,1213,864,1218,865,1223,866,1229,868,1234,869,1240,871,1245,872,1251,874,1257,875,1262,877,1268,879,1274,880,1279,882,1285,884,1291,886,1297,888,1302,890,1308,892,1314,894,1320,896,1325,898,1331,900,1337,902,1342,904,1348,907,1353,909,1359,911,1364,914,1369,916,1374,919,1380,921,1385,924,1390,927,1395,929,1399,932,1404,935,1409,938,1413,941,1418,944,1422,947,1426,950,1430,953,1434,956,1438,959,1442,962,1446,966,1449,969,1453,972,1456,975,1459,979,1462,982,1465,985,1468,989,1471,992,1473,996,1476,999,1478,1002,1480,1006,1482,1009,1484,1013,1486,1016,1488,1020,1489,1023,1490,1027,1492,1030,1493,1034,1493,1037,1494,1040,1495,1044,1495,1047,1495,1051,1496,1054,1496,1057,1495,1061,1495,1064,1495,1067,1494,1071,1494,1074,1493,1077,1492,1080,1491,1083,1490,1086,1489,1089,1487,1092,1486,1095,1484,1098,1483,1100,1481,1103,1479,1106,1477,1108,1475,1110,1473,1113,1471,1115,1469,1117,1466,1119,1464,1121,1461,1123,1459,1125,1456,1126,1454,1128,1451,1129,1448,1131,1445,1132,1442,1133,1439,1134,1436,1135,1432,1136,1429,1137,1425,1137,1421,1138,1417,1138,1413,1139,1408,1139,1404,1139,1399,1139,1394,1139,1389,1139,1383,1139,1378,1139,1372,1138,1365,1138,1359,1138,1352,1137,1345,1136,1338,1136,1330,1135,1322,1134,1314,1133,1305,1132,1296,1131,1287,1130,1277,1128" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1263,1106,1255,1105,1246,1103,1237,1101,1229,1099,1220,1097,1211,1095,1201,1093,1192,1091,1183,1089,1174,1087,1164,1085,1155,1083,1145,1080,1136,1078,1126,1076,1117,1074,1108,1072,1098,1069,1089,1067,1080,1065,1071,1062,1062,1060,1053,1058,1045,1056,1036,1053,1028,1051,1020,1049,1012,1046,1004,1044,997,1042,989,1039,982,1037,976,1035,969,1032,963,1030,957,1028,952,1026,947,1023,942,1021,937,1019,933,1017,928,1014,924,1012,921,1010,917,1008,914,1005,911,1003,908,1001,906,998,903,996,901,994,899,991,898,989,896,987,895,984,894,982,893,979,892,977,891,974,891,972,890,969,890,967,890,964,890,961,890,959,891,956,891,953,892,950,893,947,893,944,894,941,896,938,897,935,898,932,899,929,901,926,902,923,904,920,906,917,908,914,910,911,912,908,914,905,916,902,918,899,921,896,923,893,925,891,928,888,931,885,933,883,936,880,939,877,941,875,944,873,947,870,950,868,953,866,956,864,959,862,962,860,965,858,968,857,972,855,975,853,978,852,981,851,985,849,988,848,991,847,994,846,998,845,1001,844,1005,843,1008,843,1012,842,1015,841,1019,841,1022,840,1026,840,1029,839,1033,839,1037,838,1040,838,1044,838,1048,838,1051,837,1055,837,1059,837,1063,837,1067,837,1070,836,1074,836,1078,836,1082,836,1086,836,1090,836,1094,836,1098,836,1102,836,1106,836,1110,836,1114,836,1118,836,1122,836,1126,836,1131,837,1135,837,1139,837,1144,837,1148,838,1153,838,1157,838,1162,839,1166,839,1171,840,1176,840,1181,841,1185,842,1190,842,1195,843,1200,844,1205,845,1211,845,1216,846,1221,847,1227,848,1232,850,1238,851,1243,852,1249,853,1254,855,1260,856,1266,857,1272,859,1278,860,1283,862,1289,864,1295,865,1301,867,1307,869,1313,871,1319,873,1325,875,1331,877,1337,879,1342,881,1348,883,1354,885,1360,888,1365,890,1371,892,1377,895,1382,897,1388,900,1393,902,1399,905,1404,907,1409,910,1414,913,1419,916,1424,918,1429,921,1434,924,1438,927,1443,930,1447,933,1452,936,1456,939,1460,942,1464,946,1468,949,1472,952,1475,955,1479,959,1482,962,1485,965,1488,969,1491,972,1494,975,1497,979,1499,982,1502,986,1504,989,1506,993,1508,997,1509,1000,1511,1004,1512,1007,1513,1011,1514,1015,1515,1018,1516,1022,1516,1026,1516,1030,1516,1033,1516,1037,1516,1041,1515,1044,1515,1048,1514,1052,1513,1055,1512,1059,1511,1063,1509,1066,1508,1070,1506,1073,1504,1076,1502,1080,1500,1083,1498,1086,1495,1089,1493,1092,1490,1095,1488,1098,1485,1101,1482,1103,1479,1106,1476,1108,1472,1111,1469,1113,1466,1115,1462,1117,1458,1118,1455,1120,1451,1122,1447,1123,1443,1124,1439,1125,1435,1126,1431,1127,1427,1127,1422,1128,1418,1128,1413,1129,1408,1129,1404,1129,1399,1129,1394,1129,1389,1128,1383,1128,1378,1127,1372,1127,1367,1126,1361,1125,1355,1124,1349,1123,1342,1122,1336,1121,1330,1120,1323,1119,1316,1117,1309,1116,1302,1114,1294,1113,1287,1111,1279,1110,1271,1108,1263,1106" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1704,8 +1861,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 PM HST Sun Nov 01 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>1. Well Southeast of the Hawaiian Islands:<br>Showers and thunderstorms associated with a broad area of low<br>pressure located well east-southeast of the Hawaiian Islands remain<br>disorganized. Environmental conditions appear generally favorable<br>for gradual development of this system, and a tropical depression<br>could form during the middle to latter portions of this week as it<br>moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...medium...60 percent.<br>
-<br><br>Forecaster Gibbs<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Mon Nov 02 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>1. Well Southeast of the Hawaiian Islands:<br>A broad area of low pressure located well east-southeast of the<br>Hawaiian Islands is producing disorganized showers and<br>thunderstorms. Environmental conditions appear generally favorable<br>for gradual development of this system, and a tropical depression is<br>likely to form during the middle to latter portions of this week as<br>it moves westward to west-northwestward around 10 to 15 mph over the<br>Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.<br>* Formation chance through 7 days...high...70 percent.<br>
+<br><br>Forecaster Kelly<br><br></pre>
       </div>
           
     </div>
@@ -1723,8 +1880,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1000 PM PST Sun Nov 1 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>1. Well Southeast of the Hawaiian Islands: <br>Showers and thunderstorms associated with a broad area of low <br>pressure located well east-southeast of the Hawaiian Islands remain <br>disorganized. Environmental conditions appear generally favorable <br>for gradual development of this system, and a tropical depression <br>could form during the middle to latter portions of this week as it <br>moves westward to west-northwestward over the Central Pacific basin.<br>* Formation chance through 48 hours...low...10 percent.<br>* Formation chance through 7 days...medium...60 percent.<br>
-<br><br>Forecaster Gibbs<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1000 AM PST Mon Nov 2 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>1. Well Southeast of the Hawaiian Islands: <br>A broad area of low pressure located well east-southeast of the <br>Hawaiian Islands is producing disorganized showers and <br>thunderstorms. Environmental conditions appear generally favorable <br>for gradual development of this system, and a tropical depression is <br>likely to form during the middle to latter portions of this week as <br>it moves westward to west-northwestward around 10 to 15 mph over the <br>Central Pacific basin.<br>* Formation chance through 48 hours...low...20 percent.<br>* Formation chance through 7 days...high...70 percent.<br>
+<br><br>Forecaster Kelly<br><br></pre>
       </div>
           
             
@@ -1739,7 +1896,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">549 <br />ABPZ21 KNHC 020503<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1000 PM PST domingo 1 de noviembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Al sureste de las Islas de Hawai: Aguaceros y tormentas eléctricas<br />asociadas con una amplia área de baja presión ubicada al<br />este-sureste de las Islas de Hawái permanecen desorganizadas. Las<br />condiciones ambientales parecen generalmente favorables para el<br />desarrollo gradual de este sistema, y una depresión tropical podría<br />formarse durante las partes medias y últimas de esta semana a medida<br />que se mueve hacia el oeste a noroeste sobre la cuenca del Pacífico<br />Central.<br />* Probabilidad de formación hasta 48 horas...baja...10 por ciento.<br />* Probabilidad de formación en 7 días...mediana...60 por ciento.<br /><br />$$<br />Pronosticador Gibbs<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">687 <br />ABPZ21 KNHC 021716<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1000 AM PST lunes 2 de noviembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Bien al sureste de las islas de Hawai: Una amplia área de baja<br />presión ubicada en el este-sureste de las islas de Hawái está<br />produciendo aguaceros y tormentas desorganizadas. Las condiciones<br />ambientales parecen generalmente favorables para el desarrollo<br />gradual de este sistema, y es probable que se forme una depresión<br />tropical durante las partes medias y últimas de esta semana a medida<br />que se mueve hacia el oeste a noroeste alrededor de 10 a 15 mph<br />sobre la cuenca del Pacífico Central.<br />* Probabilidad de formación hasta 48 horas...baja...20 por ciento.<br />* Probabilidad de formación hasta 7 días...alta...70 por ciento.<br /><br />$$<br />Pronosticador Kelly<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
@@ -1758,7 +1915,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>100 AM EST Mon Nov 2 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Gibbs<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>100 PM EST Mon Nov 2 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>1. Western Atlantic:<br>An area of low pressure is likely to form along a weakening frontal <br>boundary a few hundred miles northeast of the Bahamas in a couple of <br>days. This system could acquire some subtropical characteristics <br>late this week while it drifts over the western Atlantic. The <br>chances of subtropical development should end by the weekend when <br>the system is expected to move eastward or northeastward into <br>unfavorable environmental conditions.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...low...30 percent.<br>
+<br><br>Forecaster Cangialosi<br><br></pre>
       </div>
           
             
@@ -1773,7 +1931,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">036 <br />ACCA62 KNHC 020507<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />100 AM EST lunes 2 de noviembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Gibbs<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">025 <br />ACCA62 KNHC 021711<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />100 PM EST lunes 2 de noviembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Atlántico occidental: Es probable que se forme un área de baja<br />presión a lo largo de un límite frontal que se debilita a unos<br />cientos de millas al noreste de las Bahamas en un par de días. Este<br />sistema podría adquirir algunas características subtropicales a<br />finales de esta semana mientras se desplaza sobre el Atlántico<br />oeste. Las probabilidades de desarrollo subtropical deben terminar<br />para el fin de semana, cuando se espera que el sistema se mueva<br />hacia el este o noreste en condiciones ambientales desfavorables.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...baja...30 por ciento.<br /><br />$$<br />Pronosticador Cangialosi<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
