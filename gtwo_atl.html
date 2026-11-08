@@ -601,148 +601,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <!-- 1. Stripped height-4/overflow-hidden and added inline grid settings -->
     <div id="gtwo-menu-container" class="width-full bg-primary-lighter" style="display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;">
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-atl-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
-      
-      <div id="menu-atl-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
-      <div id="menu-atl-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
       
@@ -960,94 +842,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
 
-          
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 48 Hours"
-    data-risk="nearzero"
-    data-prob="0"
-    data-details="
-  
-  <b>As of 7:00 PM EST Sat Nov 7 2026...</b><br>Western and Central Atlantic (AL94):<br>A broad, non-tropical low pressure system located several hundred miles south-southeast of Bermuda is producing disorganized showers and thunderstorms to the east of its center. The system remains in close proximity to fronts, and recent satellite images indicate the circulation of the low has become less defined today. Subtropical development of this system is not expected while it moves generally eastward and merges with a frontal system over the next day or two. For more information, including Gale Warnings, see High Seas Forecasts issued by the National Weather Service.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...near 0 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="912" cy="739" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-   
-        </svg>
-          
-      </div>
-
-      <div id="view-atl-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_atl_2d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_atl_2d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_atl_2d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_atl_2d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_atl_2d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_atl_2d1_w1024.png" 
-          alt="2 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-
-           
-            
-            
-              
-                
-                  
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 48 Hours"
-    data-risk="nearzero"
-    data-prob="0"
-    data-details="
-  
-  <b>As of 7:00 PM EST Sat Nov 7 2026...</b><br>Western and Central Atlantic (AL94):<br>A broad, non-tropical low pressure system located several hundred miles south-southeast of Bermuda is producing disorganized showers and thunderstorms to the east of its center. The system remains in close proximity to fronts, and recent satellite images indicate the circulation of the low has become less defined today. Subtropical development of this system is not expected while it moves generally eastward and merges with a frontal system over the next day or two. For more information, including Gale Warnings, see High Seas Forecasts issued by the National Weather Service.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...near 0 percent..<br>
-"
-    data-action="switchDisturbance:0">
-  
-    <circle cx="965" cy="723" r="50" fill="transparent" pointer-events="all" />
-  
-  </g>
-
-                
-              
-            
              
         </svg>
           
@@ -1093,104 +887,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
 
-          
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 7 Days"
-    data-risk="nearzero"
-    data-prob="0"
-    data-details="
-  
-  <b>As of 7:00 PM EST Sat Nov 7 2026...</b><br>Western and Central Atlantic (AL94):<br>A broad, non-tropical low pressure system located several hundred miles south-southeast of Bermuda is producing disorganized showers and thunderstorms to the east of its center. The system remains in close proximity to fronts, and recent satellite images indicate the circulation of the low has become less defined today. Subtropical development of this system is not expected while it moves generally eastward and merges with a frontal system over the next day or two. For more information, including Gale Warnings, see High Seas Forecasts issued by the National Weather Service.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...near 0 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="912" cy="739" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-   
-        </svg>
-          
-      </div>
-
-      <div id="view-atl-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_atl_7d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_atl_7d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_atl_7d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_atl_7d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_atl_7d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_atl_7d1_w1024.png" 
-          alt="7 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="View Pacific Outlook" 
-    onclick="switchBasin('pac')">
-    <polygon points="0,898,21,909,26,911,28,917,43,926,62,928,72,939,77,939,85,945,100,951,107,955,117,955,132,962,145,968,150,970,162,974,177,976,207,963,215,965,222,969,228,972,235,976,241,983,249,994,269,1008,277,1012,292,1012,301,1016,309,1020,318,1020,324,1024,333,1026,343,1028,350,1022,352,1022,354,1026,354,1037,367,1048,371,1054,386,1067,388,1075,386,1086,386,1090,399,1099,405,1095,409,1095,409,1101,416,1101,422,1105,431,1111,431,1118,448,1126,467,1128,474,1137,484,1139,484,1147,491,1152,510,1143,506,1135,499,1128,503,1126,510,1122,512,1116,518,1112,527,1111,533,1119,538,1124,535,1131,542,1139,546,1145,552,1156,557,1165,552,1167,559,1175,555,1179,557,1184,557,1203,555,1209,559,1216,557,1224,553,1228,548,1239,538,1239,531,1243,531,1254,525,1254,521,1260,527,1262,521,1269,0,1269" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-
-          
-
-           
-            
-            
-              
-                
-                  
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 7 Days"
-    data-risk="nearzero"
-    data-prob="0"
-    data-details="
-  
-  <b>As of 7:00 PM EST Sat Nov 7 2026...</b><br>Western and Central Atlantic (AL94):<br>A broad, non-tropical low pressure system located several hundred miles south-southeast of Bermuda is producing disorganized showers and thunderstorms to the east of its center. The system remains in close proximity to fronts, and recent satellite images indicate the circulation of the low has become less defined today. Subtropical development of this system is not expected while it moves generally eastward and merges with a frontal system over the next day or two. For more information, including Gale Warnings, see High Seas Forecasts issued by the National Weather Service.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...near 0 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="912" cy="739" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
-                
-              
-            
              
         </svg>
           
@@ -1245,13 +941,13 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="20"
     data-details="
   
-  <b>As of 4:00 PM PST Sat Nov 7 2026...</b><br>Eastern East Pacific:<br>A broad area of low pressure is producing disorganized showers and thunderstorms. Some development is possible over the next day or so while the system drifts northward. Regardless of development, this system is expected to bring areas of heavy rain to portions of Central America this weekend. Thereafter, unfavorable environmental conditions should end formation chances early next week as the system turns westward and moves away from land.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 10:00 PM PST Sat Nov 7 2026...</b><br>Eastern East Pacific:<br>An area of low pressure located just offshore of Costa Rica and Nicaragua continues to produce disorganized shower and thunderstorm activity. Some development of this system is possible over the next day or so while the system drifts slowly northwestward. Thereafter, environmental conditions are forecast to become unfavorable for additional development as the system turns westward away from land. Regardless of development, this system is expected to bring areas of heavy rain to portions of Central America over the remainder of this weekend.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1746" cy="696" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1742" cy="694" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1266,11 +962,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1100 AM HST Sat Nov 07 (Advisory #5)</b><br>Maximum Sustained Winds: 45 knots; 50 mph<br>Minimum Central Pressure: 998 mb<br>Located at: 11.5N 153.9W<br>Movement: west-northwest at 8 knots; 9 mph<br>
+  <b>As of 0500 PM HST Sat Nov 07 (Advisory #6)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 11.4N 154.5W<br>Movement: west at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_cp4+shtml/072046.shtml?cone#contents">
+    data-action="/refresh/graphics_cp4+shtml/080232.shtml?cone#contents">
     
-      <circle cx="552" cy="682" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="541" cy="683" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
@@ -1332,7 +1028,7 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="20"
     data-details="
   
-  <b>As of 4:00 PM PST Sat Nov 7 2026...</b><br>Eastern East Pacific:<br>A broad area of low pressure is producing disorganized showers and thunderstorms. Some development is possible over the next day or so while the system drifts northward. Regardless of development, this system is expected to bring areas of heavy rain to portions of Central America this weekend. Thereafter, unfavorable environmental conditions should end formation chances early next week as the system turns westward and moves away from land.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 10:00 PM PST Sat Nov 7 2026...</b><br>Eastern East Pacific:<br>An area of low pressure located just offshore of Costa Rica and Nicaragua continues to produce disorganized shower and thunderstorm activity. Some development of this system is possible over the next day or so while the system drifts slowly northwestward. Thereafter, environmental conditions are forecast to become unfavorable for additional development as the system turns westward away from land. Regardless of development, this system is expected to bring areas of heavy rain to portions of Central America over the remainder of this weekend.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
 "
     data-action="switchDisturbance:0">
   
@@ -1397,17 +1093,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="20"
     data-details="
   
-  <b>As of 4:00 PM PST Sat Nov 7 2026...</b><br>Eastern East Pacific:<br>A broad area of low pressure is producing disorganized showers and thunderstorms. Some development is possible over the next day or so while the system drifts northward. Regardless of development, this system is expected to bring areas of heavy rain to portions of Central America this weekend. Thereafter, unfavorable environmental conditions should end formation chances early next week as the system turns westward and moves away from land.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 10:00 PM PST Sat Nov 7 2026...</b><br>Eastern East Pacific:<br>An area of low pressure located just offshore of Costa Rica and Nicaragua continues to produce disorganized shower and thunderstorm activity. Some development of this system is possible over the next day or so while the system drifts slowly northwestward. Thereafter, environmental conditions are forecast to become unfavorable for additional development as the system turns westward away from land. Regardless of development, this system is expected to bring areas of heavy rain to portions of Central America over the remainder of this weekend.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1746" cy="696" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1742" cy="694" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1752,678,1751,677,1750,677,1749,676,1749,675,1748,675,1747,674,1746,673,1745,673,1745,672,1744,671,1743,671,1742,670,1741,670,1740,669,1739,669,1739,668,1738,668,1737,668,1736,667,1735,667,1734,666,1733,666,1732,666,1731,665,1730,665,1729,665,1729,665,1728,664,1727,664,1726,664,1725,663,1724,663,1723,663,1722,663,1721,663,1720,662,1719,662,1718,662,1717,662,1716,662,1715,661,1714,661,1713,661,1712,661,1711,661,1710,661,1709,661,1708,661,1707,660,1706,660,1706,660,1705,660,1704,660,1703,660,1702,660,1701,660,1700,660,1699,660,1698,660,1697,660,1696,660,1695,661,1694,661,1693,661,1692,661,1691,661,1690,661,1689,661,1688,662,1687,662,1686,662,1685,662,1684,663,1683,663,1682,663,1681,663,1680,664,1679,664,1679,664,1678,665,1677,665,1676,665,1675,666,1674,666,1673,666,1672,667,1671,667,1671,668,1670,668,1669,669,1668,669,1667,670,1666,670,1666,671,1665,671,1664,672,1663,672,1663,673,1662,673,1661,674,1660,674,1660,675,1659,676,1658,676,1658,677,1657,677,1657,678,1656,679,1655,680,1655,680,1654,681,1654,682,1653,682,1653,683,1652,684,1652,685,1652,686,1651,687,1651,687,1651,688,1650,689,1650,690,1650,691,1650,692,1649,693,1649,694,1649,695,1649,696,1649,697,1649,698,1649,699,1649,700,1649,701,1649,702,1649,703,1649,704,1649,705,1649,706,1649,707,1649,708,1649,709,1650,710,1650,711,1650,712,1650,713,1651,714,1651,714,1651,715,1652,716,1652,717,1652,718,1653,719,1653,719,1654,720,1654,721,1654,722,1655,722,1655,723,1656,724,1657,725,1657,725,1658,726,1658,726,1659,727,1660,728,1660,728,1661,729,1662,729,1662,730,1663,730,1664,731,1665,731,1665,732,1666,732,1667,733,1668,733,1669,734,1669,734,1670,735,1671,735,1672,735,1673,736,1674,736,1675,737,1676,737,1677,737,1678,738,1679,738,1680,738,1681,739,1682,739,1683,739,1685,740,1686,740,1687,740,1688,740,1689,741,1690,741,1692,741,1693,741,1694,742,1695,742,1697,742,1698,742,1699,742,1700,742,1702,742,1703,743,1704,743,1706,743,1707,743,1709,743,1710,743,1711,743,1713,743,1714,743,1716,743,1717,743,1718,743,1720,743,1721,742,1723,742,1724,742,1726,742,1727,742,1728,741,1730,741,1731,741,1732,741,1734,740,1735,740,1736,740,1738,739,1739,739,1740,738,1741,738,1743,738,1744,737,1745,736,1746,736,1747,735,1748,735,1749,734,1750,733,1751,733,1752,732,1753,731,1754,730,1755,730,1755,729,1756,728,1757,727,1758,726,1758,725,1759,725,1759,724,1760,723,1760,722,1761,721,1761,720,1762,719,1762,718,1762,717,1763,716,1763,715,1763,714,1763,712,1764,711,1764,710,1764,709,1764,708,1764,707,1764,706,1763,705,1763,703,1763,702,1763,701,1763,700,1762,699,1762,698,1762,697,1761,695,1761,694,1761,693,1760,692,1760,691,1759,690,1759,689,1758,688,1758,687,1757,686,1756,685,1756,684,1755,683,1754,682,1754,681,1753,680,1752,679,1752,678" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1752,678,1751,677,1750,676,1749,676,1748,675,1747,674,1746,673,1745,672,1744,671,1743,671,1742,670,1741,669,1740,668,1739,668,1738,667,1737,666,1736,666,1735,665,1734,664,1733,664,1732,663,1731,662,1730,662,1729,661,1728,661,1727,660,1726,660,1725,659,1724,659,1723,659,1722,658,1721,658,1720,657,1719,657,1719,657,1718,656,1717,656,1716,656,1715,655,1715,655,1714,655,1713,654,1712,654,1712,654,1711,654,1710,653,1710,653,1709,653,1708,653,1708,652,1707,652,1706,652,1706,652,1705,651,1704,651,1704,651,1703,651,1703,651,1702,650,1701,650,1701,650,1700,650,1699,649,1699,649,1698,649,1697,649,1697,648,1696,648,1695,648,1695,648,1694,647,1693,647,1693,647,1692,647,1691,646,1691,646,1690,646,1689,646,1688,645,1688,645,1687,645,1686,645,1686,644,1685,644,1684,644,1683,644,1682,643,1682,643,1681,643,1680,643,1679,642,1678,642,1678,642,1677,642,1676,642,1675,641,1674,641,1673,641,1673,641,1672,641,1671,641,1670,641,1669,641,1668,641,1667,640,1667,640,1666,640,1665,640,1664,640,1663,640,1662,641,1661,641,1661,641,1660,641,1659,641,1658,641,1657,641,1656,642,1656,642,1655,642,1654,642,1653,643,1653,643,1652,643,1651,644,1650,644,1650,645,1649,645,1648,646,1648,646,1647,647,1646,647,1646,648,1645,649,1644,649,1644,650,1643,651,1643,651,1642,652,1641,653,1641,654,1640,654,1640,655,1639,656,1639,657,1638,658,1638,659,1637,659,1637,660,1637,661,1636,662,1636,663,1635,664,1635,665,1635,666,1634,667,1634,668,1634,669,1634,670,1633,671,1633,672,1633,673,1633,674,1633,675,1633,676,1633,677,1633,678,1633,679,1633,680,1634,681,1634,682,1634,683,1635,684,1635,684,1636,685,1636,686,1637,687,1638,688,1638,689,1639,690,1640,691,1641,691,1642,692,1644,693,1645,694,1646,694,1647,695,1649,696,1650,696,1652,697,1653,698,1655,698,1656,699,1658,699,1660,700,1661,700,1663,701,1665,701,1666,702,1668,702,1670,703,1671,703,1673,704,1675,704,1676,704,1678,705,1679,705,1681,705,1683,706,1684,706,1685,706,1687,707,1688,707,1689,707,1691,707,1692,708,1693,708,1694,708,1695,708,1697,709,1698,709,1699,709,1700,709,1701,709,1702,709,1703,710,1704,710,1705,710,1706,710,1707,710,1708,710,1709,710,1711,710,1712,710,1713,711,1714,711,1715,711,1716,711,1718,711,1719,711,1720,711,1722,711,1723,711,1724,711,1726,711,1727,711,1729,711,1730,711,1732,711,1733,711,1735,711,1736,711,1738,711,1739,711,1741,711,1742,711,1743,711,1745,711,1746,710,1748,710,1749,710,1750,710,1751,709,1752,709,1753,709,1754,708,1755,708,1756,707,1757,707,1758,706,1759,705,1759,705,1760,704,1760,703,1760,703,1761,702,1761,701,1761,700,1761,699,1761,698,1761,697,1761,696,1761,695,1761,694,1761,693,1760,692,1760,691,1759,690,1759,689,1759,688,1758,687,1757,686,1757,685,1756,684,1755,683,1755,682,1754,681,1753,680,1752,679,1752,678" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1422,11 +1118,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1100 AM HST Sat Nov 07 (Advisory #5)</b><br>Maximum Sustained Winds: 45 knots; 50 mph<br>Minimum Central Pressure: 998 mb<br>Located at: 11.5N 153.9W<br>Movement: west-northwest at 8 knots; 9 mph<br>
+  <b>As of 0500 PM HST Sat Nov 07 (Advisory #6)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 11.4N 154.5W<br>Movement: west at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_cp4+shtml/072046.shtml?cone#contents">
+    data-action="/refresh/graphics_cp4+shtml/080232.shtml?cone#contents">
     
-      <circle cx="552" cy="682" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="541" cy="683" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
@@ -1496,17 +1192,17 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="20"
     data-details="
   
-  <b>As of 4:00 PM PST Sat Nov 7 2026...</b><br>Eastern East Pacific:<br>A broad area of low pressure is producing disorganized showers and thunderstorms. Some development is possible over the next day or so while the system drifts northward. Regardless of development, this system is expected to bring areas of heavy rain to portions of Central America this weekend. Thereafter, unfavorable environmental conditions should end formation chances early next week as the system turns westward and moves away from land.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
+  <b>As of 10:00 PM PST Sat Nov 7 2026...</b><br>Eastern East Pacific:<br>An area of low pressure located just offshore of Costa Rica and Nicaragua continues to produce disorganized shower and thunderstorm activity. Some development of this system is possible over the next day or so while the system drifts slowly northwestward. Thereafter, environmental conditions are forecast to become unfavorable for additional development as the system turns westward away from land. Regardless of development, this system is expected to bring areas of heavy rain to portions of Central America over the remainder of this weekend.<br>* Formation chance through 48 hours...low...20 percent.. <br>* Formation chance through 7 days...low...20 percent..<br>
 "
     data-action="switchDisturbance:1">
   
     
       
-    <circle cx="1746" cy="696" r="24" stroke="none" fill="transparent" pointer-events="all" />
+    <circle cx="1742" cy="694" r="24" stroke="none" fill="transparent" pointer-events="all" />
       
     
       
-    <polygon points="1752,678,1751,677,1750,677,1749,676,1749,675,1748,675,1747,674,1746,673,1745,673,1745,672,1744,671,1743,671,1742,670,1741,670,1740,669,1739,669,1739,668,1738,668,1737,668,1736,667,1735,667,1734,666,1733,666,1732,666,1731,665,1730,665,1729,665,1729,665,1728,664,1727,664,1726,664,1725,663,1724,663,1723,663,1722,663,1721,663,1720,662,1719,662,1718,662,1717,662,1716,662,1715,661,1714,661,1713,661,1712,661,1711,661,1710,661,1709,661,1708,661,1707,660,1706,660,1706,660,1705,660,1704,660,1703,660,1702,660,1701,660,1700,660,1699,660,1698,660,1697,660,1696,660,1695,661,1694,661,1693,661,1692,661,1691,661,1690,661,1689,661,1688,662,1687,662,1686,662,1685,662,1684,663,1683,663,1682,663,1681,663,1680,664,1679,664,1679,664,1678,665,1677,665,1676,665,1675,666,1674,666,1673,666,1672,667,1671,667,1671,668,1670,668,1669,669,1668,669,1667,670,1666,670,1666,671,1665,671,1664,672,1663,672,1663,673,1662,673,1661,674,1660,674,1660,675,1659,676,1658,676,1658,677,1657,677,1657,678,1656,679,1655,680,1655,680,1654,681,1654,682,1653,682,1653,683,1652,684,1652,685,1652,686,1651,687,1651,687,1651,688,1650,689,1650,690,1650,691,1650,692,1649,693,1649,694,1649,695,1649,696,1649,697,1649,698,1649,699,1649,700,1649,701,1649,702,1649,703,1649,704,1649,705,1649,706,1649,707,1649,708,1649,709,1650,710,1650,711,1650,712,1650,713,1651,714,1651,714,1651,715,1652,716,1652,717,1652,718,1653,719,1653,719,1654,720,1654,721,1654,722,1655,722,1655,723,1656,724,1657,725,1657,725,1658,726,1658,726,1659,727,1660,728,1660,728,1661,729,1662,729,1662,730,1663,730,1664,731,1665,731,1665,732,1666,732,1667,733,1668,733,1669,734,1669,734,1670,735,1671,735,1672,735,1673,736,1674,736,1675,737,1676,737,1677,737,1678,738,1679,738,1680,738,1681,739,1682,739,1683,739,1685,740,1686,740,1687,740,1688,740,1689,741,1690,741,1692,741,1693,741,1694,742,1695,742,1697,742,1698,742,1699,742,1700,742,1702,742,1703,743,1704,743,1706,743,1707,743,1709,743,1710,743,1711,743,1713,743,1714,743,1716,743,1717,743,1718,743,1720,743,1721,742,1723,742,1724,742,1726,742,1727,742,1728,741,1730,741,1731,741,1732,741,1734,740,1735,740,1736,740,1738,739,1739,739,1740,738,1741,738,1743,738,1744,737,1745,736,1746,736,1747,735,1748,735,1749,734,1750,733,1751,733,1752,732,1753,731,1754,730,1755,730,1755,729,1756,728,1757,727,1758,726,1758,725,1759,725,1759,724,1760,723,1760,722,1761,721,1761,720,1762,719,1762,718,1762,717,1763,716,1763,715,1763,714,1763,712,1764,711,1764,710,1764,709,1764,708,1764,707,1764,706,1763,705,1763,703,1763,702,1763,701,1763,700,1762,699,1762,698,1762,697,1761,695,1761,694,1761,693,1760,692,1760,691,1759,690,1759,689,1758,688,1758,687,1757,686,1756,685,1756,684,1755,683,1754,682,1754,681,1753,680,1752,679,1752,678" stroke="none" fill="transparent" pointer-events="all" />
+    <polygon points="1752,678,1751,677,1750,676,1749,676,1748,675,1747,674,1746,673,1745,672,1744,671,1743,671,1742,670,1741,669,1740,668,1739,668,1738,667,1737,666,1736,666,1735,665,1734,664,1733,664,1732,663,1731,662,1730,662,1729,661,1728,661,1727,660,1726,660,1725,659,1724,659,1723,659,1722,658,1721,658,1720,657,1719,657,1719,657,1718,656,1717,656,1716,656,1715,655,1715,655,1714,655,1713,654,1712,654,1712,654,1711,654,1710,653,1710,653,1709,653,1708,653,1708,652,1707,652,1706,652,1706,652,1705,651,1704,651,1704,651,1703,651,1703,651,1702,650,1701,650,1701,650,1700,650,1699,649,1699,649,1698,649,1697,649,1697,648,1696,648,1695,648,1695,648,1694,647,1693,647,1693,647,1692,647,1691,646,1691,646,1690,646,1689,646,1688,645,1688,645,1687,645,1686,645,1686,644,1685,644,1684,644,1683,644,1682,643,1682,643,1681,643,1680,643,1679,642,1678,642,1678,642,1677,642,1676,642,1675,641,1674,641,1673,641,1673,641,1672,641,1671,641,1670,641,1669,641,1668,641,1667,640,1667,640,1666,640,1665,640,1664,640,1663,640,1662,641,1661,641,1661,641,1660,641,1659,641,1658,641,1657,641,1656,642,1656,642,1655,642,1654,642,1653,643,1653,643,1652,643,1651,644,1650,644,1650,645,1649,645,1648,646,1648,646,1647,647,1646,647,1646,648,1645,649,1644,649,1644,650,1643,651,1643,651,1642,652,1641,653,1641,654,1640,654,1640,655,1639,656,1639,657,1638,658,1638,659,1637,659,1637,660,1637,661,1636,662,1636,663,1635,664,1635,665,1635,666,1634,667,1634,668,1634,669,1634,670,1633,671,1633,672,1633,673,1633,674,1633,675,1633,676,1633,677,1633,678,1633,679,1633,680,1634,681,1634,682,1634,683,1635,684,1635,684,1636,685,1636,686,1637,687,1638,688,1638,689,1639,690,1640,691,1641,691,1642,692,1644,693,1645,694,1646,694,1647,695,1649,696,1650,696,1652,697,1653,698,1655,698,1656,699,1658,699,1660,700,1661,700,1663,701,1665,701,1666,702,1668,702,1670,703,1671,703,1673,704,1675,704,1676,704,1678,705,1679,705,1681,705,1683,706,1684,706,1685,706,1687,707,1688,707,1689,707,1691,707,1692,708,1693,708,1694,708,1695,708,1697,709,1698,709,1699,709,1700,709,1701,709,1702,709,1703,710,1704,710,1705,710,1706,710,1707,710,1708,710,1709,710,1711,710,1712,710,1713,711,1714,711,1715,711,1716,711,1718,711,1719,711,1720,711,1722,711,1723,711,1724,711,1726,711,1727,711,1729,711,1730,711,1732,711,1733,711,1735,711,1736,711,1738,711,1739,711,1741,711,1742,711,1743,711,1745,711,1746,710,1748,710,1749,710,1750,710,1751,709,1752,709,1753,709,1754,708,1755,708,1756,707,1757,707,1758,706,1759,705,1759,705,1760,704,1760,703,1760,703,1761,702,1761,701,1761,700,1761,699,1761,698,1761,697,1761,696,1761,695,1761,694,1761,693,1760,692,1760,691,1759,690,1759,689,1759,688,1758,687,1757,686,1757,685,1756,684,1755,683,1755,682,1754,681,1753,680,1752,679,1752,678" stroke="none" fill="transparent" pointer-events="all" />
       
     
   
@@ -1570,11 +1266,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1100 AM HST Sat Nov 07 (Advisory #5)</b><br>Maximum Sustained Winds: 45 knots; 50 mph<br>Minimum Central Pressure: 998 mb<br>Located at: 11.5N 153.9W<br>Movement: west-northwest at 8 knots; 9 mph<br>
+  <b>As of 0500 PM HST Sat Nov 07 (Advisory #6)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 11.4N 154.5W<br>Movement: west at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_cp4+shtml/072046.shtml?cone#contents">
+    data-action="/refresh/graphics_cp4+shtml/080232.shtml?cone#contents">
     
-      <circle cx="989" cy="958" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="973" cy="960" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
@@ -1632,11 +1328,11 @@ document.addEventListener('DOMContentLoaded', function() {
     data-prob="N/A"
     data-details="
   
-  <b>As of 1100 AM HST Sat Nov 07 (Advisory #5)</b><br>Maximum Sustained Winds: 45 knots; 50 mph<br>Minimum Central Pressure: 998 mb<br>Located at: 11.5N 153.9W<br>Movement: west-northwest at 8 knots; 9 mph<br>
+  <b>As of 0500 PM HST Sat Nov 07 (Advisory #6)</b><br>Maximum Sustained Winds: 50 knots; 60 mph<br>Minimum Central Pressure: 993 mb<br>Located at: 11.4N 154.5W<br>Movement: west at 8 knots; 9 mph<br>
 "
-    data-action="/refresh/graphics_cp4+shtml/072046.shtml?cone#contents">
+    data-action="/refresh/graphics_cp4+shtml/080232.shtml?cone#contents">
     
-      <circle cx="989" cy="958" r="24" stroke="none" fill="transparent" pointer-events="all" />
+      <circle cx="973" cy="960" r="24" stroke="none" fill="transparent" pointer-events="all" />
     
   </g>
    
@@ -1764,7 +1460,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 PM HST Sat Nov 07 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical<br>Storm Pena, located several hundred miles south-southeast of the Big<br>Island of Hawaii.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br><br><br>Forecaster Adams<br><br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 PM HST Sat Nov 07 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical<br>Storm Pena, located several hundred miles south-southeast of the Big<br>Island of Hawaii.<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br><br>Forecaster Papin<br><br><br></pre>
       </div>
           
     </div>
@@ -1782,8 +1478,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>400 PM PST Sat Nov 7 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical <br>Storm Pena, located several hundred miles south-southeast of the Big <br>Island of Hawaii.<br><br>1. Eastern East Pacific:<br>A broad area of low pressure is producing disorganized showers and <br>thunderstorms. Some development is possible over the next day or so <br>while the system drifts northward. Regardless of development, this <br>system is expected to bring areas of heavy rain to portions of <br>Central America this weekend. Thereafter, unfavorable environmental <br>conditions should end formation chances early next week as the <br>system turns westward and moves away from land. <br>* Formation chance through 48 hours...low...20 percent.<br>* Formation chance through 7 days...low...20 percent.<br>
-<br><br><br><br>Forecaster Adams<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1000 PM PST Sat Nov 7 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Active Systems:<br>The National Hurricane Center is issuing advisories on Tropical <br>Storm Pena, located several hundred miles south-southeast of the Big <br>Island of Hawaii.<br><br>1. Eastern East Pacific:<br>An area of low pressure located just offshore of Costa Rica and <br>Nicaragua continues to produce disorganized shower and thunderstorm <br>activity. Some development of this system is possible over the next <br>day or so while the system drifts slowly northwestward. Thereafter, <br>environmental conditions are forecast to become unfavorable for <br>additional development as the system turns westward away from land. <br>Regardless of development, this system is expected to bring areas of <br>heavy rain to portions of Central America over the remainder of this <br>weekend.<br>* Formation chance through 48 hours...low...20 percent.<br>* Formation chance through 7 days...low...20 percent.<br>
+<br><br>Forecaster Papin<br><br></pre>
       </div>
           
             
@@ -1798,7 +1494,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">706 <br />ABPZ21 KNHC 072322<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />400 PM PST sábado 7 de noviembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas Activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la Tormenta Tropical Pena, ubicada a varios<br />cientos de millas al sureste de la Isla Grande de Hawai.<br /><br />Este del Pacífico Oriental: Una amplia área de baja presión está<br />produciendo aguaceros y tormentas eléctricas desorganizadas. Es<br />posible que se produzca algún desarrollo durante el próximo día<br />mientras el sistema se desplaza hacia el norte. Independientemente<br />del desarrollo, se espera que este sistema traiga áreas de lluvia<br />intensa a porciones de Centroamérica este fin de semana. Después de<br />eso, las condiciones ambientales desfavorables deben poner fin a las<br />probabilidades de formación a principios de la próxima semana a<br />medida que el sistema gire hacia el oeste y se aleje de tierra.<br />* Probabilidad de formación hasta 48 horas...baja...20 por ciento.<br />* Probabilidad de formación hasta 7 días...baja...20 por ciento.<br /><br />&&<br /><br />$$<br />Pronosticador Adams<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">306 <br />ABPZ21 KNHC 080543<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1000 PM PST sábado 7 de noviembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />Sistemas Activos: El Centro Nacional de Huracanes está emitiendo<br />advertencias sobre la Tormenta Tropical Pena, ubicada a varios<br />cientos de millas al sureste de la Isla Grande de Hawai.<br /><br />Este del Pacífico Oriental: Un área de baja presión ubicada justo<br />frente a las costas de Costa Rica y Nicaragua continúa produciendo<br />actividad de aguaceros y tormentas eléctricas desorganizadas. Es<br />posible que se desarrolle algún tipo de sistema durante el próximo<br />día mientras el sistema se desplaza lentamente hacia el noroeste.<br />Después de eso, se pronostica que las condiciones ambientales se<br />volverán desfavorables para un desarrollo adicional a medida que el<br />sistema gire hacia el oeste desde tierra. Independientemente del<br />desarrollo, se espera que este sistema traiga áreas de lluvia<br />intensa a porciones de Centroamérica durante el resto de este fin de<br />semana.<br />* Probabilidad de formación hasta 48 horas...baja...20 por ciento.<br />* Probabilidad de formación hasta 7 días...baja...20 por ciento.<br /><br />$$<br />Pronosticador Papin<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
@@ -1817,8 +1513,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>700 PM EST Sat Nov 7 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>1. Western and Central Atlantic (AL94):<br>A broad, non-tropical low pressure system located several hundred <br>miles south-southeast of Bermuda is producing disorganized showers <br>and thunderstorms to the east of its center. The system remains in <br>close proximity to fronts, and recent satellite images indicate the <br>circulation of the low has become less defined today. Subtropical <br>development of this system is not expected while it moves generally <br>eastward and merges with a frontal system over the next day or two. <br>For more information, including Gale Warnings, see High Seas <br>Forecasts issued by the National Weather Service.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...low...near 0 percent.<br>
-<br><br>High Seas Forecasts issued by the National Weather Service can be <br>found under AWIPS header NFDHSFAT1, WMO header FZNT01 KWBC, and <br>online at ocean.weather.gov/shtml/NFDHSFAT1.php<br><br><br>Forecaster Reinhart<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>100 AM EST Sun Nov 8 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Tropical cyclone formation is not expected over the next 7 days.<br><br>$$<br>Forecaster Papin<br>NNNN<br><br></pre>
       </div>
           
             
@@ -1833,7 +1528,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">043 <br />ACCA62 KNHC 072322<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />700 PM EST sábado 7 de noviembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Atlántico Oeste y Central (AL94): Un sistema de baja presión no<br />tropical amplio localizado a varios cientos de millas al sureste de<br />Bermuda está produciendo aguaceros desorganizados y tormentas<br />eléctricas al este de su centro. El sistema permanece en las<br />proximidades de los frentes, e imágenes de satélite recientes<br />indican que la circulación de la baja se ha vuelto menos definida<br />hoy. No se espera el desarrollo subtropical de este sistema mientras<br />que se mueve generalmente hacia el este y se fusiona con un sistema<br />frontal durante el próximo día o dos. Para más información,<br />incluyendo Avisos de Tormenta, vea Pronósticos de Alta Mar emitidos<br />por el Servicio Nacional de Meteorología.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...baja...cerca del 0 por<br />ciento.<br /><br />&&<br />Los pronósticos de alta mar emitidos por el Servicio Nacional de<br />Meteorología se pueden encontrar bajo el encabezado de AWIPS<br />NFDHSFAT1, el encabezado de la OMM FZNT01 KWBC, y en línea en<br />ocean.weather.gov/shtml/NFDHSFAT1.php<br /><br />$$<br />Pronosticador Reinhart<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">135 <br />ACCA62 KNHC 080518<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />100 AM EST domingo 8 de noviembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />No se espera la formación de ciclones tropicales en los próximos 7<br />días.<br /><br />$$<br />Pronosticador Papin<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
