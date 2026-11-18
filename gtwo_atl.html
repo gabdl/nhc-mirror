@@ -614,17 +614,76 @@ document.addEventListener('DOMContentLoaded', function() {
           
         </div>
       </div>
-
-      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
+      
       <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          
-          <!-- Stays on Line 1 on mobile -->
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
-          
-          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
-          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
-          
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium "
+            
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="menu-atl-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
+        
+        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
+          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
+            
+              
+              
+              
+            
+          <button
+            id="dist-btn-0"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium "
+            
+            onclick="switchDisturbance('0')"
+          >
+            ALL
+          </button>
+            
+              
+              
+              
+              
+            
+          <button
+            id="dist-btn-1"
+            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-medium text-on-gtwo-medium text-bold border-gray-90"
+            style="box-shadow: 1px 2px 2px black;"
+            onclick="switchDisturbance('1')"
+          >
+            1
+          </button>
+          </div>
         </div>
       </div>
 
@@ -769,6 +828,104 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
 
+          
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 40% Chance of Cyclone Formation in 7 Days"
+    data-risk="medium"
+    data-prob="40"
+    data-details="
+  
+  <b>As of 1:00 PM EST Wed Nov 18 2026...</b><br>Off the Southeast U.S. Coast:<br>A non-tropical low pressure system is expected to form near the northern Bahamas by late Friday.  This system could become a subtropical or tropical storm while it moves northward or northeastward near or offshore of the southeastern U.S. coast through the weekend.  Regardless of development, strong winds, dangerous surf, and coastal flooding are likely along portions of the southeast and mid-Atlantic coasts into early next week. Interests along the eastern U.S. coast should monitor the progress of this system.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...40 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="560,581,562,579,564,577,566,576,567,574,569,572,571,571,573,569,574,567,576,566,578,564,580,563,581,561,583,559,585,558,586,556,588,555,590,553,591,551,593,550,594,548,596,547,598,545,599,543,601,541,602,540,604,538,605,536,606,535,608,533,609,531,610,529,612,527,613,525,614,523,615,521,616,519,617,517,618,515,619,513,620,511,621,508,622,506,623,504,624,501,625,499,626,497,626,494,627,492,628,490,629,487,630,485,630,483,631,481,632,478,633,476,634,474,635,472,635,470,636,468,637,466,638,464,639,462,640,460,641,458,643,457,644,455,645,453,646,452,648,451,649,450,650,448,652,448,654,447,655,446,657,445,659,445,661,444,663,444,665,444,667,444,669,444,671,444,673,445,676,445,678,446,680,446,683,447,685,448,687,449,690,450,692,451,694,452,697,453,699,455,701,456,703,458,706,459,708,461,710,462,712,464,714,466,716,467,718,469,720,471,721,473,723,475,724,477,726,479,727,481,729,483,730,485,731,487,732,489,732,491,733,493,733,495,734,498,734,500,734,502,734,504,734,506,734,508,734,511,734,513,733,515,733,517,732,520,732,522,731,524,730,526,729,529,728,531,728,533,726,536,725,538,724,540,723,543,722,545,720,547,719,550,718,552,716,555,715,557,713,559,712,562,710,564,708,567,707,569,705,572,703,574,702,577,700,579,698,582,697,584,695,587,693,590,691,592,690,595,688,597,686,600,684,602,682,605,680,607,679,610,677,612,675,615,673,617,671,620,669,622,667,625,665,627,663,629,661,632,659,634,656,636,654,639,652,641,650,643,648,645,645,648,643,650,641,652,638,654,636,656,634,658,631,660,629,662,626,664,624,665,621,667,619,669,616,671,614,672,611,674,608,675,606,677,603,678,600,680,598,681,595,682,593,684,590,685,587,686,585,687,582,688,580,689,577,690,574,691,572,692,569,692,567,693,564,694,562,694,560,695,557,695,555,696,553,696,550,696,548,696,546,697,544,697,542,697,540,697,538,696,536,696,534,696,533,696,531,695,529,695,528,694,526,694,525,693,523,692,522,691,521,691,520,690,519,689,517,688,516,687,516,686,515,684,514,683,513,682,512,681,512,679,511,678,511,677,510,675,510,674,510,672,509,671,509,669,509,668,509,666,509,664,509,663,509,661,509,659,510,657,510,656,510,654,511,652,511,650,512,648,513,646,513,644,514,643,515,641,516,639,517,637,518,635,519,633,520,631,521,629,522,627,524,625,525,623,526,621,528,619,529,617,531,615,532,613,534,611,535,609,537,607,538,605,540,603,541,601,543,599,545,597,546,596,548,594,550,592,552,590,553,588,555,586,557,584,559,583,560,581" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+   
+        </svg>
+          
+      </div>
+
+      <div id="view-atl-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
+        <img 
+          srcset="
+            /xgtwo/resize/xgtwo_atl_7d1_w1920.png 1920w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1600.png 1600w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1366.png 1366w,
+            /xgtwo/resize/xgtwo_atl_7d1_w1024.png 1024w,
+            /xgtwo/resize/xgtwo_atl_7d1_w768.png 768w,
+            /xgtwo/resize/xgtwo_atl_7d1_w640.png 640w,
+            /xgtwo/resize/xgtwo_atl_7d1_w400.png 400w,
+            /xgtwo/resize/xgtwo_atl_7d1_w320.png 320w
+          "
+          sizes="
+            (width <= 320px) 320px,
+            (width <= 400px) 400px,
+            (width <= 640px) 640px,
+            (width <= 768px) 768px,
+            (width <= 1024px) 1024px,
+            (width <= 1366px) 1366px,
+            (width <= 1600px) 1600px,
+            (width <= 1920px) 1920px,
+            1024px"
+          src="/xgtwo/resize/xgtwo_atl_7d1_w1024.png" 
+          alt="7 Day Background" 
+          class="width-full height-full"
+        >
+        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
+
+          
+            
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="Return to All Disturbances" 
+    onclick="switchDisturbance('0')">
+    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+          
+
+          
+  <g class="nav-system cursor-pointer" 
+    data-nav-title="View Pacific Outlook" 
+    onclick="switchBasin('pac')">
+    <polygon points="0,898,21,909,26,911,28,917,43,926,62,928,72,939,77,939,85,945,100,951,107,955,117,955,132,962,145,968,150,970,162,974,177,976,207,963,215,965,222,969,228,972,235,976,241,983,249,994,269,1008,277,1012,292,1012,301,1016,309,1020,318,1020,324,1024,333,1026,343,1028,350,1022,352,1022,354,1026,354,1037,367,1048,371,1054,386,1067,388,1075,386,1086,386,1090,399,1099,405,1095,409,1095,409,1101,416,1101,422,1105,431,1111,431,1118,448,1126,467,1128,474,1137,484,1139,484,1147,491,1152,510,1143,506,1135,499,1128,503,1126,510,1122,512,1116,518,1112,527,1111,533,1119,538,1124,535,1131,542,1139,546,1145,552,1156,557,1165,552,1167,559,1175,555,1179,557,1184,557,1203,555,1209,559,1216,557,1224,553,1228,548,1239,538,1239,531,1243,531,1254,525,1254,521,1260,527,1262,521,1269,0,1269" stroke="none" fill="transparent" pointer-events="all" />
+  </g>
+
+
+          
+
+           
+            
+            
+              
+                
+                  
+  <g class="storm-system cursor-pointer" 
+    data-name="Disturbance 1: 40% Chance of Cyclone Formation in 7 Days"
+    data-risk="medium"
+    data-prob="40"
+    data-details="
+  
+  <b>As of 1:00 PM EST Wed Nov 18 2026...</b><br>Off the Southeast U.S. Coast:<br>A non-tropical low pressure system is expected to form near the northern Bahamas by late Friday.  This system could become a subtropical or tropical storm while it moves northward or northeastward near or offshore of the southeastern U.S. coast through the weekend.  Regardless of development, strong winds, dangerous surf, and coastal flooding are likely along portions of the southeast and mid-Atlantic coasts into early next week. Interests along the eastern U.S. coast should monitor the progress of this system.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...medium...40 percent..<br>
+"
+    data-action="switchDisturbance:1">
+  
+    
+      
+    <polygon points="560,581,562,579,564,577,566,576,567,574,569,572,571,571,573,569,574,567,576,566,578,564,580,563,581,561,583,559,585,558,586,556,588,555,590,553,591,551,593,550,594,548,596,547,598,545,599,543,601,541,602,540,604,538,605,536,606,535,608,533,609,531,610,529,612,527,613,525,614,523,615,521,616,519,617,517,618,515,619,513,620,511,621,508,622,506,623,504,624,501,625,499,626,497,626,494,627,492,628,490,629,487,630,485,630,483,631,481,632,478,633,476,634,474,635,472,635,470,636,468,637,466,638,464,639,462,640,460,641,458,643,457,644,455,645,453,646,452,648,451,649,450,650,448,652,448,654,447,655,446,657,445,659,445,661,444,663,444,665,444,667,444,669,444,671,444,673,445,676,445,678,446,680,446,683,447,685,448,687,449,690,450,692,451,694,452,697,453,699,455,701,456,703,458,706,459,708,461,710,462,712,464,714,466,716,467,718,469,720,471,721,473,723,475,724,477,726,479,727,481,729,483,730,485,731,487,732,489,732,491,733,493,733,495,734,498,734,500,734,502,734,504,734,506,734,508,734,511,734,513,733,515,733,517,732,520,732,522,731,524,730,526,729,529,728,531,728,533,726,536,725,538,724,540,723,543,722,545,720,547,719,550,718,552,716,555,715,557,713,559,712,562,710,564,708,567,707,569,705,572,703,574,702,577,700,579,698,582,697,584,695,587,693,590,691,592,690,595,688,597,686,600,684,602,682,605,680,607,679,610,677,612,675,615,673,617,671,620,669,622,667,625,665,627,663,629,661,632,659,634,656,636,654,639,652,641,650,643,648,645,645,648,643,650,641,652,638,654,636,656,634,658,631,660,629,662,626,664,624,665,621,667,619,669,616,671,614,672,611,674,608,675,606,677,603,678,600,680,598,681,595,682,593,684,590,685,587,686,585,687,582,688,580,689,577,690,574,691,572,692,569,692,567,693,564,694,562,694,560,695,557,695,555,696,553,696,550,696,548,696,546,697,544,697,542,697,540,697,538,696,536,696,534,696,533,696,531,695,529,695,528,694,526,694,525,693,523,692,522,691,521,691,520,690,519,689,517,688,516,687,516,686,515,684,514,683,513,682,512,681,512,679,511,678,511,677,510,675,510,674,510,672,509,671,509,669,509,668,509,666,509,664,509,663,509,661,509,659,510,657,510,656,510,654,511,652,511,650,512,648,513,646,513,644,514,643,515,641,516,639,517,637,518,635,519,633,520,631,521,629,522,627,524,625,525,623,526,621,528,619,529,617,531,615,532,613,534,611,535,609,537,607,538,605,540,603,541,601,543,599,545,597,546,596,548,594,550,592,552,590,553,588,555,586,557,584,559,583,560,581" stroke="none" fill="transparent" pointer-events="all" />
+      
+    
+  
+  </g>
+
+                
+              
+            
              
         </svg>
           
@@ -1078,7 +1235,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 PM HST Tue Nov 17 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Pierce/Reinhart<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Wed Nov 18 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Katz/Pasch<br>NNNN<br><br></pre>
       </div>
           
     </div>
@@ -1096,7 +1253,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1000 PM PST Tue Nov 17 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Pierce/Reinhart<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1000 AM PST Wed Nov 18 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Katz/Pasch<br>NNNN<br><br></pre>
       </div>
           
             
@@ -1111,7 +1268,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">096 <br />ABPZ21 KNHC 180506<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1000 PM PST martes 17 de noviembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Pierce/Reinhart<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">149 <br />ABPZ21 KNHC 181726<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1000 AM PST miércoles 18 de noviembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Katz/Pasch<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
@@ -1130,7 +1287,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>100 AM EST Wed Nov 18 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Evans/Reinhart<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>100 PM EST Wed Nov 18 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>1. Off the Southeast U.S. Coast:<br>A non-tropical low pressure system is expected to form near the <br>northern Bahamas by late Friday.  This system could become a <br>subtropical or tropical storm while it moves northward or <br>northeastward near or offshore of the southeastern U.S. coast <br>through the weekend.  Regardless of development, strong winds, <br>dangerous surf, and coastal flooding are likely along portions of <br>the southeast and mid-Atlantic coasts into early next week.  <br>Interests along the eastern U.S. coast should monitor the progress <br>of this system.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...medium...40 percent.<br>
+<br><br>Forecaster Pasch/Katz<br><br></pre>
       </div>
           
             
@@ -1145,7 +1303,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">764 <br />ACCA62 KNHC 180505<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />100 AM EST miércoles 18 de noviembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Evans/Reinhart<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">590 <br />ACCA62 KNHC 181736<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />100 PM EST miércoles 18 de noviembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Frente a la Costa Sureste de los Estados Unidos: Se espera que un<br />sistema de baja presión no tropical se forme cerca del norte de las<br />Bahamas para tarde el viernes. Este sistema podría convertirse en<br />una tormenta subtropical o tropical mientras se mueve hacia el norte<br />o hacia el noreste cerca o hacia el mar de la costa sureste de los<br />Estados Unidos durante el fin de semana. Independientemente del<br />desarrollo, son probables vientos fuertes, oleaje peligroso e<br />inundaciones costeras a lo largo de porciones de las costas del<br />sureste y del Atlántico medio hasta principios de la próxima semana.<br />Las personas interesadas a lo largo de la costa este de los Estados<br />Unidos deben monitorear el progreso de este sistema.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...medio...40 por ciento.<br /><br />$$<br />Pronosticador Pasch/Katz<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
