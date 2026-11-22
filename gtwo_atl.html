@@ -601,148 +601,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <!-- 1. Stripped height-4/overflow-hidden and added inline grid settings -->
     <div id="gtwo-menu-container" class="width-full bg-primary-lighter" style="display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;">
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-atl-2d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
-      
-      <div id="menu-atl-2d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
+
+      <!-- Updated "None" state container to mimic the multi-line mobile grid -->
       <div id="menu-atl-7d0" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
         <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero "
-            
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
-        </div>
-      </div>
-      
-      <div id="menu-atl-7d1" class="gtwo-menu width-full pointer-events-none opacity-0 z-0" style="grid-column: 1; grid-row: 1;">
-        
-        <div class="display-flex flex-column tablet:flex-row flex-align-center flex-justify-center padding-y-05 font-sans-sm">
-          <span class="text-bold tablet:margin-right-1 margin-bottom-1">Disturbances:</span>
-          <div class="display-flex flex-wrap flex-justify-center margin-bottom-1 tablet:margin-bottom-0">
-            
-              
-              
-              
-            
-          <button
-            id="dist-btn-0"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero "
-            
-            onclick="switchDisturbance('0')"
-          >
-            ALL
-          </button>
-            
-              
-              
-              
-              
-            
-          <button
-            id="dist-btn-1"
-            class="usa-button usa-button--unstyled margin-right-1 margin-bottom-1 text-no-underline padding-x-1 padding-y-05 radius-md border-1px border-gray-50 bg-gtwo-nearzero text-on-gtwo-nearzero text-bold border-gray-90"
-            style="box-shadow: 1px 2px 2px black;"
-            onclick="switchDisturbance('1')"
-          >
-            1
-          </button>
-          </div>
+          
+          <!-- Stays on Line 1 on mobile -->
+          <span class="text-bold tablet:margin-right-1 margin-bottom-1 tablet:margin-bottom-0">Disturbances:</span>
+          
+          <!-- Drops to Line 2 on mobile with identical vertical spacing as the buttons -->
+          <span class="text-bold margin-bottom-1 tablet:margin-bottom-0">None</span>
+          
         </div>
       </div>
 
@@ -842,94 +724,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
 
-          
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 48 Hours"
-    data-risk="nearzero"
-    data-prob="0"
-    data-details="
-  
-  <b>As of 7:00 AM EST Sun Nov 22 2026...</b><br>Offshore of the Southeast U.S. Coast:<br>A non-tropical, gale-force low pressure area centered a few hundred miles east of the North Carolina coast is producing disorganized showers and thunderstorms. This low is forecast to move northward into unfavorable environmental conditions, and development into a tropical or subtropical system is not expected. Regardless of the system&#39;s status, this large weather system is still expected to produce heavy rains, gusty winds, dangerous surf, rip currents, and coastal flooding along portions of the eastern U.S. coasts during the next couple of days.  Additional information on this system, including Gale Warnings, can be found in High Seas Forecasts issued by the National Weather Service, as well as products issued by your local National Weather Service forecast office.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...near 0 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="619" cy="559" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-   
-        </svg>
-          
-      </div>
-
-      <div id="view-atl-2d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_atl_2d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_atl_2d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_atl_2d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_atl_2d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_atl_2d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_atl_2d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_atl_2d1_w1024.png" 
-          alt="2 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-
-          
-
-           
-            
-            
-              
-                
-                  
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 48 Hours"
-    data-risk="nearzero"
-    data-prob="0"
-    data-details="
-  
-  <b>As of 7:00 AM EST Sun Nov 22 2026...</b><br>Offshore of the Southeast U.S. Coast:<br>A non-tropical, gale-force low pressure area centered a few hundred miles east of the North Carolina coast is producing disorganized showers and thunderstorms. This low is forecast to move northward into unfavorable environmental conditions, and development into a tropical or subtropical system is not expected. Regardless of the system&#39;s status, this large weather system is still expected to produce heavy rains, gusty winds, dangerous surf, rip currents, and coastal flooding along portions of the eastern U.S. coasts during the next couple of days.  Additional information on this system, including Gale Warnings, can be found in High Seas Forecasts issued by the National Weather Service, as well as products issued by your local National Weather Service forecast office.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...near 0 percent..<br>
-"
-    data-action="switchDisturbance:0">
-  
-    <circle cx="965" cy="723" r="50" fill="transparent" pointer-events="all" />
-  
-  </g>
-
-                
-              
-            
              
         </svg>
           
@@ -975,104 +769,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
           
 
-          
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 7 Days"
-    data-risk="nearzero"
-    data-prob="0"
-    data-details="
-  
-  <b>As of 7:00 AM EST Sun Nov 22 2026...</b><br>Offshore of the Southeast U.S. Coast:<br>A non-tropical, gale-force low pressure area centered a few hundred miles east of the North Carolina coast is producing disorganized showers and thunderstorms. This low is forecast to move northward into unfavorable environmental conditions, and development into a tropical or subtropical system is not expected. Regardless of the system&#39;s status, this large weather system is still expected to produce heavy rains, gusty winds, dangerous surf, rip currents, and coastal flooding along portions of the eastern U.S. coasts during the next couple of days.  Additional information on this system, including Gale Warnings, can be found in High Seas Forecasts issued by the National Weather Service, as well as products issued by your local National Weather Service forecast office.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...near 0 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="619" cy="559" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-   
-        </svg>
-          
-      </div>
-
-      <div id="view-atl-7d1" class="gtwo-layer position-absolute top-0 left-0 width-full height-full pointer-events-none opacity-0 z-0">
-        <img 
-          srcset="
-            /xgtwo/resize/xgtwo_atl_7d1_w1920.png 1920w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1600.png 1600w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1366.png 1366w,
-            /xgtwo/resize/xgtwo_atl_7d1_w1024.png 1024w,
-            /xgtwo/resize/xgtwo_atl_7d1_w768.png 768w,
-            /xgtwo/resize/xgtwo_atl_7d1_w640.png 640w,
-            /xgtwo/resize/xgtwo_atl_7d1_w400.png 400w,
-            /xgtwo/resize/xgtwo_atl_7d1_w320.png 320w
-          "
-          sizes="
-            (width <= 320px) 320px,
-            (width <= 400px) 400px,
-            (width <= 640px) 640px,
-            (width <= 768px) 768px,
-            (width <= 1024px) 1024px,
-            (width <= 1366px) 1366px,
-            (width <= 1600px) 1600px,
-            (width <= 1920px) 1920px,
-            1024px"
-          src="/xgtwo/resize/xgtwo_atl_7d1_w1024.png" 
-          alt="7 Day Background" 
-          class="width-full height-full"
-        >
-        <svg viewBox="0 0 1920 1449" preserveAspectRatio="none" class="layer-svg position-absolute top-0 left-0 width-full height-full z-200">
-
-          
-            
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="Return to All Disturbances" 
-    onclick="switchDisturbance('0')">
-    <rect x="0" y="136" width="1920" height="1135" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-          
-
-          
-  <g class="nav-system cursor-pointer" 
-    data-nav-title="View Pacific Outlook" 
-    onclick="switchBasin('pac')">
-    <polygon points="0,898,21,909,26,911,28,917,43,926,62,928,72,939,77,939,85,945,100,951,107,955,117,955,132,962,145,968,150,970,162,974,177,976,207,963,215,965,222,969,228,972,235,976,241,983,249,994,269,1008,277,1012,292,1012,301,1016,309,1020,318,1020,324,1024,333,1026,343,1028,350,1022,352,1022,354,1026,354,1037,367,1048,371,1054,386,1067,388,1075,386,1086,386,1090,399,1099,405,1095,409,1095,409,1101,416,1101,422,1105,431,1111,431,1118,448,1126,467,1128,474,1137,484,1139,484,1147,491,1152,510,1143,506,1135,499,1128,503,1126,510,1122,512,1116,518,1112,527,1111,533,1119,538,1124,535,1131,542,1139,546,1145,552,1156,557,1165,552,1167,559,1175,555,1179,557,1184,557,1203,555,1209,559,1216,557,1224,553,1228,548,1239,538,1239,531,1243,531,1254,525,1254,521,1260,527,1262,521,1269,0,1269" stroke="none" fill="transparent" pointer-events="all" />
-  </g>
-
-
-          
-
-           
-            
-            
-              
-                
-                  
-  <g class="storm-system cursor-pointer" 
-    data-name="Disturbance 1: 0% Chance of Cyclone Formation in 7 Days"
-    data-risk="nearzero"
-    data-prob="0"
-    data-details="
-  
-  <b>As of 7:00 AM EST Sun Nov 22 2026...</b><br>Offshore of the Southeast U.S. Coast:<br>A non-tropical, gale-force low pressure area centered a few hundred miles east of the North Carolina coast is producing disorganized showers and thunderstorms. This low is forecast to move northward into unfavorable environmental conditions, and development into a tropical or subtropical system is not expected. Regardless of the system&#39;s status, this large weather system is still expected to produce heavy rains, gusty winds, dangerous surf, rip currents, and coastal flooding along portions of the eastern U.S. coasts during the next couple of days.  Additional information on this system, including Gale Warnings, can be found in High Seas Forecasts issued by the National Weather Service, as well as products issued by your local National Weather Service forecast office.<br>* Formation chance through 48 hours...low...near 0 percent.. <br>* Formation chance through 7 days...low...near 0 percent..<br>
-"
-    data-action="switchDisturbance:1">
-  
-    
-      
-    <circle cx="619" cy="559" r="24" stroke="none" fill="transparent" pointer-events="all" />
-      
-    
-  
-  </g>
-
-                
-              
-            
              
         </svg>
           
@@ -1382,7 +1078,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-cpac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>200 AM HST Sun Nov 22 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Blake<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC HFOTWOCP ALL<br>TTAA00 PHFO DDHHMM<br><br>Tropical Weather Outlook<br>NWS Central Pacific Hurricane Center Honolulu HI<br>Issued by NWS National Hurricane Center Miami FL<br>800 AM HST Sun Nov 22 2026<br><br>For the central North Pacific...between 140W and 180W:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Blake<br>NNNN<br><br></pre>
       </div>
           
     </div>
@@ -1400,7 +1096,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>400 AM PST Sun Nov 22 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Blake<br>NNNN<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOEP ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>1000 AM PST Sun Nov 22 2026<br><br>For the eastern and central North Pacific east of 180 longitude:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Blake<br>NNNN<br><br></pre>
       </div>
           
             
@@ -1415,7 +1111,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-pac-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">297 <br />ABPZ21 KNHC 221140<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />400 AM PST domingo 22 de noviembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Blake<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">174 <br />ABPZ21 KNHC 221712<br />TWOSEP<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />1000 AM PST domingo 22 de noviembre de 2026<br /><br />Para el Pacífico Norte oriental y central al este de 180 longitud<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Blake<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
@@ -1434,8 +1130,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-en" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>700 AM EST Sun Nov 22 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>1. Offshore of the Southeast U.S. Coast:<br>A non-tropical, gale-force low pressure area centered a few hundred <br>miles east of the North Carolina coast is producing disorganized <br>showers and thunderstorms. This low is forecast to move northward <br>into unfavorable environmental conditions, and development into a <br>tropical or subtropical system is not expected.<br><br>Regardless of the system's status, this large weather system is <br>still expected to produce heavy rains, gusty winds, dangerous surf, <br>rip currents, and coastal flooding along portions of the eastern <br>U.S. coasts during the next couple of days.  Additional information <br>on this system, including Gale Warnings, can be found in High Seas <br>Forecasts issued by the National Weather Service, as well as <br>products issued by your local National Weather Service forecast <br>office.<br>* Formation chance through 48 hours...low...near 0 percent.<br>* Formation chance through 7 days...low...near 0 percent.<br>
-<br><br>High Seas Forecasts issued by the National Weather Service can be <br>found under AWIPS header NFDHSFAT1, WMO header FZNT01 KWBC, and <br>online at ocean.weather.gov/shtml/NFDHSFAT1.php<br><br><br>Forecaster Kelly<br><br></pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">ZCZC MIATWOAT ALL<br>TTAA00 KNHC DDHHMM<br><br>Tropical Weather Outlook<br>NWS National Hurricane Center Miami FL<br>100 PM EST Sun Nov 22 2026<br><br>For the North Atlantic...Caribbean Sea and the Gulf of America:<br><br>Tropical cyclone formation is not expected during the next 7 days.<br><br>$$<br>Forecaster Kelly<br>NNNN<br><br></pre>
       </div>
           
             
@@ -1450,7 +1145,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     <div id="two-atl-es" class="two-layer display-none">
       <div class="teletype-scroller">
-        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">355 <br />ACCA62 KNHC 221128<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />700 AM EST domingo 22 de noviembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />Alta mar de la costa sureste de los Estados Unidos: Un área de baja<br />presión no tropical con fuerza de tormenta centrada a unos cientos<br />de millas al este de la costa de Carolina del Norte está produciendo<br />aguaceros desorganizados y tormentas eléctricas. Se pronostica que<br />esta baja se desplazará hacia el norte a condiciones ambientales<br />desfavorables, y no se espera que se desarrolle en un sistema<br />tropical o subtropical.<br /><br />Independientemente del estado del sistema, todavía se espera que<br />este grande sistema meteorológico produzca fuertes lluvias, ráfagas<br />de viento, oleaje peligroso, corrientes marinas e inundaciones<br />costeras a lo largo de porciones de las costas este de los Estados<br />Unidos durante los próximos dos días. Información adicional sobre<br />este sistema, incluyendo Avisos de Tormenta, se puede encontrar en<br />Pronósticos de Alta Mar emitidos por el Servicio Nacional de<br />Meteorología, así como en los productos emitidos por su oficina de<br />pronóstico del Servicio Nacional de Meteorología local.<br />* Probabilidad de formación hasta 48 horas...baja...cerca del 0 por<br />ciento.<br />* Probabilidad de formación hasta 7 días...baja...cerca del 0 por<br />ciento.<br /><br />&&<br />Los pronósticos de alta mar emitidos por el Servicio Nacional de<br />Meteorología se pueden encontrar bajo el encabezado de AWIPS<br />NFDHSFAT1, el encabezado de la OMM FZNT01 KWBC, y en línea en<br />ocean.weather.gov/shtml/NFDHSFAT1.php<br /><br />$$<br />Pronosticador Kelly<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
+        <pre class="teletype-content border-2px border-base-light padding-2 font-mono-3xs tablet:font-mono-sm" aria-live="polite">582 <br />ACCA62 KNHC 221714<br />TWOSAT<br /><br />Perspectiva de tiempo tropical<br />Centro Nacional de Huracanes del SNM Miami FL<br />100 PM EST domingo 22 de noviembre de 2026<br /><br />Para el Atlántico Norte...Mar Caribe y el Golfo de América<br /><br />No se espera la formación de ciclones tropicales durante los<br />próximos 7 días.<br /><br />$$<br />Pronosticador Kelly<br /><br /><br /><br /><br />*** Este producto ha sido procesado automáticamente utilizando un<br />programa de traducción y puede contener omisiones y errores. El<br />Servicio Nacional de Meteorología no puede garantizar la precisión<br />del texto convertido. De haber alguna duda, el texto en inglés es<br />siempre la versión autorizada. ***</pre>
       </div>
           
             
